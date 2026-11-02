@@ -1,0 +1,62 @@
+iter 1: stream cyclictest max 3937 us, outliers 0, full True rc 0
+iter 2: stream cyclictest max 2917 us, outliers 0, full True rc 0
+iter 3: stream cyclictest max 3362 us, outliers 0, full True rc 0
+iter 4: stream cyclictest max 3623 us, outliers 0, full True rc 0
+iter 5: stream cyclictest max 4675 us, outliers 0, full True rc 0
+iter 6: stream cyclictest max 7667 us, outliers 0, full True rc 0
+iter 7: stream cyclictest max 4981 us, outliers 0, full True rc 0
+iter 8: stream cyclictest max 6310 us, outliers 0, full True rc 0
+iter 9: stream cyclictest max 5834 us, outliers 0, full True rc 0
+iter 10: stream cyclictest max 4540 us, outliers 0, full True rc 0
+iter 11: stream cyclictest max 4805 us, outliers 0, full True rc 0
+iter 12: stream cyclictest max 4147 us, outliers 1, full True rc 0
+iter 13: stream cyclictest max 3392 us, outliers 0, full True rc 0
+iter 14: stream cyclictest max 3310 us, outliers 0, full True rc 0
+iter 15: stream cyclictest max 4719 us, outliers 0, full True rc 0
+iter 16: stream cyclictest max 7491 us, outliers 0, full True rc 0
+iter 17: stream cyclictest max 5893 us, outliers 0, full True rc 0
+iter 18: stream cyclictest max 7668 us, outliers 0, full True rc 0
+iter 19: stream cyclictest max 10084 us, outliers 0, full True rc 0
+iter 20: stream cyclictest max 2962 us, outliers 0, full True rc 0
+iter 21: stream cyclictest max 3822 us, outliers 0, full True rc 0
+iter 22: stream cyclictest max 2756 us, outliers 0, full True rc 0
+iter 23: stream cyclictest max 5188 us, outliers 0, full True rc 0
+iter 24: stream cyclictest max 4583 us, outliers 0, full True rc 0
+iter 25: stream cyclictest max 4005 us, outliers 0, full True rc 0
+iter 26: stream cyclictest max 5815 us, outliers 0, full True rc 0
+iter 27: stream cyclictest max 6819 us, outliers 1, full True rc 0
+iter 28: stream cyclictest max 6835 us, outliers 0, full True rc 0
+iter 29: stream cyclictest max 9210 us, outliers 1, full True rc 0
+iter 30: stream cyclictest max 4674 us, outliers 0, full True rc 0
+iter 31: stream cyclictest max 3939 us, outliers 0, full True rc 0
+iter 32: stream cyclictest max 7437 us, outliers 0, full True rc 0
+iter 33: stream cyclictest max 9615 us, outliers 0, full True rc 0
+iter 34: stream cyclictest max 6908 us, outliers 0, full True rc 0
+iter 35: stream cyclictest max 5266 us, outliers 0, full True rc 0
+iter 36: stream cyclictest max 5378 us, outliers 0, full True rc 0
+iter 37: stream cyclictest max 3137 us, outliers 1, full True rc 0
+iter 38: stream cyclictest max 4281 us, outliers 1, full True rc 0
+iter 39: stream cyclictest max 5130 us, outliers 0, full True rc 0
+iter 40: stream cyclictest max 4294 us, outliers 0, full True rc 0
+iter 41: stream cyclictest max 6861 us, outliers 0, full True rc 0
+iter 42: stream cyclictest max 5126 us, outliers 0, full True rc 0
+iter 43: stream cyclictest max 4406 us, outliers 0, full True rc 0
+iter 44: stream cyclictest max 4354 us, outliers 0, full True rc 0
+iter 45: stream cyclictest max 3686 us, outliers 1, full True rc 0
+iter 46: stream cyclictest max 2593 us, outliers 0, full True rc 0
+iter 47: stream cyclictest max 4967 us, outliers 0, full True rc 0
+iter 48: stream cyclictest max 9911 us, outliers 0, full True rc 0
+iter 49: stream cyclictest max 6302 us, outliers 0, full True rc 0
+iter 50: stream cyclictest max 5281 us, outliers 0, full True rc 0
+iter 51: stream cyclictest max 3573 us, outliers 0, full True rc 0
+iter 52: stream cyclictest max 4772 us, outliers 0, full True rc 0
+iter 53: stream cyclictest max 2974 us, outliers 0, full True rc 0
+STREAM SOAK: iterations 53 worst cyclictest max 10084 us outliers total 6 incomplete 0
+iq_check 1: ok : [2465], "corr_mag_iq_log": 0.8558, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 0.9998} ok
+iq_check 2: ok ": [2465], "corr_mag_iq_log": 0.853, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 0.9999} ok
+iq_check 3: ok ak": [2465], "corr_mag_iq_log": 0.8427, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 1.0} ok
+iq_check 4: ok : [2465], "corr_mag_iq_log": 0.8489, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 0.9999} ok
+iq_check 5: ok ak": [2465], "corr_mag_iq_log": 0.8552, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 1.0} ok
+iq_check 6: ok ak": [2465], "corr_mag_iq_log": 0.8526, "expected_bin": 2465, "raw_peak": 2465, "raw_vs_mag_log_corr": 1.0} ok
+IQ CHECK REPEAT: runs 6 ok 6 FAIL 0
+SOAK_DONE

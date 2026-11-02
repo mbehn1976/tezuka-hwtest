@@ -1,0 +1,51 @@
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx
+8<--- cut here ---
+Unable to handle kernel paging request at virtual address b5d2d000 when write
+[b5d2d000] *pgd=036f8831, *pte=00000000, *ppte=00000000
+Internal error: Oops: 817 [#1] PREEMPT SMP ARM
+Modules linked in: maia_sdr(O)
+CPU: 1 UID: 0 PID: 25261 Comm: kmodrace Tainted: G           O       6.12.77 #1
+Tainted: [O]=OOT_MODULE
+Hardware name: Xilinx Zynq Platform
+PC is at v7_dma_inv_range+0x3c/0x54
+LR is at maia_sdr_rxbuffer_ioctl+0x78/0xb4 [maia_sdr]
+pc : [<c0114d58>]    lr : [<bf0002f0>]    psr: 80080013
+sp : e2945f08  ip : c376a018  fp : b656af3c
+r10: 00000000  r9 : 00000003  r8 : c5572a80
+r7 : d0e28c80  r6 : 00000000  r5 : 40044d00  r4 : c20b5640
+r3 : 0000001f  r2 : 00000020  r1 : b5d33000  r0 : b5d2d000
+Flags: Nzcv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment none
+Control: 18c5387d  Table: 053dc04a  DAC: 00000051
+Register r0 information: non-paged memory
+Register r1 information: non-paged memory
+Register r2 information: non-paged memory
+Register r3 information: non-paged memory
+Register r4 information: slab kmalloc-192 start c20b5600 pointer offset 64 size 192
+Register r5 information: non-paged memory
+Register r6 information: NULL pointer
+Register r7 information: slab filp start d0e28c80 pointer offset 0 size 128
+Register r8 information: slab task_struct start c5572a80 pointer offset 0 size 2176
+Register r9 information: non-paged memory
+Register r10 information: NULL pointer
+Register r11 information: non-paged memory
+Register r12 information: slab kmalloc-256 start c376a000 pointer offset 24 size 256
+Process kmodrace (pid: 25261, stack limit = 0x872d1422)
+Stack: (0xe2945f08 to 0xe2946000)
+5f00:                   40044d00 00000000 00000001 40044d00 d0e28c81 c02731e0
+5f20: 00000000 1bbe6467 00000255 c5572a80 e2945fb0 c010024c 0000018e c010024c
+5f40: c5572a80 1bbe6467 c5572a80 c01300e8 b656adcc e2945f64 c5572a80 c013021c
+5f60: e2945f84 00000000 00000000 1bbe6467 b656af3c c0130438 b656b968 1bbe6467
+5f80: ffffffff 00000001 40044d00 004cf00c 00000036 c010024c c5572a80 00000000
+5fa0: b656af3c c0100060 00000001 40044d00 00000003 40044d00 00000000 b656ada0
+5fc0: 00000001 40044d00 004cf00c 00000036 00000003 b656b420 b5d6b000 b656af3c
+5fe0: 004cefc0 b656ad90 004cdb14 b6e5b418 60080010 00000003 00000000 00000000
+Call trace: 
+ v7_dma_inv_range from maia_sdr_rxbuffer_ioctl+0x78/0xb4 [maia_sdr]
+ maia_sdr_rxbuffer_ioctl [maia_sdr] from sys_ioctl+0x364/0xd10
+ sys_ioctl from ret_fast_syscall+0x0/0x54
+Exception stack(0xe2945fa8 to 0xe2945ff0)
+5fa0:                   00000001 40044d00 00000003 40044d00 00000000 b656ada0
+5fc0: 00000001 40044d00 004cf00c 00000036 00000003 b656b420 b5d6b000 b656af3c
+5fe0: 004cefc0 b656ad90 004cdb14 b6e5b418
+Code: e1110003 e1c11003 1e071f3e e1500001 (3e070f36) 
+---[ end trace 0000000000000000 ]---

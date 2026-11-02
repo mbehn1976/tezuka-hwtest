@@ -1,0 +1,18 @@
+04:37:54 == usb control start
+04:37:55 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+04:37:55 6.12 spi irq thread: pid 171's current scheduling priority: 60
+04:38:20 throughput 612 #1: recv 209.7 MB in 10.75 s = 19.5 MB/s / send 200 MB in 11.17 s = 17.9 MB/s
+04:38:46 throughput 612 #2: recv 209.7 MB in 12.18 s = 17.2 MB/s / send 200 MB in 10.54 s = 19.0 MB/s
+04:39:13 throughput 612 #3: recv 209.7 MB in 12.63 s = 16.6 MB/s / send 200 MB in 10.82 s = 18.5 MB/s
+04:39:14 after throughput 612: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+04:58:18 card on 7.3: 1 match
+05:17:21 throughput 73 #1: recv 209.7 MB in 12.95 s = 16.2 MB/s / send 200 MB in 11.06 s = 18.1 MB/s
+05:17:49 throughput 73 #2: recv 209.7 MB in 13.79 s = 15.2 MB/s / send 200 MB in 10.72 s = 18.7 MB/s
+05:18:16 throughput 73 #3: recv 209.7 MB in 12.52 s = 16.8 MB/s / send 200 MB in 10.51 s = 19.0 MB/s
+05:18:16 after throughput 73: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:36:35 Q_usb4M_612ctl: Q_usb4M_612ctl: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 19, outliers 21  | SPI timeouts 0 | before: up=88.88 spito=0 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 177 pol=1 rt=50 cpu=0 irq/29-e0006000.spi | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:36:35 Q_usb4M_73ship: Q_usb4M_73ship: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 56, outliers 83  | SPI timeouts 0 | before: up=88.78 spito=0 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1  spi_irq: 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:36:35 Q_usb4M_73kt1: Q_usb4M_73kt1: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 34, outliers 45  | SPI timeouts 0 | before: up=89.32 spito=0 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:37:29 card back on 6.12: 1 match
+05:37:30 6.12 control: 6.12.114-rt21 23.66  spito=0
+05:37:30 == usb control done

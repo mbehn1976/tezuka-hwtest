@@ -1,0 +1,13 @@
+up=785.47 spito=5
+249:ad9361 spi0.0: SPI transfer timed out
+251:spi_master spi0: noqueue transfer failed
+252:ad9361 spi0.0: Read Error -110
+254:ad9361 spi0.0: SPI transfer timed out
+256:spi_master spi0: noqueue transfer failed
+257:ad9361 spi0.0: Read Error -110
+258:ad9361 spi0.0: SPI transfer timed out
+260:spi_master spi0: noqueue transfer failed
+-- last dmesg line: ad9361 spi0.0: Read Error -110
+(adcheck not on board)
+ISR=0x00000014
+ 29:      33507          0 GIC-0  58 Level     e0006000.spi

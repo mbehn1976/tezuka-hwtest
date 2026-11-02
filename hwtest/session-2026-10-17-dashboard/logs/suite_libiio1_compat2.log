@@ -1,0 +1,10 @@
+######## RX=Pluto
+== Pluto iq 2500000
+{"name": "cw 205000 Hz", "frames": 31, "mag_peak": 2128, "iq_peak": [2128, 2129], "corr_mag_iq_log": 0.7361, "expected_bin": 2128, "raw_peak": 2128, "raw_vs_mag_log_corr": 0.9883} FAIL
+{"name": "cw -600000 Hz", "frames": 31, "mag_peak": 2128, "iq_peak": [2128], "corr_mag_iq_log": 0.7396, "expected_bin": 810, "raw_peak": 2128, "raw_vs_mag_log_corr": 0.9893} FAIL
+{"name": "noise (TX -89 dB)", "frames": 31, "mag_peak": 2048, "iq_peak": [2047, 2048, 2049, 2193], "corr_mag_iq_log": 0.5757}
+{"name": "ofdm 1024/128/600", "frames": 31, "mag_peak": 2128, "iq_peak": [2128], "corr_mag_iq_log": 0.7178, "inband_over_outband_db_mag": 4.1, "inband_over_outband_db_iq": 1.0} FAIL
+restored TX True RX True
+== Pluto phase 2500000
+tone 205000.0 Hz sent: {'peak_bin': 2128, 'iq_peak_bin': 2128, 'expected_bin': 2128, 'f_timedomain_hz': 48873.5, 'f_phase_hz': 48872.4, 'f_diff_hz': -1.1, 'dphi_scatter_rad': 0.0668, 'bin_fraction': 0.07, 'model_bins': 1, 'model_max_phase_err_deg': 0.15, 'model_max_amp_err_db': 0.02, 'iq_vs_raw_max_phase_diff_deg': 0.4, 'td_drift_hz': 23.0} FAIL
+tone 205300.0 Hz sent: {'peak_bin': 2128, 'iq_peak_bin': 2128, 'expected_bin': 2128, 'f_timedomain_hz': 48840.4, 'f_phase_hz': 48837.6, 'f_diff_hz': -2.8, 'dphi_scatter_rad': 0.0573, 'bin_fraction': 0.02, 'model_bins': 1, 'model_max_phase_err_deg': 0.05, 'model_max_amp_err_db': 0.01, 'iq_vs_raw_max_phase_diff_deg': 0.7, 'td_drift_hz': 17.0} FAIL

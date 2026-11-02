@@ -1,0 +1,18 @@
+== config
+1
+      1 pid 832's current affinity mask: 1
+      1 pid 834's current affinity mask: 1
+      1 pid 835's current affinity mask: 1
+/usr/bin/stress-ng
+29337 root     stress-ng --cpu 1 --vm 1 --vm-bytes 32M --timeout 1020s
+29344 root     {stress-ng-cpu} stress-ng --cpu 1 --vm 1 --vm-bytes 32M --timeout 1020s
+29345 root     {stress-ng-vm} stress-ng --cpu 1 --vm 1 --vm-bytes 32M --timeout 1020s
+29348 root     {stress-ng-vm} stress-ng --cpu 1 --vm 1 --vm-bytes 32M --timeout 1020s
+29432 root     cyclictest -t1 -p99 -i250 -a1 -D 1000s -m -q
+== stream test done
+stress-ng: info:  [29337] dispatching hogs: 1 cpu, 1 vm
+stress-ng: info:  [29337] note: system has only 210 MB of free memory and swap, recommend using --oom-avoid
+stress-ng: info:  [29345] vm: using 32MB per stressor instance (total 32MB of 210.81MB available memory)
+0
+ 00:22:48 up 22 min,  load average: 5.08, 5.27, 3.81
+ALLDONE

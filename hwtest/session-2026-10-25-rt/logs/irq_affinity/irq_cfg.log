@@ -1,0 +1,14 @@
+== a) eth irq -> CPU1
+2
+ 31:    5160402      74668 GIC-0  54 Level     eth0
+A_DONE
+== b) api_controller paused
+ 1166 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 1240 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 1242 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 2823 root     bash -c kill -STOP $(pidof api_controller.sh 2>/dev/null || pgrep -f api_controller); ps | grep "[a]pi_controller"
+irq30 per s while paused: 0
+B_DONE
+0
+ 01:45:38 up  1:45,  load average: 3.38, 3.67, 3.84
+ALLDONE

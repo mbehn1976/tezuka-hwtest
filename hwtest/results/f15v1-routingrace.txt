@@ -1,0 +1,8 @@
+binary e0896cf4, 0xBC start 0x0000000E, toggles 500
+  toggle 11 enabled=false: 0xBC=0x0000000F expected 0x0000000E (http 500)
+  toggle 213 enabled=false: 0xBC=0x0000000F expected 0x0000000E (http 500)
+  toggle 243 enabled=true: 0xBC=0x00000005 expected 0x0000000F (http 200)
+  toggle 482 enabled=true: 0xBC=0x00000005 expected 0x0000000F (http 200)
+result: 1000 PATCH calls, wrong 0xBC after 4, non-200 replies 3
+0xBC restored to 0x00000000
+system maia-httpd pid 1984

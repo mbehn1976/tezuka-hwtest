@@ -1,0 +1,2 @@
+stage B1_cpu1: FAIL, rounds 30, incomplete 1, rounds with outliers 30
+HUNT_DONE

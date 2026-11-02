@@ -1,0 +1,107 @@
+== X1_rr99
+pid 833's current scheduling policy: SCHED_OTHER
+pid 833's current scheduling priority: 0
+pid 833's new scheduling policy: SCHED_RR
+pid 833's new scheduling priority: 99
+pid 835's current scheduling policy: SCHED_OTHER
+pid 835's current scheduling priority: 0
+pid 835's new scheduling policy: SCHED_RR
+pid 835's new scheduling priority: 99
+pid 836's current scheduling policy: SCHED_OTHER
+pid 836's current scheduling priority: 0
+pid 836's new scheduling policy: SCHED_RR
+pid 836's new scheduling priority: 99
+pid 945's current scheduling policy: SCHED_OTHER
+pid 945's current scheduling priority: 0
+pid 945's new scheduling policy: SCHED_RR
+pid 945's new scheduling priority: 99
+iiod pid 833's current scheduling policy: SCHED_RR pid 833's current scheduling priority: 99
+usbd_main_thd pid 835's current scheduling policy: SCHED_RR pid 835's current scheduling priority: 99
+net_main_thd pid 836's current scheduling policy: SCHED_RR pid 836's current scheduling priority: 99
+avahi_thd pid 945's current scheduling policy: SCHED_RR pid 945's current scheduling priority: 99
+liveness before (0 = ok): 0
+cyclictest (X1_rr99): # /dev/cpu_dma_latency set to 0us
+T: 0 ( 6889) P:98 I:250 C: 397029 Min:     10 Act:   15 Avg:  120 Max:   63078
+liveness after (0 = ok): 0
+DONE_X1_rr99
+== X2_other
+pid 833's current scheduling policy: SCHED_RR
+pid 833's current scheduling priority: 99
+pid 833's new scheduling policy: SCHED_OTHER
+pid 833's new scheduling priority: 0
+pid 835's current scheduling policy: SCHED_RR
+pid 835's current scheduling priority: 99
+pid 835's new scheduling policy: SCHED_OTHER
+pid 835's new scheduling priority: 0
+pid 836's current scheduling policy: SCHED_RR
+pid 836's current scheduling priority: 99
+pid 836's new scheduling policy: SCHED_OTHER
+pid 836's new scheduling priority: 0
+pid 945's current scheduling policy: SCHED_RR
+pid 945's current scheduling priority: 99
+pid 945's new scheduling policy: SCHED_OTHER
+pid 945's new scheduling priority: 0
+iiod pid 833's current scheduling policy: SCHED_OTHER pid 833's current scheduling priority: 0
+usbd_main_thd pid 835's current scheduling policy: SCHED_OTHER pid 835's current scheduling priority: 0
+net_main_thd pid 836's current scheduling policy: SCHED_OTHER pid 836's current scheduling priority: 0
+avahi_thd pid 945's current scheduling policy: SCHED_OTHER pid 945's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (X2_other): /tmp/trace_c1.sh: cd: line 2: can't cd to /sys/kernel/debug/tracing: No such file or directory
+/tmp/trace_c1.sh: line 4: can't create options/function-trace: nonexistent directory
+T: 0 (12309) P:98 I:250 C: 560000 Min:     10 Act:   11 Avg:   18 Max:      80
+max_latency_us: 0
+cp: can't stat 'trace': No such file or directory
+wc: /tmp/trace_c1_X2_other.txt: No such file or directory
+/tmp/trace_c1.sh: line 8: can't create options/function-trace: nonexistent directory
+scp: /tmp/trace_c1_X2_other.txt: No such file or directory
+liveness after (0 = ok): 0
+DONE_X2_other
+== X3_rr99_trace
+pid 833's current scheduling policy: SCHED_OTHER
+pid 833's current scheduling priority: 0
+pid 833's new scheduling policy: SCHED_RR
+pid 833's new scheduling priority: 99
+pid 835's current scheduling policy: SCHED_OTHER
+pid 835's current scheduling priority: 0
+pid 835's new scheduling policy: SCHED_RR
+pid 835's new scheduling priority: 99
+pid 836's current scheduling policy: SCHED_OTHER
+pid 836's current scheduling priority: 0
+pid 836's new scheduling policy: SCHED_RR
+pid 836's new scheduling priority: 99
+pid 945's current scheduling policy: SCHED_OTHER
+pid 945's current scheduling priority: 0
+pid 945's new scheduling policy: SCHED_RR
+pid 945's new scheduling priority: 99
+iiod pid 833's current scheduling policy: SCHED_RR pid 833's current scheduling priority: 99
+usbd_main_thd pid 835's current scheduling policy: SCHED_RR pid 835's current scheduling priority: 99
+net_main_thd pid 836's current scheduling policy: SCHED_RR pid 836's current scheduling priority: 99
+avahi_thd pid 945's current scheduling policy: SCHED_RR pid 945's current scheduling priority: 99
+liveness before (0 = ok): 0
+cyclictest (X3_rr99_trace): /tmp/trace_c1.sh: cd: line 2: can't cd to /sys/kernel/debug/tracing: No such file or directory
+/tmp/trace_c1.sh: line 4: can't create options/function-trace: nonexistent directory
+T: 0 (17652) P:98 I:250 C: 396532 Min:     10 Act:   25 Avg:  120 Max:   88576
+max_latency_us: 0
+cp: can't stat 'trace': No such file or directory
+wc: /tmp/trace_c1_X3_rr99_trace.txt: No such file or directory
+/tmp/trace_c1.sh: line 8: can't create options/function-trace: nonexistent directory
+scp: /tmp/trace_c1_X3_rr99_trace.txt: No such file or directory
+liveness after (0 = ok): 0
+DONE_X3_rr99_trace
+pid 833's current scheduling policy: SCHED_RR
+pid 833's current scheduling priority: 99
+pid 833's new scheduling policy: SCHED_OTHER
+pid 833's new scheduling priority: 0
+pid 835's current scheduling policy: SCHED_RR
+pid 835's current scheduling priority: 99
+pid 835's new scheduling policy: SCHED_OTHER
+pid 835's new scheduling priority: 0
+pid 836's current scheduling policy: SCHED_RR
+pid 836's current scheduling priority: 99
+pid 836's new scheduling policy: SCHED_OTHER
+pid 836's new scheduling priority: 0
+pid 945's current scheduling policy: SCHED_RR
+pid 945's current scheduling priority: 99
+pid 945's new scheduling policy: SCHED_OTHER
+pid 945's new scheduling priority: 0
+ALLDONE

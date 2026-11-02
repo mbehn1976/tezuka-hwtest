@@ -1,0 +1,181 @@
+7.3 AD9361 SPI timeout isolation, 2026-11-01, Pluto+ (serial WZ5Z6HQZ6IXHI5QI), image sdimg-rt73-br (7.3.0-rc7 PREEMPT_RT, Buildroot).
+Method as on 2026-10-31 (k73_soak_2026-10-31): fresh reboot per run, 60 s settle, AD9361 digital loopback, cyclic TX tone (tone.bin, iio_writedev -c -b 65536),
+RX 5 MS/s over the USB link (192.168.4.1), host libiio 1.0.0 iio_rwdev -b 262144 with NB_BLOCKS=32, 5 s rounds, phase-jump detector drop73u.py, board monitor once a minute.
+All services running as booted. Hardware-measured; the board kernel log has no timestamps, so timeout times come from the per-minute monitor.
+
+Run A (as booted, S24rtprio: ktimers/0,1 SCHED_FIFO 99): 14.8 min, 80 rounds, 0 incomplete, 43 rounds with slips (54%), 65 slips;
+  4 AD9361 SPI timeouts (one per 3.7 min; first between +0 and +4 min, then about +10, +12, +12..15 min).
+Run B (ktimers/0,1 set to SCHED_FIFO 1 after boot, checked every minute): 29.5 min, 160 rounds, 0 incomplete, 50 rounds with slips (31%), 62 slips;
+  1 AD9361 SPI timeout (about +23 min).
+Every timeout is the same block: "ad9361 spi0.0: SPI transfer timed out", "spi_master spi0: failed to transfer one message from queue",
+  "spi_master spi0: noqueue transfer failed", "ad9361 spi0.0: Read Error -110" (reads only, synchronous transfer in the caller's context).
+Unchanged in both runs: irq/29-e0006000.spi SCHED_FIFO 50 on cpu0, spi0 message thread SCHED_OTHER, spi0 runtime PM control=auto/active, die 71-75 C, maia API 200.
+
+Statistics: if B had A's timeout rate, P(<= 1 timeout in 29.5 min) = 0.003, so the ktimers boost raises the timeout rate about 8 times.
+The boost also nearly doubles the rounds with slips on this USB path (54% vs 31%).
+But B is not zero: 7.3 still times out without the boost. The 6.12 control of 2026-10-31 (0 timeouts in 18 min, 21% rounds with slips)
+cannot be told apart from B (P(0 in 18 min | B's rate) = 0.54); a longer 6.12 control is needed for that.
+
+Ethernet ping to 192.168.3.1 (host eno1 192.168.3.10 temporary): 18-21 ms during run A (USB stream + ktimers 99); idle 0.38 ms (ktimers 1) and 0.48 ms (ktimers 99).
+
+CORRECTION (same day, after reading the per-minute sample-rate readback): the first SPI timeout of a boot WEDGES the AD9361 control path.
+From the first timeout on, every read of in_voltage_sampling_frequency returns garbage (A: 393082, 402516505, 100639197, 196560 ...;
+B: 1250000, 196541, 402516505), direct_reg_access reads 0xFF for every register (incl. 0x037), ensm reads sleep, a later rate write
+fails with "Calibration TIMEOUT (0x5E, 0x80)" / "Failed to set BB ref clock rate (-22)". The I/Q stream keeps running. Only a reboot clears it.
+So A's 2nd-4th timeouts happened in the wedged state and are not independent events. The valid measure is the time to the FIRST timeout:
+  A (ktimers 99): within 4 min; 2026-10-31 run 2 (ktimers 99): about 1 min; B (ktimers 1): about 24 min; 6.12 control: none in 18 min.
+One event per run: the earlier "about 8 times, p = 0.003" is WITHDRAWN. The boost may make it worse; these runs do not prove it.
+Wedged-state SPI controller registers (wedged_spi_regs_after_B.txt, read with runtime PM forced on, RXD not read):
+  CR 0x7C25 (master, CPHA, CS all deasserted, SSFORCE), ISR 0x14 (TX below threshold + RX FIFO NOT EMPTY), IMR 0, ER 0 (disabled), TXWR 1, RXTHR 1.
+  RX FIFO not empty while idle is suspicious (stale bytes would shift later reads); needs the fresh-boot values for comparison.
+
+=== Later runs, 2026-11-01 evening (same method unless noted) ===
+E_eth_prio (7.3, ONE boot, Ethernet 192.168.3.1 at 10 MS/s, 15 rounds of 5 s per setting, 4 and 32 blocks, ktimers changed at runtime):
+  ktimers 99: 4 blocks 9/15 rounds with slips (11 slips), 32 blocks 0.   51: 9/15 (14), 0.   49: 15/15 (213), 7/15 (24).   1: 15/15 (201), 9/15 (65).
+  0 SPI timeouts in 22 min of Ethernet streaming; sample-rate readback stable; ISR 0x04 at the end.
+  => the 17g fix needs ktimers ABOVE the irq threads (50); 51 is as good as 99, 49 is as bad as 1.
+F_usb_ktimers51 (7.3, fresh boot, USB 5 MS/s, 29.6 min, ktimers 51): first SPI timeout within 2 min, 15 by the end (wedged), 108/160 rounds with slips (68%), ISR 0x14 at the end.
+  => on the USB path any ktimers priority above 50 starves the SPI irq thread: 99 and 51 behave the same (first timeout 1-4 min in 3 runs), 1 gave 24 min (B).
+  No priority satisfies both paths on 7.3; the fix belongs in the SPI driver / timeout handling, not in priorities.
+Card written back to sdimg-rt21-sw (6.12.114-rt21); board /boot md5 == image; previous card in known_good/card-before-2026-11-01-612control.
+G_usb_612_control (6.12.114-rt21, fresh boot, USB 5 MS/s, 39.2 min, ktimers at the kernel default FIFO 1): 215 rounds, 0 incomplete, 24 rounds with slips (11%), 25 slips,
+  0 SPI timeouts, sample-rate readback stable the whole run, ISR 0x04 at the end, no stalls or traces.
+  With the 2026-10-31 control: 6.12 = 0 timeouts in 57 min over two boots; 7.3 with ktimers at 1 = first timeout at 24 min (one boot); 7.3 above 50 = 1-4 min (three boots).
+Also seen today: one 7.3 boot (18:46) hung CPU 0 for 60 s in the ChipIdea UDC irq thread (_ep_set_halt) during host RNDIS setup -> RCU stall, host rndis probe -110, board came up with usb0 192.168.2.1 and no eth0 address. Recovered over the USB ACM console. dmesg: boot_1846_usb_rcu_stall_dmesg.txt.
+Open: why 7.3's SPI reads time out at all (suspects: cadence SPI driver changes 6.12->7.3 incl. runtime PM; USB UDC irq thread at the same prio/CPU), and why the controller is left with an unread RX FIFO (ISR 0x14) after the timeout. Both need code reading, then a kernel patch and a re-run.
+Board state at the end: 6.12.114-rt21, TX writer stopped, TX gain -89 dB, loopback reset to 0. Host eno1 alias 192.168.3.10 removed.
+
+=== 7.3 FINAL (v7.3, 2026-10-18) + SPI recovery patch, 2026-11-01 late evening ===
+Image known_good/sdimg-rt73-final: kernel 7.3.0 = v7.3 + the four rc7 patches (rebased unchanged) + 0005 spi-cadence handle_err
+(mask IRQs, drop the stale RX bytes, cdns_spi_init_hw; patch file in this folder). Same method as the runs above, USB 5 MS/s, 32 blocks, 5 s rounds, services running.
+Fresh-boot AD9361 reference (adcheck.sh): regs 0x037=0x0A 0x002=0x5C 0x003=0x5C 0x017=0x1A, sf write OK, ensm fdd, controller ISR 0x04.
+
+I_73final_ktimers51 (ktimers 51, spi irq on cpu0 as shipped; 15 min, 80 rounds): 8 SPI timeouts (first at +3 min, like every run with ktimers > 50),
+  but the chip stayed healthy: sf readback 5000000 for the whole run, end check identical to the fresh-boot reference, ISR 0x04.
+  => the recovery patch works: a timeout costs one failed register read, no wedge until reboot. Slips 45/80 rounds (77), unchanged by the patch.
+H_73final_spiirq_cpu1 (same, plus /proc/irq/29/smp_affinity=2 so irq/29-e0006000.spi runs on cpu1; 30 min, 160 rounds): 0 SPI timeouts,
+  end check identical to the reference, ISR 0x04. Slips 69/160 rounds (97).
+  => the timeouts are cpu0 contention: the SPI irq thread (FIFO 50) shares cpu0 with the USB, Ethernet, DMA and maia irq threads (all FIFO 50)
+     and with ktimers; on cpu1 it always runs within the 200 ms the SPI core allows. Control on the same image and boot settings: first timeout at 3 min.
+Firmware conclusion for 7.3: ktimers at 51 (keeps the 17g Ethernet fix, see E_eth_prio) + spi0 irq affinity cpu1 (S24rtprio candidates) + patch 0005. Not tested yet with that
+  combination over Ethernet, nor as a long soak; the 6.12 image stays the shipping kernel. The USB UDC stall of 18:46 is a separate, intermittent bug.
+Card written back to sdimg-rt21-sw at the end of the chain (see sd_write_612b.log).
+
+=== USB slip investigation on 6.12.114-rt21 (2026-11-01 21:53-22:20, hardware-measured on the Pluto+) ===
+Link throughput (TCP, 200 MB, nc on the board, tp.py on the host): USB (RNDIS, high-speed) 17.9-19.9 MB/s board->host, 18.6-19.1 MB/s host->board.
+  Ethernet host->board 59.7-64.3 MB/s; board->host only 17.8-18.4 MB/s with dd|nc on the A9 (CPU-bound test, not the link: the I/Q stream itself did 40 MB/s at 10 MS/s).
+  5 MS/s of CS16 I/Q is 20 MB/s = the whole USB link.
+NEW: a 20 s USB throughput test on a FRESH 6.12 boot (no stream) produced 5 SPI timeouts and the wedge (regs read one register shifted: 0x037=0x5C 0x002=0xA ...,
+  sf readback garbage, ISR 0x14). Reproduced twice (first take and take 2). With the SPI irq moved to cpu1 (smp_affinity=2) the same test: 0 timeouts, chip healthy.
+  => 6.12 is not immune; the USB UDC interrupt thread on cpu0 is the trigger, and the irq affinity fix works on 6.12 too (2 min test, no soak).
+Stream series (6.12, SPI irq on cpu1, loopback tone, 32 blocks, 15 rounds of 5 s each): USB 2.5 MS/s 0 slips; USB 4 MS/s 0; USB 5 MS/s 5 of 15 rounds (7 slips),
+  repeat 1 of 15 (1); Ethernet 5 MS/s 0; Ethernet 10 MS/s 0. 0 SPI timeouts, chip healthy at the end.
+  => the USB slips are the link bandwidth: 5 MS/s sits at 100 % of what RNDIS over USB 2.0 carries here; at 80 % (4 MS/s) it is clean, and Ethernet at the same
+     rate is clean. Not a kernel bug. Options: Ethernet for >4 MS/s, CS12/CS8 sample formats (15/10 MB/s at 5 MS/s), or an NCM gadget function instead of RNDIS
+     (untested here; Linux hosts usually get more out of NCM, Windows needs a driver).
+
+=== 7.3 FINAL qualification against 6.12, 2026-11-01 22:30 to 2026-11-02 05:40 (hardware-measured on the Pluto+) ===
+Images: known_good/sdimg-rt73-final2 (7.3.0 + 5 patches, S24rtprio = ktimers 51 + SPI irq smp_affinity cpu1) for attempt 1;
+  known_good/sdimg-rt73-final3 (same kernel, S24rtprio = ktimers 51 + AD9361 SPI irq thread at FIFO 60 on cpu0) for attempt 2 and everything after;
+  6.12 = known_good/sdimg-rt21-sw (6.12.114-rt21, has no S24rtprio at all). Scripts chain3.sh, chain3b.sh, prio60.sh, chain4.sh; results in Q_73final/, P60_check/, Q_usbctl/.
+Attempt 1 (final2, SPI irq on cpu1): 15 boot cycles clean (no RCU stall, no trace, host RNDIS OK, usb0 192.168.4.1, eth0 192.168.3.1, chip healthy on each boot);
+  USB 2.5 MS/s 0/15 rounds with slips, USB 4 MS/s 0/15, Ethernet 10 MS/s nb4 6/15 (8 slips) nb32 0/15, USB nc 18.2/18.2 MB/s;
+  BUT 8 SPI timeouts during the Ethernet 10 MS/s test (recovered by patch 0005, chip healthy): on cpu1 the SPI irq thread (FIFO 50) is starved by iiod
+  (SCHED_RR 99, pinned to cpu1 by S23udc) under an Ethernet stream. Run E (same test, SPI irq on cpu0) had 0 in 22 min. The affinity move is the wrong fix.
+P60_check (final2 boot, at runtime: SPI irq back on cpu0, its thread chrt -f 60): Ethernet 10 MS/s nb4 8/15 (13) nb32 0, USB nc 16.9/18.6 MB/s, USB 5 MS/s 9/20 (14);
+  0 timeouts, healthy. => shipped setting: S24rtprio sets the AD9361 SPI irq thread to FIFO 60 (above the FIFO 50 irq threads and ktimers 51), no affinity change, on every kernel.
+Attempt 2 (final3): boots 1-13 clean, BOOT 14 FAULT: hung task in a kworker (ipv6_addrconf addrconf_dad_work -> ipv6_mc_dad_complete, rt_mutex) right after the
+  gadget came up; the host saw RNDIS tx watchdog timeouts and a USB reset; the board was up with usb0 192.168.2.1 and no eth0 address (dmesg: Q_73final/boot14_dmesg.txt).
+  Second 7.3 boot fault of a different kind (first: 18:46, UDC spin, rc7 image). Recovered over the ACM console.
+  7.3 final: 1 fault in 29 boot cycles (plus about 10 reboots in the runs below, all fine); 6.12: 0 faults in about 15 reboots this session.
+Short tests after the recovery (final3, shipped settings, no monitor): USB 2.5 MS/s 0/15, USB 4 MS/s 0/15, Ethernet 10 MS/s nb4 7/15 (9) nb32 0/15, USB nc 16.7/17.5 MB/s,
+  0 SPI timeouts, healthy.
+Soaks (run_variant3, monitor once a minute). CAUTION: both streamed at 5 MS/s, not at the labelled rate. run_variant3 runs the AD9361 pre-check (adcheck.sh, whose
+  rate-write test writes 5 MS/s) AFTER radio_on, so the rate was 5 MS/s whatever FS said (monitor sf=5000000 in every line; found 2026-11-02 05:40).
+  Q_eth10M_soak = Ethernet 5 MS/s, 3 h 18 min, 720 rounds: 0 rounds with slips, 0 SPI timeouts, chip healthy at the end.
+  Q_usb4M_soak = USB 5 MS/s, 56 min, 340 rounds: 137 rounds with slips (40 %, 178 slips) from round 1 on, 0 SPI timeouts, healthy (the USB ceiling of 17n, like runs F/H/I).
+  The same bug affected runs I and H (labelled 5 MS/s anyway, nothing changes) and the Q_usbctl runs below. run_variant4.sh runs the pre-check first and aborts on a wrong readback.
+Card back on sdimg-rt21-sw; 6.12 with the SPI irq thread at FIFO 60 (chrt at runtime): USB nc 20.4/19.0 MB/s, 0 SPI timeouts, healthy (6.12 as shipped wedged in this test, 17n).
+USB control at 5 MS/s (Q_usbctl, chain4.sh; fresh boot each, 100 rounds, monitor on; directories say 4M but the rate was 5 MS/s, see above):
+  6.12 as shipped (ktimers 1, SPI irq FIFO 50): 19/100 rounds with slips (21 slips), 0 timeouts.   7.3 final3 shipped (ktimers 51, SPI irq 60): 56/100 (83), 0.
+  7.3 final3 with ktimers lowered to FIFO 1 at runtime: 34/100 (45), 0. Slips evenly spread (per 20 rounds: 6.12 5 5 2 3 4; 7.3 11 11 12 11 11; 7.3 ktimers 1: 9 8 6 7 4).
+  => at the USB ceiling 7.3 slips about 3 times as often as 6.12; about half of the excess is the ktimers 51 setting (needed for Ethernet, run E), the rest is the kernel.
+USB link throughput, three 200 MB TCP transfers each way (board->host / host->board): 6.12 19.5 17.2 16.6 / 17.9 19.0 18.5 MB/s; 7.3 16.2 15.2 16.8 / 18.1 18.7 19.0 MB/s.
+  With the earlier single measurements: 6.12 16.6-20.4 / 17.9-19.1, 7.3 15.2-18.2 / 17.5-19.0. 7.3 is about 1-2 MB/s slower board->host (the stream direction); 5 MS/s CS16 = 20 MB/s.
+Ethernet 10 MS/s soaks at the real rate (chain5.sh, run_variant4, 330 rounds each, 6.12 as shipped then 7.3 final3, plus 100 rounds USB 4 MS/s on 7.3): see below.
+Ethernet 10 MS/s soaks at the REAL rate (chain5.sh, run_variant4.sh, 32 blocks, 5 s rounds, fresh boot, monitor once a minute; the monitor confirmed the rate in every line):
+  Q_eth10M_612 (6.12.114-rt21 as shipped: ktimers 1, SPI irq FIFO 50): 330 rounds, 1 h, 0 rounds with slips, 0 SPI timeouts, chip healthy.
+  Q_eth10M_73 (7.3 final3 as shipped: ktimers 51, SPI irq 60): 330 rounds, 1 h, 1 round with 1 slip (round 205), 0 SPI timeouts, healthy.
+  Q_usb4M_73 (7.3 final3 as shipped, USB 4 MS/s): 100 rounds, 17 min, 0 slips, 0 SPI timeouts, healthy.
+  Card back on sdimg-rt21-sw (md5 match), eno1 alias removed, 08:05.
+VERDICT, 7.3 final (v7.3 + 0005, ktimers 51, SPI irq thread FIFO 60) against 6.12 as shipped: equal on the SPI path (0 timeouts in about 8 h of streaming over both links,
+  while 6.12 as shipped wedges under a USB throughput test), equal on Ethernet with 32 blocks (1 slip in 1 h against 0) and over USB below the ceiling (4 MS/s clean, 100 rounds).
+  Behind on boot reliability (2 gadget bring-up faults in about 40 boots, 0 on 6.12) and on USB at the link ceiling (56 vs 19 of 100 rounds with slips, board->host 1-2 MB/s lower).
+  6.12 stays the shipping kernel.
+NEXT (user go, 2026-11-02 08:00): USB experiments (UDC irq thread priority, ktimers, NCM instead of RNDIS, CPU 0 load), then a 7.3 debug image with patch 0006
+  (bounded hw_ep_set_halt), MAGIC_SYSRQ, PRINTK_TIME, hung task 10 s and a board watcher that dumps all tasks on the first fault, and a 200-boot loop with per-boot log capture.
+
+=== USB link experiments (chain6.sh v2, 2026-11-02 08:55-09:24, Q_usbexp; take 1 in Q_usbexp_take1 is void, the host profile had moved to the original Pluto) ===
+Method: per kernel on one boot, 3 x 200 MB TCP each way over USB (dd|nc on the board, tp.py on the host) with cpu0load.sh sampling 70 s on the board,
+  then variants at runtime; AD9361 SPI thread at FIFO 60 on both kernels; gadget swapped to NCM with ncm_switch.sh (configfs only, env untouched).
+6.12 RNDIS base: board->host 20.5 18.1 20.2 MB/s, host->board 19.0 18.0 18.4; cpu0 67 % busy, cpu1 66 %, UDC irq thread 13.6 % of a core, ktimers/0 0.3 %.
+6.12 UDC thread at 60: 21.5 15.6 19.7 / 18.4 17.9 18.8 (no gain; 60 is the SPI thread's level: 4 SPI timeouts and the wedge on 6.12 by the end of the run, no 0005 there).
+6.12 NCM: 16.5 17.6 18.4 / 25.8 26.4 25.5; UDC thread 4.6 %. The NCM 5 MS/s stream on 6.12 is INVALID (chip already wedged, rate readback garbage).
+7.3 RNDIS base: 14.4 15.6 18.2 / 18.4 18.2 18.7; cpu0 72 %, UDC 13.7 %. UDC at 60: 19.2 13.6 13.9 / 17.9 16.6 18.5. ktimers 1: 13.1 13.5 16.6 / 16.8 17.9 18.4. both: 13.5 15.3 11.6 / 17.9 17.0 18.3.
+  => no priority change helps; the UDC thread costs the same CPU on both kernels; the board->host nc figure is the A9 pushing dd through a pipe (CPU-bound, 17n), not the link.
+7.3 NCM: 14.2 15.1 17.5 / 25.8 26.7 26.1; UDC thread 4.9 %. NCM USB 5 MS/s stream, 20 rounds: 0 rounds with slips (RNDIS on the same image: 9 of 20 in P60_check, 56 of 100 in Q_usbctl).
+  6 SPI timeouts during the 7.3 run (most likely the UDC-at-60 phases, same FIFO level as the SPI thread; dmesg not kept), chip healthy at the end (0005).
+=> NCM is the fix for the USB ceiling: a third of the UDC CPU, +40 % host->board, and a clean 5 MS/s stream on 7.3. S23udc already supports it (U-Boot env
+   usb_ethernet_mode=ncm; Linux hosts bind cdc_ncm; Windows not tested). To do: NCM stream on a healthy 6.12 boot, an NCM soak at 5 MS/s, 6 and 8 MS/s over NCM.
+Boot-fault hunt started 09:25 (chain7.sh): debug image build, card, bootloop.sh BL1 200 cycles, card back to 6.12.
+
+=== Boot-fault hunt (chain7.sh, chain8.sh, bootloop.sh, bootloop2.sh; 2026-11-02 09:26-12:28; Q_bootloop/BL1 and Q_bootloop/BL612) ===
+7.3 debug image: patches 0001-0006 (0006 = bounded hw_ep_set_halt, 1000 x udelay(1), warning, -EBUSY), kernel fragment k73dbg/linux_debug.fragment
+  (MAGIC_SYSRQ, PRINTK_TIME, LOG_BUF_SHIFT 19, hung task 10 s, RCU stall 21 s), k73dbg/overlay S99bootwatch (sysrq w/l/t dumps on the first fault line).
+  bootloop: reboot over SSH, wait, dmesg + dumps + addresses + adcheck, fault lines in dmesg, USB events in the host journal; 40 s per cycle.
+  6.12 debug image: the shipping build tree (output/plutoplus_rt) + 0006 + the same fragment and watcher (k612dbg/patches).
+BL1 (7.3 debug, 119 of the planned 200 cycles; stopped, the answer was in): 113 clean. 4 boots (2, 47, 50, 80) with the 0006 warning
+  (ep0in and ep0out halt=1 not taken, ENDPTCTRL 0x00800080, error: _ep_set_halt) 0.4 s after the gadget bind = the host RNDIS init; all 4 up with
+  usb0 and eth0 addresses, SSH over USB working, chip healthy. 0 hung tasks, 0 RCU stalls, 0 boots without SSH. 2 boots (32, 75) with host-side
+  descriptor errors and a port power cycle during the board reset, before U-Boot's gadget (a clean boot shows none). 3 boots (9, 86, 112) read the
+  AD9361 product id 0x037 as 0x0 on the first SPI access (no error logged, the next reads fine).
+BL612 (6.12 debug, 120 cycles): 115 clean. 1 boot (96) with the identical warning at 13.4 s, up with a working link. 0 other faults. 4 boots with the
+  host reset noise. Product id 0xA in 120 of 120.
+=> The wedge is the unbounded loop, in both kernels, on 1-3 % of boots: the controller refuses the ep0 stall (most likely a pending SETUP packet,
+   which the hardware answers by clearing the stall bit), the UDC irq thread spins with ci->lock held and is the only one that could consume the
+   packet. 6.12's 0 of about 40 boots in 17o was sampling. Upstream: the same bound was proposed in 2021 (usb: chipidea: add loop timeout for
+   hw_ep_set_halt(), Jeaho Hwang, on a Zynq-7000) and not applied; the loop is still unbounded in 6.12 and 7.3.
+Fix: 0006 (the warning now prints ENDPTSETUPSTAT too; linux-73 commit 82cc526) in tezuka_fw-dev as patches/linux/7.3/0006 and patches/linux/6.12-rt/0001
+  (configs/plutoplus_rt_defconfig selects 6.12-rt). Release images: known_good/sdimg-rt21-halt (6.12 shipping config + fix + S24rtprio) and
+  known_good/sdimg-rt73-final4 (7.3, 0001-0006). Not changed: patches/linux/adi-6.12.y (other boards, upstream firmware; user's decision).
+chain9.sh (12:25-12:37): both release builds (sdimg-rt21-halt uImage 2d6678b0, sdimg-rt73-final4 uImage 9c231b07), card on sdimg-rt21-halt, first boot
+  checked (6.12.114-rt21, SPI thread FIFO 60, ktimers 1, no sysrq, no watcher). The 120-cycle loop BL612h was stopped after 2 clean boots as not needed:
+  the fix is verified by the debug loops and the release warning logs ENDPTSETUPSTAT on every ordinary boot that hits the condition. The card holds sdimg-rt21-halt.
+
+=== Final images, QSPI writes, NCM default, cyclictest, product id probe (chainA.sh, chainB.sh, chainC.sh; 2026-11-02 14:30-17:11; Q_final/) ===
+Images: sdimg-rt73-final5 (7.3.0 + 0001-0007 + NCM default, uImage 8e115cfe), sdimg-rt21-v2 (6.12.114-rt21 + 6.12-rt 0001 halt + 0002 recovery + NCM default,
+  uImage 735d62b2); release configs, no debug fragment, no watcher; build checks in runA.log. Board chain runB.log 15:11-16:55 (6.12 first, then 7.3), runC.log 16:58-17:11.
+NCM: both kernels boot with usb_ethernet_mode=ncm on the command line (uEnv.txt -> sdboot_ram -> S23udc), gadget ncm.usb0, host cdc_ncm, 192.168.4.1 up on all 8 boots.
+  6.12 link, 2 x 200 MB each way: board->host 15.8 MB/s (the dd|nc limit), host->board 26.4 MB/s. USB 5 MS/s, 32 blocks, 20 rounds: 6.12 0 slips, 7.3 0 slips;
+  7.3 soak 240 rounds (20 min): 0 slips, 0 incomplete, 0 SPI timeouts, 0 halt warnings, chip healthy. RNDIS on the same stream: 19/100 (6.12) and 56/100 (7.3) in 17o.
+6.12 recovery test (SPI thread at FIFO 50 during the transfers): 0 timeouts, so 6.12-rt/0002 is build-verified only (over NCM the 17n contention is gone).
+QSPI on 7.3 (qspi_test.sh; restore source = mtd3 read on 6.12, md5 25c3d602; 7.3 reads mtd0-3 to the same md5s; every write in flash 18-32 MiB, mtd0 never written):
+  env round trip over a reboot ok (fw_setenv, mtd1 rewritten); 64 KiB block at mtd3+16 MiB (bank 1) erased, written, read back, restored, mtd3 == dump;
+  14 MiB of pluto.frm at mtd3+16 MiB: erase+program+read back 109 s, restore 110 s, mtd3 == dump; after reboot mtd0/2/3 unchanged, 0 driver errors. ALL PASSED.
+  Not tested: a QSPI boot of 7.3 (user: flash the frm into mtd3, move the jumper) and a write to mtd0.
+pidglitch (150 reads of 0x037, each after 4 s idle): 7.3 auto 3 off (0x80 0xF 0xF), 7.3 with the SPI controller held active 2 off (0x0 0x0);
+  6.12 auto 3 off (0xF 0xF 0x80). => the same glitch on both kernels, about 2 % of reads after idle, not the runtime resume path, not a 7.3 matter; parked.
+  17p's 3/119 against 0/120 was sampling.
+cyclictest 140 s, -t1 -p98 -i250, pinned, no isolcpus, shipped S24rtprio (cyc.sh; min/avg/max us):
+  6.12: core0 idle 10/22/92, core1 idle 10/20/78, core0 under a 10 MS/s Ethernet stream 10/26/410, core1 under the stream 10/479/163158.
+  7.3:  core0 idle 11/29/113, core1 idle 12/29/121, core0 stream 2/37/646, core1 stream 2/775/338135.
+  core1 under the stream = iiod at RR 99 on core 1 above cyclictest at 98 (both kernels), not a kernel latency. 7.3 is 20-60 % above 6.12 in the maxima of single runs.
+  The stream tool timed out at 120 s (SECS 135 above its 120 s subprocess limit): no slip summary for these runs, 4.8 GB received in each (the stream ran).
+VERDICT: 7.3.0 + 0001-0007 and 6.12 + 6.12-rt 0001/0002, both with NCM and S24rtprio, are equal on boot, on the SPI path, on Ethernet and on USB at 5 MS/s.
+  7.3 has QSPI writes (bank register path tested) and the recovery patch exercised on hardware; 6.12 has the lower RT tail (single runs). Doc 17r.
+  The card holds sdimg-rt73-final5. Commits on dev/next: 12f198d (0007, 6.12-rt/0002, READMEs), 37b2af2 (NCM default), doc 17r; linux-tezuka-private tezuka-7.3 tip c9fe47a.
+Why 7.3 cyclictest is higher (A/B on the 7.3 board at idle, 60 s each, 17:27-17:32, ktimers changed at runtime with chrt and restored):
+  ktimers 51: core0 avg 30 max 116, core1 avg 24 max 98; ktimers 1: core0 avg 24 max 136, core1 avg 24 max 94.
+  => the 7.x-only ktimers boost (17g) costs ~6 us on the core 0 average, nothing on the maxima or on core 1. 2026-10-30 with services reduced: both kernels avg 12 at idle,
+  7.3 max 62 vs 6.12 83 (the other direction), so the maxima are run-to-run spread; the full service set adds ~10 us to the average on both. Same clocksource
+  (arm_global_timer), clockevents, HZ 1000, Spectre workaround; 7.3 config adds TRACEPOINTS/FTRACE/NETCONSOLE/SCHED_CACHE (not measured). Doc 17r.

@@ -1,0 +1,27 @@
+03:34:03 == Q_usb4M_soak: 340 rounds, kernel 7.3.0, stream host 192.168.4.1, fs 4000000, blocks 32
+03:34:03 reboot board
+03:34:42 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+03:35:44 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+03:35:44 setup: cat > /tmp/adcheck.sh <<"EOS"
+#!/bin/sh
+# AD9361 control-path health: product id regs via debugfs, sf write+readback, kernel log counters
+P=$(dirname $(grep -l '^ad9361-phy$' /sys/bus/iio/devices/iio:device*/name)); N=$(basename $P); D=/sys/kernel/debug/iio/$N
+r(){ echo $1 > $D/direct_reg_access; cat $D/direct_reg_access; }
+echo "regs 0x037=$(r 0x037) 0x002=$(r 0x002) 0x003=$(r 0x003) 0x017=$(r 0x017)"
+b=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')
+echo "sf_read=$(cat $P/in_voltage_sampling_frequency)"
+echo 5000000 > $P/in_voltage_sampling_frequency 2>&1; echo "sf_after_write=$(cat $P/in_voltage_sampling_frequency) ensm=$(cat $P/ensm_mode)"
+echo "spito=$(dmesg | grep -c 'SPI transfer timed out') errlines_before_write=$b errlines_now=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')"
+PM=/sys/bus/platform/devices/e0006000.spi/power; echo on > $PM/control; sleep 0.2; echo "ISR=$(devmem 0xE0006004 32)"; echo auto > $PM/control
+EOS
+echo shipped settings
+shipped settings
+03:35:48 radio: phy=iio:device1 sf=4000000 loopback=1 writer=1
+03:35:51 pre: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=4000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+03:35:51 before: up=89.08 spito=0 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1  spi_irq: 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi
+03:35:53 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.332/0.458/0.629/0.118 ms)
+04:31:59 stream end
+04:32:00 post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+tx_muted
+04:32:04 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+04:32:04 RESULT Q_usb4M_soak: SUMMARY nb32: runs 340, incomplete 0, runs with outliers 137, outliers 178  | SPI timeouts 0

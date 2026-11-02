@@ -1,0 +1,101 @@
+README
+available_events
+available_filter_functions
+== Z1_nostack
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Z1_nostack): T: 0 ( 1579) P:98 I:250 C: 559997 Min:     15 Act:   61 Avg:   87 Max:     255
+max_latency_us: 187
+99 /tmp/trace_c1_Z1_nostack.txt
+liveness after (0 = ok): 0
+DONE_Z1_nostack
+== Z2_nostack
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Z2_nostack): T: 0 ( 6752) P:98 I:250 C: 559999 Min:     21 Act:   67 Avg:   88 Max:     256
+max_latency_us: 193
+105 /tmp/trace_c1_Z2_nostack.txt
+liveness after (0 = ok): 0
+DONE_Z2_nostack
+== Z3_nostack
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Z3_nostack): T: 0 (11559) P:98 I:250 C: 560000 Min:     16 Act:   90 Avg:   88 Max:     249
+max_latency_us: 194
+93 /tmp/trace_c1_Z3_nostack.txt
+liveness after (0 = ok): 0
+DONE_Z3_nostack
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+ALLDONE

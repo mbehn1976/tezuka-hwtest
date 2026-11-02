@@ -1,0 +1,49 @@
+# tracer: wakeup_rt
+#
+# wakeup_rt latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 49607 us, #6/6, CPU#0 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: cyclictest-1923 (uid:0 nice:0 policy:1 rt_prio:99)
+#    -----------------
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+classifi-1146      0dnh5.    1us+:     1146:120:R   + [000]    1923:  0:R cyclictest
+classifi-1146      0dnh5.   29us : <stack trace>
+ => __trace_stack
+ => probe_wakeup
+ => ttwu_do_activate
+ => try_to_wake_up
+ => hrtimer_wakeup
+ => __hrtimer_run_queues
+ => hrtimer_interrupt
+ => twd_handler
+ => handle_percpu_devid_irq
+ => handle_irq_desc
+ => gic_handle_irq
+ => generic_handle_arch_irq
+ => call_with_stack
+ => __irq_svc
+ => finish_task_switch
+ => __schedule
+ => schedule
+ => do_work_pending
+ => slow_work_pending
+classifi-1146      0dnh5.   31us*: 0
+classifi-1146      0d..3. 49579us : __schedule
+classifi-1146      0d..3. 49583us+:     1146:120:R ==> [000]    1923:  0:R cyclictest
+classifi-1146      0d..3. 49605us : <stack trace>
+ => __trace_stack
+ => probe_wakeup_sched_switch
+ => __schedule
+ => schedule
+ => do_work_pending
+ => slow_work_pending

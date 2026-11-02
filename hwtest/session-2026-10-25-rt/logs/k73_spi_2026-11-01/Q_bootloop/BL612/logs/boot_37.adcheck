@@ -1,0 +1,5 @@
+regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A
+sf_read=30720000
+sf_after_write=5000000 ensm=fdd
+spito=0 errlines_before_write=0 errlines_now=0
+ISR=0x00000014

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out

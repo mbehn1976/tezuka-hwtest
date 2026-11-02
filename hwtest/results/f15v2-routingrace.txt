@@ -1,0 +1,4 @@
+binary d03803fe, 0xBC start 0x0000000E, toggles 500
+result: 1000 PATCH calls, wrong 0xBC after 0, non-200 replies 0
+0xBC restored to 0x00000000
+system maia-httpd pid 21033

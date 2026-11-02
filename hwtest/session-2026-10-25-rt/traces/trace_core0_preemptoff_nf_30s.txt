@@ -1,0 +1,29 @@
+# tracer: preemptoff
+#
+# preemptoff latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 86 us, #4/4, CPU#0 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: cyclictest-30816 (uid:0 nice:0 policy:1 rt_prio:90)
+#    -----------------
+#  => started at: schedule
+#  => ended at:   schedule
+#
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+mosquitt-1122      0...1.    1us+: schedule <-schedule
+cyclicte-30816     0...1.   84us : schedule <-schedule
+cyclicte-30816     0...1.   87us+: stop_critical_timing <-schedule
+cyclicte-30816     0...1.  115us : <stack trace>
+ => do_nanosleep
+ => hrtimer_nanosleep
+ => sys_clock_nanosleep_time32
+ => ret_fast_syscall

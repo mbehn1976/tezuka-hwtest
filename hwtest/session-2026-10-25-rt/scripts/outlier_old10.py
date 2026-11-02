@@ -1,0 +1,61 @@
+import sys, time, subprocess, re, numpy as np
+from numpy.lib.stride_tricks import sliding_window_view as sw
+sys.path.insert(0, '.')
+import hwlib as h
+PL, PP = '192.168.2.1', '192.168.3.1'
+SSH = ['sshpass', '-p', 'analog', 'ssh', '-o', 'StrictHostKeyChecking=no', 'root@' + PP]
+D = '/tmp/claude-1000/-home-mb/41989768-b1a0-4c9f-8051-97dd61788b75/scratchpad/'
+BUF = 262144; B = 512
+def medf(x, k): return np.median(sw(np.pad(x, k // 2, mode='edge'), k), axis=1)
+I1 = '/tmp/claude-1000/-home-mb/41989768-b1a0-4c9f-8051-97dd61788b75/scratchpad/libiio1_host/inst'
+def stream(fs, secs, mode):
+    n = int(fs * secs)
+    time.sleep(3)
+    path = D + 'ol.bin'
+    if mode == 'local':
+        r = subprocess.run(SSH + ['iio_readdev -u local: -b %d -s %d cf-ad9361-lpc voltage0 voltage1 > /tmp/loc.bin 2>/tmp/loc.err; echo rc=0' % (BUF, n)], capture_output=True, text=True, timeout=120)
+        with open(path, 'wb') as f:
+            subprocess.run(SSH + ['cat /tmp/loc.bin; rm -f /tmp/loc.bin'], stdout=f, timeout=120)
+    else:
+        env = None; cmd = None
+        if mode == 'eth':
+            cmd = ['iio_readdev', '-u', 'ip:' + PP, '-b', str(BUF), '-s', str(n), 'cf-ad9361-lpc', 'voltage0', 'voltage1']
+        elif mode == 'usb':
+            cmd = ['iio_readdev', '-u', 'ip:192.168.4.1', '-b', str(BUF), '-s', str(n), 'cf-ad9361-lpc', 'voltage0', 'voltage1']
+        elif mode == 'eth1':
+            import os
+            env = dict(os.environ, LD_LIBRARY_PATH=I1 + '/lib:' + I1 + '/lib64')
+            cmd = [I1 + '/bin/iio_rwdev', '-u', 'ip:' + PP, '-b', str(BUF), '-s', str(n), 'cf-ad9361-lpc', 'voltage0', 'voltage1']
+        with open(path, 'wb') as f:
+            r = subprocess.run(cmd, stdout=f, stderr=subprocess.PIPE, text=True, timeout=120, env=env)
+    d = np.fromfile(path, dtype='<i2'); z = d[0::2] + 1j * d[1::2]
+    if len(z) < 1 << 19:
+        return False, [], 0.0
+    sp = np.abs(np.fft.fft(z[:1 << 18] * np.blackman(1 << 18))); f0 = np.fft.fftfreq(1 << 18, 1 / fs)[sp.argmax()]
+    y = (z * np.exp(-2j * np.pi * f0 * np.arange(len(z)) / fs))[:len(z) // B * B].reshape(-1, B).mean(1)
+    dp = np.angle(y[1:] * np.conj(y[:-1])); dev = dp - medf(dp, 101)
+    out = []
+    for i in np.where(np.abs(dev) > .4)[0]:
+        s = (i + 1) * B; near = s % BUF; near = min(near, BUF - near)
+        out.append((s, near, float(dev[i]), 0.0))
+    return len(z) == n, out, f0
+st = (h.save_settings(PL), h.save_settings(PP))
+res = {}
+try:
+    for fs in (10000000,):
+        h.configure(PL, PP, fs, 4000000, 2400000000, 30, -10)
+        h.start_tx(PL, h.tone(fs, h.tone_freq(fs, 1250)), 2000); time.sleep(1)
+        for mode in ('eth',):
+            allo = []
+            for it in range(40):
+                full, out, f0 = stream(fs, 5, mode)
+                allo.append((full, out))
+                print('%s iter %d full=%s outliers=%d %s' % (mode, it + 1, full, len(out), [(int(o[0]), int(o[1]), round(o[2], 2)) for o in out]), flush=True)
+            res[mode] = allo
+        h.stop_tx(PL)
+finally:
+    h.tx_cleanup(PL); h.restore_settings(PL, st[0]); h.restore_settings(PP, st[1])
+for mode, allo in res.items():
+    flat = [o for full, out in allo for o in out]
+    print('SUMMARY %s 5 MS/s: iterations %d, incomplete %d, outliers %d, on a 262144 boundary (<=1024 samples): %d' % (mode, len(allo), sum(1 for full, out in allo if not full), len(flat), sum(1 for o in flat if o[1] <= 1024)))
+print('OUTLIER_DONE')

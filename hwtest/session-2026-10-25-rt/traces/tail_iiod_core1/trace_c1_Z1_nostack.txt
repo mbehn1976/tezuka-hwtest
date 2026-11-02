@@ -1,0 +1,99 @@
+# tracer: wakeup_rt
+#
+# wakeup_rt latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 187 us, #6/6, CPU#1 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: cyclictest-1579 (uid:0 nice:0 policy:1 rt_prio:98)
+#    -----------------
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+writer-t-3399      1Dnh44    2us+:     3399:120:R   + [001]    1579:  1:R cyclictest
+writer-t-3399      1Dnh44   88us : <stack trace>
+ => __trace_stack
+ => probe_wakeup
+ => ttwu_do_activate
+ => try_to_wake_up
+ => hrtimer_wakeup
+ => __hrtimer_run_queues
+ => hrtimer_interrupt
+ => twd_handler
+ => handle_percpu_devid_irq
+ => handle_irq_desc
+ => gic_handle_irq
+ => generic_handle_arch_irq
+ => call_with_stack
+ => __irq_svc
+ => migrate_disable
+ => ___slab_alloc
+ => kmem_cache_alloc_node_noprof
+ => kmalloc_reserve
+ => __alloc_skb
+ => skb_segment
+ => tcp_gso_segment
+ => inet_gso_segment
+ => skb_mac_gso_segment
+ => __skb_gso_segment
+ => validate_xmit_skb
+ => validate_xmit_skb_list
+ => sch_direct_xmit
+ => __qdisc_run
+ => __dev_queue_xmit
+ => ip_finish_output2
+ => ip_output
+ => __ip_queue_xmit
+ => __tcp_transmit_skb
+ => tcp_write_xmit
+ => tcp_push_one
+ => tcp_sendmsg_locked
+ => tcp_sendmsg
+ => sock_write_iter
+ => aio_write.constprop.0
+ => io_submit_one.constprop.0
+ => sys_io_submit
+ => ret_fast_syscall
+writer-t-3399      1Dnh44   92us+: 0
+writer-t-3399      1D..34  130us : __schedule
+writer-t-3399      1D..34  132us+:     3399:120:R ==> [001]    1579:  1:R cyclictest
+writer-t-3399      1D..34  184us : <stack trace>
+ => __trace_stack
+ => probe_wakeup_sched_switch
+ => __schedule
+ => preempt_schedule_irq
+ => svc_preempt
+ => migrate_disable
+ => ___slab_alloc
+ => kmem_cache_alloc_node_noprof
+ => kmalloc_reserve
+ => __alloc_skb
+ => skb_segment
+ => tcp_gso_segment
+ => inet_gso_segment
+ => skb_mac_gso_segment
+ => __skb_gso_segment
+ => validate_xmit_skb
+ => validate_xmit_skb_list
+ => sch_direct_xmit
+ => __qdisc_run
+ => __dev_queue_xmit
+ => ip_finish_output2
+ => ip_output
+ => __ip_queue_xmit
+ => __tcp_transmit_skb
+ => tcp_write_xmit
+ => tcp_push_one
+ => tcp_sendmsg_locked
+ => tcp_sendmsg
+ => sock_write_iter
+ => aio_write.constprop.0
+ => io_submit_one.constprop.0
+ => sys_io_submit
+ => ret_fast_syscall

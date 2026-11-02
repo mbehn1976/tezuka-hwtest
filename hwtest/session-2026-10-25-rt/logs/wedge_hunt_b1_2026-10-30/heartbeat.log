@@ -1,0 +1,20 @@
+2026-10-30 12:21:23 stage B1_cpu1 start: rounds=60 stress-ng --cpu 1
+2026-10-30 12:21:43 stage B1_cpu1 rounds 0 incomplete 0
+2026-10-30 12:22:04 stage B1_cpu1 rounds 1 incomplete 0
+2026-10-30 12:22:25 stage B1_cpu1 rounds 2 incomplete 0
+2026-10-30 12:22:47 stage B1_cpu1 rounds 3 incomplete 0
+2026-10-30 12:23:08 stage B1_cpu1 rounds 4 incomplete 0
+2026-10-30 12:23:29 stage B1_cpu1 rounds 5 incomplete 0
+2026-10-30 12:23:50 stage B1_cpu1 rounds 6 incomplete 0
+2026-10-30 12:24:12 stage B1_cpu1 rounds 7 incomplete 0
+2026-10-30 12:24:33 stage B1_cpu1 rounds 8 incomplete 0
+2026-10-30 12:24:54 stage B1_cpu1 rounds 9 incomplete 0
+2026-10-30 12:25:15 stage B1_cpu1 rounds 11 incomplete 0
+2026-10-30 12:25:36 stage B1_cpu1 rounds 11 incomplete 0
+2026-10-30 12:25:57 stage B1_cpu1 rounds 12 incomplete 0
+2026-10-30 12:26:18 stage B1_cpu1 rounds 12 incomplete 0
+2026-10-30 12:26:39 stage B1_cpu1 rounds 12 incomplete 0
+2026-10-30 12:27:00 stage B1_cpu1 rounds 12 incomplete 0
+2026-10-30 12:27:21 stage B1_cpu1 rounds 12 incomplete 0
+2026-10-30 12:27:51 stage B1_cpu1 end: FAIL
+2026-10-30 12:27:51 done

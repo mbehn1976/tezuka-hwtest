@@ -1,0 +1,82 @@
+2026-10-30 07:32:49 stage S0_ws_only start: rounds=15 stress-ng 
+2026-10-30 07:33:09 stage S0_ws_only rounds 0 incomplete 0
+2026-10-30 07:33:30 stage S0_ws_only rounds 2 incomplete 0
+2026-10-30 07:33:52 stage S0_ws_only rounds 4 incomplete 0
+2026-10-30 07:34:13 stage S0_ws_only rounds 6 incomplete 0
+2026-10-30 07:34:34 stage S0_ws_only rounds 8 incomplete 0
+2026-10-30 07:34:56 stage S0_ws_only rounds 10 incomplete 0
+2026-10-30 07:35:16 stage S0_ws_only rounds 12 incomplete 0
+2026-10-30 07:35:38 stage S0_ws_only rounds 14 incomplete 0
+2026-10-30 07:35:59 stage S0_ws_only rounds 15 incomplete 0
+2026-10-30 07:36:02 stage S0_ws_only end: ok
+2026-10-30 07:36:02 stage S1_cpu2 start: rounds=40 stress-ng --cpu 2
+2026-10-30 07:36:23 stage S1_cpu2 rounds 0 incomplete 0
+2026-10-30 07:36:45 stage S1_cpu2 rounds 2 incomplete 0
+2026-10-30 07:37:07 stage S1_cpu2 rounds 4 incomplete 0
+2026-10-30 07:37:28 stage S1_cpu2 rounds 6 incomplete 0
+2026-10-30 07:37:50 stage S1_cpu2 rounds 8 incomplete 0
+2026-10-30 07:38:12 stage S1_cpu2 rounds 10 incomplete 0
+2026-10-30 07:38:33 stage S1_cpu2 rounds 12 incomplete 0
+2026-10-30 07:38:55 stage S1_cpu2 rounds 14 incomplete 0
+2026-10-30 07:39:17 stage S1_cpu2 rounds 16 incomplete 0
+2026-10-30 07:39:38 stage S1_cpu2 rounds 18 incomplete 0
+2026-10-30 07:40:00 stage S1_cpu2 rounds 20 incomplete 0
+2026-10-30 07:40:21 stage S1_cpu2 rounds 22 incomplete 0
+2026-10-30 07:40:43 stage S1_cpu2 rounds 24 incomplete 0
+2026-10-30 07:41:05 stage S1_cpu2 rounds 26 incomplete 0
+2026-10-30 07:41:26 stage S1_cpu2 rounds 28 incomplete 0
+2026-10-30 07:41:48 stage S1_cpu2 rounds 30 incomplete 0
+2026-10-30 07:42:09 stage S1_cpu2 rounds 32 incomplete 0
+2026-10-30 07:42:31 stage S1_cpu2 rounds 34 incomplete 0
+2026-10-30 07:42:52 stage S1_cpu2 rounds 36 incomplete 0
+2026-10-30 07:43:14 stage S1_cpu2 rounds 38 incomplete 0
+2026-10-30 07:43:36 stage S1_cpu2 rounds 40 incomplete 0
+2026-10-30 07:43:40 stage S1_cpu2 end: ok
+2026-10-30 07:43:40 stage S2_cpu2_vm2 start: rounds=40 stress-ng --cpu 2 --vm 2 --vm-bytes 48M
+2026-10-30 07:44:00 stage S2_cpu2_vm2 rounds 0 incomplete 0
+2026-10-30 07:44:23 stage S2_cpu2_vm2 rounds 2 incomplete 0
+2026-10-30 07:44:45 stage S2_cpu2_vm2 rounds 4 incomplete 0
+2026-10-30 07:45:08 stage S2_cpu2_vm2 rounds 6 incomplete 0
+2026-10-30 07:45:30 stage S2_cpu2_vm2 rounds 8 incomplete 0
+2026-10-30 07:45:52 stage S2_cpu2_vm2 rounds 10 incomplete 0
+2026-10-30 07:46:14 stage S2_cpu2_vm2 rounds 12 incomplete 0
+2026-10-30 07:46:36 stage S2_cpu2_vm2 rounds 14 incomplete 0
+2026-10-30 07:46:57 stage S2_cpu2_vm2 rounds 16 incomplete 0
+2026-10-30 07:47:19 stage S2_cpu2_vm2 rounds 18 incomplete 0
+2026-10-30 07:47:41 stage S2_cpu2_vm2 rounds 20 incomplete 0
+2026-10-30 07:48:02 stage S2_cpu2_vm2 rounds 22 incomplete 0
+2026-10-30 07:48:24 stage S2_cpu2_vm2 rounds 24 incomplete 0
+2026-10-30 07:48:45 stage S2_cpu2_vm2 rounds 26 incomplete 0
+2026-10-30 07:49:07 stage S2_cpu2_vm2 rounds 28 incomplete 0
+2026-10-30 07:49:29 stage S2_cpu2_vm2 rounds 30 incomplete 0
+2026-10-30 07:49:51 stage S2_cpu2_vm2 rounds 32 incomplete 0
+2026-10-30 07:50:12 stage S2_cpu2_vm2 rounds 34 incomplete 0
+2026-10-30 07:50:34 stage S2_cpu2_vm2 rounds 36 incomplete 0
+2026-10-30 07:50:55 stage S2_cpu2_vm2 rounds 38 incomplete 0
+2026-10-30 07:51:17 stage S2_cpu2_vm2 rounds 40 incomplete 0
+2026-10-30 07:51:22 stage S2_cpu2_vm2 end: ok
+2026-10-30 07:51:22 stage S3_cpu4_vm2_hdd start: rounds=40 stress-ng --cpu 4 --vm 2 --vm-bytes 48M --hdd 1 --hdd-bytes 32M
+2026-10-30 07:51:42 stage S3_cpu4_vm2_hdd rounds 0 incomplete 0
+2026-10-30 07:52:03 stage S3_cpu4_vm2_hdd rounds 2 incomplete 0
+2026-10-30 07:52:25 stage S3_cpu4_vm2_hdd rounds 3 incomplete 0
+2026-10-30 07:52:46 stage S3_cpu4_vm2_hdd rounds 5 incomplete 0
+2026-10-30 07:53:07 stage S3_cpu4_vm2_hdd rounds 7 incomplete 0
+2026-10-30 07:53:28 stage S3_cpu4_vm2_hdd rounds 9 incomplete 0
+2026-10-30 07:53:50 stage S3_cpu4_vm2_hdd rounds 11 incomplete 0
+2026-10-30 07:54:12 stage S3_cpu4_vm2_hdd rounds 13 incomplete 0
+2026-10-30 07:54:33 stage S3_cpu4_vm2_hdd rounds 15 incomplete 0
+2026-10-30 07:54:55 stage S3_cpu4_vm2_hdd rounds 17 incomplete 0
+2026-10-30 07:55:17 stage S3_cpu4_vm2_hdd rounds 19 incomplete 0
+2026-10-30 07:55:39 stage S3_cpu4_vm2_hdd rounds 21 incomplete 0
+2026-10-30 07:56:01 stage S3_cpu4_vm2_hdd rounds 23 incomplete 0
+2026-10-30 07:56:23 stage S3_cpu4_vm2_hdd rounds 25 incomplete 0
+2026-10-30 07:56:45 stage S3_cpu4_vm2_hdd rounds 27 incomplete 0
+2026-10-30 07:57:06 stage S3_cpu4_vm2_hdd rounds 29 incomplete 0
+2026-10-30 07:57:28 stage S3_cpu4_vm2_hdd rounds 31 incomplete 0
+2026-10-30 07:57:50 stage S3_cpu4_vm2_hdd rounds 33 incomplete 0
+2026-10-30 07:58:12 stage S3_cpu4_vm2_hdd rounds 35 incomplete 0
+2026-10-30 07:58:34 stage S3_cpu4_vm2_hdd rounds 37 incomplete 0
+2026-10-30 07:58:56 stage S3_cpu4_vm2_hdd rounds 39 incomplete 0
+2026-10-30 07:59:18 stage S3_cpu4_vm2_hdd rounds 40 incomplete 0
+2026-10-30 07:59:23 stage S3_cpu4_vm2_hdd end: ok
+2026-10-30 07:59:23 done

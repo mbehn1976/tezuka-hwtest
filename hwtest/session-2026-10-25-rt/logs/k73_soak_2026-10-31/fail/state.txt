@@ -1,0 +1,33 @@
+            CPU0       CPU1       
+  24:          0          0  GIC-0   27 Edge      gt
+  25:    8322388    7811319  GIC-0   29 Edge      twd
+  27:      22162          0  GIC-0   89 Level     7c400000.dma
+  28:     938885          0  GIC-0   88 Level     7c420000.dma
+  29:     292625          0  GIC-0   58 Level     e0006000.spi
+  30:   13445073          0  GIC-0   51 Level     e000d000.spi
+  31:          0          0  GIC-0   54 Level     eth0
+  32:      31518          0  GIC-0   87 Level     maia-sdr
+  34:        943          0  GIC-0   56 Level     mmc0
+  35:          0          0  GIC-0   43 Level     ttc_clockevent
+  36:       1906          0  GIC-0   39 Level     f8007100.adc
+  37:          0          0  GIC-0   37 Level     arm-pmu
+  38:          0          0  GIC-0   38 Level     arm-pmu
+  39:          0          0  GIC-0   40 Level     f8007000.devcfg
+  40:         59          0  GIC-0   82 Level     xuartps
+  41:    3600136          0  GIC-0   53 Level     e0002000.usb
+  42:          0          0  zynq-gpio   14 Edge      Button
+IPI0:         0          0  CPU wakeup interrupts
+IPI1:         0          0  Timer broadcast interrupts
+IPI2:   1034367    1565743  Rescheduling interrupts
+IPI3:    291427     406060  Function call interrupts
+IPI4:         0          0  CPU stop interrupts
+IPI5:    884906      67116  IRQ work interrupts
+IPI6:         0          0  completion interrupts
+ Err:          0
+7679.70 5675.08
+MemTotal:         369720 kB
+MemFree:          175640 kB
+MemAvailable:     202552 kB
+Buffers:              40 kB
+Cached:           125676 kB
+2695

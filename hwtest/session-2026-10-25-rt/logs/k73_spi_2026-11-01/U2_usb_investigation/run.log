@@ -1,0 +1,32 @@
+21:58:14 == take 2 start
+21:58:14 reboot board
+21:58:53 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+21:59:55 fresh: regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+22:00:08 throughput usb1 board->host: recv 209.7 MB in 11.69 s = 17.9 MB/s
+22:00:21 throughput usb1 host->board: send 200 MB in 10.46 s = 19.1 MB/s
+22:00:22 after USB throughput test: spito=5; regs 0x037=0x5C 0x002=0xA 0x003=0x5C 0x017=0x5C sf_read=14536764 sf_after_write=211227 ensm=fdd spito=5 errlines_before_write=5 errlines_now=6 ISR=0x00000014 
+22:00:22 == SPI timeout on 6.12 under the USB throughput test; reboot, SPI irq -> cpu1, repeat
+22:00:22 reboot board
+22:01:01 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+22:02:03 setup: spi irq 29 affinity=1
+22:02:15 throughput usb2 board->host: recv 209.7 MB in 10.66 s = 19.7 MB/s
+22:02:28 throughput usb2 host->board: send 200 MB in 10.53 s = 19.0 MB/s
+22:02:29 after USB throughput test with SPI irq on cpu1: spito=0; regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+22:02:29 eth alias up
+22:02:42 throughput eth board->host: recv 209.7 MB in 11.37 s = 18.4 MB/s
+22:02:47 throughput eth host->board: send 200 MB in 3.11 s = 64.3 MB/s
+22:02:52 stream usb_2p5M fs=2500000 via 192.168.4.1: phy=iio:device0 sf=2500000 loopback=1 writer=1
+22:05:53   RESULT usb_2p5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+22:05:58 stream usb_4M fs=4000000 via 192.168.4.1: phy=iio:device0 sf=4000000 loopback=1 writer=1
+22:08:45   RESULT usb_4M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+22:08:50 stream usb_5M fs=5000000 via 192.168.4.1: phy=iio:device0 sf=5000000 loopback=1 writer=1
+22:11:34   RESULT usb_5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 5, outliers 7  | spito=0
+22:11:38 stream eth_5M fs=5000000 via 192.168.3.1: phy=iio:device0 sf=5000000 loopback=1 writer=1
+22:14:21   RESULT eth_5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+22:14:26 stream eth_10M fs=10000000 via 192.168.3.1: phy=iio:device0 sf=10000000 loopback=1 writer=1
+22:17:10   RESULT eth_10M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+22:17:14 stream usb_5M_b fs=5000000 via 192.168.4.1: phy=iio:device0 sf=5000000 loopback=1 writer=1
+22:19:58   RESULT usb_5M_b: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 1, outliers 1  | spito=0
+22:19:59 end: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+22:20:00 eth alias removed: 192.168.1.10/24 
+22:20:00 == take 2 done

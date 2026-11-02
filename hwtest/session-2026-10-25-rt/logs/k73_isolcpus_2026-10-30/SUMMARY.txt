@@ -1,0 +1,11 @@
+7.3.0-rc7 PREEMPT_RT on the Pluto+, layout A (isolcpus=1 irqaffinity=0), 2026-10-30, hardware-measured
+image known_good/sdimg-k73rc7-iso (default image + 7.3 uImage + corrected DTB + ramdisk with eth0 192.168.3.1 and watch-loop kill); isolated=[1]
+cyclictest -m -t1 -p98 -i250 -a1 (isolated core 1) -D 300 -q -h 5000, 1.2 M samples per phase, same script as the non-isolated runs
+phase  load                          min  avg  max  p99  p99.9 p99.99  >50us  >100us
+idle   none                          11   12   39   17   28    32      0      0
+cpu2   stress-ng --cpu 2             11   12   44   19   28    32      0      0
+heavy  --cpu 4 --vm 2 --hdd 1        11   14   61   26   32    39      11     0
+same kernel, no isolcpus (k73_baseline): idle 62, cpu2 65, heavy 117
+no BUG/WARN/hung task/RCU stall; iiod SCHED_OTHER mask 1 (core 0); stressors run on core 0 only.
+USB: with reset-gpios flag 1 the PlutoSDR + TEZUKA drive enumerate at boot without the manual pin release.
+Not covered: no streaming and no AD9361 on 7.3, so the layout A problem (lost blocks with network load on core 0, doc 16c/16j) cannot be tested.

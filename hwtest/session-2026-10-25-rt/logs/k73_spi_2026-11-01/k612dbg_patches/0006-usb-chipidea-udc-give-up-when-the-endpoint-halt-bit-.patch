@@ -1,0 +1,71 @@
+From 7955b8c1b444cea65b47f2cf45e7dac659727949 Mon Sep 17 00:00:00 2001
+From: Mario Behn <mario.behn@gmail.com>
+Date: Mon, 2 Nov 2026 08:04:25 +0100
+Subject: [PATCH] usb: chipidea: udc: give up when the endpoint halt bit is not
+ taken
+
+hw_ep_set_halt() writes the stall bit and loops until the controller
+reads it back. On a Zynq-7000 (ChipIdea core, PREEMPT_RT 7.3) the
+read-back never matched while the host was setting up its RNDIS
+link: the UDC interrupt thread spun in the loop for 60 s with the
+controller lock held, RCU reported the stall, every usb_ep_queue()
+caller blocked behind the lock, and the thread only got out when the
+host reset the port. A second boot showed the same picture from the
+outside (an IPv6 DAD worker hung behind the lock, RNDIS transmit
+timeouts and a port reset on the host) without a backtrace of the
+thread. Seen twice in about 40 boots, not reproducible on demand.
+
+Give up after 1000 attempts (about 1 ms), log the endpoint control
+register and return -EBUSY. The callers already handle a failure:
+isr_setup_packet() and isr_tr_complete_handler() print
+"error: _ep_set_halt" and carry on, and usb_ep_set_halt() hands the
+error back to the function driver.
+
+Signed-off-by: Mario Behn <mario.behn@gmail.com>
+---
+ drivers/usb/chipidea/udc.c | 22 +++++++++++++++-------
+ 1 file changed, 15 insertions(+), 7 deletions(-)
+
+diff --git a/drivers/usb/chipidea/udc.c b/drivers/usb/chipidea/udc.c
+index d52f89489893..b58a32f4f4ba 100644
+--- a/drivers/usb/chipidea/udc.c
++++ b/drivers/usb/chipidea/udc.c
+@@ -224,20 +224,28 @@ static int hw_ep_prime(struct ci_hdrc *ci, int num, int dir, int is_ctrl)
+  */
+ static int hw_ep_set_halt(struct ci_hdrc *ci, int num, int dir, int value)
+ {
++	enum ci_hw_regs reg = OP_ENDPTCTRL + num;
++	u32 mask_xs = (dir == TX) ? ENDPTCTRL_TXS : ENDPTCTRL_RXS;
++	u32 mask_xr = (dir == TX) ? ENDPTCTRL_TXR : ENDPTCTRL_RXR;
++	int retries = 1000;
++
+ 	if (value != 0 && value != 1)
+ 		return -EINVAL;
+ 
+ 	do {
+-		enum ci_hw_regs reg = OP_ENDPTCTRL + num;
+-		u32 mask_xs = (dir == TX) ? ENDPTCTRL_TXS : ENDPTCTRL_RXS;
+-		u32 mask_xr = (dir == TX) ? ENDPTCTRL_TXR : ENDPTCTRL_RXR;
+-
+ 		/* data toggle - reserved for EP0 but it's in ESS */
+ 		hw_write(ci, reg, mask_xs|mask_xr,
+ 			  value ? mask_xs : mask_xr);
+-	} while (value != hw_ep_get_halt(ci, num, dir));
+-
+-	return 0;
++		if (value == hw_ep_get_halt(ci, num, dir))
++			return 0;
++		udelay(1);
++	} while (--retries);
++
++	dev_warn_ratelimited(ci->dev,
++			     "ep%d%s: halt=%d not taken, ENDPTCTRL 0x%08x\n",
++			     num, dir == TX ? "in" : "out", value,
++			     hw_read(ci, reg, ~0));
++	return -EBUSY;
+ }
+ 
+ /**
+-- 
+2.53.0
+

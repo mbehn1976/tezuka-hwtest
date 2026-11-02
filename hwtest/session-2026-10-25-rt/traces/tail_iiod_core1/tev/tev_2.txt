@@ -1,0 +1,120 @@
+          <idle>-0       [001] d..2.  2536.305143: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.305171: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.305373: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.305378: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536304277029
+          <idle>-0       [001] dnh4.  2536.305385: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.305388: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.305391: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.305404: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.305433: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.305624: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.305628: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536304527505
+          <idle>-0       [001] dnh4.  2536.305633: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.305636: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.305639: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.305646: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.305670: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.305872: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.305876: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536304776295
+          <idle>-0       [001] dnh4.  2536.305881: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.305884: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.305887: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.305894: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.305919: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.306103: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.306108: hrtimer_expire_entry: hrtimer=88e42dc2 function=tick_nohz_handler now=2536305008429
+          <idle>-0       [001] dnh4.  2536.306120: sched_wakeup: comm=rcuc/1 pid=29 prio=98 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.306127: hrtimer_expire_exit: hrtimer=88e42dc2
+          <idle>-0       [001] dnh1.  2536.306133: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536305033227
+          <idle>-0       [001] dnh4.  2536.306137: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.306139: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.306141: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.306150: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.306180: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=rcuc/1 next_pid=29 next_prio=98
+          rcuc/1-29      [001] d..2.  2536.306200: sched_switch: prev_comm=rcuc/1 prev_pid=29 prev_prio=98 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.306375: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.306380: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536305280349
+          <idle>-0       [001] dnh4.  2536.306388: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.306391: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.306394: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.306403: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.306436: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.306623: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.306628: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536305527093
+          <idle>-0       [001] dnh4.  2536.306634: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.306637: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.306640: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.306648: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.306676: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.306872: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.306877: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536305776225
+          <idle>-0       [001] dnh4.  2536.306883: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.306885: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.306890: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.306898: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.306926: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.307104: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.307110: hrtimer_expire_entry: hrtimer=88e42dc2 function=tick_nohz_handler now=2536306009469
+          <idle>-0       [001] dnh4.  2536.307121: sched_wakeup: comm=rcuc/1 pid=29 prio=98 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.307129: hrtimer_expire_exit: hrtimer=88e42dc2
+          <idle>-0       [001] dnh1.  2536.307135: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536306035461
+          <idle>-0       [001] dnh4.  2536.307139: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.307141: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.307144: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.307152: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.307185: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=rcuc/1 next_pid=29 next_prio=98
+          rcuc/1-29      [001] d..2.  2536.307207: sched_switch: prev_comm=rcuc/1 prev_pid=29 prev_prio=98 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.307374: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.307378: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536306277825
+          <idle>-0       [001] dnh4.  2536.307385: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.307387: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.307391: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.307399: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.307427: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.307623: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.307627: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536306526495
+          <idle>-0       [001] dnh4.  2536.307634: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.307637: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.307640: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.307647: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.307677: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.307875: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.307880: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536306780337
+          <idle>-0       [001] dnh4.  2536.307887: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.307889: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.307893: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.307901: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.307931: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.308102: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.308106: hrtimer_expire_entry: hrtimer=88e42dc2 function=tick_nohz_handler now=2536307006057
+          <idle>-0       [001] d.h1.  2536.308117: hrtimer_expire_exit: hrtimer=88e42dc2
+          <idle>-0       [001] d.h1.  2536.308122: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536307022875
+          <idle>-0       [001] dnh4.  2536.308128: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.308131: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.308134: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.308140: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.308169: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.308374: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.308379: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536307278985
+          <idle>-0       [001] dnh4.  2536.308386: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.308388: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.308392: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.308401: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.308444: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.308624: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.308629: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536307529029
+          <idle>-0       [001] dnh4.  2536.308636: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.308638: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.308642: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.308650: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d..2.  2536.308691: sched_switch: prev_comm=cyclictest prev_pid=27126 prev_prio=1 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0       [001] d.h1.  2536.308876: irq_handler_entry: irq=25 name=twd
+          <idle>-0       [001] d.h1.  2536.308883: hrtimer_expire_entry: hrtimer=36b6d412 function=hrtimer_wakeup now=2536307781605
+          <idle>-0       [001] dnh4.  2536.308894: sched_wakeup: comm=cyclictest pid=27126 prio=1 target_cpu=001
+          <idle>-0       [001] dnh1.  2536.308900: hrtimer_expire_exit: hrtimer=36b6d412
+          <idle>-0       [001] dnh1.  2536.308905: irq_handler_exit: irq=25 ret=handled
+          <idle>-0       [001] d..2.  2536.308917: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=27126 next_prio=1
+      cyclictest-27126   [001] d.h1.  2536.308926: irq_handler_entry: irq=25 name=twd
+      cyclictest-27126   [001] d.h1.  2536.308935: irq_handler_exit: irq=25 ret=handled
+      cyclictest-27126   [001] d..4.  2536.308947: sched_wakeup: comm=ktimers/1 pid=30 prio=98 target_cpu=001
+      cyclictest-27126   [001] .....  2536.308996: tracing_mark_write: hit latency threshold (91 > 90)

@@ -1,0 +1,9 @@
+kernel: #1 SMP PREEMPT Sun Oct 11 06:48:16 CEST 2026
+spectre_v2: no vulnerabilities dir
+Spectre V2: workarounds disabled by configuration
+pipe_roundtrips_per_s 23626 (min 20333 max 25158)
+getppid_per_s 1349639 (min 1089765 max 1478145)
+iio_readdev CS16 160 MB: 111.1 MB/s
+iio_readdev CS16 160 MB: 106.7 MB/s
+iio_readdev CS16 160 MB: 106.0 MB/s
+maia-httpd CPU over 20 s: 1.8 %

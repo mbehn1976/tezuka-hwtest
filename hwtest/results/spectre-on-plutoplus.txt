@@ -1,0 +1,10 @@
+kernel: #1 SMP PREEMPT Mon Oct 12 22:14:04 CEST 2026
+spectre_v2: Mitigation: Branch predictor hardening
+CPU0: Spectre v2: using BPIALL workaround
+CPU1: Spectre v2: using BPIALL workaround
+pipe_roundtrips_per_s 21681 (min 19750 max 21875)
+getppid_per_s 985261 (min 894004 max 1182224)
+iio_readdev CS16 160 MB: 108.1 MB/s
+iio_readdev CS16 160 MB: 109.6 MB/s
+iio_readdev CS16 160 MB: 106.7 MB/s
+maia-httpd CPU over 20 s: 1.7 %

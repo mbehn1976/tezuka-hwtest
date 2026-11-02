@@ -1,0 +1,5 @@
+stage S0_ws_only: ok, rounds 15, incomplete 0, rounds with outliers 0
+stage S1_cpu2: ok, rounds 40, incomplete 0, rounds with outliers 0
+stage S2_cpu2_vm2: ok, rounds 40, incomplete 0, rounds with outliers 0
+stage S3_cpu4_vm2_hdd: ok, rounds 40, incomplete 0, rounds with outliers 0
+HUNT_DONE

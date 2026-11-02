@@ -1,0 +1,7 @@
+16:58:38 == phase C start: pidglitch on 6.12
+16:59:29 card on sdimg-rt21-v2: 1 match
+16:59:51 boot: 6.12.114-rt21 up=44.40 sysrq=none usb0=192.168.4.1/24 eth0=192.168.3.1/24 spi_thread=176 prio=60 ktimers0=1 watcher=0 halt_warn=0 rtprio=1 
+17:09:55 6.12 pidglitch mode=auto reads=150 off=3 2:0xF:active 14:0xF:active 95:0x80:active spito=0 readerr=0
+17:10:49 card on sdimg-rt73-final5: 1 match
+17:11:10 boot: 7.3.0 up=43.40 sysrq=none usb0=192.168.4.1/24 eth0=192.168.3.1/24 spi_thread=187 prio=60 ktimers0=51 watcher=0 halt_warn=0 rtprio=1 
+17:11:10 == phase C done; the card holds sdimg-rt73-final5

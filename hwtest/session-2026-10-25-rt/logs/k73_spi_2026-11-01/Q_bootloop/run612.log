@@ -1,0 +1,11 @@
+10:54:11 == 6.12 counter-test start
+10:54:11 buildroot options: BR2_ROOTFS_OVERLAY="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_base ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_tezuka ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_maia ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_iqengine /tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/k73dbg/overlay" BR2_LINUX_KERNEL_PATCH="/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/k612dbg/patches" BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="$(BR2_EXTERNAL_PLUTOSDR_PATH)/board/tezuka/plutoplus/kernel/fragment/frag1.config $(BR2_EXTERNAL_PLUTOSDR_PATH)/board/tezuka/plutoplus/kernel/fragment/rt.config /tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/k73dbg/linux_debug.fragment" 
+10:54:11 build start
+10:57:59 build checks: release=6.12.114-rt21 halt patch in tree=1 config: CONFIG_LOG_BUF_SHIFT=19 CONFIG_PRINTK_TIME=y CONFIG_MAGIC_SYSRQ=y CONFIG_DEFAULT_HUNG_TASK_TIMEOUT=10 CONFIG_RCU_CPU_STALL_TIMEOUT=21  watcher=1 rtprio=1 modules=6.12.114-rt21
+10:57:59 image: 6.12.114-rt21 uImage 98dd09e1 ramdisk 205bc925 (shipping: uImage 76b2f2e8 ramdisk 581772f5)
+10:58:54 card on the 6.12 debug image: 1 match
+10:59:14 debug boot: 6.12.114-rt21 sysrq=1 hung=10 allcpu=1 rcu=21 watcher=3 ts=[   18.273564] usb0=192.168.4.1/24 eth0=192.168.3.1/24 
+12:27:33 == BL612 done: 115 clean of 120; with fault lines: 1; halt not taken: 1; host usb events: 4; product id not 0xA: 120 read, 0 off; without SSH: 0
+12:28:26 card back on 6.12 shipping: 1 match
+12:28:47 6.12 control: 6.12.114-rt21 43.68 
+12:28:47 == 6.12 counter-test done

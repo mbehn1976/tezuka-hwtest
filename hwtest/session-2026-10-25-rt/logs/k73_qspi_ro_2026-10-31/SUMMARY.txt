@@ -1,0 +1,6 @@
+QSPI read-only on 7.3.0-rc7, Pluto+ WZ5Z6HQZ6IXHI5QI, W25Q256 (ef4019), 2026-10-31
+Image known_good/sdimg-k73rc7-qspiro = sdimg-k73rc7-branch + uImage with patched spi-zynq-qspi (qspi-ro/spi-zynq-qspi-ear-readonly.diff).
+Reference: flash-ref-plutoplus-2026-10-31 read on 6.12 (identical to the 2026-10-14 backup for mtd0..3).
+7.3 md5: mtd0 c4a8d86d..., mtd1 dac04566..., mtd2 e4c89913..., mtd3 25c3d602... = all MATCH.
+mtd0 re-read after mtd3 matches (EAR back to 0). 4 KiB straddling flash offset 0x1000000 matches. 30 MiB mtd3 read in 2.3 s.
+Driver refused 0 ops ("read-only" count 0): nothing tried to write. fw_printenv works (real env), jffs2 mounted rw on mtd2 (noatime), no writes issued.

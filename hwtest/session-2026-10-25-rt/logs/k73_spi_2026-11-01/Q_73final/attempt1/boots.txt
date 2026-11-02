@@ -1,0 +1,15 @@
+up=81.35 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.46 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.65 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.09 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.73 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.05 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.67 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.11 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.39 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.57 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.06 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.26 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.91 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0

@@ -1,0 +1,4 @@
+### T1: TX restart, board-side loop, TX gain 0 dB
+[T1] no drop in 150 s
+### T2: TX restart, board-side loop, TX gain -89 dB
+[T2] no drop in 150 s

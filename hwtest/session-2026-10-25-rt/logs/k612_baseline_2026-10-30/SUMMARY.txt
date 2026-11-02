@@ -1,0 +1,11 @@
+6.12.114-rt21 (default image sdimg-rt21-sw, no isolcpus) vs 7.3.0-rc7 PREEMPT_RT on the same Pluto+, 2026-10-30, hardware-measured
+cyclictest -m -t1 -p98 -i250 -a1 -D 300 -q -h 5000, 1.2 M samples per phase, same script (baseline73.sh) on both
+A = 6.12 as shipped (classifier, maia-httpd, api_controller, mqtt, watch* scripts running)
+B = 6.12 with those services stopped (close to the service set of the 7.3 test, which lacks the ADI drivers)
+                         idle                         cpu2 (--cpu 2)               heavy (--cpu 4 --vm 2 --hdd 1)
+                  max  p99.9 p99.99 >50us      max  p99.9 p99.99 >50us      max  p99.9 p99.99 >50us  >100us
+6.12 A shipped     86    61    67   20496       82    51    60   1395       82    61    71   10763    0
+6.12 B reduced     83    32    40       8       60    37    43      5      109    59    76    7221   11
+7.3  (reduced)     62    35    47      50       65    38    46     34      117    64    99   11695   90
+Single 5-minute runs; maxima come from a handful of rare samples, so differences of this size are inside run-to-run noise.
+No BUG/WARN/hung task/RCU stall in dmesg on either kernel.

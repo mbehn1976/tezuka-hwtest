@@ -1,0 +1,52 @@
+README
+available_events
+available_filter_functions
+== E1_events
+pid 8978's current scheduling policy: SCHED_OTHER
+pid 8978's current scheduling priority: 0
+pid 8978's new scheduling policy: SCHED_OTHER
+pid 8978's new scheduling priority: 0
+pid 8989's current scheduling policy: SCHED_OTHER
+pid 8989's current scheduling priority: 0
+pid 8989's new scheduling policy: SCHED_OTHER
+pid 8989's new scheduling priority: 0
+pid 8990's current scheduling policy: SCHED_OTHER
+pid 8990's current scheduling priority: 0
+pid 8990's new scheduling policy: SCHED_OTHER
+pid 8990's new scheduling priority: 0
+pid 9000's current scheduling policy: SCHED_OTHER
+pid 9000's current scheduling priority: 0
+pid 9000's new scheduling policy: SCHED_OTHER
+pid 9000's new scheduling priority: 0
+iiod pid 8978's current scheduling policy: SCHED_OTHER pid 8978's current scheduling priority: 0
+usbd_main_thd pid 8989's current scheduling policy: SCHED_OTHER pid 8989's current scheduling priority: 0
+net_main_thd pid 8990's current scheduling policy: SCHED_OTHER pid 8990's current scheduling priority: 0
+avahi_thd pid 9000's current scheduling policy: SCHED_OTHER pid 9000's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (E1_events): try 1: T: 0 (31677) P:98 I:250 C:  40515 Min:     27 Act:  115 Avg:   36 Max:     115
+try 2: T: 0 ( 1203) P:98 I:250 C:      4 Min:     52 Act:   91 Avg:   64 Max:      91
+try 3: T: 0 ( 1258) P:98 I:250 C:  16089 Min:     27 Act:   97 Avg:   36 Max:      97
+try 4: T: 0 ( 2233) P:98 I:250 C:   1202 Min:     27 Act:   93 Avg:   31 Max:      93
+try 5: T: 0 ( 2338) P:98 I:250 C:      7 Min:     33 Act:   91 Avg:   50 Max:      91
+try 6: T: 0 ( 2397) P:98 I:250 C:     31 Min:     37 Act:   93 Avg:   57 Max:      93
+try 7: T: 0 ( 2463) P:98 I:250 C:  14929 Min:     28 Act:   98 Avg:   36 Max:      98
+try 8: T: 0 ( 3438) P:98 I:250 C:    234 Min:     28 Act:   91 Avg:   32 Max:      91
+liveness after (0 = ok): 0
+DONE_E1_events
+pid 8978's current scheduling policy: SCHED_OTHER
+pid 8978's current scheduling priority: 0
+pid 8978's new scheduling policy: SCHED_OTHER
+pid 8978's new scheduling priority: 0
+pid 8989's current scheduling policy: SCHED_OTHER
+pid 8989's current scheduling priority: 0
+pid 8989's new scheduling policy: SCHED_OTHER
+pid 8989's new scheduling priority: 0
+pid 8990's current scheduling policy: SCHED_OTHER
+pid 8990's current scheduling priority: 0
+pid 8990's new scheduling policy: SCHED_OTHER
+pid 8990's new scheduling priority: 0
+pid 9000's current scheduling policy: SCHED_OTHER
+pid 9000's current scheduling priority: 0
+pid 9000's new scheduling policy: SCHED_OTHER
+pid 9000's new scheduling priority: 0
+ALLDONE

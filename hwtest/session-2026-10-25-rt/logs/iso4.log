@@ -1,0 +1,29 @@
+== A_iiod1_eth0 (hog on core 0): iiod mask 2, eth irq31 mask 1
+pid 832's current affinity mask: 2
+1
+liveness before (0 = ok): 0
+cyclictest (A_iiod1_eth0): T: 0 ( 1981) P:99 I:250 C:1320000 Min:     10 Act:   11 Avg:   18 Max:     109
+liveness after (0 = ok): 0
+1
+0
+DONE_A_iiod1_eth0
+== B_iiod0_eth1 (hog on core 0): iiod mask 1, eth irq31 mask 2
+pid 832's current affinity mask: 1
+2
+liveness before (0 = ok): 0
+cyclictest (B_iiod0_eth1): T: 0 (12554) P:99 I:250 C:1320000 Min:     10 Act:   13 Avg:   17 Max:      69
+liveness after (0 = ok): 1
+1
+0
+DONE_B_iiod0_eth1
+== C_iiod1_eth1 (hog on core 0): iiod mask 2, eth irq31 mask 2
+pid 832's current affinity mask: 2
+2
+liveness before (0 = ok): 1
+cyclictest (C_iiod1_eth1): 
+liveness after (0 = ok): 1
+1
+0
+DONE_C_iiod1_eth1
+pid 832's current affinity mask: 1
+ALLDONE

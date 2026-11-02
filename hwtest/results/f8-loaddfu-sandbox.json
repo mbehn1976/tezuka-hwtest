@@ -1,0 +1,199 @@
+{
+ "good files": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.117s, speed 14680064 B/s\u001b[1;36m",
+    "131072 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 2000000,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "2000000 bytes written, 0 bytes skipped in 0.14s, speed 146285714 B/s\u001b[1;36m",
+    "131072 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  }
+ },
+ "pluto.dfu missing": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": false,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.115s, speed 14680064 B/s\u001b[1;36m",
+    "131072 bytes read in 1 ms (125 MiB/s)\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.0s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 0,
+   "fit_matches_file": false,
+   "fit_area_erased": true,
+   "env_matches_file": false,
+   "env_area_erased": true,
+   "bootm_attempted": false,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "pluto.dfu missing, too big for the flash, or the flash write failed: firmware not updated"
+   ]
+  }
+ },
+ "pluto.dfu 12 MiB": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "12582912 bytes read in 5 ms (2.3 GiB/s)\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.113s, speed 14680064 B/s\u001b[1;36m",
+    "131072 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 12582912,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "12582912 bytes read in 4 ms (2.9 GiB/s)\u001b[1;36m",
+    "12582912 bytes written, 0 bytes skipped in 0.100s, speed 12582912 B/s\u001b[1;36m",
+    "131072 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  }
+ },
+ "uboot-env.dfu missing": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": false,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.111s, speed 14680064 B/s\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 2000000,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": false,
+   "env_area_erased": true,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "2000000 bytes written, 0 bytes skipped in 0.15s, speed 136533333 B/s\u001b[1;36m",
+    "uboot-env.dfu missing or not 0x20000 bytes: environment not updated"
+   ]
+  }
+ },
+ "uboot-env.dfu 1000 bytes": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": false,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.111s, speed 14680064 B/s\u001b[1;36m",
+    "1000 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 2000000,
+   "fit_matches_file": true,
+   "fit_area_erased": false,
+   "env_matches_file": false,
+   "env_area_erased": true,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "2000000 bytes read in 1 ms (1.9 GiB/s)\u001b[1;36m",
+    "2000000 bytes written, 0 bytes skipped in 0.15s, speed 136533333 B/s\u001b[1;36m",
+    "1000 bytes read in 0 ms\u001b[1;36m",
+    "uboot-env.dfu missing or not 0x20000 bytes: environment not updated"
+   ]
+  }
+ },
+ "pluto.dfu 15 MiB (> 14 MiB FIT area)": {
+  "old": {
+   "fit_written_bytes": 14680064,
+   "fit_matches_file": false,
+   "fit_area_erased": false,
+   "env_matches_file": true,
+   "env_area_erased": false,
+   "bootm_attempted": true,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "325 bytes read in 0 ms\u001b[1;36m",
+    "15728640 bytes read in 5 ms (2.9 GiB/s)\u001b[1;36m",
+    "14680064 bytes written, 0 bytes skipped in 0.110s, speed 14680064 B/s\u001b[1;36m",
+    "131072 bytes read in 0 ms\u001b[1;36m",
+    "131072 bytes written, 0 bytes skipped in 0.1s, speed 134217728 B/s\u001b[1;36m"
+   ]
+  },
+  "new": {
+   "fit_written_bytes": 0,
+   "fit_matches_file": false,
+   "fit_area_erased": true,
+   "env_matches_file": false,
+   "env_area_erased": true,
+   "bootm_attempted": false,
+   "messages": [
+    "Error: eth@10002000 No valid MAC address found.\u001b[1;36m",
+    "617 bytes read in 0 ms\u001b[1;36m",
+    "15728640 bytes read in 6 ms (2.4 GiB/s)\u001b[1;36m",
+    "Size exceeds partition or device limit\u001b[1;36m",
+    "pluto.dfu missing, too big for the flash, or the flash write failed: firmware not updated"
+   ]
+  }
+ }
+}

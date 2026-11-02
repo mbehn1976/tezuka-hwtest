@@ -1,0 +1,28 @@
+05:40:16 == Q_eth10M_612: 330 rounds, kernel 6.12.114-rt21, stream host 192.168.3.1, fs 10000000, blocks 32 (v4: pre-check before radio_on)
+05:40:16 reboot board
+05:40:54 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+05:41:56 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+05:41:56 setup: cat > /tmp/adcheck.sh <<"EOS"
+#!/bin/sh
+# AD9361 control-path health: product id regs via debugfs, sf write+readback, kernel log counters
+P=$(dirname $(grep -l '^ad9361-phy$' /sys/bus/iio/devices/iio:device*/name)); N=$(basename $P); D=/sys/kernel/debug/iio/$N
+r(){ echo $1 > $D/direct_reg_access; cat $D/direct_reg_access; }
+echo "regs 0x037=$(r 0x037) 0x002=$(r 0x002) 0x003=$(r 0x003) 0x017=$(r 0x017)"
+b=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')
+echo "sf_read=$(cat $P/in_voltage_sampling_frequency)"
+echo 5000000 > $P/in_voltage_sampling_frequency 2>&1; echo "sf_after_write=$(cat $P/in_voltage_sampling_frequency) ensm=$(cat $P/ensm_mode)"
+echo "spito=$(dmesg | grep -c 'SPI transfer timed out') errlines_before_write=$b errlines_now=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')"
+PM=/sys/bus/platform/devices/e0006000.spi/power; echo on > $PM/control; sleep 0.2; echo "ISR=$(devmem 0xE0006004 32)"; echo auto > $PM/control
+EOS
+echo as shipped
+as shipped
+05:41:57 pre: regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:42:00 radio: phy=iio:device0 sf=10000000 loopback=1 writer=1
+05:42:03 before: up=88.89 spito=0 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 178 pol=1 rt=50 cpu=0 irq/29-e0006000.spi
+05:42:05 stream start (ping 192.168.3.1: rtt min/avg/max/mdev = 0.363/0.500/0.660/0.116 ms)
+06:41:27 stream end
+06:41:28 rate seen by the monitor:      61 sf=10000000 
+06:41:28 post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=10000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+tx_muted
+06:41:32 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+06:41:32 RESULT Q_eth10M_612: SUMMARY nb32: runs 330, incomplete 0, runs with outliers 0, outliers 0  | SPI timeouts 0

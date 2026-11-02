@@ -1,0 +1,59 @@
+22:31:52 == qualification start
+22:32:48 image built: 7.3.0 uImage 2976ebcf ramdisk 31f9eaf6
+22:33:43 card written: 1 match
+22:33:45 reboot board
+22:34:24 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:35:29 boot 2: up=81.35 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:35:29 reboot board
+22:36:07 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:37:12 boot 2: up=81.46 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:37:12 reboot board
+22:37:51 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:38:56 boot 2: up=81.65 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:38:56 reboot board
+22:39:34 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:40:39 boot 2: up=81.09 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:40:39 reboot board
+22:41:18 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:42:23 boot 2: up=81.73 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:42:23 reboot board
+22:43:01 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:44:06 boot 2: up=81.05 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:44:06 reboot board
+22:44:45 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:45:50 boot 2: up=81.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:45:50 reboot board
+22:46:28 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:47:33 boot 2: up=81.67 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:47:33 reboot board
+22:48:12 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:49:16 boot 2: up=81.11 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:49:16 reboot board
+22:49:55 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:51:00 boot 2: up=81.39 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:51:00 reboot board
+22:51:39 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:52:44 boot 2: up=81.57 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:52:44 reboot board
+22:53:22 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:54:27 boot 2: up=81.06 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:54:27 reboot board
+22:55:06 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:56:11 boot 2: up=81.26 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:56:11 reboot board
+22:56:49 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:57:54 boot 2: up=81.91 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:57:54 reboot board
+22:58:33 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+22:59:38 boot 2: up=81.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiaff=1 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+22:59:38 boot cycles done: stalls=0 traces=0 host_rndis_errors=0 wrong_usb0=0 wrong_eth0=0
+22:59:38 eth alias up
+22:59:42 stream usb_2p5M fs=2500000 nbs=32 via 192.168.4.1: phy=iio:device1 sf=2500000 loopback=1 writer=1
+23:02:43   RESULT usb_2p5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+23:02:48 stream usb_4M fs=4000000 nbs=32 via 192.168.4.1: phy=iio:device1 sf=4000000 loopback=1 writer=1
+23:05:35   RESULT usb_4M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+23:05:40 stream eth_10M fs=10000000 nbs=4,32 via 192.168.3.1: phy=iio:device1 sf=10000000 loopback=1 writer=1
+23:10:48   RESULT eth_10M: SUMMARY nb4: runs 15, incomplete 0, runs with outliers 6, outliers 8 SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=8
+23:11:15 USB throughput: recv 209.7 MB in 11.51 s = 18.2 MB/s / send 200 MB in 11.02 s = 18.2 MB/s
+23:11:16 after USB throughput test: spito=8 (was 8); regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=10000000 sf_after_write=5000000 ensm=fdd spito=8 errlines_before_write=8 errlines_now=8 ISR=0x00000004 
+23:25:05 == qualification start

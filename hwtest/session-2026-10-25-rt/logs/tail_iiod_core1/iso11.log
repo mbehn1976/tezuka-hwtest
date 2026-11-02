@@ -1,0 +1,7 @@
+rounds done: 40, incomplete: 0
+pid iiod: 8978
+              total        used        free      shared  buff/cache   available
+Mem:         370732       76972      195216         536       98544      194036
+cat: can't open '/tmp/iiod_exit.log': No such file or directory
+ls: /tmp/core.*: No such file or directory
+ALLDONE

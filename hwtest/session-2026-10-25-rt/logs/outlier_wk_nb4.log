@@ -1,0 +1,122 @@
+WK nb4 round 1 outliers=0 maxwake_us=28630 | t:   92 Avg:   57 Max:     344 | #    | task: net_client_thd-10601 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 1 full=True outliers=0
+WK nb4 round 2 outliers=5 maxwake_us=71244 | t:   66 Avg:   56 Max:     302 | #    | task: writer-task-11197 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 2 full=True outliers=5
+WK nb4 round 3 outliers=0 maxwake_us=34353 | t:   54 Avg:   53 Max:     790 | #    | task: net_client_thd-11854 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 3 full=True outliers=0
+WK nb4 round 4 outliers=3 maxwake_us=44184 | t:   77 Avg:   55 Max:     355 | #    | task: net_client_thd-12490 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 4 full=True outliers=3
+WK nb4 round 5 outliers=1 maxwake_us=32574 | t:   58 Avg:   56 Max:     353 | #    | task: writer-task-13105 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 5 full=True outliers=1
+WK nb4 round 6 outliers=4 maxwake_us=59268 | t:   99 Avg:   57 Max:     454 | #    | task: writer-task-13737 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 6 full=True outliers=4
+WK nb4 round 7 outliers=8 maxwake_us=45748 | t:   90 Avg:   60 Max:     483 | #    | task: net_client_thd-14339 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 7 full=True outliers=8
+WK nb4 round 8 outliers=0 maxwake_us=36152 | t:   54 Avg:   52 Max:     323 | #    | task: net_client_thd-14999 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 8 full=True outliers=0
+WK nb4 round 9 outliers=1 maxwake_us=32581 | t:   69 Avg:   52 Max:     336 | #    | task: writer-task-15627 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 9 full=True outliers=1
+WK nb4 round 10 outliers=13 maxwake_us=50977 | t:   62 Avg:   54 Max:     410 | #    | task: writer-task-16250 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 10 full=True outliers=13
+WK nb4 round 11 outliers=0 maxwake_us=41581 | t:   68 Avg:   57 Max:     353 | #    | task: net_client_thd-16905 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 11 full=True outliers=0
+WK nb4 round 12 outliers=0 maxwake_us=28871 | t:   66 Avg:   58 Max:     388 | #    | task: writer-task-17511 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 12 full=True outliers=0
+WK nb4 round 13 outliers=0 maxwake_us=38507 | t:   19 Avg:   39 Max:     413 | #    | task: net_client_thd-18155 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 13 full=True outliers=0
+WK nb4 round 14 outliers=1 maxwake_us=63710 | t:  101 Avg:   56 Max:     558 | #    | task: writer-task-18781 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 14 full=True outliers=1
+WK nb4 round 15 outliers=4 maxwake_us=68498 | t:   54 Avg:   60 Max:     726 | #    | task: writer-task-19411 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 15 full=True outliers=4
+WK nb4 round 16 outliers=1 maxwake_us=40526 | t:   85 Avg:   56 Max:     497 | #    | task: net_client_thd-20045 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 16 full=True outliers=1
+WK nb4 round 17 outliers=10 maxwake_us=44647 | t:   64 Avg:   63 Max:     538 | #    | task: net_client_thd-20637 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 17 full=True outliers=10
+WK nb4 round 18 outliers=0 maxwake_us=41709 | t:   54 Avg:   51 Max:     417 | #    | task: net_client_thd-21251 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 18 full=True outliers=0
+WK nb4 round 19 outliers=6 maxwake_us=37920 | t:   91 Avg:   56 Max:    1623 | #    | task: net_client_thd-21891 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 19 full=True outliers=6
+WK nb4 round 20 outliers=0 maxwake_us=42833 | t:  106 Avg:   57 Max:     389 | #    | task: net_client_thd-22492 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 20 full=True outliers=0
+WK nb4 round 21 outliers=1 maxwake_us=39275 | t:   54 Avg:   57 Max:     335 | #    | task: net_client_thd-23118 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 21 full=True outliers=1
+WK nb4 round 22 outliers=2 maxwake_us=25485 | t:   96 Avg:   58 Max:     481 | #    | task: writer-task-23750 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 22 full=True outliers=2
+WK nb4 round 23 outliers=2 maxwake_us=46829 | t:   54 Avg:   59 Max:     395 | #    | task: net_client_thd-24331 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 23 full=True outliers=2
+WK nb4 round 24 outliers=0 maxwake_us=45024 | t:   54 Avg:   57 Max:     548 | #    | task: net_client_thd-24983 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 24 full=True outliers=0
+WK nb4 round 25 outliers=1 maxwake_us=41597 | t:  117 Avg:   56 Max:     978 | #    | task: net_client_thd-25600 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 25 full=True outliers=1
+WK nb4 round 26 outliers=0 maxwake_us=110728 | t:   77 Avg:   57 Max:     499 | #    | task: net_client_thd-26189 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 26 full=True outliers=0
+WK nb4 round 27 outliers=0 maxwake_us=80372 | t:   58 Avg:   56 Max:     410 | #    | task: net_client_thd-26834 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 27 full=True outliers=0
+WK nb4 round 28 outliers=12 maxwake_us=72685 | t:   75 Avg:   57 Max:     498 | #    | task: writer-task-27463 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 28 full=True outliers=12
+WK nb4 round 29 outliers=0 maxwake_us=26748 | t:   54 Avg:   54 Max:     334 | #    | task: net_client_thd-28113 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 29 full=True outliers=0
+WK nb4 round 30 outliers=3 maxwake_us=32788 | t:   87 Avg:   55 Max:     414 | #    | task: net_client_thd-28739 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 30 full=True outliers=3
+WK nb4 round 31 outliers=0 maxwake_us=34414 | t:   79 Avg:   56 Max:     350 | #    | task: writer-task-29340 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 31 full=True outliers=0
+WK nb4 round 32 outliers=0 maxwake_us=37517 | t:   54 Avg:   52 Max:     338 | #    | task: writer-task-29983 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 32 full=True outliers=0
+WK nb4 round 33 outliers=3 maxwake_us=59205 | t:   90 Avg:   56 Max:     404 | #    | task: writer-task-30610 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 33 full=True outliers=3
+WK nb4 round 34 outliers=0 maxwake_us=39118 | t:  107 Avg:   60 Max:     515 | #    | task: net_client_thd-31205 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 34 full=True outliers=0
+WK nb4 round 35 outliers=0 maxwake_us=43710 | t:   88 Avg:   53 Max:     315 | #    | task: net_client_thd-31836 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 35 full=True outliers=0
+WK nb4 round 36 outliers=0 maxwake_us=42821 | t:   91 Avg:   56 Max:     480 | #    | task: net_client_thd-32467 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 36 full=True outliers=0
+WK nb4 round 37 outliers=0 maxwake_us=106360 | t:   65 Avg:   54 Max:     377 | #    | task: net_client_thd-611 (uid:0 nice:0 policy:2 rt_pr
+10.0 nb4 round 37 full=True outliers=0
+WK nb4 round 38 outliers=1 maxwake_us=36289 | t:   54 Avg:   50 Max:     551 | #    | task: net_client_thd-1300 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 38 full=True outliers=1
+WK nb4 round 39 outliers=0 maxwake_us=27412 | t:   83 Avg:   55 Max:     309 | #    | task: writer-task-1917 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 39 full=True outliers=0
+WK nb4 round 40 outliers=0 maxwake_us=42502 | t:   96 Avg:   61 Max:     491 | #    | task: net_client_thd-2511 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 40 full=True outliers=0
+WK nb4 round 41 outliers=2 maxwake_us=32379 | t:   54 Avg:   56 Max:     343 | #    | task: net_client_thd-3125 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 41 full=True outliers=2
+WK nb4 round 42 outliers=0 maxwake_us=40504 | t:   64 Avg:   59 Max:     403 | #    | task: net_client_thd-3773 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 42 full=True outliers=0
+WK nb4 round 43 outliers=1 maxwake_us=38589 | t:   55 Avg:   59 Max:     523 | #    | task: writer-task-4404 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 43 full=True outliers=1
+WK nb4 round 44 outliers=0 maxwake_us=26476 | t:  105 Avg:   56 Max:     379 | #    | task: writer-task-5037 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 44 full=True outliers=0
+WK nb4 round 45 outliers=0 maxwake_us=37673 | t:   88 Avg:   54 Max:     344 | #    | task: writer-task-5626 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 45 full=True outliers=0
+WK nb4 round 46 outliers=0 maxwake_us=32162 | t:   54 Avg:   51 Max:     371 | #    | task: net_client_thd-6254 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 46 full=True outliers=0
+WK nb4 round 47 outliers=3 maxwake_us=44306 | t:  114 Avg:   57 Max:     603 | #    | task: net_client_thd-6893 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 47 full=True outliers=3
+WK nb4 round 48 outliers=2 maxwake_us=44138 | t:   57 Avg:   55 Max:     405 | #    | task: net_client_thd-7511 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 48 full=True outliers=2
+WK nb4 round 49 outliers=1 maxwake_us=45844 | t:  118 Avg:   55 Max:     339 | #    | task: writer-task-8150 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 49 full=True outliers=1
+WK nb4 round 50 outliers=1 maxwake_us=35317 | t:   87 Avg:   60 Max:     339 | #    | task: writer-task-8759 (uid:0 nice:0 policy:2 rt_prio
+10.0 nb4 round 50 full=True outliers=1
+WK nb4 round 51 outliers=0 maxwake_us=84570 | t:   76 Avg:   54 Max:     344 | #    | task: net_client_thd-9391 (uid:0 nice:0 policy:2 rt_p
+10.0 nb4 round 51 full=True outliers=0
+WK nb4 round 52 outliers=0 maxwake_us=26180 | t:  110 Avg:   54 Max:     435 | #    | task: writer-task-10029 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 52 full=True outliers=0
+WK nb4 round 53 outliers=2 maxwake_us=68171 | t:   65 Avg:   55 Max:     355 | #    | task: writer-task-10619 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 53 full=True outliers=2
+WK nb4 round 54 outliers=1 maxwake_us=44448 | t:   55 Avg:   54 Max:     378 | #    | task: writer-task-11280 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 54 full=True outliers=1
+WK nb4 round 55 outliers=3 maxwake_us=52027 | t:  107 Avg:   56 Max:     952 | #    | task: writer-task-11902 (uid:0 nice:0 policy:2 rt_pri
+10.0 nb4 round 55 full=True outliers=3
+WK nb4 round 56 outliers=0 maxwake_us=37651 | t:   59 Avg:   55 Max:     405 | #    | task: net_client_thd-12533 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 56 full=True outliers=0
+WK nb4 round 57 outliers=0 maxwake_us=43113 | t:   63 Avg:   57 Max:     368 | #    | task: net_client_thd-13169 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 57 full=True outliers=0
+WK nb4 round 58 outliers=5 maxwake_us=57303 | t:   56 Avg:   58 Max:     389 | #    | task: net_client_thd-13752 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 58 full=True outliers=5
+WK nb4 round 59 outliers=2 maxwake_us=30878 | t:   53 Avg:   52 Max:     433 | #    | task: net_client_thd-14406 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 59 full=True outliers=2
+WK nb4 round 60 outliers=2 maxwake_us=42596 | t:   72 Avg:   56 Max:     365 | #    | task: net_client_thd-15024 (uid:0 nice:0 policy:2 rt_
+10.0 nb4 round 60 full=True outliers=2
+SUMMARY 10.0 MS/s nb4 blocks: runs 60, incomplete 0, runs with outliers 32, outliers 107, on a 262144 boundary: 107
+OUTLIER_DONE

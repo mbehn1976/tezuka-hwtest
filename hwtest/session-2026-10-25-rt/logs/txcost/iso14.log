@@ -1,0 +1,38 @@
+stray processes on board (must be empty): 
+== B0: gso=generic-segmentation-offload: on limit=1048576
+# Avg Latencies: 00026
+# Max Latencies: 00126
+samples 1200000, >=50us 11824 (0.9853%), >=80us 800
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+iiod alive: 8978, exit log: cat: can't open '/tmp/iiod_exit.log': No such file or directory
+DONE_B0
+== C1_gso_off: gso=generic-segmentation-offload: off limit=1048576
+# Avg Latencies: 00028
+# Max Latencies: 00112
+samples 1200000, >=50us 91212 (7.6010%), >=80us 672
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+iiod alive: 8978, exit log: cat: can't open '/tmp/iiod_exit.log': No such file or directory
+DONE_C1_gso_off
+== C2_limit64k: gso=generic-segmentation-offload: on limit=65536
+# Avg Latencies: 00025
+# Max Latencies: 00094
+samples 1200000, >=50us 10718 (0.8932%), >=80us 49
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+iiod alive: 8978, exit log: cat: can't open '/tmp/iiod_exit.log': No such file or directory
+DONE_C2_limit64k
+== C3_both: gso=generic-segmentation-offload: off limit=65536
+# Avg Latencies: 00029
+# Max Latencies: 00104
+samples 1200000, >=50us 51176 (4.2647%), >=80us 479
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+iiod alive: 8978, exit log: cat: can't open '/tmp/iiod_exit.log': No such file or directory
+DONE_C3_both
+== B0b: gso=generic-segmentation-offload: on limit=1048576
+# Avg Latencies: 00026
+# Max Latencies: 00128
+samples 1200000, >=50us 12049 (1.0041%), >=80us 50
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+iiod alive: 8978, exit log: cat: can't open '/tmp/iiod_exit.log': No such file or directory
+DONE_B0b
+net.ipv4.tcp_limit_output_bytes = 1048576
+ALLDONE

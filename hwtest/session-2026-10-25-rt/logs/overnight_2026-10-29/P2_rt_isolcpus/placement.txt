@@ -1,0 +1,7 @@
+cmdline:
+console=ttyPS0,115200 rootfstype=ramfs root=/dev/ram0 rw rootwait earlycon clk_ignore_unused cpuidle.off=1 isolcpus=1 irqaffinity=0 uio_pdrv_genirq.of_id=uio_pdrv_genirq UBOOT_MODEBOOT=sdboot UBOOT_VERSION=""
+isolated=[1]
+iiod mask=1 SCHED_OTHER 0
+usbd_main_thd mask=1 SCHED_OTHER 0
+net_main_thd mask=1 SCHED_OTHER 0
+avahi_thd mask=1 SCHED_OTHER 0

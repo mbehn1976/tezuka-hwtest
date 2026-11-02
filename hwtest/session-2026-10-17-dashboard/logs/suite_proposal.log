@@ -1,0 +1,139 @@
+######## RX=Pluto
+== Pluto iq 2500000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto phase 2500000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto frame 2500000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto iq 10000000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto phase 10000000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto frame 10000000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto iq 20000000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto phase 20000000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto frame 20000000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto iq 30720000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto phase 30720000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto frame 30720000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto iq 61440000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto phase 61440000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto frame 61440000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+######## RX=Pluto+
+== Pluto+ iq 2500000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ phase 2500000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ frame 2500000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ iq 10000000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ phase 10000000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ frame 10000000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ iq 20000000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ phase 20000000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ frame 20000000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ iq 30720000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ phase 30720000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ frame 30720000
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ iq 61440000
+    self.process_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+== Pluto+ phase 61440000
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/mb/.venvs/pluto-test/lib/python3.14/site-packages/websockets/client.py", line 145, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404

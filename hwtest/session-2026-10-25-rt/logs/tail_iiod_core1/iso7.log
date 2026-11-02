@@ -1,0 +1,101 @@
+README
+available_events
+available_filter_functions
+== Y1_other_trace
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Y1_other_trace): T: 0 (10325) P:98 I:250 C: 559935 Min:     11 Act:   58 Avg:   92 Max:     279
+max_latency_us: 192
+105 /tmp/trace_c1_Y1_other_trace.txt
+liveness after (0 = ok): 0
+DONE_Y1_other_trace
+== Y2_other_trace
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Y2_other_trace): T: 0 (15194) P:98 I:250 C: 559998 Min:     20 Act:   58 Avg:   89 Max:     262
+max_latency_us: 191
+99 /tmp/trace_c1_Y2_other_trace.txt
+liveness after (0 = ok): 0
+DONE_Y2_other_trace
+== Y3_other_trace
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (Y3_other_trace): T: 0 (20100) P:98 I:250 C: 559993 Min:     11 Act:   79 Avg:   88 Max:     263
+max_latency_us: 186
+111 /tmp/trace_c1_Y3_other_trace.txt
+liveness after (0 = ok): 0
+DONE_Y3_other_trace
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+ALLDONE

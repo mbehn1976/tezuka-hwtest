@@ -1,0 +1,7 @@
+phase idle start 00:04:05 up=245.55
+phase idle end 00:09:10 load=4.08 3.01 1.55
+phase cpu2 start 00:09:40 up=580.74
+phase cpu2 end 00:14:49 load=5.31 4.46 2.63
+phase heavy start 00:15:19 up=919.07
+phase heavy end 00:20:27 load=9.86 8.14 4.81
+services stopped 00:20:57

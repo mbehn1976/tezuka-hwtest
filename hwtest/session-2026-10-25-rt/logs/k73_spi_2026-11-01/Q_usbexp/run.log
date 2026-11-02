@@ -1,0 +1,61 @@
+08:55:15 == usb experiments start (v2)
+08:55:15 eth control link up
+08:55:21 612 board: 6.12.114-rt21 238.94  spi thread 175 pid 175's current scheduling priority: 60 udc thread 325 pid 325's current scheduling priority: 50 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1 
+08:55:21 612 host: enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=0 rndis_msgs=0
+08:56:44 throughput 612_base #1: recv 209.7 MB in 10.25 s = 20.5 MB/s / send 200 MB in 10.53 s = 19.0 MB/s
+08:57:10 throughput 612_base #2: recv 209.7 MB in 11.61 s = 18.1 MB/s / send 200 MB in 11.10 s = 18.0 MB/s
+08:57:35 throughput 612_base #3: recv 209.7 MB in 10.40 s = 20.2 MB/s / send 200 MB in 10.87 s = 18.4 MB/s
+08:57:35 load 612_base: cpu0 busy=67% cpu1 busy=66% udc=13.6% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:57:36 udc at 60: thread 325 pid 325's current scheduling priority: 60
+08:59:00 throughput 612_udc60 #1: recv 209.7 MB in 9.75 s = 21.5 MB/s / send 200 MB in 10.87 s = 18.4 MB/s
+08:59:28 throughput 612_udc60 #2: recv 209.7 MB in 13.42 s = 15.6 MB/s / send 200 MB in 11.18 s = 17.9 MB/s
+08:59:52 throughput 612_udc60 #3: recv 209.7 MB in 10.65 s = 19.7 MB/s / send 200 MB in 10.63 s = 18.8 MB/s
+08:59:52 load 612_udc60: cpu0 busy=68% cpu1 busy=62% udc=13.5% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:59:56 ncm: switched rndis.0 -> ncm.usb0 ifname=usb0 addr=192.168.4.1/24 host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+08:59:56 host usb link up (ncm): enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=3 rndis_msgs=1
+09:01:17 throughput 612_ncm #1: recv 209.7 MB in 12.74 s = 16.5 MB/s / send 200 MB in 7.74 s = 25.8 MB/s
+09:01:39 throughput 612_ncm #2: recv 209.7 MB in 11.92 s = 17.6 MB/s / send 200 MB in 7.59 s = 26.4 MB/s
+09:02:02 throughput 612_ncm #3: recv 209.7 MB in 11.42 s = 18.4 MB/s / send 200 MB in 7.85 s = 25.5 MB/s
+09:02:02 load 612_ncm: cpu0 busy=67% cpu1 busy=68% udc=4.6% ktimers0=0.7% eth=0.0% iiod=0.0% 
+09:02:07 stream 612_ncm_5M: phy=iio:device0 sf=54074347 loopback=1 writer=1
+09:04:48   RESULT 612_ncm_5M: SUMMARY nb32: runs 20, incomplete 0, runs with outliers 16, outliers 34  | spito=4
+09:04:53 rndis: switched ncm.usb0 -> rndis.0 ifname=usb0 addr=192.168.4.1/24 host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+09:04:53 host usb link back (rndis): enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=1 rndis_msgs=2
+09:04:54 end 612: regs 0x037=0xFF 0x002=0xA 0x003=0x4C 0x017=0x5C sf_read=12036764 sf_after_write=1689823 ensm=fdd spito=4 errlines_before_write=5 errlines_now=6 ISR=0x00000014 
+09:05:47 card on 7.3: 1 match
+09:06:43 73 board: 7.3.0 75.08  spi thread 188 pid 188's current scheduling priority: 60 udc thread 693 pid 693's current scheduling priority: 50 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1 
+09:06:43 73 host: enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=1 rndis_msgs=5
+09:08:06 throughput 73_base #1: recv 209.7 MB in 14.53 s = 14.4 MB/s / send 200 MB in 10.86 s = 18.4 MB/s
+09:08:34 throughput 73_base #2: recv 209.7 MB in 13.43 s = 15.6 MB/s / send 200 MB in 10.97 s = 18.2 MB/s
+09:09:00 throughput 73_base #3: recv 209.7 MB in 11.50 s = 18.2 MB/s / send 200 MB in 10.71 s = 18.7 MB/s
+09:09:00 load 73_base: cpu0 busy=72% cpu1 busy=67% udc=13.7% ktimers0=0.7% eth=0.0% iiod=0.0% 
+09:09:00 udc at 60: thread 693 pid 693's current scheduling priority: 60
+09:10:24 throughput 73_udc60 #1: recv 209.7 MB in 10.92 s = 19.2 MB/s / send 200 MB in 11.20 s = 17.9 MB/s
+09:10:55 throughput 73_udc60 #2: recv 209.7 MB in 15.47 s = 13.6 MB/s / send 200 MB in 12.06 s = 16.6 MB/s
+09:11:24 throughput 73_udc60 #3: recv 209.7 MB in 15.08 s = 13.9 MB/s / send 200 MB in 10.80 s = 18.5 MB/s
+09:11:24 load 73_udc60: cpu0 busy=67% cpu1 busy=67% udc=13.7% ktimers0=0.3% eth=0.0% iiod=0.0% 
+09:11:27 ktimers at 1: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1 
+09:12:52 throughput 73_kt1 #1: recv 209.7 MB in 16.07 s = 13.1 MB/s / send 200 MB in 11.93 s = 16.8 MB/s
+09:13:22 throughput 73_kt1 #2: recv 209.7 MB in 15.48 s = 13.5 MB/s / send 200 MB in 11.17 s = 17.9 MB/s
+09:13:49 throughput 73_kt1 #3: recv 209.7 MB in 12.61 s = 16.6 MB/s / send 200 MB in 10.88 s = 18.4 MB/s
+09:13:49 load 73_kt1: cpu0 busy=70% cpu1 busy=72% udc=13.4% ktimers0=0.4% eth=0.0% iiod=0.0% 
+09:13:50 udc at 60 + ktimers 1: thread 693 pid 693's current scheduling priority: 60
+09:15:14 throughput 73_udc60_kt1 #1: recv 209.7 MB in 15.54 s = 13.5 MB/s / send 200 MB in 11.19 s = 17.9 MB/s
+09:15:43 throughput 73_udc60_kt1 #2: recv 209.7 MB in 13.70 s = 15.3 MB/s / send 200 MB in 11.76 s = 17.0 MB/s
+09:16:15 throughput 73_udc60_kt1 #3: recv 209.7 MB in 18.11 s = 11.6 MB/s / send 200 MB in 10.95 s = 18.3 MB/s
+09:16:15 load 73_udc60_kt1: cpu0 busy=70% cpu1 busy=70% udc=13.4% ktimers0=0.3% eth=0.0% iiod=0.0% 
+09:16:19 restored: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1 
+09:16:22 ncm: switched rndis.0 -> ncm.usb0 ifname=usb0 addr=192.168.4.1/24 host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+09:16:22 host usb link up (ncm): enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=3 rndis_msgs=1
+09:17:43 throughput 73_ncm #1: recv 209.7 MB in 14.77 s = 14.2 MB/s / send 200 MB in 7.77 s = 25.8 MB/s
+09:18:07 throughput 73_ncm #2: recv 209.7 MB in 13.88 s = 15.1 MB/s / send 200 MB in 7.50 s = 26.7 MB/s
+09:18:31 throughput 73_ncm #3: recv 209.7 MB in 12.00 s = 17.5 MB/s / send 200 MB in 7.66 s = 26.1 MB/s
+09:18:31 load 73_ncm: cpu0 busy=69% cpu1 busy=70% udc=4.9% ktimers0=1.7% eth=0.0% iiod=0.0% 
+09:18:35 stream 73_ncm_5M: phy=iio:device1 sf=5000000 loopback=1 writer=1
+09:22:29   RESULT 73_ncm_5M: SUMMARY nb32: runs 20, incomplete 0, runs with outliers 0, outliers 0  | spito=6
+09:22:33 rndis: switched ncm.usb0 -> rndis.0 ifname=usb0 addr=192.168.4.1/24 host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+09:22:33 host usb link back (rndis): enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=1 rndis_msgs=2
+09:22:34 end 73: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=6 errlines_before_write=6 errlines_now=6 ISR=0x00000004 
+09:23:26 card back on 6.12: 1 match
+09:24:06 6.12 control: 6.12.114-rt21 63.48  usb host: enx00e0220ae277 192.168.4.10/24 route=enx00e0220ae277 nm=connected:tezuka-usb ncm_msgs=1 rndis_msgs=5
+09:24:06 == usb experiments done

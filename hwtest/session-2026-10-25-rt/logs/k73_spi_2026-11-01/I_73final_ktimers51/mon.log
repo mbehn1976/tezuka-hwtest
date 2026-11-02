@@ -1,0 +1,16 @@
+20:57:55 up=91.21 avail=241872k iiod_rss=3380k tempC=73.3 writer=1 load=3.02 qspi_irq=193577 spi0_irq=7621 sf=5000000 bad=0 spito=0 ktimers0=51 spipm=active api=200
+20:58:53 up=149.47 avail=227068k iiod_rss=3456k tempC=73.6 writer=1 load=4.47 qspi_irq=265467 spi0_irq=9243 sf=5000000 bad=0 spito=0 ktimers0=51 spipm=active api=200
+20:59:50 up=206.57 avail=229968k iiod_rss=3456k tempC=73.5 writer=1 load=4.84 qspi_irq=337357 spi0_irq=10849 sf=5000000 bad=0 spito=0 ktimers0=51 spipm=active api=200
+21:00:51 up=266.73 avail=191780k iiod_rss=3504k tempC=72.8 writer=1 load=5.05 qspi_irq=409247 spi0_irq=12522 sf=5000000 bad=2 spito=1 ktimers0=51 spipm=active api=200
+21:01:51 up=327.19 avail=230252k iiod_rss=3460k tempC=74.2 writer=1 load=5.82 qspi_irq=488326 spi0_irq=14209 sf=5000000 bad=4 spito=2 ktimers0=51 spipm=active api=200
+21:02:48 up=384.06 avail=231776k iiod_rss=3460k tempC=73.6 writer=1 load=4.76 qspi_irq=553027 spi0_irq=15686 sf=5000000 bad=4 spito=2 ktimers0=51 spipm=active api=200
+21:03:47 up=442.50 avail=188876k iiod_rss=3508k tempC=73.1 writer=1 load=5.40 qspi_irq=632106 spi0_irq=17435 sf=5000000 bad=4 spito=2 ktimers0=51 spipm=active api=200
+21:04:48 up=503.85 avail=228248k iiod_rss=3460k tempC=74.2 writer=1 load=5.29 qspi_irq=696807 spi0_irq=19040 sf=5000000 bad=6 spito=3 ktimers0=51 spipm=active api=200
+21:05:44 up=560.88 avail=228364k iiod_rss=3460k tempC=74.6 writer=1 load=5.23 qspi_irq=768697 spi0_irq=20514 sf=5000000 bad=6 spito=3 ktimers0=51 spipm=active api=200
+21:06:41 up=617.56 avail=229816k iiod_rss=3460k tempC=73.7 writer=1 load=5.28 qspi_irq=840587 spi0_irq=22124 sf=5000000 bad=8 spito=4 ktimers0=51 spipm=active api=200
+21:07:40 up=675.52 avail=189708k iiod_rss=3508k tempC=74.1 writer=1 load=6.33 qspi_irq=914531 spi0_irq=23865 sf=5000000 bad=8 spito=4 ktimers0=51 spipm=active api=200
+21:08:42 up=737.96 avail=226716k iiod_rss=3460k tempC=73.9 writer=1 load=5.65 qspi_irq=991556 spi0_irq=25498 sf=5000000 bad=12 spito=6 ktimers0=51 spipm=active api=200
+21:09:38 up=794.80 avail=230972k iiod_rss=3460k tempC=74.1 writer=1 load=5.35 qspi_irq=1063446 spi0_irq=27110 sf=5000000 bad=12 spito=6 ktimers0=51 spipm=active api=200
+21:10:35 up=851.69 avail=227924k iiod_rss=3460k tempC=74.1 writer=1 load=4.54 qspi_irq=1135336 spi0_irq=28722 sf=5000000 bad=12 spito=6 ktimers0=51 spipm=active api=200
+21:11:38 up=914.73 avail=229608k iiod_rss=3464k tempC=73.7 writer=1 load=4.78 qspi_irq=1207226 spi0_irq=30472 sf=5000000 bad=12 spito=6 ktimers0=51 spipm=active api=200
+21:12:36 up=972.27 avail=232228k iiod_rss=3468k tempC=74.8 writer=1 load=5.19 qspi_irq=1279116 spi0_irq=31951 sf=5000000 bad=16 spito=8 ktimers0=51 spipm=active api=200

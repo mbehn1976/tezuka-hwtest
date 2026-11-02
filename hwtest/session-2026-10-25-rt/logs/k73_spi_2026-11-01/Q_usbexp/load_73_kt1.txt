@@ -1,0 +1,1 @@
+cpu0 busy=70% cpu1 busy=72% udc=13.4% ktimers0=0.4% eth=0.0% iiod=0.0% 

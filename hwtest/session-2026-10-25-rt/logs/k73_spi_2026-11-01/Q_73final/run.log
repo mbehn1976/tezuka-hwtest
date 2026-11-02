@@ -1,0 +1,69 @@
+23:26:01 image built: 7.3.0 uImage 4c60a5b2 ramdisk 880f11f6
+23:26:55 card written: 1 match
+23:26:55 reboot board
+23:27:33 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:28:41 boot 2: up=81.31 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:28:41 reboot board
+23:29:20 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:30:27 boot 2: up=81.90 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x0 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:30:27 reboot board
+23:31:06 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:32:14 boot 2: up=81.66 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0xA 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:32:14 reboot board
+23:32:53 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:34:00 boot 2: up=81.87 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:34:00 reboot board
+23:34:39 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:35:47 boot 2: up=82.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:35:47 reboot board
+23:36:26 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:37:34 boot 2: up=82.06 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:37:34 reboot board
+23:38:13 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:39:20 boot 2: up=82.16 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:39:20 reboot board
+23:39:59 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:41:07 boot 2: up=81.92 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:41:07 reboot board
+23:41:46 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:42:54 boot 2: up=82.19 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:42:54 reboot board
+23:43:32 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:44:40 boot 2: up=82.22 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:44:40 reboot board
+23:45:19 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:46:27 boot 2: up=82.05 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:46:27 reboot board
+23:47:05 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:48:13 boot 2: up=81.86 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:48:13 reboot board
+23:48:52 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+23:49:59 boot 2: up=81.70 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+23:49:59 reboot board
+23:58:38 board: 
+23:58:38 ABORT: not the Pluto+ on 7.3.0
+00:01:46 == resume (chain3b) start
+00:01:59 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+00:02:03 settings: 14 pol=1 rt=51 cpu=0 ktimers/0 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi 27 pol=1 rt=51 cpu=1 ktimers/1 
+00:02:03 eth alias up
+00:02:07 stream usb_2p5M fs=2500000 nbs=32 via 192.168.4.1: phy=iio:device1 sf=2500000 loopback=1 writer=1
+00:05:08   RESULT usb_2p5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+00:05:13 stream usb_4M fs=4000000 nbs=32 via 192.168.4.1: phy=iio:device1 sf=4000000 loopback=1 writer=1
+00:08:00   RESULT usb_4M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+00:08:05 stream eth_10M fs=10000000 nbs=4,32 via 192.168.3.1: phy=iio:device1 sf=10000000 loopback=1 writer=1
+00:13:13   RESULT eth_10M: SUMMARY nb4: runs 15, incomplete 0, runs with outliers 7, outliers 9 SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito=0
+00:13:42 USB throughput: recv 209.7 MB in 12.56 s = 16.7 MB/s / send 200 MB in 11.44 s = 17.5 MB/s
+00:13:43 after USB throughput test: spito=0 (was 0); regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=10000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+04:32:04 Q_eth10M_soak: Q_eth10M_soak: SUMMARY nb32: runs 720, incomplete 0, runs with outliers 0, outliers 0  | SPI timeouts 0 | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+04:32:04 Q_usb4M_soak: Q_usb4M_soak: SUMMARY nb32: runs 340, incomplete 0, runs with outliers 137, outliers 178  | SPI timeouts 0 | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+04:32:57 card back on 6.12: 1 match
+04:32:58 6.12 control: 6.12.114-rt21 spito=0
+pid 171's current scheduling policy: SCHED_FIFO
+pid 171's current scheduling priority: 50
+pid 171's new scheduling policy: SCHED_FIFO
+pid 171's new scheduling priority: 60
+pid 171's current scheduling priority: 60
+04:33:23 USB throughput: recv 209.7 MB in 10.27 s = 20.4 MB/s / send 200 MB in 10.53 s = 19.0 MB/s
+04:33:24 6.12 with SPI thread at FIFO 60, after USB throughput test: spito +0; regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+04:33:24 eth alias removed: 192.168.1.10/24 
+04:33:24 == qualification done

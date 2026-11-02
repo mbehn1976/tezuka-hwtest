@@ -1,0 +1,237 @@
+# tracer: irqsoff
+#
+# irqsoff latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 359 us, #210/210, CPU#0 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: irq/30-e000d000-194 (uid:0 nice:0 policy:1 rt_prio:50)
+#    -----------------
+#  => started at: __irq_svc
+#  => ended at:   __irq_svc
+#
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+irq/30-e-194       0D..12    1us : __irq_svc
+irq/30-e-194       0D..12    2us : irq_enter <-generic_handle_arch_irq
+irq/30-e-194       0D..12    3us : irq_enter_rcu <-generic_handle_arch_irq
+irq/30-e-194       0D..12    5us : preempt_count_add <-irq_enter_rcu
+irq/30-e-194       0D.h12    6us : gic_handle_irq <-generic_handle_arch_irq
+irq/30-e-194       0D.h12    8us : generic_handle_domain_irq <-gic_handle_irq
+irq/30-e-194       0D.h12    9us : __irq_resolve_mapping <-generic_handle_domain_irq
+irq/30-e-194       0D.h12   10us : __rcu_read_lock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12   12us : __rcu_read_unlock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12   13us : handle_irq_desc <-gic_handle_irq
+irq/30-e-194       0D.h12   15us : handle_fasteoi_irq <-handle_irq_desc
+irq/30-e-194       0D.h12   16us : _raw_spin_lock <-handle_fasteoi_irq
+irq/30-e-194       0D.h12   17us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h22   19us : gic_mask_irq <-handle_fasteoi_irq
+irq/30-e-194       0D.h22   20us : handle_irq_event <-handle_fasteoi_irq
+irq/30-e-194       0D.h22   22us : _raw_spin_unlock <-handle_irq_event
+irq/30-e-194       0D.h22   23us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12   24us : __handle_irq_event_percpu <-handle_irq_event
+irq/30-e-194       0D.h12   26us : irq_default_primary_handler <-__handle_irq_event_percpu
+irq/30-e-194       0D.h12   27us : __irq_wake_thread <-__handle_irq_event_percpu
+irq/30-e-194       0D.h12   29us : wake_up_process <-__handle_irq_event_percpu
+irq/30-e-194       0D.h12   30us : try_to_wake_up <-__handle_irq_event_percpu
+irq/30-e-194       0D.h12   31us : preempt_count_add <-try_to_wake_up
+irq/30-e-194       0D.h22   33us : preempt_count_sub <-try_to_wake_up
+irq/30-e-194       0D.h12   34us : add_interrupt_randomness <-handle_irq_event
+irq/30-e-194       0D.h12   36us : read_current_timer <-add_interrupt_randomness
+irq/30-e-194       0D.h12   37us : gt_read_long <-read_current_timer
+irq/30-e-194       0D.h12   38us : fast_mix <-add_interrupt_randomness
+irq/30-e-194       0D.h12   40us : note_interrupt <-handle_irq_event
+irq/30-e-194       0D.h12   41us : _raw_spin_lock <-handle_irq_event
+irq/30-e-194       0D.h12   43us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h22   44us : gic_eoi_irq <-handle_fasteoi_irq
+irq/30-e-194       0D.h22   46us : _raw_spin_unlock <-handle_irq_desc
+irq/30-e-194       0D.h22   47us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12   49us : generic_handle_domain_irq <-gic_handle_irq
+irq/30-e-194       0D.h12   50us : __irq_resolve_mapping <-generic_handle_domain_irq
+irq/30-e-194       0D.h12   52us : __rcu_read_lock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12   53us : __rcu_read_unlock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12   54us : handle_irq_desc <-gic_handle_irq
+irq/30-e-194       0D.h12   56us : handle_percpu_devid_irq <-handle_irq_desc
+irq/30-e-194       0D.h12   57us : ipi_handler <-handle_percpu_devid_irq
+irq/30-e-194       0D.h12   59us : do_handle_IPI <-ipi_handler
+irq/30-e-194       0D.h12   61us : generic_smp_call_function_single_interrupt <-do_handle_IPI
+irq/30-e-194       0D.h12   63us : __flush_smp_call_function_queue <-do_handle_IPI
+irq/30-e-194       0D.h12   66us : rto_push_irq_work_func <-irq_work_single
+irq/30-e-194       0D.h12   68us : raw_spin_rq_lock_nested <-rto_push_irq_work_func
+irq/30-e-194       0D.h12   69us : preempt_count_add <-raw_spin_rq_lock_nested
+irq/30-e-194       0D.h22   70us : _raw_spin_lock <-raw_spin_rq_lock_nested
+irq/30-e-194       0D.h22   72us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h32   73us : preempt_count_sub <-rto_push_irq_work_func
+irq/30-e-194       0D.h22   75us : push_rt_task <-rto_push_irq_work_func
+irq/30-e-194       0D.h22   76us : pick_next_pushable_task <-push_rt_task
+irq/30-e-194       0D.h22   78us : find_lock_lowest_rq <-push_rt_task
+irq/30-e-194       0D.h22   79us : find_lowest_rq <-find_lock_lowest_rq
+irq/30-e-194       0D.h22   81us : cpupri_find <-find_lowest_rq
+irq/30-e-194       0D.h22   82us : cpupri_find_fitness <-find_lowest_rq
+irq/30-e-194       0D.h22   84us : __rcu_read_lock <-find_lowest_rq
+irq/30-e-194       0D.h22   88us : __rcu_read_unlock <-find_lowest_rq
+irq/30-e-194       0D.h22   90us : raw_spin_rq_unlock <-find_lock_lowest_rq
+irq/30-e-194       0D.h22   91us : _raw_spin_unlock <-find_lock_lowest_rq
+irq/30-e-194       0D.h22   93us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12   94us : double_rq_lock <-find_lock_lowest_rq
+irq/30-e-194       0D.h12   96us : preempt_count_add <-double_rq_lock
+irq/30-e-194       0D.h22   97us : _raw_spin_lock <-double_rq_lock
+irq/30-e-194       0D.h22   99us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h32  100us : preempt_count_sub <-double_rq_lock
+irq/30-e-194       0D.h22  102us : preempt_count_add <-double_rq_lock
+irq/30-e-194       0D.h32  103us : _raw_spin_lock <-double_rq_lock
+irq/30-e-194       0D.h32  105us+: preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h42  143us : preempt_count_sub <-find_lock_lowest_rq
+irq/30-e-194       0D.h32  144us : pick_next_pushable_task <-find_lock_lowest_rq
+irq/30-e-194       0D.h32  147us : deactivate_task <-push_rt_task
+irq/30-e-194       0D.h32  148us : update_rq_clock.part.0 <-deactivate_task
+irq/30-e-194       0D.h32  150us : dequeue_task_rt <-push_rt_task
+irq/30-e-194       0D.h32  152us : update_curr_common <-dequeue_task_rt
+irq/30-e-194       0D.h32  153us : dequeue_rt_stack <-dequeue_task_rt
+irq/30-e-194       0D.h32  155us : dequeue_pushable_task <-dequeue_task_rt
+irq/30-e-194       0D.h32  157us : set_task_cpu <-push_rt_task
+irq/30-e-194       0D.h32  159us : activate_task <-push_rt_task
+irq/30-e-194       0D.h32  161us : sched_mm_cid_migrate_to <-activate_task
+irq/30-e-194       0D.h32  163us : update_rq_clock.part.0 <-activate_task
+irq/30-e-194       0D.h32  164us : enqueue_task_rt <-activate_task
+irq/30-e-194       0D.h32  166us : dequeue_rt_stack <-enqueue_task_rt
+irq/30-e-194       0D.h32  167us : cpupri_set <-enqueue_task_rt
+irq/30-e-194       0D.h32  169us : enqueue_pushable_task <-activate_task
+irq/30-e-194       0D.h32  171us : resched_curr <-push_rt_task
+irq/30-e-194       0D.h32  172us : __resched_curr.constprop.0 <-push_rt_task
+irq/30-e-194       0D.h32  174us : arch_smp_send_reschedule <-push_rt_task
+irq/30-e-194       0D.h32  175us : smp_cross_call <-push_rt_task
+irq/30-e-194       0D.h32  177us : __ipi_send_mask <-push_rt_task
+irq/30-e-194       0D.h32  178us : gic_ipi_send_mask <-__ipi_send_mask
+irq/30-e-194       0D.h32  180us : raw_spin_rq_unlock <-push_rt_task
+irq/30-e-194       0D.h32  182us : _raw_spin_unlock <-push_rt_task
+irq/30-e-194       0D.h32  183us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h22  185us : push_rt_task <-rto_push_irq_work_func
+irq/30-e-194       0D.h22  186us : raw_spin_rq_unlock <-rto_push_irq_work_func
+irq/30-e-194       0D.h22  187us : _raw_spin_unlock <-rto_push_irq_work_func
+irq/30-e-194       0D.h22  189us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12  190us : _raw_spin_lock <-rto_push_irq_work_func
+irq/30-e-194       0D.h12  192us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h22  193us : rto_next_cpu <-rto_push_irq_work_func
+irq/30-e-194       0D.h22  195us : _raw_spin_unlock <-rto_push_irq_work_func
+irq/30-e-194       0D.h22  196us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12  198us : preempt_count_add <-irq_work_queue_on
+irq/30-e-194       0D.h22  199us : __smp_call_single_queue <-irq_work_queue_on
+irq/30-e-194       0D.h22  201us : call_function_single_prep_ipi <-__smp_call_single_queue
+irq/30-e-194       0D.h22  203us : arch_send_call_function_single_ipi <-irq_work_queue_on
+irq/30-e-194       0D.h22  204us : smp_cross_call <-irq_work_queue_on
+irq/30-e-194       0D.h22  205us : __ipi_send_mask <-irq_work_queue_on
+irq/30-e-194       0D.h22  207us : gic_ipi_send_mask <-__ipi_send_mask
+irq/30-e-194       0D.h22  208us : preempt_count_sub <-irq_work_queue_on
+irq/30-e-194       0D.h12  210us : gic_eoi_irq <-handle_irq_desc
+irq/30-e-194       0D.h12  212us : generic_handle_domain_irq <-gic_handle_irq
+irq/30-e-194       0D.h12  213us : __irq_resolve_mapping <-generic_handle_domain_irq
+irq/30-e-194       0D.h12  215us : __rcu_read_lock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12  216us : __rcu_read_unlock <-__irq_resolve_mapping
+irq/30-e-194       0D.h12  218us : handle_irq_desc <-gic_handle_irq
+irq/30-e-194       0D.h12  220us : handle_percpu_devid_irq <-handle_irq_desc
+irq/30-e-194       0D.h12  221us : twd_handler <-handle_percpu_devid_irq
+irq/30-e-194       0D.h12  223us : hrtimer_interrupt <-twd_handler
+irq/30-e-194       0D.h12  224us : _raw_spin_lock_irqsave <-hrtimer_interrupt
+irq/30-e-194       0D.h12  226us : preempt_count_add <-_raw_spin_lock_irqsave
+irq/30-e-194       0D.h22  227us : ktime_get_update_offsets_now <-hrtimer_interrupt
+irq/30-e-194       0D.h22  228us : gt_clocksource_read <-ktime_get_update_offsets_now
+irq/30-e-194       0D.h22  230us : __hrtimer_run_queues <-hrtimer_interrupt
+irq/30-e-194       0D.h22  232us : _raw_spin_unlock_irqrestore <-__hrtimer_run_queues
+irq/30-e-194       0D.h22  234us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+irq/30-e-194       0D.h12  235us : tick_nohz_handler <-__hrtimer_run_queues
+irq/30-e-194       0D.h12  237us : ktime_get <-tick_nohz_handler
+irq/30-e-194       0D.h12  238us : gt_clocksource_read <-ktime_get
+irq/30-e-194       0D.h12  240us : tick_do_update_jiffies64 <-tick_nohz_handler
+irq/30-e-194       0D.h12  241us : _raw_spin_lock <-tick_do_update_jiffies64
+irq/30-e-194       0D.h12  243us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h22  244us : calc_global_load <-tick_do_update_jiffies64
+irq/30-e-194       0D.h22  246us : _raw_spin_unlock <-tick_do_update_jiffies64
+irq/30-e-194       0D.h22  247us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12  249us : update_wall_time <-tick_nohz_handler
+irq/30-e-194       0D.h12  250us : timekeeping_advance <-update_wall_time
+irq/30-e-194       0D.h12  252us : _raw_spin_lock_irqsave <-timekeeping_advance
+irq/30-e-194       0D.h12  253us : preempt_count_add <-_raw_spin_lock_irqsave
+irq/30-e-194       0D.h22  254us : gt_clocksource_read <-timekeeping_advance
+irq/30-e-194       0D.h22  256us : ntp_tick_length <-timekeeping_advance
+irq/30-e-194       0D.h22  258us : ntp_tick_length <-timekeeping_advance
+irq/30-e-194       0D.h22  260us : timekeeping_update <-timekeeping_advance
+irq/30-e-194       0D.h22  261us : ntp_get_next_leap <-timekeeping_update
+irq/30-e-194       0D.h22  263us : raw_notifier_call_chain <-timekeeping_update
+irq/30-e-194       0D.h22  265us : notifier_call_chain <-raw_notifier_call_chain
+irq/30-e-194       0D.h22  266us : update_fast_timekeeper <-timekeeping_update
+irq/30-e-194       0D.h22  268us : update_fast_timekeeper <-timekeeping_update
+irq/30-e-194       0D.h22  270us : _raw_spin_unlock_irqrestore <-timekeeping_advance
+irq/30-e-194       0D.h22  271us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+irq/30-e-194       0D.h12  273us : update_process_times <-tick_nohz_handler
+irq/30-e-194       0D.h12  274us : account_process_tick <-update_process_times
+irq/30-e-194       0D.h12  276us : account_system_time <-update_process_times
+irq/30-e-194       0D.h12  277us : account_system_index_time <-account_system_time
+irq/30-e-194       0D.h12  279us : hrtimer_run_queues <-update_process_times
+irq/30-e-194       0D.h12  280us : raise_ktimers_thread <-update_process_times
+irq/30-e-194       0D.h12  282us : rcu_sched_clock_irq <-update_process_times
+irq/30-e-194       0D.h12  284us : rcu_is_cpu_rrupt_from_idle <-rcu_sched_clock_irq
+irq/30-e-194       0D.h12  285us : rcu_segcblist_ready_cbs <-rcu_sched_clock_irq
+irq/30-e-194       0D.h12  286us : rcu_is_cpu_rrupt_from_idle <-rcu_sched_clock_irq
+irq/30-e-194       0D.h12  288us : sched_tick <-update_process_times
+irq/30-e-194       0D.h12  290us : preempt_count_add <-sched_tick
+irq/30-e-194       0D.h22  291us : _raw_spin_lock <-sched_tick
+irq/30-e-194       0D.h22  292us : preempt_count_add <-_raw_spin_lock
+irq/30-e-194       0D.h32  294us : preempt_count_sub <-sched_tick
+irq/30-e-194       0D.h22  295us : update_rq_clock.part.0 <-sched_tick
+irq/30-e-194       0D.h22  297us : task_tick_rt <-sched_tick
+irq/30-e-194       0D.h22  298us : update_curr_common <-task_tick_rt
+irq/30-e-194       0D.h22  300us : update_rt_rq_load_avg <-task_tick_rt
+irq/30-e-194       0D.h22  302us : __accumulate_pelt_segments <-update_rt_rq_load_avg
+irq/30-e-194       0D.h22  304us : calc_global_load_tick <-sched_tick
+irq/30-e-194       0D.h22  305us : task_tick_mm_cid <-sched_tick
+irq/30-e-194       0D.h22  307us : _raw_spin_unlock <-sched_tick
+irq/30-e-194       0D.h22  308us : preempt_count_sub <-_raw_spin_unlock
+irq/30-e-194       0D.h12  310us : perf_event_task_tick <-sched_tick
+irq/30-e-194       0D.h12  311us : perf_adjust_freq_unthr_context <-perf_event_task_tick
+irq/30-e-194       0D.h12  313us : __rcu_read_lock <-perf_event_task_tick
+irq/30-e-194       0D.h12  314us : __rcu_read_unlock <-sched_tick
+irq/30-e-194       0D.h12  315us : idle_cpu <-sched_tick
+irq/30-e-194       0D.h12  317us : sched_balance_trigger <-update_process_times
+irq/30-e-194       0D.h12  318us : run_posix_cpu_timers <-tick_nohz_handler
+irq/30-e-194       0D.h12  320us : hrtimer_forward <-tick_nohz_handler
+irq/30-e-194       0D.h12  322us : _raw_spin_lock_irq <-__hrtimer_run_queues
+irq/30-e-194       0D.h12  323us : preempt_count_add <-_raw_spin_lock_irq
+irq/30-e-194       0D.h22  324us : enqueue_hrtimer <-__hrtimer_run_queues
+irq/30-e-194       0D.h22  326us : hrtimer_update_next_event <-hrtimer_interrupt
+irq/30-e-194       0D.h22  328us : __hrtimer_next_event_base.constprop.0 <-hrtimer_update_next_event
+irq/30-e-194       0D.h22  330us : __hrtimer_next_event_base.constprop.0 <-hrtimer_update_next_event
+irq/30-e-194       0D.h22  331us : _raw_spin_unlock_irqrestore <-hrtimer_interrupt
+irq/30-e-194       0D.h22  332us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+irq/30-e-194       0D.h12  334us : tick_program_event <-hrtimer_interrupt
+irq/30-e-194       0D.h12  335us : clockevents_program_event <-tick_program_event
+irq/30-e-194       0D.h12  337us : ktime_get <-clockevents_program_event
+irq/30-e-194       0D.h12  338us : gt_clocksource_read <-ktime_get
+irq/30-e-194       0D.h12  340us : twd_set_next_event <-clockevents_program_event
+irq/30-e-194       0D.h12  341us : gic_eoi_irq <-handle_irq_desc
+irq/30-e-194       0D.h12  343us : irq_exit <-call_with_stack
+irq/30-e-194       0D.h12  344us : preempt_count_sub <-irq_exit
+irq/30-e-194       0D..12  346us : wake_up_process <-irq_exit
+irq/30-e-194       0D..12  347us : try_to_wake_up <-irq_exit
+irq/30-e-194       0D..12  349us : preempt_count_add <-try_to_wake_up
+irq/30-e-194       0D..22  350us : _raw_spin_lock_irqsave <-try_to_wake_up
+irq/30-e-194       0D..22  352us : preempt_count_add <-_raw_spin_lock_irqsave
+irq/30-e-194       0D..32  353us : _raw_spin_unlock_irqrestore <-try_to_wake_up
+irq/30-e-194       0D..32  355us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+irq/30-e-194       0D..22  356us : preempt_count_sub <-try_to_wake_up
+irq/30-e-194       0D..12  358us : __irq_svc
+irq/30-e-194       0D..12  360us+: stop_critical_timing <-__irq_svc
+irq/30-e-194       0D..12  393us : <stack trace>
+ => _raw_spin_unlock_irq
+ => irq_finalize_oneshot.part.0
+ => irq_forced_thread_fn
+ => irq_thread
+ => kthread
+ => ret_from_fork

@@ -1,0 +1,10 @@
+== paused (2)
+irq30/s 0
+bash: line 1: kill: (32507) - No such process
+P_DONE
+== baseline (2)
+irq30/s 2410
+B_DONE
+0
+ 02:12:40 up  2:12,  load average: 5.71, 4.88, 4.11
+ALLDONE

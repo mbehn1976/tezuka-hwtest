@@ -1,0 +1,33 @@
+README
+available_events
+available_filter_functions
+== E1_events
+pid 848's current scheduling policy: SCHED_OTHER
+pid 848's current scheduling priority: 0
+pid 848's new scheduling policy: SCHED_OTHER
+pid 848's new scheduling priority: 0
+pid 850's current scheduling policy: SCHED_OTHER
+pid 850's current scheduling priority: 0
+pid 850's new scheduling policy: SCHED_OTHER
+pid 850's new scheduling priority: 0
+pid 851's current scheduling policy: SCHED_OTHER
+pid 851's current scheduling priority: 0
+pid 851's new scheduling policy: SCHED_OTHER
+pid 851's new scheduling priority: 0
+pid 941's current scheduling policy: SCHED_OTHER
+pid 941's current scheduling priority: 0
+pid 941's new scheduling policy: SCHED_OTHER
+pid 941's new scheduling priority: 0
+iiod pid 848's current scheduling policy: SCHED_OTHER pid 848's current scheduling priority: 0
+usbd_main_thd pid 850's current scheduling policy: SCHED_OTHER pid 850's current scheduling priority: 0
+net_main_thd pid 851's current scheduling policy: SCHED_OTHER pid 851's current scheduling priority: 0
+avahi_thd pid 941's current scheduling policy: SCHED_OTHER pid 941's current scheduling priority: 0
+liveness before (0 = ok): 0
+cyclictest (E1_events): try 1: T: 0 (24493) P:98 I:250 C:  88056 Min:     27 Act:  103 Avg:   35 Max:     103
+try 2: T: 0 (27126) P:98 I:250 C:  62429 Min:     24 Act:   91 Avg:   35 Max:      91
+try 3: T: 0 (29447) P:98 I:250 C: 200000 Min:     27 Act:   29 Avg:   36 Max:      90
+liveness after (0 = ok): IIOD_DEAD
+DONE_E1_events
+chrt: invalid number 'adj_10mhz.sh'
+taskset: invalid number 'adj_10mhz.sh'
+ALLDONE

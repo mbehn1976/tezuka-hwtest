@@ -1,0 +1,260 @@
+08:09:59 == usb experiments start
+08:10:01 eth control link up
+08:10:06 612 board: 6.12.114-rt21 342.75  udc thread 327 pid 327's current scheduling priority: 50 ktimers: pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 1
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 1
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 1
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 1
+14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1 
+08:11:30 throughput 612_base #1: recv 209.7 MB in 11.73 s = 17.9 MB/s / send 200 MB in 10.91 s = 18.3 MB/s
+08:11:55 throughput 612_base #2: recv 209.7 MB in 10.66 s = 19.7 MB/s / send 200 MB in 10.54 s = 19.0 MB/s
+08:12:20 throughput 612_base #3: recv 209.7 MB in 11.47 s = 18.3 MB/s / send 200 MB in 10.48 s = 19.1 MB/s
+08:12:20 load 612_base: cpu0 busy=67% cpu1 busy=67% udc=13.3% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:12:21 udc at 60: thread 327 pid 327's current scheduling priority: 60
+08:13:44 throughput 612_udc60 #1: recv 209.7 MB in 9.88 s = 21.2 MB/s / send 200 MB in 10.96 s = 18.3 MB/s
+08:14:08 throughput 612_udc60 #2: recv 209.7 MB in 10.16 s = 20.7 MB/s / send 200 MB in 10.49 s = 19.1 MB/s
+08:14:34 throughput 612_udc60 #3: recv 209.7 MB in 11.62 s = 18.0 MB/s / send 200 MB in 10.98 s = 18.2 MB/s
+08:14:34 load 612_udc60: cpu0 busy=64% cpu1 busy=67% udc=13.6% ktimers0=0.2% eth=0.0% iiod=0.0% 
+08:14:38 ncm: switched rndis.0 -> ncm.usb0 ifname=(unnamed net_device) addr= host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+08:16:25 host usb link FAILED after the ncm switch: enx00e02248cd43 192.168.4.10/24 ncm_msgs=4 rndis_msgs=1
+08:16:27 rndis: switched ncm.usb0 -> rndis.0 ifname=(unnamed net_device) addr= host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+08:18:08 host usb link FAILED after the rndis switch: enx00e02248cd43 192.168.4.10/24 ncm_msgs=1 rndis_msgs=2
+08:18:09 end 612: regs 0x037=0x0 0x002=0x80 0x003=0x0 0x017=0x0 sf_read=48990196 sf_after_write=20534586 ensm=rx spito=16 errlines_before_write=16 errlines_now=17 ISR=0x00000014 
+08:19:05 card on 7.3: 1 match
+08:20:00 73 board: 7.3.0 75.42  udc thread 689 pid 689's current scheduling priority: 50 ktimers: pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 51
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 51
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 51
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 51
+14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1 
+08:24:02 throughput 73_base #1: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:26:08 throughput 73_base #2: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:28:15 throughput 73_base #3: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:28:15 load 73_base: cpu0 busy=59% cpu1 busy=63% udc=0.0% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:28:15 udc at 60: thread 689 pid 689's current scheduling priority: 60
+08:30:22 throughput 73_udc60 #1: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:32:28 throughput 73_udc60 #2: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:34:35 throughput 73_udc60 #3: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:34:35 load 73_udc60: cpu0 busy=60% cpu1 busy=61% udc=0.0% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:34:37 ktimers at 1: pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 51
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 1
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 51
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 1
+14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1 
+08:36:45 throughput 73_kt1 #1: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:38:51 throughput 73_kt1 #2: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:40:57 throughput 73_kt1 #3: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:40:57 load 73_kt1: cpu0 busy=62% cpu1 busy=60% udc=0.0% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:40:58 udc at 60 + ktimers 1: thread 689 pid 689's current scheduling priority: 60
+08:43:05 throughput 73_udc60_kt1 #1: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:45:11 throughput 73_udc60_kt1 #2: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:47:17 throughput 73_udc60_kt1 #3: Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 5, in <module>
+    c, _ = s.accept(); n = 0; t0 = None
+           ~~~~~~~~^^
+  File "/usr/lib/python3.14/socket.py", line 298, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+TimeoutError: timed out / Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+08:47:17 load 73_udc60_kt1: cpu0 busy=61% cpu1 busy=60% udc=0.0% ktimers0=0.3% eth=0.0% iiod=0.0% 
+08:47:20 restored: pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 1
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 51
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 1
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 51
+14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1 
+08:47:23 ncm: switched rndis.0 -> ncm.usb0 ifname=(unnamed net_device) addr= host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+08:49:04 host usb link FAILED after the ncm switch: enx00e02248cd43 192.168.4.10/24 ncm_msgs=3 rndis_msgs=1
+08:49:07 rndis: switched ncm.usb0 -> rndis.0 ifname=(unnamed net_device) addr= host_addr=00:e0:22:0a:e2:77 udc=ci_hdrc.0
+08:50:48 host usb link FAILED after the rndis switch: enx00e02248cd43 192.168.4.10/24 ncm_msgs=1 rndis_msgs=2
+08:50:49 end 73: regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+08:51:42 card back on 6.12: 1 match
+08:52:02 6.12 control: 6.12.114-rt21 43.47  usb host: enx00e02248cd43 192.168.4.10/24
+enx00e0220ae277 192.168.4.10/24 ncm_msgs=1 rndis_msgs=5
+08:52:02 == usb experiments done

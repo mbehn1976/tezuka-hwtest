@@ -1,0 +1,19 @@
+2026-10-30 14:58:21 phase F1_idle start: 400 cycles, mode full
+2026-10-30 14:58:32 phase F1_idle cycle 100 ok
+2026-10-30 14:58:43 phase F1_idle cycle 200 ok
+2026-10-30 14:58:53 phase F1_idle cycle 300 ok
+2026-10-30 14:59:04 phase F1_idle cycle 400 ok
+2026-10-30 14:59:04 phase F2_cpu2 start: 400 cycles, mode full
+2026-10-30 14:59:16 phase F2_cpu2 cycle 100 ok
+2026-10-30 14:59:27 phase F2_cpu2 cycle 200 ok
+2026-10-30 14:59:38 phase F2_cpu2 cycle 300 ok
+2026-10-30 14:59:49 phase F2_cpu2 cycle 400 ok
+2026-10-30 14:59:50 phase F3_kill_idle start: 300 cycles, mode kill
+2026-10-30 15:01:02 phase F3_kill_idle cycle 100 ok
+2026-10-30 15:02:14 phase F3_kill_idle cycle 200 ok
+2026-10-30 15:03:26 phase F3_kill_idle cycle 300 ok
+2026-10-30 15:03:26 phase F4_kill_cpu2 start: 300 cycles, mode kill
+2026-10-30 15:04:37 phase F4_kill_cpu2 cycle 100 ok
+2026-10-30 15:05:51 phase F4_kill_cpu2 cycle 200 ok
+2026-10-30 15:07:00 phase F4_kill_cpu2 cycle 300 ok
+2026-10-30 15:07:00 done

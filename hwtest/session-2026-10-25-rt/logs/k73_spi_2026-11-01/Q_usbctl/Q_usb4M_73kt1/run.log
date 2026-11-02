@@ -1,0 +1,35 @@
+05:18:16 == Q_usb4M_73kt1: 100 rounds, kernel 7.3.0, stream host 192.168.4.1, fs 4000000, blocks 32
+05:18:16 reboot board
+05:18:55 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+05:19:57 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+05:19:57 setup: cat > /tmp/adcheck.sh <<"EOS"
+#!/bin/sh
+# AD9361 control-path health: product id regs via debugfs, sf write+readback, kernel log counters
+P=$(dirname $(grep -l '^ad9361-phy$' /sys/bus/iio/devices/iio:device*/name)); N=$(basename $P); D=/sys/kernel/debug/iio/$N
+r(){ echo $1 > $D/direct_reg_access; cat $D/direct_reg_access; }
+echo "regs 0x037=$(r 0x037) 0x002=$(r 0x002) 0x003=$(r 0x003) 0x017=$(r 0x017)"
+b=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')
+echo "sf_read=$(cat $P/in_voltage_sampling_frequency)"
+echo 5000000 > $P/in_voltage_sampling_frequency 2>&1; echo "sf_after_write=$(cat $P/in_voltage_sampling_frequency) ensm=$(cat $P/ensm_mode)"
+echo "spito=$(dmesg | grep -c 'SPI transfer timed out') errlines_before_write=$b errlines_now=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')"
+PM=/sys/bus/platform/devices/e0006000.spi/power; echo on > $PM/control; sleep 0.2; echo "ISR=$(devmem 0xE0006004 32)"; echo auto > $PM/control
+EOS
+for p in $(grep -l "^ktimers/" /proc/[0-9]*/comm | cut -d/ -f3); do chrt -f -p 1 $p; done; echo ktimers set to FIFO 1
+pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 51
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 1
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 51
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 1
+ktimers set to FIFO 1
+05:20:01 radio: phy=iio:device1 sf=4000000 loopback=1 writer=1
+05:20:04 pre: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=4000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+05:20:05 before: up=89.32 spito=0 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi
+05:20:06 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.256/0.458/0.574/0.108 ms)
+05:36:28 stream end
+05:36:30 post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+tx_muted
+05:36:34 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+05:36:34 RESULT Q_usb4M_73kt1: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 34, outliers 45  | SPI timeouts 0

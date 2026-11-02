@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/tp.py", line 14, in <module>
+    s = socket.create_connection((h, p), timeout=30); t0 = time.time()
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host

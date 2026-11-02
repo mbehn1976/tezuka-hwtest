@@ -1,0 +1,11 @@
+05:40:13 == eth soaks start
+05:40:14 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+05:40:16 eth alias up
+06:41:32 Q_eth10M_612: Q_eth10M_612: SUMMARY nb32: runs 330, incomplete 0, runs with outliers 0, outliers 0  | SPI timeouts 0 | rate seen by the monitor:      61 sf=10000000  | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=10000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+06:42:26 card on 7.3: 1 match
+07:43:22 Q_eth10M_73: Q_eth10M_73: SUMMARY nb32: runs 330, incomplete 0, runs with outliers 1, outliers 1  | SPI timeouts 0 | rate seen by the monitor:      59 sf=10000000  | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=10000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+08:03:49 Q_usb4M_73: Q_usb4M_73: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 0, outliers 0  | SPI timeouts 0 | rate seen by the monitor:      19 sf=4000000  | post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=4000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+08:04:44 card back on 6.12: 1 match
+08:04:44 6.12 control: 6.12.114-rt21 23.80  spito=0
+08:04:44 eth alias removed: 192.168.1.10/24 
+08:04:44 == eth soaks done

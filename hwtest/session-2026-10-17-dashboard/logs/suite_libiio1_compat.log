@@ -1,0 +1,143 @@
+######## RX=Pluto
+== Pluto iq 2500000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto phase 2500000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto frame 2500000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto iq 10000000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto phase 10000000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto frame 10000000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto iq 20000000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto phase 20000000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto frame 20000000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto iq 30720000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto phase 30720000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto frame 30720000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto iq 61440000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto phase 61440000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto frame 61440000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+######## RX=Pluto+
+== Pluto+ iq 2500000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ phase 2500000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ frame 2500000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ iq 10000000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ phase 10000000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ frame 10000000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ iq 20000000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ phase 20000000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ frame 20000000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ iq 30720000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ phase 30720000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ frame 30720000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ iq 61440000
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ phase 61440000
+  File "/home/mb/code/maia-sdr-bp/maia-hdl/hwtest/hwlib.py", line 88, in start_tx
+    assert st.startswith('writers 1 buffer 1'), st
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+== Pluto+ frame 61440000
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: writers 0 buffer 0
+SUITE_DONE

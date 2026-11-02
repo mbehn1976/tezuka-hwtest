@@ -1,0 +1,11 @@
+09:26:14 == boot-fault hunt start
+09:26:14 buildroot options: BR2_ROOTFS_OVERLAY="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_base ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_tezuka ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_maia ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_iqengine /tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/k73dbg/overlay" BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="/tmp/claude-1000/-home-mb/cef86cb2-5b49-4a37-971c-ce5a3edb4ed1/scratchpad/k73spi/k73dbg/linux_debug.fragment" 
+09:26:14 build start
+09:30:23 build checks: halt patch in tree=1 config: CONFIG_LOG_BUF_SHIFT=19 CONFIG_PRINTK_TIME=y CONFIG_MAGIC_SYSRQ=y CONFIG_DEFAULT_HUNG_TASK_TIMEOUT=10 CONFIG_RCU_CPU_STALL_TIMEOUT=21  watcher=1 rtprio60=1 modules=7.3.0
+09:30:23 image: 7.3.0 uImage 15fc92e9 ramdisk 38feac12
+09:31:19 card on the debug image: 1 match
+09:31:40 debug boot: 7.3.0 sysrq=1 hung=10 allcpu=1 rcu=21 watcher=3 ts=[   19.937654] usb0=192.168.4.1/24 eth0=192.168.3.1/24 
+10:50:36 == BL1 done: 113 clean of 119; with fault lines: 4; without SSH: 0
+10:51:29 card back on 6.12: 1 match
+10:51:50 6.12 control: 6.12.114-rt21 43.69 
+10:51:50 == boot-fault hunt done

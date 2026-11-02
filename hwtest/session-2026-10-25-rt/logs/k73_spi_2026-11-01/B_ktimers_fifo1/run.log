@@ -1,0 +1,22 @@
+18:01:50 == variant B_ktimers_fifo1, 160 rounds; reboot board
+18:02:29 board: 7.3.0-rc7 WZ5Z6HQZ6IXHI5QI
+18:03:29 setup: for p in $(grep -l "^ktimers/" /proc/[0-9]*/comm | cut -d/ -f3); do chrt -f -p 1 $p; done; for p in $(grep -l "^ktimers/" /proc/[0-9]*/comm | cut -d/ -f3); do chrt -p $p; done
+pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 99
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 1
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 99
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 1
+grep: /proc/4831/comm: No such file or directory
+pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 1
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 1
+18:03:33 radio: sf=5000000 loopback=1 writer=1
+18:03:36 before: up=86.60 control=auto runtime_status=active autosuspend_delay_ms=3000 spito=0  ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 186 pol=1 rt=50 cpu=0 irq/29-e0006000.spi
+18:03:36 stream start
+18:33:07 stream end
+tx_muted
+18:33:12 RESULT B_ktimers_fifo1: SUMMARY nb32: runs 160, incomplete 0, runs with outliers 50, outliers 62 | SPI timeouts 1 | first: 

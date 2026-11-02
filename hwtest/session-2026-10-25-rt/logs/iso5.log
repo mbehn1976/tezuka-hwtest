@@ -1,0 +1,15 @@
+pid 833's current affinity mask: 2
+== H_load
+liveness before (0 = ok): 0
+cyclictest (H_load): T: 0 (12639) P:98 I:250 C:1320000 Min:     10 Act:   13 Avg:   18 Max:     108
+liveness after (0 = ok): 0
+ 01:31:43 up  1:31,  load average: 3.26, 3.25, 3.10
+DONE_H_load
+== H_load_hog
+liveness before (0 = ok): 0
+cyclictest (H_load_hog): T: 0 (25209) P:98 I:250 C:1320000 Min:     10 Act:   12 Avg:   18 Max:     112
+liveness after (0 = ok): 0
+ 01:37:18 up  1:37,  load average: 4.87, 4.59, 3.77
+DONE_H_load_hog
+pid 833's current affinity mask: 1
+ALLDONE

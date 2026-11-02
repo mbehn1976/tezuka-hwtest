@@ -1,0 +1,16 @@
+[E0_control_idle] apply: true  (22:06:03)
+   command took 0.3 s
+   stable for 90 s
+[E1_sample_rate_61p44] apply: echo 61440000 > /sys/bus/iio/devices/iio:device0/in_voltage_sampling_frequency  (22:07:49)
+   command took 0.3 s
+   stable for 90 s
+[E2_bandwidth] apply: echo 49152000 > /sys/bus/iio/devices/iio:device0/in_voltage_rf_bandwidth; echo 49152000 > /sys/bus/iio/devices/iio:device0/out_voltage_rf_bandwidth  (22:09:35)
+   command took 0.2 s
+   stable for 90 s
+[E3_lo_and_gain] apply: echo 2400000000 > /sys/bus/iio/devices/iio:device0/out_altvoltage1_TX_LO_frequency; echo 0 > /sys/bus/iio/devices/iio:device0/out_voltage0_hardwaregain; echo 2400000000 > /sys/bus/iio/devices/iio:device0/out_altvoltage0_RX_LO_frequency; echo manual > /sys/bus/iio/devices/iio:device0/in_voltage0_gain_control_mode; echo 40 > /sys/bus/iio/devices/iio:device0/in_voltage0_hardwaregain  (22:11:20)
+   command took 0.2 s
+   stable for 90 s
+[E4_start_tx_cyclic] apply: dd if=/dev/urandom of=/tmp/rf_tx.bin bs=1024 count=16 2>/dev/null; (iio_writedev -c -b 4096 cf-ad9361-dds-core-lpc voltage0 voltage1 < /tmp/rf_tx.bin > /tmp/rf_tx.log 2>&1 &) ; sleep 1  (22:13:06)
+   command took 1.2 s
+   stable for 90 s
+EXP_DONE

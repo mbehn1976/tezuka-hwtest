@@ -1,0 +1,9 @@
+6.12.114-rt21 layout A (isolcpus=1 irqaffinity=0, image known_good/sdimg-rt21-sw-on) against 7.3.0-rc7 isolated, same Pluto+, 2026-10-30, hardware-measured
+cyclictest -m -t1 -p98 -i250 -a1 (isolated core 1) -D 300 -q -h 5000, 1.2 M samples per phase, same script (baseline73.sh)
+extra services stopped on 6.12 (classifier, maia-httpd, api_controller, mqtt, watch*), close to the 7.3 service set; iiod SCHED_OTHER mask 1
+                       idle                       cpu2                       heavy (--cpu 4 --vm 2 --hdd 1)
+                 max p99.9 p99.99 >50us     max p99.9 p99.99 >50us     max p99.9 p99.99 >50us
+6.12 layout A     37   27    30     0        39   27    31     0        49   29    35     0
+7.3-rc7 isolated  39   28    32     0        44   28    32     0        61   32    39    11
+No BUG/WARN/hung task/RCU stall on either kernel. Single 5 minute runs.
+Not covered: no streaming/AD9361 on 7.3, so the lost-block problem of layout A (doc 16c/16j) cannot be compared.

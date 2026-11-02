@@ -1,0 +1,133 @@
+{
+ "label": "plutoplus-combined-f17-61M44",
+ "time": "2026-10-11 23:58:23",
+ "sampling_frequency": "61440000",
+ "ddc_config": {
+  "enabled": false,
+  "frequency": 0.0,
+  "decimation": 20,
+  "input_sampling_frequency": 61440000.0,
+  "output_sampling_frequency": 3072000.0,
+  "max_input_sampling_frequency": 69444444.44444445
+ },
+ "board": [
+  "plutoplus",
+  "#1 SMP PREEMPT Sun Oct 11 06:48:16 CEST 2026",
+  "d0d83aa17a2fea9180f3098e7a5ecf97  /boot/system_top.bin",
+  "ba5c7f5c8f9f5e2175baa0fc51679cba  /boot/devicetree.dtb",
+  "626ac4c8d03f3122c316d95f2405747c  /boot/uramdisk.image.xz"
+ ],
+ "F4_waterfall_profile": {
+  "frames": 48,
+  "frame_period_s": 0.0682,
+  "profiles_seen": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "first_32": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   0,
+   1
+  ],
+  "step_histogram": {
+   "1": 47
+  }
+ },
+ "F4_pads_outputs_low": [
+  "bank2 DIRM=0x00003e00 OEN=0x00003e00  EN_AGC(bit12) dir=out oe=1",
+  "samples=6468449 duration=10.0s",
+  "EN_AGC: rising_edges=0 high_fraction=0.0000 first_rise=-1.000s last_rise=-1.000s",
+  "CTRL_IN1..3 pad: transitions=147 bits_seen=0x7 histogram: 0:0.123 1:0.124 2:0.127 3:0.127 4:0.129 5:0.132 6:0.119 7:0.118"
+ ],
+ "F4_pads_restored": "bank2 DIRM=0x00002000 OEN=0x00003e00  EN_AGC(bit12) dir=in oe=1",
+ "F1": {
+  "routing_off_api": {
+   "http": "200",
+   "reg_0x790200BC": "0x00000000"
+  },
+  "cs16_routing_off": {
+   "rc": 0,
+   "bytes": 6144000,
+   "seconds": 0.17,
+   "stderr": "",
+   "msps": 9.035,
+   "nonzero": 0.741
+  },
+  "cs12_routing_off": {
+   "rc": 0,
+   "bytes": 3932160,
+   "seconds": 0.09,
+   "stderr": "",
+   "magic_count": 4,
+   "magic_gaps": [
+    590960,
+    704848,
+    1263056
+   ],
+   "nonzero": 0.925
+  },
+  "routing_on_api": {
+   "http": "200",
+   "reg_0x790200BC": "0x00000001"
+  },
+  "cs16_routing_on": {
+   "rc": 0,
+   "bytes": 6144000,
+   "seconds": 0.58,
+   "stderr": "",
+   "msps": 2.648,
+   "nonzero": 0.708
+  },
+  "cs12_routing_on": {
+   "rc": 0,
+   "bytes": 3932160,
+   "seconds": 0.49,
+   "stderr": "",
+   "magic_count": 5,
+   "magic_gaps": [
+    786432
+   ],
+   "nonzero": 0.796
+  },
+  "restore": {
+   "http": "200",
+   "reg_0x790200BC": "0x00000000"
+  },
+  "restore_fs": "30720000"
+ }
+}

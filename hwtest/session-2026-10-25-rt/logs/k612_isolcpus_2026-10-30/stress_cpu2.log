@@ -1,0 +1,9 @@
+stress-ng: info:  [2892] setting to a 5 mins 30 secs run per stressor
+stress-ng: info:  [2892] dispatching hogs: 2 cpu
+stress-ng: info:  [2892] note: system has only 214 MB of free memory and swap, recommend using --oom-avoid
+stress-ng: info:  [2892] stopping 2 stressors
+stress-ng: info:  [2892] skipped: 0
+stress-ng: info:  [2892] passed: 2: cpu (2)
+stress-ng: info:  [2892] failed: 0
+stress-ng: info:  [2892] metrics untrustworthy: 0
+stress-ng: info:  [2892] successful run completed in 5 mins 5.10 secs

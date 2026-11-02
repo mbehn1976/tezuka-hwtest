@@ -1,0 +1,62 @@
+TS nb32 round 1 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=53.6 at=14 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.2
+10.0 nb32 round 1 full=True outliers=0
+TS nb32 round 2 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=70.8 at=139 | lost-block gaps_ms(before,after)=[] | wait_ms max=70.3
+10.0 nb32 round 2 full=True outliers=0
+TS nb32 round 3 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=51.9 at=148 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.8
+10.0 nb32 round 3 full=True outliers=0
+TS nb32 round 4 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=45.2 at=145 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.3
+10.0 nb32 round 4 full=True outliers=0
+TS nb32 round 5 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=52.8 at=73 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.1
+10.0 nb32 round 5 full=True outliers=0
+TS nb32 round 6 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=51.3 at=62 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.4
+10.0 nb32 round 6 full=True outliers=0
+TS nb32 round 7 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=49.6 at=68 | lost-block gaps_ms(before,after)=[] | wait_ms max=55.4
+10.0 nb32 round 7 full=True outliers=0
+TS nb32 round 8 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=46.1 at=100 | lost-block gaps_ms(before,after)=[] | wait_ms max=54.5
+10.0 nb32 round 8 full=True outliers=0
+TS nb32 round 9 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=53.2 at=36 | lost-block gaps_ms(before,after)=[] | wait_ms max=54.8
+10.0 nb32 round 9 full=True outliers=0
+TS nb32 round 10 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=69.2 at=190 | lost-block gaps_ms(before,after)=[] | wait_ms max=69.0
+10.0 nb32 round 10 full=True outliers=0
+TS nb32 round 11 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=66.0 at=105 | lost-block gaps_ms(before,after)=[] | wait_ms max=65.8
+10.0 nb32 round 11 full=True outliers=0
+TS nb32 round 12 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=59.0 at=99 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.7
+10.0 nb32 round 12 full=True outliers=0
+TS nb32 round 13 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.5 max=73.4 at=81 | lost-block gaps_ms(before,after)=[] | wait_ms max=72.8
+10.0 nb32 round 13 full=True outliers=0
+TS nb32 round 14 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=54.1 at=156 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.2
+10.0 nb32 round 14 full=True outliers=0
+TS nb32 round 15 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=51.9 at=106 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.5
+10.0 nb32 round 15 full=True outliers=0
+TS nb32 round 16 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=52.1 at=161 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.5
+10.0 nb32 round 16 full=True outliers=0
+TS nb32 round 17 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=51.9 at=156 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.8
+10.0 nb32 round 17 full=True outliers=0
+TS nb32 round 18 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=35.3 at=5 | lost-block gaps_ms(before,after)=[] | wait_ms max=55.5
+10.0 nb32 round 18 full=True outliers=0
+TS nb32 round 19 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=45.5 at=70 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.7
+10.0 nb32 round 19 full=True outliers=0
+TS nb32 round 20 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=55.8 at=182 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.7
+10.0 nb32 round 20 full=True outliers=0
+TS nb32 round 21 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=46.3 at=148 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.4
+10.0 nb32 round 21 full=True outliers=0
+TS nb32 round 22 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=32.5 at=175 | lost-block gaps_ms(before,after)=[] | wait_ms max=54.6
+10.0 nb32 round 22 full=True outliers=0
+TS nb32 round 23 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=36.0 at=185 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.3
+10.0 nb32 round 23 full=True outliers=0
+TS nb32 round 24 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=69.3 at=124 | lost-block gaps_ms(before,after)=[] | wait_ms max=69.1
+10.0 nb32 round 24 full=True outliers=0
+TS nb32 round 25 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=44.4 at=118 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.6
+10.0 nb32 round 25 full=True outliers=0
+TS nb32 round 26 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=56.4 at=109 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.1
+10.0 nb32 round 26 full=True outliers=0
+TS nb32 round 27 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=36.0 at=111 | lost-block gaps_ms(before,after)=[] | wait_ms max=55.1
+10.0 nb32 round 27 full=True outliers=0
+TS nb32 round 28 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=54.6 at=180 | lost-block gaps_ms(before,after)=[] | wait_ms max=56.6
+10.0 nb32 round 28 full=True outliers=0
+TS nb32 round 29 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.0 max=43.5 at=166 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.7
+10.0 nb32 round 29 full=True outliers=0
+TS nb32 round 30 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=49.9 at=55 | lost-block gaps_ms(before,after)=[] | wait_ms max=58.8
+10.0 nb32 round 30 full=True outliers=0
+SUMMARY 10.0 MS/s nb32 blocks: runs 30, incomplete 0, runs with outliers 0, outliers 0, on a 262144 boundary: 0
+OUTLIER_DONE

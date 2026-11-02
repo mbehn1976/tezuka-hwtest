@@ -1,0 +1,8 @@
+seg 1 uptime 5687.75: T: 0 (15694) P:98 I:250 C:2400000 Min:     14 Act:   22 Avg:   26 Max:     139
+seg 2 uptime 6287.94: T: 0 ( 1051) P:98 I:250 C:2400000 Min:     14 Act:   26 Avg:   27 Max:     113
+seg 3 uptime 6888.41: T: 0 (18314) P:98 I:250 C:2400000 Min:     14 Act:   37 Avg:   25 Max:      97
+seg 4 uptime 7488.81: T: 0 ( 3177) P:98 I:250 C:2400000 Min:     14 Act:   16 Avg:   26 Max:     129
+seg 5 uptime 8089.01: T: 0 (20695) P:98 I:250 C:2400000 Min:     14 Act:   18 Avg:   26 Max:      91
+seg 6 uptime 8689.19: T: 0 ( 5585) P:98 I:250 C:2400000 Min:     14 Act:   32 Avg:   26 Max:     119
+seg 7 uptime 9289.65: T: 0 (23052) P:98 I:250 C:2400000 Min:     14 Act:   28 Avg:   26 Max:      93
+seg 8 uptime 9890.27: T: 0 ( 7990) P:98 I:250 C:2400000 Min:     14 Act:   20 Avg:   26 Max:      98

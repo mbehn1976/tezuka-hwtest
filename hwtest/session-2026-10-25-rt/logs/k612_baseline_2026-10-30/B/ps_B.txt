@@ -1,0 +1,100 @@
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [pool_workqueue_]
+    4 root     [kworker/R-kvfre]
+    5 root     [kworker/R-rcu_g]
+    6 root     [kworker/R-sync_]
+    7 root     [kworker/R-slub_]
+    9 root     [kworker/0:0H-ev]
+   10 root     [kworker/0:1-dev]
+   12 root     [kworker/R-mm_pe]
+   13 root     [ksoftirqd/0]
+   14 root     [ktimers/0]
+   15 root     [rcu_preempt]
+   16 root     [rcub/0]
+   17 root     [rcu_exp_par_gp_]
+   18 root     [rcuc/0]
+   19 root     [rcu_exp_gp_kthr]
+   20 root     [migration/0]
+   21 root     [irq_work/0]
+   22 root     [cpuhp/0]
+   23 root     [cpuhp/1]
+   24 root     [irq_work/1]
+   25 root     [migration/1]
+   26 root     [rcuc/1]
+   27 root     [ktimers/1]
+   28 root     [ksoftirqd/1]
+   30 root     [kworker/1:0H-ev]
+   31 root     [kdevtmpfs]
+   32 root     [kworker/R-inet_]
+   33 root     [khungtaskd]
+   34 root     [oom_reaper]
+   35 root     [kworker/R-write]
+   36 root     [kworker/R-kbloc]
+   37 root     [kworker/u8:1-ev]
+   38 root     [backlog_napi/0]
+   39 root     [backlog_napi/1]
+   40 root     [watchdogd]
+   41 root     [kworker/0:1H-kb]
+   42 root     [kworker/R-rpcio]
+   43 root     [kworker/R-xprti]
+   57 root     [kswapd0]
+   58 root     [kworker/R-nfsio]
+   60 root     [kworker/R-cifsi]
+   61 root     [kworker/R-smb3d]
+   62 root     [kworker/R-cifsf]
+   63 root     [kworker/R-cifso]
+   64 root     [kworker/R-defer]
+   65 root     [kworker/R-serve]
+   66 root     [kworker/R-cfid_]
+   96 root     [irq/27-7c400000]
+   97 root     [irq/28-7c420000]
+  177 root     [irq/29-e0006000]
+  179 root     [spi0]
+  187 root     [irq/30-e000d000]
+  263 root     [kworker/u8:7-kv]
+  279 root     [irq/31-eth%d]
+  304 root     [irq/32-maia-sdr]
+  306 root     [irq/32-s-maia-s]
+  325 root     [kworker/R-ci_ot]
+  326 root     [irq/33-e0002000]
+  354 root     [kworker/u9:0]
+  355 root     [kworker/R-sdhci]
+  359 root     [irq/35-mmc0]
+  361 root     [irq/35-s-mmc0]
+  376 root     [kworker/R-mmc_c]
+  388 root     [irq/37-f8007100]
+  401 root     [irq/40-f8007000]
+  424 root     [kworker/1:1H-kb]
+  425 root     [kworker/R-mld]
+  426 root     [kworker/R-ipv6_]
+  654 root     [kworker/u8:13-e]
+  689 root     [pr/legacy]
+  696 root     [irq/42-Button]
+  702 root     [kworker/0:2-mm_]
+  704 root     [irq/41-xuartps]
+  711 root     [jffs2_gcd_mtd2]
+  726 root     /sbin/syslogd -n
+  730 root     /sbin/klogd -n
+  739 root     watchdog -t 5 -T 10 /dev/watchdog
+  844 root     /usr/sbin/iiod -D -n 3 -F /dev/iio_ffs
+  852 root     [file-storage]
+  868 dbus     /usr/bin/dbus-daemon --system --syslog
+ 1015 root     /usr/sbin/ifplugd
+ 1019 root     /usr/sbin/udhcpd /etc/udhcpd.conf
+ 1063 root     /bin/sh /sbin/update.sh
+ 1068 chrony   /usr/sbin/chronyd
+ 1082 avahi    avahi-daemon: running [plutoplus.local]
+ 1083 avahi    avahi-daemon: chroot helper
+ 1091 root     /usr/sbin/dropbear -R
+ 1114 root     /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
+ 1198 root     input-event-daemon
+ 1199 root     /sbin/getty -L ttyPS0 0 vt100
+ 1200 root     /sbin/getty -L ttyGS0 0 vt100
+ 6718 root     [kworker/1:0-mm_]
+14808 root     sh /tmp/wrap612.sh
+19471 root     [kworker/1:2-mm_]
+21293 root     [kworker/1:1-eve]
+26148 root     sleep 1
+26149 root     ps w

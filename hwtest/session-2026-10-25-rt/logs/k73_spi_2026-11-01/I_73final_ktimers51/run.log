@@ -1,0 +1,38 @@
+20:56:05 == I_73final_ktimers51: 80 rounds, kernel 7.3.0, stream host 192.168.4.1, fs 5000000, blocks 32
+20:56:05 reboot board
+20:56:44 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+20:57:45 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+20:57:45 setup: cat > /tmp/adcheck.sh <<"EOS"
+#!/bin/sh
+# AD9361 control-path health: product id regs via debugfs, sf write+readback, kernel log counters
+P=$(dirname $(grep -l '^ad9361-phy$' /sys/bus/iio/devices/iio:device*/name)); N=$(basename $P); D=/sys/kernel/debug/iio/$N
+r(){ echo $1 > $D/direct_reg_access; cat $D/direct_reg_access; }
+echo "regs 0x037=$(r 0x037) 0x002=$(r 0x002) 0x003=$(r 0x003) 0x017=$(r 0x017)"
+b=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')
+echo "sf_read=$(cat $P/in_voltage_sampling_frequency)"
+echo 5000000 > $P/in_voltage_sampling_frequency 2>&1; echo "sf_after_write=$(cat $P/in_voltage_sampling_frequency) ensm=$(cat $P/ensm_mode)"
+echo "spito=$(dmesg | grep -c 'SPI transfer timed out') errlines_before_write=$b errlines_now=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')"
+PM=/sys/bus/platform/devices/e0006000.spi/power; echo on > $PM/control; sleep 0.2; echo "ISR=$(devmem 0xE0006004 32)"; echo auto > $PM/control
+EOS
+for p in $(grep -l "^ktimers/" /proc/[0-9]*/comm | cut -d/ -f3); do chrt -f -p 51 $p; done; echo setup_I_done
+grep: /proc/5016/comm: No such file or directory
+grep: /proc/5018/comm: No such file or directory
+grep: /proc/5019/comm: No such file or directory
+pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 99
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 51
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 99
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 51
+setup_I_done
+20:57:49 radio: phy=iio:device1 sf=5000000 loopback=1 writer=1
+20:57:52 pre: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+20:57:53 before: up=89.07 spito=0 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1  spi_irq: 186 pol=1 rt=50 cpu=0 irq/29-e0006000.spi
+20:57:54 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.249/0.544/0.778/0.171 ms)
+21:12:45 stream end
+21:12:47 post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=8 errlines_before_write=8 errlines_now=8 ISR=0x00000004 
+tx_muted
+21:12:51 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+21:12:51 RESULT I_73final_ktimers51: SUMMARY nb32: runs 80, incomplete 0, runs with outliers 45, outliers 77  | SPI timeouts 8

@@ -1,0 +1,72 @@
+=== forensics Fri Oct 30 02:52:26 PM CET 2026
+iiod pid=834
+tid 3332 net_client_thd state=S wchan=futex_wait_queue syscall=240 0x492398
+tid 3333 writer-task state=S wchan=futex_wait_queue syscall=240 0xb450080c
+tid 3336 buffer-enqueue state=S wchan=futex_wait_queue syscall=240 0x4924ec
+tid 3337 buffer-dequeue state=S wchan=futex_wait_queue syscall=240 0x47e748
+tid 3338 enqueue-worker state=S wchan=futex_wait_queue syscall=240 0x492474
+tid 834 iiod state=S wchan=futex_wait_queue syscall=240 0x4791c8
+tid 836 usbd_main_thd state=S wchan=do_sys_poll syscall=168 0xb6ace974
+tid 837 net_main_thd state=S wchan=do_sys_poll syscall=168 0xb62cd918
+tid 946 avahi_thd state=S wchan=do_sys_poll syscall=168 0xb4f02a60
+--- iiod stacks (if available)
+tid 3332
+tid 3333
+tid 3336
+tid 3337
+tid 3338
+tid 834
+tid 836
+tid 837
+tid 946
+--- processes holding iio devices
+pid 834 iiod
+lrwx------    1 root     root            64 Jan  1 00:00 21 -> anon_inode:iio:buffer
+lrwx------    1 root     root            64 Jan  1 00:00 4 -> /dev/iio_ffs/ep0
+--- sysfs buffer state
+/sys/bus/iio/devices/iio:device3/buffer/data_available=0
+/sys/bus/iio/devices/iio:device3/buffer/direction=in
+/sys/bus/iio/devices/iio:device3/buffer/enable=0
+/sys/bus/iio/devices/iio:device3/buffer/length=262144
+/sys/bus/iio/devices/iio:device3/buffer/length_align_bytes=8
+/sys/bus/iio/devices/iio:device3/buffer/watermark=2048
+/sys/bus/iio/devices/iio:device3/buffer0/data_available=0
+/sys/bus/iio/devices/iio:device3/buffer0/direction=in
+/sys/bus/iio/devices/iio:device3/buffer0/enable=0
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage0_en=1
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage0_index=0
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage0_type=le:S12/16>>0
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage1_en=1
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage1_index=1
+/sys/bus/iio/devices/iio:device3/buffer0/in_voltage1_type=le:S12/16>>0
+/sys/bus/iio/devices/iio:device3/buffer0/length=262144
+/sys/bus/iio/devices/iio:device3/buffer0/length_align_bytes=8
+/sys/bus/iio/devices/iio:device3/buffer0/watermark=2048
+/sys/bus/iio/devices/iio:device3/scan_elements/in_voltage0_en=1
+/sys/bus/iio/devices/iio:device3/scan_elements/in_voltage1_en=1
+--- hung task / warnings
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+rcu: 	RCU_SOFTIRQ processing moved to rcuc kthreads.
+	No expedited grace period (rcu_normal_after_boot).
+rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 400.
+--- reader: where does a new local reader wait?
+reader pid=
+cat: can't open '/proc//task/*/wchan': No such file or directory
+tid * wchan= syscall=
+ERROR: iio:device3: Unable to dequeue block: Connection timed out (110)
+ERROR: iio:device3: Unable to get next block: Connection timed out (110)
+--- kill -9 iiod, then local reader again
+iiod after kill -9: []
+ 27:      11873          0 GIC-0  89 Level     7c400000.dma
+rc=0
+ 27:      11879          0 GIC-0  89 Level     7c400000.dma
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+loop7: detected capacity change from 0 to 61440
+maia_sdr: loading out-of-tree module taints kernel.
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx

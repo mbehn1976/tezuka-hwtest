@@ -1,0 +1,8 @@
+7.3.0-rc7 PREEMPT_RT on Pluto+ (mainline-ish kernel, no AD9361/ADI drivers, QSPI not probed), 2026-10-30, hardware-measured
+cyclictest -m -t1 -p98 -i250 -a1 -D 300 -q -h 5000 (1.2 M samples per phase), no isolcpus, services of the default ramdisk running
+(watchdatveasy.sh/watchconsolefreq.sh stopped: with no iio:device0 they spin in a tight inotifywait loop)
+phase  load                          min  avg  max  p99  p99.9 p99.99  >50us   >100us
+idle   none                          11   12   62   24   35    47      50      0
+cpu2   stress-ng --cpu 2             13   19   65   29   38    46      34      0
+heavy  --cpu 4 --vm 2 --hdd 1        14   26   117  50   64    99      11695   90
+no BUG/WARN/hung-task/RCU stall in dmesg. Not comparable 1:1 with the 6.12 soak numbers (no iiod streaming, 5 min phases).

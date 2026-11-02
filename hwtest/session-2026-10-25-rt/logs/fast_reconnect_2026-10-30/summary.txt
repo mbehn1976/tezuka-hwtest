@@ -1,0 +1,5 @@
+F1_idle: ok, 400 cycles
+F2_cpu2: ok, 400 cycles
+F3_kill_idle: ok, 300 cycles
+F4_kill_cpu2: ok, 300 cycles
+FAST_DONE

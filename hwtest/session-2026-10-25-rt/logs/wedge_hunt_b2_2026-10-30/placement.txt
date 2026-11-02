@@ -1,0 +1,3 @@
+pid 834's current affinity mask: 1
+2
+1

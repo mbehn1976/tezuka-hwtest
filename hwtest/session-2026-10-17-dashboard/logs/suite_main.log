@@ -1,0 +1,143 @@
+######## RX=Pluto
+== Pluto iq 2500000
+{"name": "cw 205000 Hz", "frames": 4, "mag_peak": 2464, "iq_peak": [2464], "corr_mag_iq_log": 0.8491, "expected_bin": 2464, "raw_peak": 2464, "raw_vs_mag_linear_corr": 0.999} ok
+{"name": "cw -600000 Hz", "frames": 4, "mag_peak": 1145, "iq_peak": [1145], "corr_mag_iq_log": 0.8453, "expected_bin": 1145, "raw_peak": 1145, "raw_vs_mag_linear_corr": 0.9994} ok
+{"name": "noise (TX -89 dB)", "frames": 4, "mag_peak": 2048, "iq_peak": [2046, 2048, 2049], "corr_mag_iq_log": 0.2482}
+{"name": "ofdm 1024/128/600", "frames": 4, "mag_peak": 1484, "iq_peak": [1498, 1558, 1669, 2386], "corr_mag_iq_log": 0.9881, "inband_over_outband_db_mag": 35.9, "inband_over_outband_db_iq": 29.6} ok
+restored TX True RX True
+== Pluto phase 2500000
+tone 205000.0 Hz sent: {'peak_bin': 2464, 'iq_peak_bin': 2464, 'expected_bin': 2464, 'f_timedomain_hz': 253624.7, 'f_phase_hz': 253619.3, 'f_diff_hz': -5.4, 'dphi_scatter_rad': 0.0053, 'model_max_phase_err_deg': 0.27, 'model_max_amp_err_db': 0.18, 'iq_vs_raw_max_phase_diff_deg': 23.0, 'td_drift_hz': 43.0} ok
+tone 205300.0 Hz sent: {'peak_bin': 2464, 'iq_peak_bin': 2464, 'expected_bin': 2464, 'f_timedomain_hz': 253858.8, 'f_phase_hz': 253853.4, 'f_diff_hz': -5.4, 'dphi_scatter_rad': 0.0048, 'model_max_phase_err_deg': 0.22, 'model_max_amp_err_db': 0.18, 'iq_vs_raw_max_phase_diff_deg': 1.5, 'td_drift_hz': 38.9} ok
+tone -600000.0 Hz sent: {'peak_bin': 1144, 'iq_peak_bin': 1144, 'expected_bin': 1144, 'f_timedomain_hz': -551514.6, 'f_phase_hz': -551519.4, 'f_diff_hz': -4.9, 'dphi_scatter_rad': 0.0051, 'model_max_phase_err_deg': 0.25, 'model_max_amp_err_db': 0.06, 'iq_vs_raw_max_phase_diff_deg': 3.9, 'td_drift_hz': 33.5} ok
+restored TX True RX True
+== Pluto frame 2500000
+fs 2500000: {"nint": 61, "frames": 101, "bins": [2463, 2472], "frame_period_ms": 99.94, "arrival_ms_median": 100.0, "arrival_ms_max": 104.0, "theta_pred_rad": 1.781, "theta_meas_rad": 1.7811, "meas_minus_pred_rad": 0.0001, "scatter_rad": 0.001, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": 0.24, "single_tone_second_diff_rms_rad": 0.384, "delta_ppm": 20.208, "carrier_offset_hz": 48504.0} ok
+restored TX True RX True nint True
+== Pluto iq 10000000
+{"name": "cw 820000 Hz", "frames": 13, "mag_peak": 2404, "iq_peak": [2404], "corr_mag_iq_log": 0.8956, "expected_bin": 2404, "raw_peak": 2404, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -2400000 Hz", "frames": 13, "mag_peak": 1085, "iq_peak": [1085], "corr_mag_iq_log": 0.8986, "expected_bin": 1085, "raw_peak": 1085, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 13, "mag_peak": 2048, "iq_peak": [8, 2046, 2047, 2048], "corr_mag_iq_log": 0.6601}
+{"name": "ofdm 1024/128/600", "frames": 13, "mag_peak": 1952, "iq_peak": [1171, 1304, 1478, 1558], "corr_mag_iq_log": 0.9966, "inband_over_outband_db_mag": 27.8, "inband_over_outband_db_iq": 26.4} ok
+restored TX True RX True
+== Pluto phase 10000000
+tone 820000.0 Hz sent: {'peak_bin': 2404, 'iq_peak_bin': 2404, 'expected_bin': 2404, 'f_timedomain_hz': 868459.1, 'f_phase_hz': 868456.6, 'f_diff_hz': -2.4, 'dphi_scatter_rad': 0.0033, 'model_max_phase_err_deg': 0.45, 'model_max_amp_err_db': 0.26, 'iq_vs_raw_max_phase_diff_deg': 2.8, 'td_drift_hz': 18.0} ok
+tone 821200.0 Hz sent: {'peak_bin': 2404, 'iq_peak_bin': 2404, 'expected_bin': 2404, 'f_timedomain_hz': 869630.0, 'f_phase_hz': 869629.6, 'f_diff_hz': -0.3, 'dphi_scatter_rad': 0.0032, 'model_max_phase_err_deg': 0.44, 'model_max_amp_err_db': 0.09, 'iq_vs_raw_max_phase_diff_deg': 1.2, 'td_drift_hz': 15.7} ok
+tone -2400000.0 Hz sent: {'peak_bin': 1085, 'iq_peak_bin': 1085, 'expected_bin': 1085, 'f_timedomain_hz': -2351656.5, 'f_phase_hz': -2351656.6, 'f_diff_hz': -0.2, 'dphi_scatter_rad': 0.0032, 'model_max_phase_err_deg': 0.11, 'model_max_amp_err_db': 0.06, 'iq_vs_raw_max_phase_diff_deg': 0.4, 'td_drift_hz': 13.6} ok
+restored TX True RX True
+== Pluto frame 10000000
+fs 10000000: {"nint": 244, "frames": 101, "bins": [2404, 2412], "frame_period_ms": 99.94, "arrival_ms_median": 99.9, "arrival_ms_max": 104.5, "theta_pred_rad": 0.8413, "theta_meas_rad": 0.8414, "meas_minus_pred_rad": 0.0001, "scatter_rad": 0.0011, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": -0.27, "single_tone_second_diff_rms_rad": 0.27, "delta_ppm": 20.177, "carrier_offset_hz": 48442.3} ok
+restored TX True RX True nint True
+== Pluto iq 20000000
+{"name": "cw 1640000 Hz", "frames": 25, "mag_peak": 2394, "iq_peak": [2394], "corr_mag_iq_log": 0.9342, "expected_bin": 2394, "raw_peak": 2394, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -4800000 Hz", "frames": 25, "mag_peak": 1075, "iq_peak": [1075], "corr_mag_iq_log": 0.9386, "expected_bin": 1075, "raw_peak": 1075, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 25, "mag_peak": 2048, "iq_peak": [0, 7, 18, 52], "corr_mag_iq_log": 0.6515}
+{"name": "ofdm 1024/128/600", "frames": 25, "mag_peak": 1930, "iq_peak": [1046, 1161, 1253, 1294], "corr_mag_iq_log": 0.9979, "inband_over_outband_db_mag": 27.0, "inband_over_outband_db_iq": 25.7} ok
+restored TX True RX True
+== Pluto phase 20000000
+tone 1640000.0 Hz sent: {'peak_bin': 2394, 'iq_peak_bin': 2394, 'expected_bin': 2394, 'f_timedomain_hz': 1688569.9, 'f_phase_hz': 1688570.8, 'f_diff_hz': 0.9, 'dphi_scatter_rad': 0.0064, 'model_max_phase_err_deg': 0.22, 'model_max_amp_err_db': 0.11, 'iq_vs_raw_max_phase_diff_deg': 0.7, 'td_drift_hz': 0.6} ok
+tone 1642400.0 Hz sent: {'peak_bin': 2394, 'iq_peak_bin': 2394, 'expected_bin': 2394, 'f_timedomain_hz': 1690969.9, 'f_phase_hz': 1690969.6, 'f_diff_hz': -0.2, 'dphi_scatter_rad': 0.0061, 'model_max_phase_err_deg': 0.83, 'model_max_amp_err_db': 0.04, 'iq_vs_raw_max_phase_diff_deg': 0.9, 'td_drift_hz': 0.3} ok
+tone -4800000.0 Hz sent: {'peak_bin': 1075, 'iq_peak_bin': 1075, 'expected_bin': 1075, 'f_timedomain_hz': -4751561.1, 'f_phase_hz': -4751561.9, 'f_diff_hz': -0.8, 'dphi_scatter_rad': 0.0059, 'model_max_phase_err_deg': 0.13, 'model_max_amp_err_db': 0.06, 'iq_vs_raw_max_phase_diff_deg': 0.8, 'td_drift_hz': 3.8} ok
+restored TX True RX True
+== Pluto frame 20000000
+fs 20000000: {"nint": 488, "frames": 101, "bins": [2394, 2402], "frame_period_ms": 99.94, "arrival_ms_median": 100.0, "arrival_ms_max": 102.9, "theta_pred_rad": 1.6812, "theta_meas_rad": 1.6811, "meas_minus_pred_rad": -0.0, "scatter_rad": 0.0014, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": 0.01, "single_tone_second_diff_rms_rad": 0.255, "delta_ppm": 20.236, "carrier_offset_hz": 48600.1} ok
+restored TX True RX True nint True
+== Pluto iq 30720000
+{"name": "cw 2519040 Hz", "frames": 38, "mag_peak": 2390, "iq_peak": [2390], "corr_mag_iq_log": 0.949, "expected_bin": 2390, "raw_peak": 2390, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -7372800 Hz", "frames": 38, "mag_peak": 1071, "iq_peak": [1071], "corr_mag_iq_log": 0.9522, "expected_bin": 1071, "raw_peak": 1071, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 38, "mag_peak": 2048, "iq_peak": [12, 22, 50, 114], "corr_mag_iq_log": 0.5616}
+{"name": "ofdm 1024/128/600", "frames": 37, "mag_peak": 2302, "iq_peak": [1021, 1157, 1250, 1273], "corr_mag_iq_log": 0.9985, "inband_over_outband_db_mag": 25.9, "inband_over_outband_db_iq": 24.8} ok
+restored TX True RX True
+== Pluto phase 30720000
+tone 2519040.0 Hz sent: {'peak_bin': 2390, 'iq_peak_bin': 2390, 'expected_bin': 2390, 'f_timedomain_hz': 2567863.8, 'f_phase_hz': 2567866.8, 'f_diff_hz': 2.9, 'dphi_scatter_rad': 0.0057, 'model_max_phase_err_deg': 2.85, 'model_max_amp_err_db': 0.04, 'iq_vs_raw_max_phase_diff_deg': 2.0, 'td_drift_hz': 15.1} ok
+tone 2522726.4 Hz sent: {'peak_bin': 2391, 'iq_peak_bin': 2391, 'expected_bin': 2391, 'f_timedomain_hz': 2571572.5, 'f_phase_hz': 2571572.0, 'f_diff_hz': -0.5, 'dphi_scatter_rad': 0.0055, 'model_max_phase_err_deg': 0.21, 'model_max_amp_err_db': 0.07, 'iq_vs_raw_max_phase_diff_deg': 0.3, 'td_drift_hz': 8.6} ok
+tone -7372800.0 Hz sent: {'peak_bin': 1071, 'iq_peak_bin': 1071, 'expected_bin': 1071, 'f_timedomain_hz': -7324140.0, 'f_phase_hz': -7324139.8, 'f_diff_hz': 0.3, 'dphi_scatter_rad': 0.0057, 'model_max_phase_err_deg': 0.67, 'model_max_amp_err_db': 0.82, 'iq_vs_raw_max_phase_diff_deg': 5.2, 'td_drift_hz': 7.6} ok
+restored TX True RX True
+== Pluto frame 30720000
+fs 30720000: {"nint": 749, "frames": 101, "bins": [2390, 2399], "frame_period_ms": 99.87, "arrival_ms_median": 99.8, "arrival_ms_max": 104.2, "theta_pred_rad": 2.1896, "theta_meas_rad": 2.1893, "meas_minus_pred_rad": -0.0003, "scatter_rad": 0.0015, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": -0.3, "single_tone_second_diff_rms_rad": 0.246, "delta_ppm": 20.348, "carrier_offset_hz": 48885.9} ok
+restored TX True RX True nint True
+== Pluto iq 61440000
+{"name": "cw 5038080 Hz", "frames": 75, "mag_peak": 2387, "iq_peak": [2387], "corr_mag_iq_log": 0.9612, "expected_bin": 2387, "raw_peak": 2387, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -14745600 Hz", "frames": 75, "mag_peak": 1068, "iq_peak": [1068], "corr_mag_iq_log": 0.9599, "expected_bin": 1068, "raw_peak": 1068, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 74, "mag_peak": 2048, "iq_peak": [1, 16, 20, 45], "corr_mag_iq_log": 0.5464}
+{"name": "ofdm 1024/128/600", "frames": 74, "mag_peak": 1923, "iq_peak": [1161, 1288, 1301, 1308], "corr_mag_iq_log": 0.9988, "inband_over_outband_db_mag": 23.1, "inband_over_outband_db_iq": 22.5} ok
+restored TX True RX True
+== Pluto phase 61440000
+tone 5038080.0 Hz sent: {'peak_bin': 2387, 'iq_peak_bin': 2387, 'expected_bin': 2387, 'f_timedomain_hz': 5087371.9, 'f_phase_hz': 5087377.2, 'f_diff_hz': 5.3, 'dphi_scatter_rad': 0.0041, 'model_max_phase_err_deg': 0.52, 'model_max_amp_err_db': 0.06, 'iq_vs_raw_max_phase_diff_deg': 1.1, 'td_drift_hz': 32.8} ok
+tone 5045452.8 Hz sent: {'peak_bin': 2388, 'iq_peak_bin': 2388, 'expected_bin': 2388, 'f_timedomain_hz': 5094795.4, 'f_phase_hz': 5094798.1, 'f_diff_hz': 2.7, 'dphi_scatter_rad': 0.0045, 'model_max_phase_err_deg': 0.44, 'model_max_amp_err_db': 0.43, 'iq_vs_raw_max_phase_diff_deg': 4.5, 'td_drift_hz': 25.6} ok
+tone -14745600.0 Hz sent: {'peak_bin': 1068, 'iq_peak_bin': 1068, 'expected_bin': 1068, 'f_timedomain_hz': -14696626.1, 'f_phase_hz': -14696623.7, 'f_diff_hz': 2.4, 'dphi_scatter_rad': 0.0038, 'model_max_phase_err_deg': 0.48, 'model_max_amp_err_db': 0.28, 'iq_vs_raw_max_phase_diff_deg': 0.4, 'td_drift_hz': 21.2} ok
+restored TX True RX True
+== Pluto frame 61440000
+fs 61440000: {"nint": 1023, "frames": 148, "bins": [2387, 2396], "frame_period_ms": 68.2, "arrival_ms_median": 68.2, "arrival_ms_max": 72.7, "theta_pred_rad": -1.256, "theta_meas_rad": -1.2568, "meas_minus_pred_rad": -0.0009, "scatter_rad": 0.0019, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": 0.66, "single_tone_second_diff_rms_rad": 0.2, "delta_ppm": 20.539, "carrier_offset_hz": 49398.1} ok
+restored TX True RX True nint True
+######## RX=Pluto+
+== Pluto+ iq 2500000
+{"name": "cw 205000 Hz", "frames": 4, "mag_peak": 2303, "iq_peak": [2303], "corr_mag_iq_log": 0.7724, "expected_bin": 2303, "raw_peak": 2303, "raw_vs_mag_linear_corr": 0.9998} ok
+{"name": "cw -600000 Hz", "frames": 4, "mag_peak": 984, "iq_peak": [984], "corr_mag_iq_log": 0.6526, "expected_bin": 984, "raw_peak": 984, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 4, "mag_peak": 2048, "iq_peak": [102, 2049, 3931], "corr_mag_iq_log": 0.0238}
+{"name": "ofdm 1024/128/600", "frames": 4, "mag_peak": 2503, "iq_peak": [1163, 1193, 1305, 1339], "corr_mag_iq_log": 0.9892, "inband_over_outband_db_mag": 35.0, "inband_over_outband_db_iq": 28.9} ok
+restored TX True RX True
+== Pluto+ phase 2500000
+tone 205000.0 Hz sent: {'peak_bin': 2303, 'iq_peak_bin': 2303, 'expected_bin': 2303, 'f_timedomain_hz': 155822.0, 'f_phase_hz': 155816.2, 'f_diff_hz': -5.9, 'dphi_scatter_rad': 0.0057, 'model_max_phase_err_deg': 0.24, 'model_max_amp_err_db': 0.21, 'iq_vs_raw_max_phase_diff_deg': 7.3, 'td_drift_hz': 29.7} ok
+tone 205300.0 Hz sent: {'peak_bin': 2304, 'iq_peak_bin': 2304, 'expected_bin': 2304, 'f_timedomain_hz': 156098.9, 'f_phase_hz': 156097.9, 'f_diff_hz': -1.0, 'dphi_scatter_rad': 0.007, 'model_max_phase_err_deg': 0.4, 'model_max_amp_err_db': 0.18, 'iq_vs_raw_max_phase_diff_deg': 0.6, 'td_drift_hz': 1.1} ok
+tone -600000.0 Hz sent: {'peak_bin': 984, 'iq_peak_bin': 984, 'expected_bin': 984, 'f_timedomain_hz': -649183.3, 'f_phase_hz': -649183.7, 'f_diff_hz': -0.5, 'dphi_scatter_rad': 0.0057, 'model_max_phase_err_deg': 0.15, 'model_max_amp_err_db': 0.03, 'iq_vs_raw_max_phase_diff_deg': 12.1, 'td_drift_hz': 3.3} ok
+restored TX True RX True
+== Pluto+ frame 2500000
+fs 2500000: {"nint": 61, "frames": 101, "bins": [2303, 2312], "frame_period_ms": 99.94, "arrival_ms_median": 99.9, "arrival_ms_max": 103.7, "theta_pred_rad": 1.9113, "theta_meas_rad": 1.9114, "meas_minus_pred_rad": 0.0, "scatter_rad": 0.0008, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": 0.1, "single_tone_second_diff_rms_rad": 0.295, "delta_ppm": -20.479, "carrier_offset_hz": -49152.7} ok
+restored TX True RX True nint True
+== Pluto+ iq 10000000
+{"name": "cw 820000 Hz", "frames": 13, "mag_peak": 2364, "iq_peak": [2364], "corr_mag_iq_log": 0.7308, "expected_bin": 2364, "raw_peak": 2364, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -2400000 Hz", "frames": 12, "mag_peak": 1045, "iq_peak": [1045], "corr_mag_iq_log": 0.7114, "expected_bin": 1045, "raw_peak": 1045, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 13, "mag_peak": 2048, "iq_peak": [2, 58, 75, 93], "corr_mag_iq_log": 0.765}
+{"name": "ofdm 1024/128/600", "frames": 13, "mag_peak": 1900, "iq_peak": [1190, 1353, 1431, 1665], "corr_mag_iq_log": 0.9965, "inband_over_outband_db_mag": 27.1, "inband_over_outband_db_iq": 25.7} ok
+restored TX True RX True
+== Pluto+ phase 10000000
+tone 820000.0 Hz sent: {'peak_bin': 2364, 'iq_peak_bin': 2364, 'expected_bin': 2364, 'f_timedomain_hz': 770865.4, 'f_phase_hz': 770855.5, 'f_diff_hz': -9.9, 'dphi_scatter_rad': 0.0031, 'model_max_phase_err_deg': 0.62, 'model_max_amp_err_db': 0.04, 'iq_vs_raw_max_phase_diff_deg': 0.3, 'td_drift_hz': 47.3} ok
+tone 821200.0 Hz sent: {'peak_bin': 2364, 'iq_peak_bin': 2364, 'expected_bin': 2364, 'f_timedomain_hz': 772015.0, 'f_phase_hz': 772011.7, 'f_diff_hz': -3.3, 'dphi_scatter_rad': 0.0035, 'model_max_phase_err_deg': 0.39, 'model_max_amp_err_db': 0.06, 'iq_vs_raw_max_phase_diff_deg': 2.2, 'td_drift_hz': 16.8} ok
+tone -2400000.0 Hz sent: {'peak_bin': 1045, 'iq_peak_bin': 1045, 'expected_bin': 1045, 'f_timedomain_hz': -2449141.1, 'f_phase_hz': -2449142.1, 'f_diff_hz': -1.0, 'dphi_scatter_rad': 0.0039, 'model_max_phase_err_deg': 0.37, 'model_max_amp_err_db': 0.16, 'iq_vs_raw_max_phase_diff_deg': 0.6, 'td_drift_hz': 10.8} ok
+restored TX True RX True
+== Pluto+ frame 10000000
+fs 10000000: {"nint": 244, "frames": 101, "bins": [2364, 2372], "frame_period_ms": 99.94, "arrival_ms_median": 99.9, "arrival_ms_max": 107.1, "theta_pred_rad": 1.3622, "theta_meas_rad": 1.3625, "meas_minus_pred_rad": 0.0003, "scatter_rad": 0.0009, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": -0.26, "single_tone_second_diff_rms_rad": 0.306, "delta_ppm": -20.483, "carrier_offset_hz": -49176.2} ok
+restored TX True RX True nint True
+== Pluto+ iq 20000000
+{"name": "cw 1640000 Hz", "frames": 25, "mag_peak": 2374, "iq_peak": [2374], "corr_mag_iq_log": 0.7842, "expected_bin": 2374, "raw_peak": 2374, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -4800000 Hz", "frames": 25, "mag_peak": 1055, "iq_peak": [1055], "corr_mag_iq_log": 0.7815, "expected_bin": 1055, "raw_peak": 1055, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 24, "mag_peak": 2048, "iq_peak": [1, 50, 57, 68], "corr_mag_iq_log": 0.8445}
+{"name": "ofdm 1024/128/600", "frames": 25, "mag_peak": 1910, "iq_peak": [1060, 1208, 1274, 1340], "corr_mag_iq_log": 0.9977, "inband_over_outband_db_mag": 26.7, "inband_over_outband_db_iq": 25.3} ok
+restored TX True RX True
+== Pluto+ phase 20000000
+tone 1640000.0 Hz sent: {'peak_bin': 2374, 'iq_peak_bin': 2374, 'expected_bin': 2374, 'f_timedomain_hz': 1590681.0, 'f_phase_hz': 1590673.2, 'f_diff_hz': -7.8, 'dphi_scatter_rad': 0.0064, 'model_max_phase_err_deg': 0.59, 'model_max_amp_err_db': 0.19, 'iq_vs_raw_max_phase_diff_deg': 0.2, 'td_drift_hz': 65.1} ok
+tone 1642400.0 Hz sent: {'peak_bin': 2374, 'iq_peak_bin': 2374, 'expected_bin': 2374, 'f_timedomain_hz': 1593004.2, 'f_phase_hz': 1593001.4, 'f_diff_hz': -2.7, 'dphi_scatter_rad': 0.0064, 'model_max_phase_err_deg': 0.4, 'model_max_amp_err_db': 0.08, 'iq_vs_raw_max_phase_diff_deg': 0.3, 'td_drift_hz': 32.2} ok
+tone -4800000.0 Hz sent: {'peak_bin': 1055, 'iq_peak_bin': 1055, 'expected_bin': 1055, 'f_timedomain_hz': -4849306.4, 'f_phase_hz': -4849307.1, 'f_diff_hz': -0.6, 'dphi_scatter_rad': 0.0063, 'model_max_phase_err_deg': 0.48, 'model_max_amp_err_db': 0.1, 'iq_vs_raw_max_phase_diff_deg': 0.4, 'td_drift_hz': 22.6} ok
+restored TX True RX True
+== Pluto+ frame 20000000
+fs 20000000: {"nint": 488, "frames": 101, "bins": [2374, 2382], "frame_period_ms": 99.94, "arrival_ms_median": 99.8, "arrival_ms_max": 104.0, "theta_pred_rad": 2.7267, "theta_meas_rad": 2.7274, "meas_minus_pred_rad": 0.0007, "scatter_rad": 0.001, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": -0.19, "single_tone_second_diff_rms_rad": 0.389, "delta_ppm": -20.574, "carrier_offset_hz": -49412.5} ok
+restored TX True RX True nint True
+== Pluto+ iq 30720000
+{"name": "cw 2519040 Hz", "frames": 38, "mag_peak": 2377, "iq_peak": [2377], "corr_mag_iq_log": 0.8315, "expected_bin": 2377, "raw_peak": 2377, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -7372800 Hz", "frames": 38, "mag_peak": 1058, "iq_peak": [1058], "corr_mag_iq_log": 0.8334, "expected_bin": 1058, "raw_peak": 1058, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 38, "mag_peak": 2048, "iq_peak": [0, 5, 15, 44], "corr_mag_iq_log": 0.8938}
+{"name": "ofdm 1024/128/600", "frames": 38, "mag_peak": 2289, "iq_peak": [1008, 1063, 1290, 1352], "corr_mag_iq_log": 0.9982, "inband_over_outband_db_mag": 26.7, "inband_over_outband_db_iq": 25.4} ok
+restored TX True RX True
+== Pluto+ phase 30720000
+tone 2519040.0 Hz sent: {'peak_bin': 2377, 'iq_peak_bin': 2377, 'expected_bin': 2377, 'f_timedomain_hz': 2469394.0, 'f_phase_hz': 2469383.5, 'f_diff_hz': -10.6, 'dphi_scatter_rad': 0.0055, 'model_max_phase_err_deg': 1.52, 'model_max_amp_err_db': 0.33, 'iq_vs_raw_max_phase_diff_deg': 0.9, 'td_drift_hz': 72.2} ok
+tone 2522726.4 Hz sent: {'peak_bin': 2378, 'iq_peak_bin': 2378, 'expected_bin': 2378, 'f_timedomain_hz': 2472993.2, 'f_phase_hz': 2472989.2, 'f_diff_hz': -4.1, 'dphi_scatter_rad': 0.0056, 'model_max_phase_err_deg': 1.33, 'model_max_amp_err_db': 0.12, 'iq_vs_raw_max_phase_diff_deg': 0.7, 'td_drift_hz': 38.5} ok
+tone -7372800.0 Hz sent: {'peak_bin': 1058, 'iq_peak_bin': 1058, 'expected_bin': 1058, 'f_timedomain_hz': -7422383.4, 'f_phase_hz': -7422385.2, 'f_diff_hz': -1.9, 'dphi_scatter_rad': 0.0057, 'model_max_phase_err_deg': 1.58, 'model_max_amp_err_db': 0.23, 'iq_vs_raw_max_phase_diff_deg': 1.9, 'td_drift_hz': 26.8} ok
+restored TX True RX True
+== Pluto+ frame 30720000
+fs 30720000: {"nint": 750, "frames": 101, "bins": [2377, 2386], "frame_period_ms": 100.0, "arrival_ms_median": 100.0, "arrival_ms_max": 103.6, "theta_pred_rad": 1.5691, "theta_meas_rad": 1.5705, "meas_minus_pred_rad": 0.0014, "scatter_rad": 0.001, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": 0.4, "single_tone_second_diff_rms_rad": 0.443, "delta_ppm": -20.702, "carrier_offset_hz": -49736.0} ok
+restored TX True RX True nint True
+== Pluto+ iq 61440000
+{"name": "cw 5038080 Hz", "frames": 74, "mag_peak": 2381, "iq_peak": [2381], "corr_mag_iq_log": 0.9151, "expected_bin": 2381, "raw_peak": 2381, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "cw -14745600 Hz", "frames": 74, "mag_peak": 1062, "iq_peak": [1062], "corr_mag_iq_log": 0.9156, "expected_bin": 1062, "raw_peak": 1062, "raw_vs_mag_linear_corr": 1.0} ok
+{"name": "noise (TX -89 dB)", "frames": 74, "mag_peak": 3773, "iq_peak": [3, 7, 19, 29], "corr_mag_iq_log": 0.9589}
+{"name": "ofdm 1024/128/600", "frames": 74, "mag_peak": 1957, "iq_peak": [1263, 1310, 1354, 1381], "corr_mag_iq_log": 0.9985, "inband_over_outband_db_mag": 25.1, "inband_over_outband_db_iq": 24.1} ok
+restored TX True RX True
+== Pluto+ phase 61440000
+tone 5038080.0 Hz sent: {'peak_bin': 2381, 'iq_peak_bin': 2381, 'expected_bin': 2381, 'f_timedomain_hz': 4987936.1, 'f_phase_hz': 4987925.1, 'f_diff_hz': -10.9, 'dphi_scatter_rad': 0.0037, 'model_max_phase_err_deg': 3.7, 'model_max_amp_err_db': 0.51, 'iq_vs_raw_max_phase_diff_deg': 0.4, 'td_drift_hz': 89.2} ok
+tone 5045452.8 Hz sent: {'peak_bin': 2381, 'iq_peak_bin': 2381, 'expected_bin': 2381, 'f_timedomain_hz': 4995192.0, 'f_phase_hz': 4995186.9, 'f_diff_hz': -5.1, 'dphi_scatter_rad': 0.0041, 'model_max_phase_err_deg': 0.56, 'model_max_amp_err_db': 0.09, 'iq_vs_raw_max_phase_diff_deg': 0.1, 'td_drift_hz': 54.8} ok
+tone -14745600.0 Hz sent: {'peak_bin': 1062, 'iq_peak_bin': 1062, 'expected_bin': 1062, 'f_timedomain_hz': -14795531.6, 'f_phase_hz': -14795533.6, 'f_diff_hz': -1.9, 'dphi_scatter_rad': 0.0041, 'model_max_phase_err_deg': 1.94, 'model_max_amp_err_db': 0.28, 'iq_vs_raw_max_phase_diff_deg': 0.2, 'td_drift_hz': 45.5} ok
+restored TX True RX True
+== Pluto+ frame 61440000
+fs 61440000: {"nint": 1023, "frames": 148, "bins": [2381, 2389], "frame_period_ms": 68.2, "arrival_ms_median": 68.2, "arrival_ms_max": 73.7, "theta_pred_rad": 0.9703, "theta_meas_rad": 0.9726, "meas_minus_pred_rad": 0.0022, "scatter_rad": 0.0013, "frames_off_gt_0p3_rad": 0, "amp_ratio_db": -0.72, "single_tone_second_diff_rms_rad": 0.274, "delta_ppm": -20.911, "carrier_offset_hz": -50292.2} ok
+restored TX True RX True nint True
+SUITE_DONE

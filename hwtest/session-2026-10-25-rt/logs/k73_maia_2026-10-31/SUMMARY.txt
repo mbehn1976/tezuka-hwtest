@@ -1,0 +1,8 @@
+maia-kmod 0.12.0 (+ the 5 local patches of package/maia-kmod) and the shipped maia-httpd on 7.3.0-rc7, Pluto+, 2026-10-31, hardware-measured
+Kernel: needs patch board/tezuka/common/patches/linux/adi-6.12.y/005-maiasdr.patch (exports v7_dma_inv_range and arm_cache_outer_inv_range); applies to rc7 with offsets only. Without it modpost fails (undefined symbols).
+Module: built out of tree against the 7.3 tree, vermagic 7.3.0-rc7 SMP preempt_rt mod_unload modversions ARMv7; added to the test image ramdisk with depmod files (sdimg-k73rc7-maia); auto-loaded at boot by S50maia-kmod, devices maia-sdr-{spectrometer,recording,raw-capture,iq-waterfall} present, maia-httpd (S60) up, no BUG/WARN/Oops in dmesg.
+wftone73.py (BIST tone stepped, /waterfall follows peak): peaks bins 2175/2559/2303/2431 as on 6.12, settled within 2 frames, distinct settled spectra per tone 11/13/10/11 (6.12 runs: 8-16).
+kmodrace 20 s (mmap/munmap vs IOCTL_CACHEINV race): 239955 maps, 170195 ioctl ok, no oops or hang.
+tonetest73.py (BIST 960 kHz -> DDC -> CS16, 20 s): 30.72 M samples, I/Q misalignment 0 per million, dropouts 0.
+Recorder via REST (BIST 960 kHz, 4 s): 33554432 ci16 samples (128 MiB, region full), median step 960.5 kHz, 0 phase jumps above 0.5 rad, 0 zero samples.
+Not tested: raw capture and I/Q waterfall (the shipped maia-httpd has no such API, kmod devices exist and load); maia-httpd was not run under load for hours.

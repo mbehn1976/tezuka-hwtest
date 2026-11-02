@@ -1,0 +1,18 @@
+== core 1 isolated, iiod on core 0, 10 MS/s stream (32 blocks), 300 s
+      1 pid 11060's current affinity mask: 1
+      1 pid 11061's current affinity mask: 1
+      1 pid 11062's current affinity mask: 1
+      1 pid 11063's current affinity mask: 1
+      1 pid 11064's current affinity mask: 1
+      1 pid 11065's current affinity mask: 1
+      1 pid 11066's current affinity mask: 1
+      1 pid 832's current affinity mask: 1
+      1 pid 834's current affinity mask: 1
+      1 pid 835's current affinity mask: 1
+      1 pid 944's current affinity mask: 1
+T: 0 (11297) P:99 I:250 C:1200000 Min:     10 Act:   14 Avg:   15 Max:      46
+== core 0 reference, idle, 120 s
+T: 0 (22589) P:99 I:250 C: 480000 Min:      9 Act:   25 Avg:   23 Max:      50
+0
+ 00:11:12 up 11 min,  load average: 3.16, 2.95, 1.79
+ALLDONE

@@ -1,0 +1,11 @@
+21:53:32 == drop investigation start; board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI 
+21:53:33 gadget functions: acm.usb0 ffs.iio_ffs mass_storage.0 rndis.0  config c.1: acm.usb0 ffs.iio_ffs mass_storage.0 rndis.0  high-speed 
+21:53:33 host usb driver: 3-6.3.1:1.0 rndis_host enx00e0220ae277 3-6.3.1:1.5   
+21:53:46 throughput usb board->host: recv 209.7 MB in 10.53 s = 19.9 MB/s
+21:53:59 throughput usb host->board: send 200 MB in 10.74 s = 18.6 MB/s
+21:54:01 eth alias up
+21:54:14 throughput eth board->host: recv 209.7 MB in 11.76 s = 17.8 MB/s
+21:54:19 throughput eth host->board: send 200 MB in 3.35 s = 59.7 MB/s
+21:54:24 stream usb_2p5M fs=2500000 via 192.168.4.1: phy=iio:device0 sf=402516466 loopback=1 writer=1
+21:56:21   RESULT usb_2p5M: SUMMARY nb32: runs 15, incomplete 0, runs with outliers 15, outliers 183 
+21:56:26 stream usb_4M fs=4000000 via 192.168.4.1: phy=iio:device0 sf=402548209 loopback=1 writer=1

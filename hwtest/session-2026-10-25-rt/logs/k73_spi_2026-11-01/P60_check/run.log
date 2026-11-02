@@ -1,0 +1,12 @@
+23:13:51 == prio60 check on 7.3.0 136.22 
+23:13:56 setup: irq 29 aff=0 thread=187 pid 187's current scheduling priority: 60
+14 pol=1 rt=51 cpu=0 ktimers/0 187 pol=1 rt=60 cpu=0 irq/29-e0006000.spi 27 pol=1 rt=51 cpu=1 ktimers/1 
+23:13:56 spito at start: 0
+23:13:56 eth alias up
+23:14:01 stream eth_10M fs=10000000 via 192.168.3.1: phy=iio:device1 sf=10000000 loopback=1 writer=1
+23:19:10   RESULT eth_10M: SUMMARY nb4: runs 15, incomplete 0, runs with outliers 8, outliers 13 SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0  | spito +0
+23:19:38 USB throughput: recv 209.7 MB in 12.37 s = 16.9 MB/s / send 200 MB in 10.76 s = 18.6 MB/s | spito +0
+23:19:43 stream usb_5M fs=5000000 via 192.168.4.1: phy=iio:device1 sf=5000000 loopback=1 writer=1
+23:23:26   RESULT usb_5M: SUMMARY nb32: runs 20, incomplete 0, runs with outliers 9, outliers 14  | spito +0
+23:23:26 end: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x5C sf_read=5000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+23:23:28 == prio60 check done

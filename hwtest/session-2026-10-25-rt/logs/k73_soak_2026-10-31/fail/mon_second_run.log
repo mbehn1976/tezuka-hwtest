@@ -1,0 +1,17 @@
+20:01:13 up=313.02 avail=240004k iiod_rss=3408k tempC=66.1 writer=1 load=3.06 qspi_irq=544811 spi0_irq=15382 sf=5000000 bad=0 api=200
+20:02:08 up=368.44 avail=226256k iiod_rss=3484k tempC=64.8 writer=1 load=4.70 qspi_irq=616701 spi0_irq=16990 sf=5000000 bad=2 api=200
+20:03:04 up=424.12 avail=230276k iiod_rss=3484k tempC=66.4 writer=1 load=4.80 qspi_irq=688591 spi0_irq=18609 sf=5000000 bad=2 api=200
+20:03:59 up=479.72 avail=232464k iiod_rss=3484k tempC=65.8 writer=1 load=4.87 qspi_irq=753292 spi0_irq=20063 sf=5000000 bad=2 api=200
+20:04:55 up=535.09 avail=230620k iiod_rss=3488k tempC=66.3 writer=1 load=5.54 qspi_irq=825182 spi0_irq=21672 sf=5000000 bad=2 api=200
+20:05:50 up=590.50 avail=230400k iiod_rss=3488k tempC=65.7 writer=1 load=5.14 qspi_irq=897072 spi0_irq=23275 sf=5000000 bad=2 api=200
+20:06:45 up=645.91 avail=228336k iiod_rss=3488k tempC=65.7 writer=1 load=4.65 qspi_irq=968962 spi0_irq=24884 sf=5000000 bad=2 api=200
+20:07:41 up=701.34 avail=231480k iiod_rss=3488k tempC=66.3 writer=1 load=4.39 qspi_irq=1040852 spi0_irq=26489 sf=5000000 bad=6 api=200
+20:08:36 up=756.73 avail=227308k iiod_rss=3488k tempC=67.4 writer=1 load=4.88 qspi_irq=1105565 spi0_irq=27948 sf=5000000 bad=6 api=200
+20:09:32 up=812.14 avail=235924k iiod_rss=3488k tempC=67.2 writer=1 load=5.73 qspi_irq=1155888 spi0_irq=29102 sf=5000000 bad=6 api=200
+20:10:27 up=867.53 avail=232968k iiod_rss=3488k tempC=67.7 writer=1 load=5.49 qspi_irq=1206211 spi0_irq=30258 sf=5000000 bad=6 api=200
+20:11:23 up=923.02 avail=229588k iiod_rss=3488k tempC=66.7 writer=1 load=5.60 qspi_irq=1256534 spi0_irq=31552 sf=5000000 bad=6 api=200
+20:12:18 up=978.44 avail=227728k iiod_rss=3488k tempC=66.4 writer=1 load=5.24 qspi_irq=1328424 spi0_irq=33023 sf=5000000 bad=6 api=200
+20:13:14 up=1033.92 avail=227852k iiod_rss=3488k tempC=66.9 writer=1 load=5.25 qspi_irq=1400314 spi0_irq=34612 sf=5000000 bad=6 api=200
+20:14:10 up=1089.72 avail=204084k iiod_rss=3536k tempC=66.1 writer=1 load=5.36 qspi_irq=1465015 spi0_irq=36205 sf=5000000 bad=8 api=200
+20:15:06 up=1146.34 avail=189196k iiod_rss=3544k tempC=67.8 writer=1 load=6.34 qspi_irq=1536905 spi0_irq=37698 sf=5000000 bad=8 api=200
+20:16:02 up=1202.08 avail=195704k iiod_rss=3544k tempC=66.8 writer=1 load=4.71 qspi_irq=1608795 spi0_irq=39370 sf=5000000 bad=10 api=200

@@ -1,0 +1,13 @@
+19:48:57 == G_usb_612_control: 215 rounds, kernel 6.12.114-rt21, stream host 192.168.4.1, fs 5000000, blocks 32
+19:48:57 reboot board
+19:49:36 board: 6.12.114-rt21 WZ5Z6HQZ6IXHI5QI
+19:50:37 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+19:50:37 setup: echo 6.12 control: no change
+6.12 control: no change
+19:50:41 radio: phy=iio:device0 sf=5000000 loopback=1 writer=1
+19:50:44 before: up=88.68 spito=0 ktimers: 14 pol=1 rt=1 cpu=0 ktimers/0 27 pol=1 rt=1 cpu=1 ktimers/1  spi_irq: 175 pol=1 rt=50 cpu=0 irq/29-e0006000.spi
+19:50:45 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.226/0.510/0.758/0.175 ms)
+20:29:54 stream end
+tx_muted
+20:29:59 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+20:29:59 RESULT G_usb_612_control: SUMMARY nb32: runs 215, incomplete 0, runs with outliers 24, outliers 25  | SPI timeouts 0

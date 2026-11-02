@@ -1,0 +1,28 @@
+ftrace function trace of the RX path during a 10 MS/s network stream (libiio 1.0 host iio_rwdev, -b 262144, no TX), ~9 s each, Pluto+, 2026-10-31
+6.12.114-rt21 (image sdimg-rt21-sw-trace = default image + older trace uImage), legacy mmap path; 7.3.0-rc7 (sdimg-k73rc7-adi-heap-trace), DMA-BUF, heap reserved unless noted
+Metric: queue-empty episode = a block completes and no block is queued to the DMAC until the next enqueue. hold = time from block done to the same block re-enqueued (nb4).
+6.12 nb4: 0 empty episodes, hold med 23.7 p99 50.8 max 53.0 ms.  6.12 nb32: 0 empty.
+7.3 nb4 reserved: 26 empty episodes (up to 114 ms), hold med 28.0 p90 97.9 p99 169 max 213 ms.  7.3 nb32 reserved: 0 empty.
+7.3 nb4 system heap: 31 empty, hold p99 165 max 237.  7.3 nb4 default_cma_region: 5 empty, hold p99 122 max 158.
+Block time at 10 MS/s = 26.2 ms; 4 blocks = 105 ms of slack. DMA/IRQ side is fine on both; block hand-back to the kernel is slower on 7.3.
+
+--- Where the time goes on 7.3 (sched_switch/wakeup + tcp_sendmsg trace, nb4, reserved heap; tracing itself loads both CPUs ~90 %, compare only relatively)
+Per block on 7.3: block_done (irq thread) -> buffer-dequeue -> writer-task tcp_sendmsg (~4 ms, returns after copying to the socket) -> net_client_thd gets the client's reply -> buffer-enqueue re-queues the block.
+Normal block: re-enqueue ~20 ms after the send. Worst windows: 125 to 280 ms.
+Worst hold (281 ms): cpu0 irq/31-eth 151 ms + ktimers/0 111 ms (= 93 % of cpu0), cpu1 api_controller (shell, iio_attr forks) 212 ms while iiod threads sleep.
+Whole trace: 6.12 cpu0 irq/31-eth 58 %, api_controller 11 %, ktimers not in top 6; 7.3 cpu0 irq/31-eth 57 %, ktimers/0 17 %. ktimers/0 is switched in 34628 times on 7.3 against 2055 on 6.12 for 1170 wakeups: it is switched in at prio 49 (priority inheritance) while irq/31-eth is blocked (state D), i.e. lock contention between the Ethernet irq thread and the timer softirq thread on cpu0.
+The writer-task <-> irq/31-eth wakeup ping-pong (about 13 us period) is the same on 6.12 and 7.3 (macb TX path), so it is not the difference.
+Timer events on 7.3: tick_nohz_handler (tick), process_timeout, qdisc_watchdog 196, tcp_write_timer 53 - no timer storm. udhcpc runs on 7.3 (no QSPI env -> DHCP fallback).
+Not proven: that the ktimers/irq contention or the shell services cause the long holds. Needs an experiment (stop services; raise irq/31 priority).
+
+--- Experiments, 7.3 trace image, main iiod (reserved heap), 15 rounds of 5 s per setting, loopback tone, runtime changes only (exp_*.log)
+A baseline (all shipped services):          nb4 133 slips in 15/15 rounds (median 6);  nb32 2 slips in 1 round
+B services stopped (api_controller, watch*, mqtt, mosquitto, udhcpc): nb4 164 in 13/15 (median 10); nb32 0
+C B + irq/31-eth (macb) SCHED_FIFO 99 (was 50): nb4 50 in 8/15 (median 1); nb32 0
+C2 repeat of C:                              nb4 71 in 10/15 (median 3); nb32 1 in 1 round
+=> services are not the cause. Raising the Ethernet irq thread cuts the nb4 slips to about a third to a half but does not remove them.
+D  B + irq/31-eth FIFO 99 + ktimers/0 FIFO 99:   nb4 1 slip in 1/15 rounds; nb32 0
+D2 repeat of D:                                 nb4 3 in 3/15; nb32 0
+E  services stopped, irq/31 back at 50, ktimers/0 FIFO 99 only: nb4 3 in 2/15; nb32 0
+F  after reboot, services RUNNING, ktimers/0 FIFO 99 only: nb4 5 in 5/15; nb32 0
+=> ktimers/0 priority is the lever (default SCHED_FIFO 1, boosted to 49 by PI while irq/31-eth waits on the softirq lock). 6.12 default for comparison: nb4 5 in 3/20.

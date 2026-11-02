@@ -1,0 +1,354 @@
+== 84.04 1.72 0.70 0.26 9/116 5397 udc=configured usb0=up
+Mem:         374576       23044      223896         128      127636      253820
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 89.24 1.67 0.71 0.26 2/113 5707 udc=configured usb0=up
+Mem:         374576       23504      223436         128      127636      253360
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 94.37 1.69 0.73 0.27 3/115 6072 udc=configured usb0=up
+Mem:         374576       23124      223816         128      127636      253740
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 99.61 1.72 0.75 0.28 1/113 6425 udc=configured usb0=up
+Mem:         374576       22052      224884         132      127640      254808
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 104.71 1.66 0.76 0.29 4/113 6741 udc=configured usb0=up
+Mem:         374576       22476      224460         132      127640      254384
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 109.90 1.69 0.78 0.30 2/113 7147 udc=configured usb0=up
+Mem:         374576       21848      225088         132      127640      255012
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 115.02 1.63 0.78 0.30 1/113 7423 udc=configured usb0=up
+Mem:         374576       22824      224104         132      127648      254032
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 120.13 1.77 0.84 0.32 4/115 7843 udc=configured usb0=up
+Mem:         374576       23428      223500         132      127648      253428
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 125.31 1.71 0.84 0.33 4/113 8132 udc=configured usb0=up
+Mem:         374576       22816      224112         132      127648      254040
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 130.46 1.65 0.84 0.33 4/114 8522 udc=configured usb0=up
+Mem:         374576       23724      223204         132      127648      253132
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 135.66 1.84 0.90 0.35 1/113 8852 udc=configured usb0=up
+Mem:         374576       22032      224896         132      127648      254824
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 140.76 1.69 0.88 0.35 3/112 9181 udc=configured usb0=up
+Mem:         374576       23076      223852         132      127648      253780
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 145.97 1.72 0.90 0.36 2/113 9574 udc=configured usb0=up
+Mem:         374576       22240      224688         132      127648      254616
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 151.08 1.66 0.90 0.36 5/114 9843 udc=configured usb0=up
+Mem:         374576       22648      224280         132      127648      254208
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 9851 7732 S    /usr/bin/mosquitto_pub -i tezuka_classifier -t state/classifier/feature_papr_db -m 15.16
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 156.26 1.77 0.94 0.38 3/115 10275 udc=configured usb0=up
+Mem:         374576       23360      223568         132      127648      253496
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 161.39 1.70 0.94 0.38 2/113 10555 udc=configured usb0=up
+Mem:         374576       22264      224664         132      127648      254592
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 166.51 1.57 0.92 0.38 3/115 10957 udc=configured usb0=up
+Mem:         374576       22672      224256         132      127648      254184
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 171.68 1.60 0.94 0.39 1/113 11269 udc=configured usb0=up
+Mem:         374576       22396      224532         132      127648      254460
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 176.78 1.47 0.93 0.39 3/113 11610 udc=configured usb0=up
+Mem:         374576       23156      223772         132      127648      253700
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 182.00 1.52 0.94 0.39 2/113 11982 udc=configured usb0=up
+Mem:         374576       22332      224592         136      127652      254520
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 187.12 1.47 0.94 0.40 3/114 12281 udc=configured usb0=up
+Mem:         374576       22852      224072         136      127652      254000
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 192.33 1.36 0.93 0.39 1/113 12696 udc=configured usb0=up
+Mem:         374576       22104      224820         136      127652      254748
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 197.42 1.41 0.95 0.40 2/113 12976 udc=configured usb0=up
+Mem:         374576       22296      224628         136      127652      254556
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 202.55 1.30 0.93 0.40 7/117 13381 udc=configured usb0=up
+Mem:         374576       22608      224316         136      127652      254244
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 207.76 1.59 1.00 0.43 1/113 13681 udc=configured usb0=up
+Mem:         374576       22192      224732         136      127652      254660
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 212.87 1.54 1.00 0.43 3/113 14062 udc=configured usb0=up
+Mem:         374576       23216      223708         136      127652      253636
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 218.05 1.42 0.98 0.43 2/113 14404 udc=configured usb0=up
+Mem:         374576       22400      224524         136      127652      254452
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 223.17 1.55 1.02 0.44 3/114 14735 udc=configured usb0=up
+Mem:         374576       24480      222444         136      127652      252372
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 228.36 1.42 1.00 0.44 1/113 15122 udc=configured usb0=up
+Mem:         374576       22292      224632         136      127652      254560
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 233.45 1.71 1.07 0.46 2/113 15393 udc=configured usb0=up
+Mem:         374576       22952      223964         136      127660      253896
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 238.60 1.65 1.06 0.47 4/112 15833 udc=configured usb0=up
+Mem:         374576       23220      223696         136      127660      253628
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 243.75 1.60 1.06 0.47 1/113 16123 udc=configured usb0=up
+Mem:         374576       22756      224160         136      127660      254092
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 248.87 1.71 1.09 0.48 3/114 16512 udc=configured usb0=up
+Mem:         374576       25040      221876         136      127660      251808
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+16526 7496 R    /usr/bin/mosquitto_pub -i tezuka_classifier -t state/classifier/confidence -m 0.0
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 254.06 1.74 1.11 0.49 5/115 16842 udc=configured usb0=up
+Mem:         374576       23904      223008         136      127664      252940
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 259.20 1.68 1.11 0.49 5/116 17172 udc=configured usb0=up
+Mem:         374576       23508      223404         136      127664      253336
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 264.36 1.86 1.16 0.51 1/113 17558 udc=configured usb0=up
+Mem:         374576       24368      222536         136      127672      252472
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 269.46 1.79 1.15 0.52 2/116 17842 udc=configured usb0=up
+Mem:         374576       24324      222576         140      127676      252512
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 274.60 1.81 1.17 0.52 4/114 18292 udc=configured usb0=up
+Mem:         374576       23740      223152         140      127684      253092
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 279.74 1.75 1.16 0.53 1/113 18557 udc=configured usb0=up
+Mem:         374576       23308      223584         140      127684      253524
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 284.87 1.69 1.16 0.53 3/115 18985 udc=configured usb0=up
+Mem:         374576       24312      222036         144      128228      252248
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 290.03 1.63 1.16 0.53 2/113 19367 udc=configured usb0=up
+Mem:         374576       24416      221932         144      128228      252144
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 295.17 1.61 1.17 0.54 3/114 19685 udc=configured usb0=up
+Mem:         374576       23832      222512         144      128232      252724
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 300.31 1.72 1.20 0.56 3/115 20089 udc=configured usb0=up
+Mem:         374576       23732      222604         144      128240      252820
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 305.40 1.66 1.20 0.56 2/113 20370 udc=configured usb0=up
+Mem:         374576       23420      222916         144      128240      253132
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 310.53 1.69 1.21 0.57 6/116 20782 udc=configured usb0=up
+Mem:         374576       23984      222352         144      128240      252568
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 315.70 1.79 1.24 0.58 1/113 21075 udc=configured usb0=up
+Mem:         374576       23036      223300         144      128240      253516
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 320.81 1.73 1.24 0.58 4/114 21462 udc=configured usb0=up
+Mem:         374576       24300      222036         144      128240      252252
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 326.02 1.83 1.27 0.60 2/117 21799 udc=configured usb0=up
+Mem:         374576       23940      222384         144      128252      252608
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 331.14 1.85 1.28 0.61 3/115 22139 udc=configured usb0=up
+Mem:         374576       24876      221448         144      128252      251672
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+22157 7628 R    /usr/bin/mosquitto_pub -i tezuka_classifier -t state/classifier/feature_flatness -m 0.3685
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 336.33 2.02 1.32 0.62 1/107 22508 udc=configured usb0=up
+Mem:         374576       22848      223476         144      128252      253700
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 341.43 1.94 1.32 0.63 3/107 22803 udc=configured usb0=up
+Mem:         374576       23288      223044         144      128244      253264
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 R    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 346.58 1.86 1.31 0.63 2/107 23226 udc=configured usb0=up
+Mem:         374576       23412      222920         144      128244      253140
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 351.69 1.79 1.31 0.63 1/108 23503 udc=configured usb0=up
+Mem:         374576       23468      222868         148      128240      253084
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 356.79 1.65 1.29 0.63 6/109 23917 udc=configured usb0=up
+Mem:         374576       23980      222356         148      128240      252572
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 361.95 1.76 1.31 0.64 2/108 24226 udc=configured usb0=up
+Mem:         374576       23952      222368         148      128256      252592
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 367.07 1.70 1.31 0.64 2/109 24614 udc=configured usb0=up
+Mem:         374576       23356      222964         148      128256      253188
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+24627 7496 R    /usr/bin/mosquitto_pub -i tezuka_classifier -t state/classifier/feature_bandwidth_bins -m 6
+24622 4380 R    iio_attr -D ad9361-phy direct_reg_access 0x5E
+== 372.20 1.72 1.32 0.65 1/108 24945 udc=configured usb0=up
+Mem:         374576       24248      222072         148      128256      252296
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 377.29 1.66 1.31 0.65 2/109 25294 udc=configured usb0=up
+Mem:         374576       24032      222288         148      128256      252512
+ 1113 9104 R    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh
+== 382.44 1.53 1.29 0.65 2/109 25650 udc=configured usb0=up
+Mem:         374576       23536      222784         148      128256      253008
+ 1113 9104 S    /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1208 7740 S    /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1133 4204 S    {api_controller.} /bin/bash /root/api_controller.sh
+ 1209 4084 S    {api_controller.} /bin/bash /root/api_controller.sh

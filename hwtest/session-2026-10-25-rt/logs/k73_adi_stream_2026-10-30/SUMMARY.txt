@@ -1,0 +1,22 @@
+Stream and drop test, 7.3.0-rc7 + ported ADI drivers against 6.12.114-rt21 default image, same Pluto+, 2026-10-30, hardware-measured
+Method: AD9361 digital loopback (debugfs loopback=1) + cyclic TX tone (iio_writedev -c -b 65536, 1.25 MHz, DMA) so one board is enough (original Pluto off);
+RX 10 MS/s over Ethernet with the libiio 1.0 host iio_rwdev (-b 262144, NB_BLOCKS=4 or 32), 20 shuffled rounds of 5 s per setting, 3 s gap, phase-jump detector (512-sample blocks, >0.4 rad).
+                       rounds  with outliers  outliers  per round min/median/max
+6.12 default, 4 blocks   20        3              5        0/0/2
+6.12 default, 32 blocks  20        0              0        0/0/0
+7.3 + ADI port, 4        20       20            353        3/18/42
+7.3 + ADI port, 32       20       20            342        6/18/34
+No round was incomplete on either kernel (all samples delivered). On 7.3 the outliers sit exactly on 262144-sample block boundaries and the jumps are multiples of 90 degrees (8-sample tone period => a slip of 2/4/6 samples), i.e. samples lost at the hand-over between DMA blocks, not whole lost blocks. NB_BLOCKS does not change it.
+Setup differences: 7.3 ran few services (no classifier/maia-httpd), 6.12 the shipped set, so the 6.12 control is the harder case.
+Not yet known: whether it is the RX DMA hand-over (mainline axi-dmac / iio-dma-buffer path in 7.3, no ADI block API) or iiod/network; a local on-board capture on 7.3 would separate them.
+
+--- Follow-up 2026-10-31: where the 7.3 loss is, and the fix (hardware-measured)
+Local on-board capture (iio_readdev, 2 s x 13, no network): 0 slips in ~1000 blocks. Network, same session: 131 slips in 12 captures.
+=> RX DMA/kernel buffer fine; loss is the iiod/libiio read path. Cause: CONFIG_DMABUF_HEAPS was off, no /dev/dma_heap, libiio 1.0 falls back to fileio read() with ~2 blocks.
+Fix: CONFIG_DMABUF_HEAPS=y, DMABUF_HEAPS_SYSTEM=y, DMABUF_HEAPS_CMA=y (heaps system, reserved, default_cma_region), iiod with LIBIIO_DMA_HEAP_PATH=reserved.
+Second iiod (iiod -D -p PORT, chrt -r 99 taskset -c 1), 32 blocks, 10 rounds of 5 s: reserved 0 slips, default_cma_region 0, system 1 slip in one round.
+Confirmation, heap reserved, 30 rounds of 5 s per setting (drop73_reserved.log): nb32 28 clean rounds, 2 rounds with 5 slips in total (max 4); nb4 29 of 30 rounds with slips, 194 in total.
+For comparison 6.12 default (before): nb32 0 of 20 rounds, nb4 3 of 20 rounds (5 slips).
+
+--- 2026-10-31: main boot iiod with LIBIIO_DMA_HEAP_PATH=reserved set in S23udc (image known_good/sdimg-k73rc7-adi-heap), 30 rounds of 5 s per setting (drop73_mainiiod.log)
+nb32: 26 clean rounds, 4 rounds with slips (1,1,2,12 = 16 total). nb4: 25 of 30 rounds with slips, 190 total. No incomplete round.

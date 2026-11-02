@@ -1,0 +1,4 @@
+### T3: host copies 100 KB over ssh in a loop (no TX, no DMA)
+[T3] no drop in 150 s
+### T4: host runs trivial ssh commands back to back
+[T4] no drop in 150 s

@@ -1,0 +1,4 @@
+INFO: debugfs mountpoint: /sys/kernel/debug/tracing/
+# /dev/cpu_dma_latency set to 0us
+T: 0 (  750) P:98 I:250 C: 200000 Min:     26 Act:   29 Avg:   42 Max:      89
+# Thread Ids: 00750

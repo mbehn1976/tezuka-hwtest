@@ -1,0 +1,11 @@
+stress-ng: info:  [3601] setting to a 5 mins 30 secs run per stressor
+stress-ng: info:  [3601] dispatching hogs: 4 cpu, 2 vm, 1 hdd
+stress-ng: info:  [3601] note: system has only 214 MB of free memory and swap, recommend using --oom-avoid
+stress-ng: info:  [3607] vm: using 48MB per stressor instance (total 96MB of 211.46MB available memory)
+stress-ng: info:  [3601] stopping 7 stressors
+stress-ng: info:  [3601] stopping 6 of 7 stressors (1 terminated)
+stress-ng: info:  [3601] skipped: 0
+stress-ng: info:  [3601] passed: 7: cpu (4) vm (2) hdd (1)
+stress-ng: info:  [3601] failed: 0
+stress-ng: info:  [3601] metrics untrustworthy: 0
+stress-ng: info:  [3601] successful run completed in 5 mins 5.85 secs

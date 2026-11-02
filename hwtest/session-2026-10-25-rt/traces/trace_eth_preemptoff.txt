@@ -1,0 +1,341 @@
+# tracer: preemptoff
+#
+# preemptoff latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 538 us, #316/316, CPU#1 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: cyclictest-5386 (uid:0 nice:0 policy:1 rt_prio:98)
+#    -----------------
+#  => started at: schedule
+#  => ended at:   schedule
+#
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+cyclicte-5386      1...1.    1us : schedule <-schedule
+cyclicte-5386      1d..1.    2us : rcu_note_context_switch <-__schedule
+cyclicte-5386      1d..1.    4us : rcu_qs <-rcu_note_context_switch
+cyclicte-5386      1d..1.    5us : preempt_count_add <-__schedule
+cyclicte-5386      1d..2.    7us : _raw_spin_lock <-__schedule
+cyclicte-5386      1d..2.    8us : preempt_count_add <-_raw_spin_lock
+cyclicte-5386      1d..3.   10us : preempt_count_sub <-__schedule
+cyclicte-5386      1d..2.   11us : update_rq_clock.part.0 <-__schedule
+cyclicte-5386      1d..2.   13us : dequeue_task_rt <-__schedule
+cyclicte-5386      1d..2.   14us : update_curr_common <-dequeue_task_rt
+cyclicte-5386      1d..2.   16us : dequeue_rt_stack <-dequeue_task_rt
+cyclicte-5386      1d..2.   18us : cpupri_set <-dequeue_rt_stack
+cyclicte-5386      1d..2.   19us : dequeue_pushable_task <-dequeue_task_rt
+cyclicte-5386      1d..2.   21us : balance_rt <-__schedule
+cyclicte-5386      1d..2.   23us : pull_rt_task <-balance_rt
+cyclicte-5386      1d..2.   24us : _raw_spin_lock <-pull_rt_task
+cyclicte-5386      1d..2.   26us : preempt_count_add <-_raw_spin_lock
+cyclicte-5386      1d..3.   27us : rto_next_cpu <-pull_rt_task
+cyclicte-5386      1d..3.   29us : _raw_spin_unlock <-pull_rt_task
+cyclicte-5386      1d..3.   30us : preempt_count_sub <-_raw_spin_unlock
+cyclicte-5386      1d..2.   32us : sched_get_rd <-pull_rt_task
+cyclicte-5386      1d..2.   34us : preempt_count_add <-irq_work_queue_on
+cyclicte-5386      1d..3.   35us : __smp_call_single_queue <-irq_work_queue_on
+cyclicte-5386      1d..3.   37us : call_function_single_prep_ipi <-__smp_call_single_queue
+cyclicte-5386      1d..3.   39us : arch_send_call_function_single_ipi <-irq_work_queue_on
+cyclicte-5386      1d..3.   40us : smp_cross_call <-irq_work_queue_on
+cyclicte-5386      1d..3.   42us : __ipi_send_mask <-irq_work_queue_on
+cyclicte-5386      1d..3.   44us : gic_ipi_send_mask <-__ipi_send_mask
+cyclicte-5386      1d..3.   45us : preempt_count_sub <-irq_work_queue_on
+cyclicte-5386      1d..2.   47us : balance_fair <-__schedule
+cyclicte-5386      1d..2.   49us : sched_balance_newidle <-balance_fair
+cyclicte-5386      1d..2.   50us : __rcu_read_lock <-sched_balance_newidle
+cyclicte-5386      1d..2.   51us : __msecs_to_jiffies <-sched_balance_newidle
+cyclicte-5386      1d..2.   53us : __rcu_read_unlock <-sched_balance_newidle
+cyclicte-5386      1d..2.   54us : pick_task_stop <-__schedule
+cyclicte-5386      1d..2.   56us : pick_task_dl <-__schedule
+cyclicte-5386      1d..2.   57us : pick_task_rt <-__schedule
+cyclicte-5386      1d..2.   59us : __pick_next_task_fair <-__schedule
+cyclicte-5386      1d..2.   60us : pick_next_task_fair <-__schedule
+cyclicte-5386      1d..2.   62us : pick_task_fair <-pick_next_task_fair
+cyclicte-5386      1d..2.   63us : pick_task_idle <-__schedule
+cyclicte-5386      1d..2.   65us : put_prev_task_rt <-__schedule
+cyclicte-5386      1d..2.   66us : update_curr_common <-put_prev_task_rt
+cyclicte-5386      1d..2.   68us : update_rt_rq_load_avg <-put_prev_task_rt
+cyclicte-5386      1d..2.   69us : set_next_task_idle <-__schedule
+cyclicte-5386      1d..2.   71us : atomic_notifier_call_chain <-__switch_to
+cyclicte-5386      1d..2.   73us : __rcu_read_lock <-atomic_notifier_call_chain
+cyclicte-5386      1d..2.   74us : notifier_call_chain <-atomic_notifier_call_chain
+cyclicte-5386      1d..2.   76us : vfp_notifier <-notifier_call_chain
+cyclicte-5386      1d..2.   77us : __rcu_read_unlock <-atomic_notifier_call_chain
+  <idle>-0         1d..2.   79us : finish_task_switch <-__schedule
+  <idle>-0         1d..2.   80us : _raw_spin_unlock <-finish_task_switch
+  <idle>-0         1d..2.   82us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1d..1.   84us : irq_enter <-generic_handle_arch_irq
+  <idle>-0         1d..1.   86us : irq_enter_rcu <-generic_handle_arch_irq
+  <idle>-0         1d..1.   87us : preempt_count_add <-irq_enter_rcu
+  <idle>-0         1d.h1.   89us : tick_irq_enter <-generic_handle_arch_irq
+  <idle>-0         1d.h1.   90us : tick_check_oneshot_broadcast_this_cpu <-generic_handle_arch_irq
+  <idle>-0         1dnh1.   91us : gic_handle_irq <-generic_handle_arch_irq
+  <idle>-0         1dnh1.   93us : generic_handle_domain_irq <-gic_handle_irq
+  <idle>-0         1dnh1.   94us : __irq_resolve_mapping <-generic_handle_domain_irq
+  <idle>-0         1dnh1.   96us : __rcu_read_lock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.   97us : __rcu_read_unlock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.   99us : handle_irq_desc <-gic_handle_irq
+  <idle>-0         1dnh1.  100us : handle_percpu_devid_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  102us : ipi_handler <-handle_percpu_devid_irq
+  <idle>-0         1dnh1.  103us : do_handle_IPI <-ipi_handler
+  <idle>-0         1dnh1.  105us : gic_eoi_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  106us : generic_handle_domain_irq <-gic_handle_irq
+  <idle>-0         1dnh1.  108us : __irq_resolve_mapping <-generic_handle_domain_irq
+  <idle>-0         1dnh1.  109us : __rcu_read_lock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  111us : __rcu_read_unlock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  112us : handle_irq_desc <-gic_handle_irq
+  <idle>-0         1dnh1.  113us : handle_percpu_devid_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  115us : ipi_handler <-handle_percpu_devid_irq
+  <idle>-0         1dnh1.  116us : do_handle_IPI <-ipi_handler
+  <idle>-0         1dnh1.  118us : generic_smp_call_function_single_interrupt <-do_handle_IPI
+  <idle>-0         1dnh1.  119us : __flush_smp_call_function_queue <-do_handle_IPI
+  <idle>-0         1dnh1.  121us : rto_push_irq_work_func <-irq_work_single
+  <idle>-0         1dnh1.  123us : raw_spin_rq_lock_nested <-rto_push_irq_work_func
+  <idle>-0         1dnh1.  124us : preempt_count_add <-raw_spin_rq_lock_nested
+  <idle>-0         1dnh2.  126us : _raw_spin_lock <-raw_spin_rq_lock_nested
+  <idle>-0         1dnh2.  127us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh3.  129us : preempt_count_sub <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  130us : push_rt_task <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  131us : pick_next_pushable_task <-push_rt_task
+  <idle>-0         1dnh2.  133us : resched_curr <-push_rt_task
+  <idle>-0         1dnh2.  134us : __resched_curr.constprop.0 <-push_rt_task
+  <idle>-0         1dnh2.  136us : raw_spin_rq_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  137us : _raw_spin_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  139us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh1.  140us : _raw_spin_lock <-rto_push_irq_work_func
+  <idle>-0         1dnh1.  141us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh2.  143us : rto_next_cpu <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  145us : _raw_spin_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  146us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh1.  147us : sched_put_rd <-irq_work_single
+  <idle>-0         1dnh1.  149us : gic_eoi_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  151us : generic_handle_domain_irq <-gic_handle_irq
+  <idle>-0         1dnh1.  152us : __irq_resolve_mapping <-generic_handle_domain_irq
+  <idle>-0         1dnh1.  153us : __rcu_read_lock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  155us : __rcu_read_unlock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  156us : handle_irq_desc <-gic_handle_irq
+  <idle>-0         1dnh1.  158us : handle_percpu_devid_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  159us : twd_handler <-handle_percpu_devid_irq
+  <idle>-0         1dnh1.  160us : hrtimer_interrupt <-twd_handler
+  <idle>-0         1dnh1.  162us : _raw_spin_lock_irqsave <-hrtimer_interrupt
+  <idle>-0         1dnh1.  163us : preempt_count_add <-_raw_spin_lock_irqsave
+  <idle>-0         1dnh2.  165us : ktime_get_update_offsets_now <-hrtimer_interrupt
+  <idle>-0         1dnh2.  166us : gt_clocksource_read <-ktime_get_update_offsets_now
+  <idle>-0         1dnh2.  168us : __hrtimer_run_queues <-hrtimer_interrupt
+  <idle>-0         1dnh2.  170us : _raw_spin_unlock_irqrestore <-__hrtimer_run_queues
+  <idle>-0         1dnh2.  171us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+  <idle>-0         1dnh1.  173us : tick_nohz_handler <-__hrtimer_run_queues
+  <idle>-0         1dnh1.  174us : ktime_get <-tick_nohz_handler
+  <idle>-0         1dnh1.  176us : gt_clocksource_read <-ktime_get
+  <idle>-0         1dnh1.  177us : update_process_times <-tick_nohz_handler
+  <idle>-0         1dnh1.  179us : account_process_tick <-update_process_times
+  <idle>-0         1dnh1.  180us : account_idle_time <-update_process_times
+  <idle>-0         1dnh1.  182us : hrtimer_run_queues <-update_process_times
+  <idle>-0         1dnh1.  183us : rcu_sched_clock_irq <-update_process_times
+  <idle>-0         1dnh1.  185us : rcu_is_cpu_rrupt_from_idle <-rcu_sched_clock_irq
+  <idle>-0         1dnh1.  186us : rcu_segcblist_ready_cbs <-rcu_sched_clock_irq
+  <idle>-0         1dnh1.  188us : rcu_is_cpu_rrupt_from_idle <-rcu_sched_clock_irq
+  <idle>-0         1dnh1.  190us : sched_tick <-update_process_times
+  <idle>-0         1dnh1.  191us : preempt_count_add <-sched_tick
+  <idle>-0         1dnh2.  193us : _raw_spin_lock <-sched_tick
+  <idle>-0         1dnh2.  194us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh3.  195us : preempt_count_sub <-sched_tick
+  <idle>-0         1dnh2.  197us : update_rq_clock.part.0 <-sched_tick
+  <idle>-0         1dnh2.  199us : task_tick_idle <-sched_tick
+  <idle>-0         1dnh2.  200us : calc_global_load_tick <-sched_tick
+  <idle>-0         1dnh2.  201us : task_tick_mm_cid <-sched_tick
+  <idle>-0         1dnh2.  203us : _raw_spin_unlock <-sched_tick
+  <idle>-0         1dnh2.  204us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh1.  206us : perf_event_task_tick <-sched_tick
+  <idle>-0         1dnh1.  207us : perf_adjust_freq_unthr_context <-perf_event_task_tick
+  <idle>-0         1dnh1.  209us : __rcu_read_lock <-perf_event_task_tick
+  <idle>-0         1dnh1.  211us : __rcu_read_unlock <-sched_tick
+  <idle>-0         1dnh1.  212us : idle_cpu <-sched_tick
+  <idle>-0         1dnh1.  213us : sched_balance_trigger <-update_process_times
+  <idle>-0         1dnh1.  215us : raise_softirq <-update_process_times
+  <idle>-0         1dnh1.  217us : run_posix_cpu_timers <-tick_nohz_handler
+  <idle>-0         1dnh1.  218us : hrtimer_forward <-tick_nohz_handler
+  <idle>-0         1dnh1.  220us : _raw_spin_lock_irq <-__hrtimer_run_queues
+  <idle>-0         1dnh1.  221us : preempt_count_add <-_raw_spin_lock_irq
+  <idle>-0         1dnh2.  223us : enqueue_hrtimer <-__hrtimer_run_queues
+  <idle>-0         1dnh2.  225us : _raw_spin_unlock_irqrestore <-__hrtimer_run_queues
+  <idle>-0         1dnh2.  227us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+  <idle>-0         1dnh1.  228us : hrtimer_wakeup <-__hrtimer_run_queues
+  <idle>-0         1dnh1.  230us : wake_up_process <-hrtimer_wakeup
+  <idle>-0         1dnh1.  231us : try_to_wake_up <-hrtimer_wakeup
+  <idle>-0         1dnh1.  232us : preempt_count_add <-try_to_wake_up
+  <idle>-0         1dnh2.  234us : _raw_spin_lock_irqsave <-try_to_wake_up
+  <idle>-0         1dnh2.  235us : preempt_count_add <-_raw_spin_lock_irqsave
+  <idle>-0         1dnh3.  237us : preempt_count_add <-try_to_wake_up
+  <idle>-0         1dnh4.  238us : _raw_spin_lock <-try_to_wake_up
+  <idle>-0         1dnh4.  240us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh5.  241us : preempt_count_sub <-try_to_wake_up
+  <idle>-0         1dnh4.  243us : update_rq_clock.part.0 <-try_to_wake_up
+  <idle>-0         1dnh4.  244us : ttwu_do_activate <-try_to_wake_up
+  <idle>-0         1dnh4.  246us : activate_task <-ttwu_do_activate
+  <idle>-0         1dnh4.  247us : enqueue_task_rt <-activate_task
+  <idle>-0         1dnh4.  249us : dequeue_rt_stack <-enqueue_task_rt
+  <idle>-0         1dnh4.  250us : cpupri_set <-enqueue_task_rt
+  <idle>-0         1dnh4.  253us : wakeup_preempt <-ttwu_do_activate
+  <idle>-0         1dnh4.  254us : __resched_curr.constprop.0 <-wakeup_preempt
+  <idle>-0         1dnh4.  256us : task_woken_rt <-ttwu_do_activate
+  <idle>-0         1dnh4.  257us : _raw_spin_unlock <-try_to_wake_up
+  <idle>-0         1dnh4.  258us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh3.  260us : _raw_spin_unlock_irqrestore <-try_to_wake_up
+  <idle>-0         1dnh3.  261us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+  <idle>-0         1dnh2.  263us : preempt_count_sub <-try_to_wake_up
+  <idle>-0         1dnh1.  264us : _raw_spin_lock_irq <-__hrtimer_run_queues
+  <idle>-0         1dnh1.  266us : preempt_count_add <-_raw_spin_lock_irq
+  <idle>-0         1dnh2.  270us : hrtimer_update_next_event <-hrtimer_interrupt
+  <idle>-0         1dnh2.  271us : __hrtimer_next_event_base.constprop.0 <-hrtimer_update_next_event
+  <idle>-0         1dnh2.  273us : __hrtimer_next_event_base.constprop.0 <-hrtimer_update_next_event
+  <idle>-0         1dnh2.  274us : _raw_spin_unlock_irqrestore <-hrtimer_interrupt
+  <idle>-0         1dnh2.  276us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+  <idle>-0         1dnh1.  277us : tick_program_event <-hrtimer_interrupt
+  <idle>-0         1dnh1.  279us : clockevents_program_event <-tick_program_event
+  <idle>-0         1dnh1.  280us : ktime_get <-clockevents_program_event
+  <idle>-0         1dnh1.  281us : gt_clocksource_read <-ktime_get
+  <idle>-0         1dnh1.  283us : twd_set_next_event <-clockevents_program_event
+  <idle>-0         1dnh1.  285us : gic_eoi_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  286us : generic_handle_domain_irq <-gic_handle_irq
+  <idle>-0         1dnh1.  288us : __irq_resolve_mapping <-generic_handle_domain_irq
+  <idle>-0         1dnh1.  289us : __rcu_read_lock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  290us : __rcu_read_unlock <-__irq_resolve_mapping
+  <idle>-0         1dnh1.  292us : handle_irq_desc <-gic_handle_irq
+  <idle>-0         1dnh1.  293us : handle_percpu_devid_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  295us : ipi_handler <-handle_percpu_devid_irq
+  <idle>-0         1dnh1.  296us : do_handle_IPI <-ipi_handler
+  <idle>-0         1dnh1.  298us : generic_smp_call_function_single_interrupt <-do_handle_IPI
+  <idle>-0         1dnh1.  299us : __flush_smp_call_function_queue <-do_handle_IPI
+  <idle>-0         1dnh1.  301us : rto_push_irq_work_func <-irq_work_single
+  <idle>-0         1dnh1.  302us : raw_spin_rq_lock_nested <-rto_push_irq_work_func
+  <idle>-0         1dnh1.  304us : preempt_count_add <-raw_spin_rq_lock_nested
+  <idle>-0         1dnh2.  305us : _raw_spin_lock <-raw_spin_rq_lock_nested
+  <idle>-0         1dnh2.  307us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh3.  308us : preempt_count_sub <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  309us : push_rt_task <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  311us : pick_next_pushable_task <-push_rt_task
+  <idle>-0         1dnh2.  312us : resched_curr <-push_rt_task
+  <idle>-0         1dnh2.  314us : __resched_curr.constprop.0 <-push_rt_task
+  <idle>-0         1dnh2.  315us : raw_spin_rq_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  316us : _raw_spin_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  318us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh1.  319us : _raw_spin_lock <-rto_push_irq_work_func
+  <idle>-0         1dnh1.  321us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dnh2.  322us : rto_next_cpu <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  324us : _raw_spin_unlock <-rto_push_irq_work_func
+  <idle>-0         1dnh2.  326us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dnh1.  327us : sched_put_rd <-irq_work_single
+  <idle>-0         1dnh1.  329us : gic_eoi_irq <-handle_irq_desc
+  <idle>-0         1dnh1.  330us : irq_exit <-call_with_stack
+  <idle>-0         1dnh1.  332us : preempt_count_sub <-irq_exit
+  <idle>-0         1dn.1.  333us : wake_up_process <-irq_exit
+  <idle>-0         1dn.1.  335us : try_to_wake_up <-irq_exit
+  <idle>-0         1dn.1.  336us : preempt_count_add <-try_to_wake_up
+  <idle>-0         1dn.2.  338us : _raw_spin_lock_irqsave <-try_to_wake_up
+  <idle>-0         1dn.2.  339us : preempt_count_add <-_raw_spin_lock_irqsave
+  <idle>-0         1dn.3.  341us : kthread_is_per_cpu <-try_to_wake_up
+  <idle>-0         1dn.3.  343us : preempt_count_add <-try_to_wake_up
+  <idle>-0         1dn.4.  345us : _raw_spin_lock <-try_to_wake_up
+  <idle>-0         1dn.4.  346us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dn.5.  348us : preempt_count_sub <-try_to_wake_up
+  <idle>-0         1dn.4.  349us : update_rq_clock.part.0 <-try_to_wake_up
+  <idle>-0         1dn.4.  351us : ttwu_do_activate <-try_to_wake_up
+  <idle>-0         1dn.4.  352us : activate_task <-ttwu_do_activate
+  <idle>-0         1dn.4.  354us : enqueue_task_fair <-activate_task
+  <idle>-0         1dn.4.  356us : update_curr <-enqueue_task_fair
+  <idle>-0         1dn.4.  357us : __update_load_avg_se <-update_load_avg
+  <idle>-0         1dn.4.  360us : __update_load_avg_cfs_rq <-update_load_avg
+  <idle>-0         1dn.4.  362us : place_entity <-enqueue_task_fair
+  <idle>-0         1dn.4.  364us : avg_vruntime <-place_entity
+  <idle>-0         1dn.4.  366us : __enqueue_entity <-enqueue_task_fair
+  <idle>-0         1dn.4.  368us : dl_server_start <-enqueue_task_fair
+  <idle>-0         1dn.4.  370us : wakeup_preempt <-ttwu_do_activate
+  <idle>-0         1dn.4.  371us : __resched_curr.constprop.0 <-wakeup_preempt
+  <idle>-0         1dn.4.  373us : _raw_spin_unlock <-try_to_wake_up
+  <idle>-0         1dn.4.  374us : preempt_count_sub <-_raw_spin_unlock
+  <idle>-0         1dn.3.  376us : _raw_spin_unlock_irqrestore <-try_to_wake_up
+  <idle>-0         1dn.3.  377us : preempt_count_sub <-_raw_spin_unlock_irqrestore
+  <idle>-0         1dn.2.  379us : preempt_count_sub <-try_to_wake_up
+  <idle>-0         1dn.1.  382us : rcu_note_context_switch <-__schedule
+  <idle>-0         1dn.1.  384us : rcu_qs <-rcu_note_context_switch
+  <idle>-0         1dn.1.  385us : preempt_count_add <-__schedule
+  <idle>-0         1dn.2.  387us : _raw_spin_lock <-__schedule
+  <idle>-0         1dn.2.  388us : preempt_count_add <-_raw_spin_lock
+  <idle>-0         1dn.3.  390us : preempt_count_sub <-__schedule
+  <idle>-0         1dn.2.  391us : pick_task_stop <-__schedule
+  <idle>-0         1dn.2.  393us : pick_task_dl <-__schedule
+  <idle>-0         1dn.2.  394us : pick_task_rt <-__schedule
+  <idle>-0         1dn.2.  396us : put_prev_task_idle <-__schedule
+  <idle>-0         1dn.2.  398us : dequeue_pushable_task <-set_next_task_rt
+  <idle>-0         1dn.2.  399us : update_rt_rq_load_avg <-set_next_task_rt
+  <idle>-0         1d..2.  402us : atomic_notifier_call_chain <-__switch_to
+  <idle>-0         1d..2.  403us : __rcu_read_lock <-atomic_notifier_call_chain
+  <idle>-0         1d..2.  407us : notifier_call_chain <-atomic_notifier_call_chain
+  <idle>-0         1d..2.  410us : vfp_notifier <-notifier_call_chain
+  <idle>-0         1d..2.  414us : __rcu_read_unlock <-atomic_notifier_call_chain
+cyclicte-5386      1d..2.  418us : finish_task_switch <-__schedule
+cyclicte-5386      1d..2.  421us : push_rt_tasks <-finish_task_switch
+cyclicte-5386      1d..2.  424us : push_rt_task <-push_rt_tasks
+cyclicte-5386      1d..2.  427us : pick_next_pushable_task <-push_rt_task
+cyclicte-5386      1d..2.  429us : find_lock_lowest_rq <-push_rt_task
+cyclicte-5386      1d..2.  430us : find_lowest_rq <-find_lock_lowest_rq
+cyclicte-5386      1d..2.  432us : cpupri_find <-find_lowest_rq
+cyclicte-5386      1d..2.  433us : cpupri_find_fitness <-find_lowest_rq
+cyclicte-5386      1d..2.  435us : __rcu_read_lock <-find_lowest_rq
+cyclicte-5386      1d..2.  437us : __rcu_read_unlock <-find_lowest_rq
+cyclicte-5386      1d..2.  439us : raw_spin_rq_unlock <-find_lock_lowest_rq
+cyclicte-5386      1d..2.  440us : _raw_spin_unlock <-find_lock_lowest_rq
+cyclicte-5386      1d..2.  441us : preempt_count_sub <-_raw_spin_unlock
+cyclicte-5386      1d..1.  443us : double_rq_lock <-find_lock_lowest_rq
+cyclicte-5386      1d..1.  444us : preempt_count_add <-double_rq_lock
+cyclicte-5386      1d..2.  446us : _raw_spin_lock <-double_rq_lock
+cyclicte-5386      1d..2.  447us : preempt_count_add <-_raw_spin_lock
+cyclicte-5386      1d..3.  448us : preempt_count_sub <-double_rq_lock
+cyclicte-5386      1d..2.  450us : preempt_count_add <-double_rq_lock
+cyclicte-5386      1d..3.  451us : _raw_spin_lock <-double_rq_lock
+cyclicte-5386      1d..3.  453us : preempt_count_add <-_raw_spin_lock
+cyclicte-5386      1d..4.  454us : preempt_count_sub <-find_lock_lowest_rq
+cyclicte-5386      1d..3.  456us : pick_next_pushable_task <-find_lock_lowest_rq
+cyclicte-5386      1d..3.  457us : deactivate_task <-push_rt_task
+cyclicte-5386      1d..3.  461us : update_rq_clock.part.0 <-deactivate_task
+cyclicte-5386      1d..3.  465us : dequeue_task_rt <-push_rt_task
+cyclicte-5386      1d..3.  468us : update_curr_common <-dequeue_task_rt
+cyclicte-5386      1d..3.  472us : dequeue_rt_stack <-dequeue_task_rt
+cyclicte-5386      1d..3.  476us : dequeue_pushable_task <-dequeue_task_rt
+cyclicte-5386      1d..3.  480us : set_task_cpu <-push_rt_task
+cyclicte-5386      1d..3.  484us : activate_task <-push_rt_task
+cyclicte-5386      1d..3.  487us : sched_mm_cid_migrate_to <-activate_task
+cyclicte-5386      1d..3.  490us : update_rq_clock.part.0 <-activate_task
+cyclicte-5386      1d..3.  494us : enqueue_task_rt <-activate_task
+cyclicte-5386      1d..3.  498us : dequeue_rt_stack <-enqueue_task_rt
+cyclicte-5386      1d..3.  502us : cpupri_set <-enqueue_task_rt
+cyclicte-5386      1d..3.  506us : enqueue_pushable_task <-activate_task
+cyclicte-5386      1d..3.  511us : resched_curr <-push_rt_task
+cyclicte-5386      1d..3.  513us : __resched_curr.constprop.0 <-push_rt_task
+cyclicte-5386      1d..3.  517us : arch_smp_send_reschedule <-push_rt_task
+cyclicte-5386      1d..3.  520us : smp_cross_call <-push_rt_task
+cyclicte-5386      1d..3.  522us : __ipi_send_mask <-push_rt_task
+cyclicte-5386      1d..3.  524us : gic_ipi_send_mask <-__ipi_send_mask
+cyclicte-5386      1d..3.  526us : raw_spin_rq_unlock <-push_rt_task
+cyclicte-5386      1d..3.  527us : _raw_spin_unlock <-push_rt_task
+cyclicte-5386      1d..3.  529us : preempt_count_sub <-_raw_spin_unlock
+cyclicte-5386      1d..2.  530us : push_rt_task <-push_rt_tasks
+cyclicte-5386      1d..2.  532us : _raw_spin_unlock <-finish_task_switch
+cyclicte-5386      1d..2.  533us : preempt_count_sub <-_raw_spin_unlock
+cyclicte-5386      1...1.  535us : preempt_count_sub <-schedule
+cyclicte-5386      1...1.  537us : schedule <-schedule
+cyclicte-5386      1...1.  540us+: stop_critical_timing <-schedule
+cyclicte-5386      1...1.  569us : <stack trace>
+ => do_nanosleep
+ => hrtimer_nanosleep
+ => sys_clock_nanosleep_time32
+ => ret_fast_syscall

@@ -1,0 +1,13 @@
+up=81.31 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.90 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x0 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.66 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0xA 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.87 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.12 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.06 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.16 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.92 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.19 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.22 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=82.05 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.86 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0
+up=81.70 usb0=192.168.4.1/24 eth0=192.168.3.1/24 rcu=0 trace=0 bugwarn=0 spito=0 kt=51 spiprio=60cpu0 regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A  host_rndis_errors=0

@@ -1,0 +1,5 @@
+[V0_repeat_original]  -> >>> USB DROP after 3 TX restarts, 14 s
+[V1_noise_data] --data noise -> >>> USB DROP after 10 TX restarts, 48 s
+[V2_tone_gain_m89] --gain -89 -> no drop in 32 TX restarts / 150 s
+[V3_no_verification_calls] --check no -> no drop in 36 TX restarts / 150 s
+VTRIALS_DONE

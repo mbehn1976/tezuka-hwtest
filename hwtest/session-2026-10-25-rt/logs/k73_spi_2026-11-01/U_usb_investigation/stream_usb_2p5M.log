@@ -1,0 +1,17 @@
+nb32 round 1 full=True outliers=12 f0=0.3125 rc=0
+nb32 round 2 full=True outliers=11 f0=0.3125 rc=0
+nb32 round 3 full=True outliers=17 f0=0.3125 rc=0
+nb32 round 4 full=True outliers=8 f0=0.3125 rc=0
+nb32 round 5 full=True outliers=16 f0=0.3125 rc=0
+nb32 round 6 full=True outliers=9 f0=0.3125 rc=0
+nb32 round 7 full=True outliers=13 f0=0.3125 rc=0
+nb32 round 8 full=True outliers=11 f0=0.3125 rc=0
+nb32 round 9 full=True outliers=11 f0=0.3125 rc=0
+nb32 round 10 full=True outliers=13 f0=0.3125 rc=0
+nb32 round 11 full=True outliers=14 f0=0.3125 rc=0
+nb32 round 12 full=True outliers=8 f0=0.3125 rc=0
+nb32 round 13 full=True outliers=16 f0=0.3125 rc=0
+nb32 round 14 full=True outliers=11 f0=0.3125 rc=0
+nb32 round 15 full=True outliers=13 f0=0.3125 rc=0
+SUMMARY nb32: runs 15, incomplete 0, runs with outliers 15, outliers 183
+DROP_DONE

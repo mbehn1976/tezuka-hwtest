@@ -1,0 +1,51 @@
+{
+ "fs": 30720000,
+ "tone_hz": 960000,
+ "ddc_out": 1536000.0,
+ "routing_reg": "0x00000001",
+ "captures": [
+  {
+   "samples": 1536000,
+   "amp": 826.1,
+   "events": 0,
+   "q_lag": 0,
+   "q_lead": 0,
+   "i_lag": 0,
+   "i_lead": 0,
+   "dropout": 0,
+   "other": 0
+  },
+  {
+   "samples": 1536000,
+   "amp": 826.0,
+   "events": 0,
+   "q_lag": 0,
+   "q_lead": 0,
+   "i_lag": 0,
+   "i_lead": 0,
+   "dropout": 0,
+   "other": 0
+  },
+  {
+   "samples": 1536000,
+   "amp": 826.1,
+   "events": 0,
+   "q_lag": 0,
+   "q_lead": 0,
+   "i_lag": 0,
+   "i_lead": 0,
+   "dropout": 0,
+   "other": 0
+  }
+ ],
+ "total": {
+  "samples": 4608000,
+  "q_lag": 0,
+  "q_lead": 0,
+  "i_lag": 0,
+  "i_lead": 0,
+  "dropout": 0,
+  "other": 0
+ },
+ "iq_misalign_per_million": 0.0
+}

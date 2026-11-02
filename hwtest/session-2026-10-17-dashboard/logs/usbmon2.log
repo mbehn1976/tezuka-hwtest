@@ -1,0 +1,76 @@
+##### BASELINE 22:16:34
+uptime 693  udc=configured
+reg 140=0x00010001
+reg 144=0x00000080
+reg 148=0x00000147
+reg 184=0x88000205
+reg 1A4=0x09202F20
+reg 1A8=0x0000000A
+ 33:     115208          0 GIC-0  53 Level     e0002000.usb
+in_voltage0_vccint_raw=1385 in_voltage1_vccaux_raw=2414 in_voltage2_vccbram_raw=1384 in_voltage3_vccpint_raw=1388 in_voltage4_vccpaux_raw=2409 in_voltage5_vccoddr_raw=2008 in_voltage6_vrefp_raw=1691 in_voltage7_vrefn_raw=-10 in_voltage8_raw=3633 in_temp0_raw=2851 
+temp scale/offset: 123.040771484 -2219
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:01] driver [RTL8211E Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+loop7: detected capacity change from 0 to 61440
+maia_sdr: loading out-of-tree module taints kernel.
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx
+-- host hub port:
+Current status for hub 4-1 [0bda:0411 Generic USB3.2 Hub, USB 3.20, 4 ports, ppps]
+  Port 1: 02a0 power 5gbps Rx.Detect
+Current status for hub 3-6 [0bda:5411 Generic USB2.1 Hub, USB 2.10, 4 ports, ppps]
+  Port 1: 0503 power highspeed enable connect [0456:b673 Analog Devices Inc. PlutoSDR (ADALM-PLUTO) WZ5Z6HQZ6IXHI5QI]
+-- host sysfs:
+1
+ok 22:17:33 irq=126514
+ok 22:18:34 irq=137903
+ok 22:19:34 irq=149322
+ok 22:20:35 irq=160830
+ok 22:21:35 irq=172339
+!!!!! DROP DETECTED 22:21:57
+##### AT_DROP 22:21:57
+uptime 1016  udc=configured
+reg 140=0x00010001
+reg 144=0x00000080
+reg 148=0x00000147
+reg 184=0x88000A05
+reg 1A4=0x09200D20
+reg 1A8=0x0000000A
+ 33:     176401          0 GIC-0  53 Level     e0002000.usb
+in_voltage0_vccint_raw=1391 in_voltage1_vccaux_raw=2411 in_voltage2_vccbram_raw=1382 in_voltage3_vccpint_raw=1386 in_voltage4_vccpaux_raw=2409 in_voltage5_vccoddr_raw=1995 in_voltage6_vrefp_raw=1689 in_voltage7_vrefn_raw=-11 in_voltage8_raw=3631 in_temp0_raw=2866 
+temp scale/offset: 123.040771484 -2219
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:01] driver [RTL8211E Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+loop7: detected capacity change from 0 to 61440
+maia_sdr: loading out-of-tree module taints kernel.
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx
+-- host hub port:
+Current status for hub 4-1 [0bda:0411 Generic USB3.2 Hub, USB 3.20, 4 ports, ppps]
+  Port 1: 02a0 power 5gbps Rx.Detect
+Current status for hub 3-6 [0bda:5411 Generic USB2.1 Hub, USB 2.10, 4 ports, ppps]
+  Port 1: 0100 power
+-- host sysfs:
+0
+##### DROP_PLUS_5S 22:22:04
+uptime 1023  udc=configured
+reg 140=0x00010001
+reg 144=0x00000080
+reg 148=0x00000147
+reg 184=0x88000A05
+reg 1A4=0x09202D20
+reg 1A8=0x0000000A
+ 33:     176401          0 GIC-0  53 Level     e0002000.usb
+in_voltage0_vccint_raw=1393 in_voltage1_vccaux_raw=2407 in_voltage2_vccbram_raw=1389 in_voltage3_vccpint_raw=1387 in_voltage4_vccpaux_raw=2413 in_voltage5_vccoddr_raw=2006 in_voltage6_vrefp_raw=1693 in_voltage7_vrefn_raw=-12 in_voltage8_raw=3627 in_temp0_raw=2861 
+temp scale/offset: 123.040771484 -2219
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:01] driver [RTL8211E Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+loop7: detected capacity change from 0 to 61440
+maia_sdr: loading out-of-tree module taints kernel.
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx
+-- host hub port:
+Current status for hub 4-1 [0bda:0411 Generic USB3.2 Hub, USB 3.20, 4 ports, ppps]
+  Port 1: 02a0 power 5gbps Rx.Detect
+Current status for hub 3-6 [0bda:5411 Generic USB2.1 Hub, USB 2.10, 4 ports, ppps]
+  Port 1: 0100 power
+-- host sysfs:
+0
+MON_DONE_DROP

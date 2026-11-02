@@ -1,0 +1,15 @@
+kernel: 6.12.114-rt21
+isolated=[1]
+iiod (shipped start, no runtime pinning): iiod:mask=1:SCHED_OTHER usbd_main_thd:mask=1:SCHED_OTHER net_main_thd:mask=1:SCHED_OTHER avahi_thd:mask=1:SCHED_OTHER 
+stray processes (must be empty): 
+== P1 idle 120 s
+# Avg Latencies: 00015 # Max Latencies: 00043 samples 480000, >=50us 0 (0.0000%)
+== P2_stream
+# Avg Latencies: 00015 # Max Latencies: 00048 samples 1200000, >=50us 0 (0.0000%)
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 25, outliers 1117, on a 262144 boundary: 1117
+iiod alive: 836
+== P3_stream_hog
+# Avg Latencies: 00015 # Max Latencies: 00044 samples 1200000, >=50us 0 (0.0000%)
+stream: 10.0 MS/s nb32 blocks: runs 25, incomplete 0, runs with outliers 25, outliers 1294, on a 262144 boundary: 1294
+iiod alive: 836
+ALLDONE

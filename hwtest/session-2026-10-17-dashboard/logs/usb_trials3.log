@@ -1,0 +1,4 @@
+### T5: TX on at 0 dB gain + local CPU bursts (2 cores, 1 s on/1 s off), no network traffic
+[T5] >>> USB DROP after 96 s (PORTSC 0x88000A05)
+### T6: same with TX gain -89 dB
+[T6] no drop in 150 s

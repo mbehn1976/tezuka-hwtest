@@ -1,0 +1,11 @@
+Soak on sdimg-rt73-br (Buildroot 7.3.0-rc7 PREEMPT_RT, Pluto+), 2026-10-31. AD9361 loopback, cyclic TX tone, RX 5 MS/s over USB (192.168.4.1), iio_rwdev -b 262144, NB_BLOCKS=32, 5 s rounds.
+Run 1 (18:55-19:52): 191 rounds; 173 complete. Rounds 174+ failed (rc=1) because AD9361 SPI reads failed ("SPI transfer timed out", "Read Error -110"), board dmesg had 19 SPI timeouts at the end. My monitor pattern missed them (fixed afterwards). Stream outliers before that: 109 of 169 rounds with slips (207 total, max 6) -- USB path, no 6.12 control yet.
+Run 2 (after reboot, 20:00-20:16): 85 rounds, all complete, 45 with slips (60 total). SPI timeouts in dmesg: 5 events in 21 min uptime (first within about 1 min of stream start); chip register reads still worked afterwards (reg 0x37 = 0x0A).
+Memory flat, 66 C die temperature, maia API 200 throughout. Streams do not use SPI; the SPI errors hit attribute reads/writes (watch scripts, monitor, debugfs).
+Open: cause of the SPI timeouts (spi-core 200 ms completion timeout on spi0 = Cadence SPI); 6.12 control not yet run.
+
+6.12 control (sdimg-rt21-sw, 6.12.114-rt21, same Pluto+, same USB path, same loopback/tone/5 MS/s/32 blocks/monitor, 20:18-20:36, 90 rounds):
+ 90 rounds, 0 incomplete, 19 rounds with slips, 19 slips total (max 1 per round); SPI timeouts: 0 (bad=0 in all 19 monitor lines); memory flat, 68 C, API 200.
+7.3 run 2 (same test): 85 rounds, 0 incomplete, 45 rounds with slips, 60 slips (max 4); SPI timeouts 5 in 21 min.
+QSPI interrupt rate is about 1400/s on 6.12 as well (1.46 M in 1051 s) -> normal polling by the shipped scripts, not a 7.3 problem.
+=> On this USB path 7.3 is worse than 6.12 in slips (about 3x) and shows AD9361 SPI timeouts that 6.12 does not. Cause open.

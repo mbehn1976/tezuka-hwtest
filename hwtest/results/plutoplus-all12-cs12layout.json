@@ -1,0 +1,93 @@
+{
+ "fs": 30720000,
+ "tone_hz": 960000,
+ "bytes": 8650752,
+ "magic_count": 10,
+ "magic_gaps": [
+  594600,
+  673328,
+  705952,
+  760520,
+  786432,
+  984320
+ ],
+ "counter_steps": [
+  1,
+  2
+ ],
+ "periods": [
+  {
+   "samples": 253504,
+   "amplitude": 412.7,
+   "rel_rms_residual": 2.9594,
+   "sign": 1,
+   "phase0": -1.3634108945659014
+  },
+  {
+   "samples": 262136,
+   "amplitude": 1024.0,
+   "rel_rms_residual": 0.0007,
+   "sign": 1,
+   "phase0": -1.5707963267938934
+  },
+  {
+   "samples": 235312,
+   "amplitude": 429.8,
+   "rel_rms_residual": 3.516,
+   "sign": 1,
+   "phase0": -1.635080074207225
+  },
+  {
+   "samples": 328104,
+   "amplitude": 230.2,
+   "rel_rms_residual": 6.0854,
+   "sign": 1,
+   "phase0": -0.49961729666207905
+  },
+  {
+   "samples": 262136,
+   "amplitude": 1024.0,
+   "rel_rms_residual": 0.0007,
+   "sign": 1,
+   "phase0": -1.5707963267938934
+  },
+  {
+   "samples": 262136,
+   "amplitude": 1024.0,
+   "rel_rms_residual": 0.0007,
+   "sign": 1,
+   "phase0": -1.5707963267938934
+  },
+  {
+   "samples": 262136,
+   "amplitude": 1024.0,
+   "rel_rms_residual": 0.0007,
+   "sign": 1,
+   "phase0": -1.5707963267938934
+  },
+  {
+   "samples": 224440,
+   "amplitude": 131.7,
+   "rel_rms_residual": 12.4111,
+   "sign": 1,
+   "phase0": 0.7512344232253739
+  },
+  {
+   "samples": 198192,
+   "amplitude": 653.5,
+   "rel_rms_residual": 1.2062,
+   "sign": 1,
+   "phase0": -2.7217734183080995
+  }
+ ],
+ "phase_step_samples_across_sync": [
+  31.94,
+  8.67,
+  22.78,
+  19.54,
+  9.0,
+  9.0,
+  20.83,
+  23.31
+ ]
+}

@@ -1,0 +1,122 @@
+TS nb4 round 1 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=38.5 at=84 | lost-block gaps_ms(before,after)=[] | wait_ms max=51.4
+10.0 nb4 round 1 full=True outliers=0
+TS nb4 round 2 outliers=1 lostblocks=[95] nblocks=191 gap_ms median=26.2 max=84.3 at=92 | lost-block gaps_ms(before,after)=[(np.float64(16.3), np.float64(28.1))] | wait_ms max=84.1
+10.0 nb4 round 2 full=True outliers=1
+TS nb4 round 3 outliers=2 lostblocks=[107, 140] nblocks=191 gap_ms median=26.0 max=85.8 at=136 | lost-block gaps_ms(before,after)=[(np.float64(17.7), np.float64(20.0)), (np.float64(27.8), np.float64(20.8))] | wait_ms max=85.6
+10.0 nb4 round 3 full=True outliers=2
+TS nb4 round 4 outliers=2 lostblocks=[165, 167] nblocks=191 gap_ms median=26.4 max=46.2 at=93 | lost-block gaps_ms(before,after)=[(np.float64(23.8), np.float64(23.3)), (np.float64(27.8), np.float64(21.7))] | wait_ms max=49.7
+10.0 nb4 round 4 full=True outliers=2
+TS nb4 round 5 outliers=4 lostblocks=[132, 135, 139, 146] nblocks=191 gap_ms median=26.5 max=37.9 at=131 | lost-block gaps_ms(before,after)=[(np.float64(37.9), np.float64(37.2)), (np.float64(30.0), np.float64(23.2)), (np.float64(22.8), np.float64(27.9)), (np.float64(21.1), np.float64(20.7))] | wait_ms max=46.7
+10.0 nb4 round 5 full=True outliers=4
+TS nb4 round 6 outliers=2 lostblocks=[174, 180] nblocks=191 gap_ms median=26.2 max=49.7 at=77 | lost-block gaps_ms(before,after)=[(np.float64(25.6), np.float64(24.3)), (np.float64(20.3), np.float64(25.2))] | wait_ms max=53.8
+10.0 nb4 round 6 full=True outliers=2
+TS nb4 round 7 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=35.5 at=179 | lost-block gaps_ms(before,after)=[] | wait_ms max=49.3
+10.0 nb4 round 7 full=True outliers=0
+TS nb4 round 8 outliers=3 lostblocks=[66, 184, 185] nblocks=191 gap_ms median=26.1 max=82.8 at=180 | lost-block gaps_ms(before,after)=[(np.float64(23.1), np.float64(27.7)), (np.float64(19.3), np.float64(24.1)), (np.float64(24.1), np.float64(23.2))] | wait_ms max=82.4
+10.0 nb4 round 8 full=True outliers=3
+TS nb4 round 9 outliers=1 lostblocks=[53] nblocks=191 gap_ms median=26.2 max=62.6 at=49 | lost-block gaps_ms(before,after)=[(np.float64(25.6), np.float64(19.8))] | wait_ms max=62.3
+10.0 nb4 round 9 full=True outliers=1
+TS nb4 round 10 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=54.0 at=162 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.8
+10.0 nb4 round 10 full=True outliers=0
+TS nb4 round 11 outliers=7 lostblocks=[79, 80, 119, 120, 123, 163, 165] nblocks=191 gap_ms median=26.3 max=86.7 at=159 | lost-block gaps_ms(before,after)=[(np.float64(23.6), np.float64(17.6)), (np.float64(17.6), np.float64(21.8)), (np.float64(30.9), np.float64(29.6)), (np.float64(29.6), np.float64(26.5)), (np.float64(27.1), np.float64(25.9)), (np.float64(25.9), np.float64(28.6)), (np.float64(27.3), np.float64(27.3))] | wait_ms max=86.4
+10.0 nb4 round 11 full=True outliers=7
+TS nb4 round 12 outliers=4 lostblocks=[180, 182, 183, 186] nblocks=191 gap_ms median=26.3 max=61.3 at=177 | lost-block gaps_ms(before,after)=[(np.float64(29.1), np.float64(27.7)), (np.float64(24.7), np.float64(28.7)), (np.float64(28.7), np.float64(26.4)), (np.float64(21.3), np.float64(23.5))] | wait_ms max=60.7
+10.0 nb4 round 12 full=True outliers=4
+TS nb4 round 13 outliers=9 lostblocks=[152, 154, 155, 157, 159, 160, 164, 165, 168] nblocks=191 gap_ms median=26.2 max=71.0 at=108 | lost-block gaps_ms(before,after)=[(np.float64(22.3), np.float64(27.1)), (np.float64(28.1), np.float64(25.4)), (np.float64(25.4), np.float64(27.9)), (np.float64(27.3), np.float64(27.5)), (np.float64(26.8), np.float64(27.3)), (np.float64(27.3), np.float64(29.7)), (np.float64(23.7), np.float64(28.5)), (np.float64(28.5), np.float64(27.2)), (np.float64(28.9), np.float64(20.6))] | wait_ms max=70.7
+10.0 nb4 round 13 full=True outliers=9
+TS nb4 round 14 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=33.7 at=182 | lost-block gaps_ms(before,after)=[] | wait_ms max=46.1
+10.0 nb4 round 14 full=True outliers=0
+TS nb4 round 15 outliers=1 lostblocks=[170] nblocks=191 gap_ms median=26.1 max=73.2 at=166 | lost-block gaps_ms(before,after)=[(np.float64(23.0), np.float64(29.4))] | wait_ms max=72.9
+10.0 nb4 round 15 full=True outliers=1
+TS nb4 round 16 outliers=3 lostblocks=[134, 135, 136] nblocks=191 gap_ms median=26.0 max=54.4 at=130 | lost-block gaps_ms(before,after)=[(np.float64(25.2), np.float64(24.8)), (np.float64(24.8), np.float64(30.5)), (np.float64(30.5), np.float64(21.6))] | wait_ms max=54.1
+10.0 nb4 round 16 full=True outliers=3
+TS nb4 round 17 outliers=1 lostblocks=[86] nblocks=191 gap_ms median=26.1 max=50.9 at=123 | lost-block gaps_ms(before,after)=[(np.float64(24.0), np.float64(23.8))] | wait_ms max=52.3
+10.0 nb4 round 17 full=True outliers=1
+TS nb4 round 18 outliers=4 lostblocks=[150, 151, 152, 156] nblocks=191 gap_ms median=26.3 max=72.1 at=181 | lost-block gaps_ms(before,after)=[(np.float64(29.9), np.float64(25.7)), (np.float64(25.7), np.float64(27.7)), (np.float64(27.7), np.float64(25.6)), (np.float64(19.9), np.float64(19.9))] | wait_ms max=71.9
+10.0 nb4 round 18 full=True outliers=4
+TS nb4 round 19 outliers=2 lostblocks=[145, 147] nblocks=191 gap_ms median=26.3 max=39.9 at=183 | lost-block gaps_ms(before,after)=[(np.float64(29.8), np.float64(25.3)), (np.float64(20.4), np.float64(20.6))] | wait_ms max=62.0
+10.0 nb4 round 19 full=True outliers=2
+TS nb4 round 20 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=37.3 at=168 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.5
+10.0 nb4 round 20 full=True outliers=0
+TS nb4 round 21 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=35.8 at=190 | lost-block gaps_ms(before,after)=[] | wait_ms max=52.8
+10.0 nb4 round 21 full=True outliers=0
+TS nb4 round 22 outliers=1 lostblocks=[112] nblocks=191 gap_ms median=26.2 max=72.4 at=108 | lost-block gaps_ms(before,after)=[(np.float64(20.1), np.float64(28.0))] | wait_ms max=72.1
+10.0 nb4 round 22 full=True outliers=1
+TS nb4 round 23 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=42.4 at=138 | lost-block gaps_ms(before,after)=[] | wait_ms max=48.9
+10.0 nb4 round 23 full=True outliers=0
+TS nb4 round 24 outliers=3 lostblocks=[164, 166, 167] nblocks=191 gap_ms median=26.2 max=40.5 at=163 | lost-block gaps_ms(before,after)=[(np.float64(40.5), np.float64(19.2)), (np.float64(20.1), np.float64(21.1)), (np.float64(21.1), np.float64(20.7))] | wait_ms max=50.8
+10.0 nb4 round 24 full=True outliers=3
+TS nb4 round 25 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=39.2 at=181 | lost-block gaps_ms(before,after)=[] | wait_ms max=54.7
+10.0 nb4 round 25 full=True outliers=0
+TS nb4 round 26 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=40.9 at=60 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.9
+10.0 nb4 round 26 full=True outliers=0
+TS nb4 round 27 outliers=4 lostblocks=[40, 123, 125, 126] nblocks=191 gap_ms median=26.2 max=57.8 at=119 | lost-block gaps_ms(before,after)=[(np.float64(19.9), np.float64(24.2)), (np.float64(31.3), np.float64(21.3)), (np.float64(26.0), np.float64(27.6)), (np.float64(27.6), np.float64(26.9))] | wait_ms max=57.5
+10.0 nb4 round 27 full=True outliers=4
+TS nb4 round 28 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=46.6 at=39 | lost-block gaps_ms(before,after)=[] | wait_ms max=55.1
+10.0 nb4 round 28 full=True outliers=0
+TS nb4 round 29 outliers=3 lostblocks=[129, 133, 134] nblocks=191 gap_ms median=26.2 max=51.6 at=167 | lost-block gaps_ms(before,after)=[(np.float64(31.1), np.float64(23.2)), (np.float64(24.2), np.float64(25.0)), (np.float64(25.0), np.float64(14.0))] | wait_ms max=54.2
+10.0 nb4 round 29 full=True outliers=3
+TS nb4 round 30 outliers=4 lostblocks=[171, 173, 176, 181] nblocks=191 gap_ms median=26.4 max=51.8 at=168 | lost-block gaps_ms(before,after)=[(np.float64(26.3), np.float64(29.4)), (np.float64(29.6), np.float64(20.6)), (np.float64(27.7), np.float64(33.3)), (np.float64(22.2), np.float64(25.9))] | wait_ms max=51.8
+10.0 nb4 round 30 full=True outliers=4
+TS nb4 round 31 outliers=5 lostblocks=[121, 122, 123, 124, 128] nblocks=191 gap_ms median=26.0 max=86.8 at=117 | lost-block gaps_ms(before,after)=[(np.float64(29.9), np.float64(27.8)), (np.float64(27.8), np.float64(25.1)), (np.float64(25.1), np.float64(32.6)), (np.float64(32.6), np.float64(24.0)), (np.float64(28.0), np.float64(22.5))] | wait_ms max=86.5
+10.0 nb4 round 31 full=True outliers=5
+TS nb4 round 32 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=72.2 at=1 | lost-block gaps_ms(before,after)=[] | wait_ms max=71.8
+10.0 nb4 round 32 full=True outliers=0
+TS nb4 round 33 outliers=1 lostblocks=[44] nblocks=191 gap_ms median=26.2 max=43.6 at=13 | lost-block gaps_ms(before,after)=[(np.float64(24.1), np.float64(26.4))] | wait_ms max=65.3
+10.0 nb4 round 33 full=True outliers=1
+TS nb4 round 34 outliers=4 lostblocks=[51, 88, 89, 90] nblocks=191 gap_ms median=26.1 max=65.2 at=43 | lost-block gaps_ms(before,after)=[(np.float64(25.6), np.float64(24.1)), (np.float64(28.6), np.float64(22.9)), (np.float64(22.9), np.float64(25.8)), (np.float64(25.8), np.float64(30.0))] | wait_ms max=65.0
+10.0 nb4 round 34 full=True outliers=4
+TS nb4 round 35 outliers=3 lostblocks=[111, 114, 117] nblocks=191 gap_ms median=26.3 max=40.4 at=107 | lost-block gaps_ms(before,after)=[(np.float64(27.8), np.float64(23.3)), (np.float64(30.7), np.float64(21.3)), (np.float64(20.5), np.float64(19.6))] | wait_ms max=49.8
+10.0 nb4 round 35 full=True outliers=3
+TS nb4 round 36 outliers=3 lostblocks=[181, 182, 183] nblocks=191 gap_ms median=26.4 max=56.9 at=44 | lost-block gaps_ms(before,after)=[(np.float64(27.7), np.float64(26.7)), (np.float64(26.7), np.float64(25.4)), (np.float64(25.4), np.float64(30.6))] | wait_ms max=56.6
+10.0 nb4 round 36 full=True outliers=3
+TS nb4 round 37 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.1 max=47.8 at=185 | lost-block gaps_ms(before,after)=[] | wait_ms max=52.8
+10.0 nb4 round 37 full=True outliers=0
+TS nb4 round 38 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=49.9 at=40 | lost-block gaps_ms(before,after)=[] | wait_ms max=50.4
+10.0 nb4 round 38 full=True outliers=0
+TS nb4 round 39 outliers=3 lostblocks=[42, 43, 44] nblocks=191 gap_ms median=26.5 max=36.9 at=38 | lost-block gaps_ms(before,after)=[(np.float64(27.9), np.float64(20.7)), (np.float64(20.7), np.float64(21.6)), (np.float64(21.6), np.float64(15.9))] | wait_ms max=46.7
+10.0 nb4 round 39 full=True outliers=3
+TS nb4 round 40 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=46.3 at=144 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.9
+10.0 nb4 round 40 full=True outliers=0
+TS nb4 round 41 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=70.1 at=81 | lost-block gaps_ms(before,after)=[] | wait_ms max=69.8
+10.0 nb4 round 41 full=True outliers=0
+TS nb4 round 42 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.4 max=34.4 at=157 | lost-block gaps_ms(before,after)=[] | wait_ms max=53.8
+10.0 nb4 round 42 full=True outliers=0
+TS nb4 round 43 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=38.3 at=11 | lost-block gaps_ms(before,after)=[] | wait_ms max=50.8
+10.0 nb4 round 43 full=True outliers=0
+TS nb4 round 44 outliers=7 lostblocks=[38, 43, 46, 53, 126, 127, 128] nblocks=191 gap_ms median=26.2 max=67.0 at=121 | lost-block gaps_ms(before,after)=[(np.float64(30.1), np.float64(34.3)), (np.float64(28.6), np.float64(24.8)), (np.float64(24.1), np.float64(31.7)), (np.float64(24.0), np.float64(24.4)), (np.float64(25.6), np.float64(22.7)), (np.float64(22.7), np.float64(23.4)), (np.float64(23.4), np.float64(24.0))] | wait_ms max=66.7
+10.0 nb4 round 44 full=True outliers=7
+TS nb4 round 45 outliers=1 lostblocks=[77] nblocks=191 gap_ms median=26.0 max=68.8 at=106 | lost-block gaps_ms(before,after)=[(np.float64(26.0), np.float64(20.8))] | wait_ms max=68.6
+10.0 nb4 round 45 full=True outliers=1
+TS nb4 round 46 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=71.5 at=121 | lost-block gaps_ms(before,after)=[] | wait_ms max=71.2
+10.0 nb4 round 46 full=True outliers=0
+TS nb4 round 47 outliers=3 lostblocks=[151, 152, 155] nblocks=191 gap_ms median=26.4 max=45.1 at=147 | lost-block gaps_ms(before,after)=[(np.float64(28.6), np.float64(27.0)), (np.float64(27.0), np.float64(26.5)), (np.float64(20.5), np.float64(28.7))] | wait_ms max=54.6
+10.0 nb4 round 47 full=True outliers=3
+TS nb4 round 48 outliers=1 lostblocks=[180] nblocks=191 gap_ms median=26.2 max=89.3 at=176 | lost-block gaps_ms(before,after)=[(np.float64(19.1), np.float64(20.7))] | wait_ms max=89.0
+10.0 nb4 round 48 full=True outliers=1
+TS nb4 round 49 outliers=1 lostblocks=[139] nblocks=191 gap_ms median=26.1 max=50.5 at=135 | lost-block gaps_ms(before,after)=[(np.float64(23.1), np.float64(30.0))] | wait_ms max=53.9
+10.0 nb4 round 49 full=True outliers=1
+TS nb4 round 50 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=34.6 at=119 | lost-block gaps_ms(before,after)=[] | wait_ms max=50.0
+10.0 nb4 round 50 full=True outliers=0
+TS nb4 round 51 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.2 max=57.4 at=111 | lost-block gaps_ms(before,after)=[] | wait_ms max=57.2
+10.0 nb4 round 51 full=True outliers=0
+TS nb4 round 52 outliers=1 lostblocks=[107] nblocks=191 gap_ms median=26.2 max=58.7 at=103 | lost-block gaps_ms(before,after)=[(np.float64(21.8), np.float64(22.3))] | wait_ms max=58.4
+10.0 nb4 round 52 full=True outliers=1
+TS nb4 round 53 outliers=2 lostblocks=[118, 119] nblocks=191 gap_ms median=26.2 max=47.7 at=114 | lost-block gaps_ms(before,after)=[(np.float64(28.1), np.float64(21.6)), (np.float64(21.6), np.float64(31.1))] | wait_ms max=52.0
+10.0 nb4 round 53 full=True outliers=2
+TS nb4 round 54 outliers=1 lostblocks=[166] nblocks=191 gap_ms median=25.9 max=49.5 at=160 | lost-block gaps_ms(before,after)=[(np.float64(21.8), np.float64(28.9))] | wait_ms max=49.3
+10.0 nb4 round 54 full=True outliers=1
+TS nb4 round 55 outliers=0 lostblocks=[] nblocks=191 gap_ms median=26.3 max=37.0 at=31 | lost-block gaps_ms(before,after)=[] | wait_ms max=49.9
+10.0 nb4 round 55 full=True outliers=0
+TS nb4 round 56 outliers=1 lostblocks=[90] nblocks=191 gap_ms median=26.4 max=36.0 at=134 | lost-block gaps_ms(before,after)=[(np.float64(21.5), np.float64(20.9))] | wait_ms max=54.7
+10.0 nb4 round 56 full=True outliers=1
+TS nb4 round 57 outliers=8 lostblocks=[59, 101, 103, 104, 119, 124, 127, 143] nblocks=191 gap_ms median=26.1 max=84.3 at=96 | lost-block gaps_ms(before,after)=[(np.float64(24.5), np.float64(18.4)), (np.float64(28.6), np.float64(21.2)), (np.float64(25.9), np.float64(23.4)), (np.float64(23.4), np.float64(27.5)), (np.float64(24.9), np.float64(30.5)), (np.float64(21.8), np.float64(25.1)), (np.float64(21.6), np.float64(23.6)), (np.float64(24.9), np.float64(25.0))] | wait_ms max=83.7
+10.0 nb4 round 57 full=True outliers=8
+TS nb4 round 58 outliers=1 lostblocks=[151] nblocks=191 gap_ms median=26.4 max=33.7 at=47 | lost-block gaps_ms(before,after)=[(np.float64(22.0), np.float64(19.6))] | wait_ms max=51.6
+10.0 nb4 round 58 full=True outliers=1
+TS nb4 round 59 outliers=2 lostblocks=[122, 125] nblocks=191 gap_ms median=26.2 max=64.4 at=151 | lost-block gaps_ms(before,after)=[(np.float64(31.6), np.float64(22.7)), (np.float64(29.9), np.float64(21.3))] | wait_ms max=64.1
+10.0 nb4 round 59 full=True outliers=2
+TS nb4 round 60 outliers=4 lostblocks=[37, 167, 169, 172] nblocks=191 gap_ms median=26.3 max=70.3 at=33 | lost-block gaps_ms(before,after)=[(np.float64(22.6), np.float64(20.3)), (np.float64(29.1), np.float64(24.3)), (np.float64(26.4), np.float64(28.4)), (np.float64(25.0), np.float64(29.2))] | wait_ms max=70.0
+10.0 nb4 round 60 full=True outliers=4
+SUMMARY 10.0 MS/s nb4 blocks: runs 60, incomplete 0, runs with outliers 39, outliers 113, on a 262144 boundary: 113
+OUTLIER_DONE

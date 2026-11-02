@@ -1,0 +1,63 @@
+# tracer: wakeup_rt
+#
+# wakeup_rt latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 81137 us, #6/6, CPU#1 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: net_client_thd-25241 (uid:0 nice:0 policy:2 rt_prio:99)
+#    -----------------
+#  => started at: __slab_free
+#  => ended at:   __irq_svc
+#
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+irq/31-e-286       0d.s52    1us+:      286: 49:R   + [001]   25241:  0:R net_client_thd
+irq/31-e-286       0d.s52   28us : <stack trace>
+ => __trace_stack
+ => probe_wakeup
+ => try_to_wake_up
+ => rt_mutex_slowunlock
+ => rt_spin_unlock
+ => tcp_v4_rcv
+ => ip_protocol_deliver_rcu
+ => ip_local_deliver_finish
+ => ip_sublist_rcv
+ => ip_list_rcv
+ => __netif_receive_skb_list_core
+ => netif_receive_skb_list_internal
+ => napi_complete_done
+ => macb_rx_poll
+ => __napi_poll.constprop.0
+ => net_rx_action
+ => handle_softirqs
+ => __local_bh_enable_ip
+ => irq_forced_thread_fn
+ => irq_thread
+ => kthread
+ => ret_from_fork
+irq/31-e-286       0d.s52   29us*: 0
+writer-t-25242     1d..3. 81089us : __schedule
+writer-t-25242     1d..3. 81094us+:    25242:  0:S ==> [001]   25241:  0:R net_client_thd
+writer-t-25242     1d..3. 81135us : <stack trace>
+ => __trace_stack
+ => probe_wakeup_sched_switch
+ => __schedule
+ => schedule
+ => schedule_timeout
+ => wait_woken
+ => sk_stream_wait_memory
+ => tcp_sendmsg_locked
+ => tcp_sendmsg
+ => sock_write_iter
+ => aio_write.constprop.0
+ => io_submit_one.constprop.0
+ => sys_io_submit
+ => ret_fast_syscall

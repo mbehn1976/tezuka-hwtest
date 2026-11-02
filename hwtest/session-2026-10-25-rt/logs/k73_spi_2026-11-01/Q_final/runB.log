@@ -1,0 +1,35 @@
+15:10:49 == phase B start
+15:11:44 card on sdimg-rt21-v2: 1 match
+15:12:06 boot: 6.12.114-rt21 up=45.14 sysrq=none usb0=192.168.4.1/24 eth0=192.168.3.1/24 spi_thread=178 prio=60 ktimers0=1 watcher=0 halt_warn=0 rtprio=1  cmdline_mode=usb_ethernet_mode=ncm gadget=ncm.usb0 host: driver=cdc_ncm 192.168.4.10/24 route_dev=enx00e0220ae277 cdc_ncm_msgs=3
+15:12:06 6.12 recovery test: spi thread 178 pid 178's current scheduling priority: 50
+15:12:57 6.12 after 2 x 200 MB each way at FIFO 50: regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004  | spi thread 178 pid 178's current scheduling priority: 60 | throughput recv 209.7 MB in 13.31 s = 15.8 MB/s / send 200 MB in 7.57 s = 26.4 MB/s
+15:13:01 radio: phy=iio:device0 sf=5000000 loopback=1 writer=1
+15:16:42 NCM 5 MS/s 20 rounds 612: SUMMARY nb32: runs 20, incomplete 0, runs with outliers 0, outliers 0  spito=0
+cyclictest 612 core 0 idle: min 10 avg 22 max 92 
+cyclictest 612 core 1 idle: min 10 avg 20 max 78 
+radio for the stream: phy=iio:device0 sf=10000000 loopback=1 writer=1
+cyclictest 612 core 0 stream: min 10 avg 26 max 410 
+cyclictest 612 core 1 stream: min 10 avg 479 max 163158 
+15:26:19 6.12 flash: mtd3 dump 31457280 bytes md5 25c3d602; mtd0-3 md5 c4a8d86d dac04566 e4c89913 25c3d602 
+15:27:12 card on sdimg-rt73-final5: 1 match
+15:27:34 boot: 7.3.0 up=44.58 sysrq=none usb0=192.168.4.1/24 eth0=192.168.3.1/24 spi_thread=188 prio=60 ktimers0=51 watcher=0 halt_warn=0 rtprio=1  cmdline_mode=usb_ethernet_mode=ncm gadget=ncm.usb0 host: driver=cdc_ncm 192.168.4.10/24 route_dev=enx00e0220ae277 cdc_ncm_msgs=4
+15:27:37 7.3 flash reads: mtd0-3 md5 c4a8d86d dac04566 e4c89913 25c3d602  (6.12: c4a8d86d dac04566 e4c89913 25c3d602 )
+qspi: tools: /dev/mtd0 /dev/mtd1 /dev/mtd2 /dev/mtd3 /usr/sbin/flash_erase /bin/dd /usr/sbin/fw_setenv 65536 31457280 
+qspi: env round trip: ok (hello73 survived the reboot; after delete: [## Error: "qspi_test" not defined]) up=29.03
+qspi: block at mtd3+16 MiB: pattern written and read back, block restored, mtd3 equals the dump
+qspi: 14 MiB at mtd3+16 MiB: written and read back in 109 s, restored in 110 s, mtd3 equals the dump
+qspi: after reboot: mtd0-3 md5 c4a8d86d 9cf6b9d0 e4c89913 25c3d602 192.168.4.1 env ipaddr=0 driver errors 0 up=30.27
+qspi: ALL PASSED
+15:43:10 pidglitch mode=auto reads=150 off=3 62:0x80:active 67:0xF:active 79:0xF:active spito=0 readerr=0
+15:53:14 pidglitch mode=on reads=150 off=2 61:0x0:active 65:0x0:active spito=0 readerr=0
+cyclictest 73 core 0 idle: min 11 avg 29 max 113 
+cyclictest 73 core 1 idle: min 12 avg 29 max 121 
+radio for the stream: phy=iio:device1 sf=10000000 loopback=1 writer=1
+cyclictest 73 core 0 stream: min 2 avg 37 max 646 
+cyclictest 73 core 1 stream: min 2 avg 775 max 338135 
+16:02:46 radio: phy=iio:device1 sf=5000000 loopback=1 writer=1
+16:07:10 NCM 5 MS/s 20 rounds 73: SUMMARY nb32: runs 20, incomplete 0, runs with outliers 0, outliers 0  spito=0
+16:07:16 radio for the soak: phy=iio:device1 sf=5000000 loopback=1 writer=1
+16:55:06 NCM 5 MS/s soak 240 rounds 7.3: SUMMARY nb32: runs 240, incomplete 0, runs with outliers 0, outliers 0  spito=0 rate seen by the monitor: 
+16:55:09 final: 7.3.0 up=4953.24 sysrq=none usb0=192.168.4.1/24 eth0=192.168.3.1/24 spi_thread=187 prio=60 ktimers0=51 watcher=0 halt_warn=0 rtprio=1  halt_warnings=0 adcheck: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A
+16:55:09 == phase B done; the card holds sdimg-rt73-final5

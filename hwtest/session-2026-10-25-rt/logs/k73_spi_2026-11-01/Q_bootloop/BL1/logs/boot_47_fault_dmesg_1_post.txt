@@ -1,0 +1,1900 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 7.3.0 (mb@mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC) (arm-linux-gcc.br_real (Buildroot 2021.11-18033-g83947c7bb6) 15.1.0, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT_RT Mon Nov  2 09:29:30 CET 2026
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Pluto+ (Z7010/AD9363)
+[    0.000000] OF: fdt: earlycon: stdout-path /amba@0/uart@E0001000 not found
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 64 MiB at 0x12000000
+[    0.000000] OF: reserved mem: 0x16000000..0x1603ffff (256 KiB) nomap non-reusable maia_sdr_spectrometer@16000000
+[    0.000000] OF: reserved mem: 0x06000000..0x0dffffff (131072 KiB) nomap non-reusable maia_sdr_recording@6000000
+[    0.000000] OF: reserved mem: 0x1a100000..0x1a1fffff (1024 KiB) nomap non-reusable maia_sdr_raw_capture@1a100000
+[    0.000000] OF: reserved mem: 0x1a200000..0x1a21ffff (128 KiB) nomap non-reusable maia_sdr_iq_waterfall@1a200000
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000001fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x0000000005ffffff]
+[    0.000000]   node   0: [mem 0x0000000006000000-0x000000000dffffff]
+[    0.000000]   node   0: [mem 0x000000000e000000-0x0000000015ffffff]
+[    0.000000]   node   0: [mem 0x0000000016000000-0x000000001603ffff]
+[    0.000000]   node   0: [mem 0x0000000016040000-0x000000001a0fffff]
+[    0.000000]   node   0: [mem 0x000000001a100000-0x000000001a21ffff]
+[    0.000000]   node   0: [mem 0x000000001a220000-0x000000001fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000001fffffff]
+[    0.000000] percpu: Embedded 16 pages/cpu s36120 r8192 d21224 u65536
+[    0.000000] pcpu-alloc: s36120 r8192 d21224 u65536 alloc=16*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Kernel command line: console=ttyPS0,115200 rootfstype=ramfs root=/dev/ram0 rw rootwait earlycon clk_ignore_unused cpuidle.off=1 uio_pdrv_genirq.of_id=uio_pdrv_genirq UBOOT_MODEBOOT=sdboot UBOOT_VERSION=""
+[    0.000000] Unknown kernel command line parameters "UBOOT_MODEBOOT=sdboot UBOOT_VERSION=", will be passed to user space.
+[    0.000000] printk: log buffer data + meta data: 524288 + 1638400 = 2162688 bytes
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 131072
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[    0.000000] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[    0.000000] rcu: 	RCU_SOFTIRQ processing moved to rcuc kthreads.
+[    0.000000] 	No expedited grace period (rcu_normal_after_boot).
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] slcr mapped to (ptrval)
+[    0.000000] L2C: platform modifies aux control register: 0x72360000 -> 0x72760000
+[    0.000000] L2C: DT/platform modifies aux control register: 0x72360000 -> 0x72760000
+[    0.000000] L2C-310 erratum 769419 enabled
+[    0.000000] L2C-310 enabling early BRESP for Cortex-A9
+[    0.000000] L2C-310 full line of zeros enabled for Cortex-A9
+[    0.000000] L2C-310 ID prefetch enabled, offset 1 lines
+[    0.000000] L2C-310 dynamic clock gating enabled, standby mode enabled
+[    0.000000] L2C-310 cache controller enabled, 8 ways, 512 kB
+[    0.000000] L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x76760001
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.000000] zynq_clock_init: clkc starts at (ptrval)
+[    0.000000] Zynq clock init
+[    0.000002] sched_clock: 64 bits at 167MHz, resolution 6ns, wraps every 4398046511103ns
+[    0.000023] clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x26703d7dd8, max_idle_ns: 440795208065 ns
+[    0.000055] Switching to timer-based delay loop, resolution 6ns
+[    0.000523] Console: colour dummy device 80x30
+[    0.000561] Calibrating delay loop (skipped), value calculated using timer frequency.. 333.33 BogoMIPS (lpj=166666)
+[    0.000577] CPU: Testing write buffer coherency: ok
+[    0.000620] CPU0: Spectre v2: using BPIALL workaround
+[    0.000629] pid_max: default: 32768 minimum: 301
+[    0.000853] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.000871] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.001310] VFS: Finished mounting rootfs on nullfs
+[    0.002203] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.003861] Setting up static identity map for 0x100000 - 0x100060
+[    0.004355] rcu: Hierarchical SRCU implementation.
+[    0.004364] rcu: 	Max phase no-delay instances is 400.
+[    0.005815] smp: Bringing up secondary CPUs ...
+[    0.007519] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.007603] CPU1: Spectre v2: using BPIALL workaround
+[    0.007892] smp: Brought up 1 node, 2 CPUs
+[    0.007906] SMP: Total of 2 processors activated (666.66 BogoMIPS).
+[    0.007917] CPU: All CPU(s) started in SVC mode.
+[    0.008271] Memory: 279964K/524288K available (11264K kernel code, 2654K rwdata, 2872K rodata, 1024K init, 662K bss, 176868K reserved, 65536K cma-reserved, 0K highmem)
+[    0.009073] devtmpfs: initialized
+[    0.020679] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.021393] posixtimers hash table entries: 1024 (order: 3, 20480 bytes, linear)
+[    0.021487] futex hash table entries: 512 (32768 bytes on 1 NUMA nodes, total 32 KiB, linear).
+[    0.024948] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.026868] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.029010] thermal_sys: Registered thermal governor 'step_wise'
+[    0.035453] /replicator: Fixed dependency cycle(s) with /axi/etb@f8801000
+[    0.035484] /axi/etb@f8801000: Fixed dependency cycle(s) with /replicator
+[    0.035675] /replicator: Fixed dependency cycle(s) with /axi/tpiu@f8803000
+[    0.035696] /axi/tpiu@f8803000: Fixed dependency cycle(s) with /replicator
+[    0.035724] /axi/ptm@f889d000: Fixed dependency cycle(s) with /axi/funnel@f8804000
+[    0.035746] /axi/funnel@f8804000: Fixed dependency cycle(s) with /axi/ptm@f889d000
+[    0.035766] /axi/ptm@f889c000: Fixed dependency cycle(s) with /axi/funnel@f8804000
+[    0.035787] /axi/funnel@f8804000: Fixed dependency cycle(s) with /axi/ptm@f889c000
+[    0.035807] /replicator: Fixed dependency cycle(s) with /axi/funnel@f8804000
+[    0.035830] /axi/funnel@f8804000: Fixed dependency cycle(s) with /replicator
+[    0.048714] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.048731] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.054233] SCSI subsystem initialized
+[    0.054809] usbcore: registered new interface driver usbfs
+[    0.054899] usbcore: registered new interface driver hub
+[    0.054969] usbcore: registered new device driver usb
+[    0.055664] pps_core: LinuxPPS API ver. 1 registered
+[    0.055673] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.055713] PTP clock support registered
+[    0.056119] FPGA manager framework
+[    0.056205] Advanced Linux Sound Architecture Driver Initialized.
+[    0.059998] clocksource: Switched to clocksource arm_global_timer
+[    0.085173] NET: Registered PF_INET protocol family
+[    0.085489] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.086893] tcp_listen_portaddr_hash hash table entries: 256 (order: 1, 5120 bytes, linear)
+[    0.086926] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.086944] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.087023] TCP bind hash table entries: 4096 (order: 6, 163840 bytes, linear)
+[    0.087391] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.087552] UDP hash table entries: 256 (order: 3, 20480 bytes, linear)
+[    0.087826] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.088830] RPC: Registered named UNIX socket transport module.
+[    0.088842] RPC: Registered udp transport module.
+[    0.088848] RPC: Registered tcp transport module.
+[    0.088853] RPC: Registered tcp-with-tls transport module.
+[    0.088859] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.089464] Trying to unpack rootfs image as initramfs...
+[    0.096200] Initialise system trusted keyrings
+[    0.097608] workingset: timestamp_bits=30 (anon: 25) max_order=17 bucket_order=0 (anon: 0)
+[    0.109547] Key type cifs.idmap registered
+[    0.109578] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.109978] Key type asymmetric registered
+[    0.109990] Asymmetric key parser 'x509' registered
+[    0.110031] io scheduler mq-deadline registered
+[    0.110041] io scheduler kyber registered
+[    0.110078] io scheduler bfq registered
+[    0.114960] zynq-pinctrl 700.pinctrl: zynq pinctrl initialized
+[    8.574242] random: crng init done
+[   10.809813] Freeing initrd memory: 19296K
+[   10.823618] Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+[   10.848142] brd: module loaded
+[   10.860399] loop: module loaded
+[   10.868031] spi-nor spi1.0: supply vcc not found, using dummy regulator
+[   10.869080] 4 fixed-partitions partitions found on MTD device spi1.0
+[   10.869096] Creating 4 MTD partitions on "spi1.0":
+[   10.869106] 0x000000000000-0x000000100000 : "qspi-fsbl-uboot"
+[   10.872930] 0x000000100000-0x000000120000 : "qspi-uboot-env"
+[   10.875771] 0x000000120000-0x000000200000 : "qspi-nvmfs"
+[   10.878871] 0x000000200000-0x000002000000 : "qspi-linux"
+[   10.882747] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   10.882761] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   10.887512] tun: Universal TUN/TAP device driver, 1.6
+[   10.919096] macb e000b000.ethernet eth0: Cadence GEM rev 0x00020118 at 0xe000b000 irq 31 (d2:50:6d:57:3c:5f)
+[   10.920067] usbcore: registered new interface driver rtl8150
+[   10.920148] usbcore: registered new device driver r8152-cfgselector
+[   10.920287] usbcore: registered new interface driver r8152
+[   10.920431] usbcore: registered new interface driver lan78xx
+[   10.920699] usbcore: registered new interface driver asix
+[   10.920840] usbcore: registered new interface driver ax88179_178a
+[   10.920972] usbcore: registered new interface driver cdc_ether
+[   10.921098] usbcore: registered new interface driver dm9601
+[   10.921221] usbcore: registered new interface driver smsc75xx
+[   10.921515] usbcore: registered new interface driver smsc95xx
+[   10.921692] usbcore: registered new interface driver rndis_host
+[   10.921831] usbcore: registered new interface driver r8153_ecm
+[   10.924072] usbcore: registered new interface driver cdc_acm
+[   10.924087] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[   10.924217] usbcore: registered new interface driver usb-storage
+[   10.924660] usbcore: registered new interface driver usbserial_generic
+[   10.924726] usbserial: USB Serial support registered for generic
+[   10.924817] usbcore: registered new interface driver ftdi_sio
+[   10.924924] usbserial: USB Serial support registered for FTDI USB Serial Device
+[   10.928317] i2c_dev: i2c /dev entries driver
+[   10.929072] pps_ldisc: PPS line discipline registered
+[   10.930506] cdns-wdt f8005000.watchdog: Xilinx Watchdog Timer with timeout 10s
+[   10.931482] Xilinx Zynq CpuIdle Driver started
+[   10.931494] failed to register cpuidle driver
+[   10.934058] clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 537538477 ns
+[   10.934161] timer #0 at 190d9b28, irq=35
+[   10.935411] hid: raw HID events driver (C) Jiri Kosina
+[   10.935730] usbcore: registered new interface driver usbhid
+[   10.935741] usbhid: USB HID core driver
+[   10.942583] ad9361 spi0.0: ad9361_probe : enter (ad9361)
+[   10.943951] OF: /axi/spi@e0006000/ad9361-phy@0: Read of boolean property 'adi,gpo0-inactive-state-high-enable' with a value.
+[   10.944105] OF: /axi/spi@e0006000/ad9361-phy@0: Read of boolean property 'adi,gpo1-inactive-state-high-enable' with a value.
+[   10.944145] OF: /axi/spi@e0006000/ad9361-phy@0: Read of boolean property 'adi,gpo2-inactive-state-high-enable' with a value.
+[   10.944173] OF: /axi/spi@e0006000/ad9361-phy@0: Read of boolean property 'adi,gpo3-inactive-state-high-enable' with a value.
+[   10.944878] ad9361 spi0.0: No GPIOs defined for ext band ctrl
+[   10.964875] mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+[   11.007319] mmc0: new high speed SDHC card at address 0001
+[   11.009125] mmcblk0: mmc0:0001 SD 14.6 GiB
+[   11.013343]  mmcblk0: p1
+[   11.212136] ad9361 spi0.0: ad9361_probe : AD936x Rev 0 successfully initialized
+[   11.225175] cf_axi_dds 79024000.cf-ad9361-dds-core-lpc: Analog Devices CF_AXI_DDS_DDS MASTER (9.02.b) at 0x79024000 mapped to 0x85d3d81d, probed DDS AD9364
+[   11.225822] armv7-pmu f8891000.pmu: hw perfevents: no interrupt-affinity property, guessing.
+[   11.226484] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 (8000003f) counters available
+[   11.236775] usbcore: registered new interface driver snd-usb-audio
+[   11.237868] NET: Registered PF_INET6 protocol family
+[   11.239683] Segment Routing with IPv6
+[   11.239742] In-situ OAM (IOAM) with IPv6
+[   11.239886] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[   11.241340] NET: Registered PF_PACKET protocol family
+[   11.241477] Key type dns_resolver registered
+[   11.241939] Registering SWP/SWPB emulation handler
+[   11.282600] Loading compiled-in X.509 certificates
+[   11.317283] e0001000.serial: ttyPS0 MMIO32:0xe0001000 (irq = 40, base_baud = 6249999) is a xuartps
+[   11.317531] printk: legacy console [ttyPS0] enabled
+[   11.318685] usb_phy_generic phy0: dummy supplies not allowed for exclusive requests (id=vbus)
+[   12.485306] cf_axi_adc 79020000.cf-ad9361-lpc: ADI AIM (10.03. ) probed ADC AD9364 as MASTER
+[   12.485512] netconsole: network logging started
+[   12.486732] input: gpio_keys as /devices/soc0/gpio_keys/input/input0
+[   12.488747] clk: Not disabling unused clocks
+[   12.488930] ALSA device list:
+[   12.488939]   #0: Dummy 1
+[   12.488947]   #1: Loopback 1
+[   12.523911] Freeing unused kernel image (initmem) memory: 1024K
+[   12.524449] Run /init as init process
+[   12.524458]   with arguments:
+[   12.524462]     /init
+[   12.524467]   with environment:
+[   12.524470]     HOME=/
+[   12.524475]     TERM=linux
+[   12.524479]     UBOOT_MODEBOOT=sdboot
+[   12.524484]     UBOOT_VERSION=
+[   12.954622] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   13.415081] file system registered
+[   13.437490] LUN: removable file: (no medium)
+[   13.587783] read descriptors
+[   13.587809] read strings
+[   13.772070] configfs-gadget.composite_gadget gadget.0: HOST MAC 00:e0:22:0a:e2:77
+[   13.772094] configfs-gadget.composite_gadget gadget.0: MAC 00:05:f7:dd:ba:ca
+[   14.325595] ci_hdrc ci_hdrc.0: ep0in: halt=1 not taken, ENDPTCTRL 0x00800080
+[   14.327221] ci_hdrc ci_hdrc.0: ep0out: halt=1 not taken, ENDPTCTRL 0x00800080
+[   14.327239] ci_hdrc ci_hdrc.0: error: _ep_set_halt
+[   14.329717] ci_hdrc ci_hdrc.0: ep0in: halt=1 not taken, ENDPTCTRL 0x00800080
+[   14.331507] ci_hdrc ci_hdrc.0: ep0out: halt=1 not taken, ENDPTCTRL 0x00800080
+[   14.331532] ci_hdrc ci_hdrc.0: error: _ep_set_halt
+[   15.788203] macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:01] driver [RTL8211E Gigabit Ethernet] (irq=POLL)
+[   15.788598] macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+[   16.110666] loop7: detected capacity change from 0 to 61440
+[   16.361403] maia_sdr: loading out-of-tree module taints kernel.
+[   19.158824] sysrq: Show Blocked State
+[   19.163308] sysrq: Show backtrace of all active CPUs
+[   19.163335] NMI backtrace for cpu 0
+[   19.163360] CPU: 0 UID: 0 PID: 1313 Comm: S99bootwatch Tainted: G           O        7.3.0 #1 PREEMPT_RT 
+[   19.163402] Tainted: [O]=OOT_MODULE
+[   19.163409] Hardware name: Xilinx Zynq Platform
+[   19.163420] Call trace: 
+[   19.163440]  unwind_backtrace from show_stack+0x10/0x14
+[   19.163489]  show_stack from dump_stack_lvl+0x54/0x68
+[   19.163515]  dump_stack_lvl from nmi_cpu_backtrace+0xd8/0xf8
+[   19.163575]  nmi_cpu_backtrace from nmi_trigger_cpumask_backtrace+0x11c/0x18c
+[   19.163626]  nmi_trigger_cpumask_backtrace from __handle_sysrq+0x98/0x198
+[   19.163679]  __handle_sysrq from write_sysrq_trigger+0x80/0x98
+[   19.163724]  write_sysrq_trigger from proc_reg_write+0x98/0xbc
+[   19.163755]  proc_reg_write from vfs_write+0xcc/0x4cc
+[   19.163805]  vfs_write from ksys_write+0x6c/0xf4
+[   19.163852]  ksys_write from ret_fast_syscall+0x0/0x54
+[   19.163897] Exception stack(0xe095dfa8 to 0xe095dff0)
+[   19.163918] dfa0:                   00000000 00000000 00000001 00576158 00000002 00000000
+[   19.163958] dfc0: 00000000 00000000 00000001 00000004 00000002 00000001 00000020 00000000
+[   19.163981] dfe0: 00000000 be901cd0 00000001 b6db4290
+[   19.164035] Sending NMI from CPU 0 to CPUs 1:
+[   19.164055] NMI backtrace for cpu 1
+[   19.164070] CPU: 1 UID: 0 PID: 1330 Comm: watchconsoletx. Tainted: G           O        7.3.0 #1 PREEMPT_RT 
+[   19.164091] Tainted: [O]=OOT_MODULE
+[   19.164096] Hardware name: Xilinx Zynq Platform
+[   19.164102] PC is at strnlen_user+0x80/0x164
+[   19.164136] LR is at strnlen_user+0x70/0x164
+[   19.164155] pc : [<c064fa70>]    lr : [<c064fa60>]    psr: 00030113
+[   19.164164] sp : e0985ef0  ip : 00000000  fp : 00000000
+[   19.164172] r10: d83f2600  r9 : 005c0ff0  r8 : 005c0ff0
+[   19.164180] r7 : 00000000  r6 : 00000051  r5 : 00020000  r4 : 005c0ff0
+[   19.164189] r3 : 00020000  r2 : 3d445750  r1 : beffffff  r0 : 00000000
+[   19.164198] Flags: nzcv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment none
+[   19.164210] Control: 18c5387d  Table: 183c004a  DAC: 00000051
+[   19.164217] Call trace: 
+[   19.164224]  strnlen_user from copy_strings+0x78/0x34c
+[   19.164255]  copy_strings from do_execveat_common+0xf8/0x194
+[   19.164274]  do_execveat_common from sys_execve+0x38/0x50
+[   19.164292]  sys_execve from ret_fast_syscall+0x0/0x54
+[   19.164310] Exception stack(0xe0985fa8 to 0xe0985ff0)
+[   19.164324] 5fa0:                   005c064c 005c0618 005c064c 005c0618 005c0624 00000006
+[   19.164338] 5fc0: 005c064c 005c0618 005b6353 0000000b 005c0624 00000002 005bf61c 005bf558
+[   19.164349] 5fe0: 005becf0 bed9f184 0052fe08 b6e7058c
+[   19.165237] sysrq: Show State
+[   19.165250] task:init            state:S stack:0     pid:1     tgid:1     ppid:0      task_flags:0x400100 flags:0x00000000
+[   19.165275] Call trace: 
+[   19.165284]  __schedule from schedule+0x2c/0xf8
+[   19.165330]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.165363]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.165387]  schedule_hrtimeout_range from do_sigtimedwait+0x1a0/0x218
+[   19.165423]  do_sigtimedwait from sys_rt_sigtimedwait_time32+0xd0/0x178
+[   19.165451]  sys_rt_sigtimedwait_time32 from ret_fast_syscall+0x0/0x54
+[   19.165469] Exception stack(0xe0815fa8 to 0xe0815ff0)
+[   19.165483] 5fa0:                   00000000 00000000 005ce154 00000000 00000000 00000008
+[   19.165498] 5fc0: 00000000 00000000 005ce150 000000b1 005cd9b0 004f8550 005cc674 b6f62000
+[   19.165509] 5fe0: 00000000 bee58bf8 00000001 b6e10290
+[   19.165518] task:kthreadd        state:S stack:0     pid:2     tgid:2     ppid:0      task_flags:0x208040 flags:0x00000000
+[   19.165538] Call trace: 
+[   19.165542]  __schedule from schedule+0x2c/0xf8
+[   19.165578]  schedule from kthreadd+0x17c/0x19c
+[   19.165619]  kthreadd from ret_from_fork+0x14/0x28
+[   19.165644] Exception stack(0xe0819fb0 to 0xe0819ff8)
+[   19.165655] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.165669] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.165680] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.165689] task:pool_workqueue_ state:S stack:0     pid:3     tgid:3     ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.165709] Call trace: 
+[   19.165714]  __schedule from schedule+0x2c/0xf8
+[   19.165749]  schedule from kthread_worker_fn+0x16c/0x364
+[   19.165783]  kthread_worker_fn from kthread+0x12c/0x15c
+[   19.165814]  kthread from ret_from_fork+0x14/0x28
+[   19.165837] Exception stack(0xe081dfb0 to 0xe081dff8)
+[   19.165849] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.165862] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.165874] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.165882] task:kworker/R-rcu_g state:I stack:0     pid:4     tgid:4     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.165903] Call trace: 
+[   19.165908]  __schedule from schedule+0x2c/0xf8
+[   19.165942]  schedule from rescuer_thread+0x38c/0x568
+[   19.166064]  rescuer_thread from kthread+0x12c/0x15c
+[   19.166108]  kthread from ret_from_fork+0x14/0x28
+[   19.166133] Exception stack(0xe0821fb0 to 0xe0821ff8)
+[   19.166146] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.166160] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.166172] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.166181] task:kworker/R-sync_ state:I stack:0     pid:5     tgid:5     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.166204] Call trace: 
+[   19.166209]  __schedule from schedule+0x2c/0xf8
+[   19.166246]  schedule from rescuer_thread+0x38c/0x568
+[   19.166281]  rescuer_thread from kthread+0x12c/0x15c
+[   19.166314]  kthread from ret_from_fork+0x14/0x28
+[   19.166338] Exception stack(0xe0825fb0 to 0xe0825ff8)
+[   19.166351] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.166364] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.166377] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.166385] task:kworker/R-kvfre state:I stack:0     pid:6     tgid:6     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.166406] Call trace: 
+[   19.166411]  __schedule from schedule+0x2c/0xf8
+[   19.166446]  schedule from rescuer_thread+0x38c/0x568
+[   19.166482]  rescuer_thread from kthread+0x12c/0x15c
+[   19.166514]  kthread from ret_from_fork+0x14/0x28
+[   19.166538] Exception stack(0xe0829fb0 to 0xe0829ff8)
+[   19.166550] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.166563] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.166574] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.166583] task:kworker/R-slub_ state:I stack:0     pid:7     tgid:7     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.166603] Call trace: 
+[   19.166608]  __schedule from schedule+0x2c/0xf8
+[   19.166643]  schedule from rescuer_thread+0x38c/0x568
+[   19.166679]  rescuer_thread from kthread+0x12c/0x15c
+[   19.166712]  kthread from ret_from_fork+0x14/0x28
+[   19.166736] Exception stack(0xe082dfb0 to 0xe082dff8)
+[   19.166747] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.166760] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.166772] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.166780] task:kworker/0:0     state:I stack:0     pid:8     tgid:8     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.166799] Workqueue:  0x0 (rcu_gp)
+[   19.166816] Call trace: 
+[   19.166822]  __schedule from schedule+0x2c/0xf8
+[   19.166857]  schedule from worker_thread+0xa8/0x320
+[   19.166892]  worker_thread from kthread+0x12c/0x15c
+[   19.166926]  kthread from ret_from_fork+0x14/0x28
+[   19.166949] Exception stack(0xe0831fb0 to 0xe0831ff8)
+[   19.166961] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.166974] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.167030] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.167043] task:kworker/0:0H    state:I stack:0     pid:9     tgid:9     ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.167066] Workqueue:  0x0 (events_highpri)
+[   19.167083] Call trace: 
+[   19.167089]  __schedule from schedule+0x2c/0xf8
+[   19.167127]  schedule from worker_thread+0xa8/0x320
+[   19.167163]  worker_thread from kthread+0x12c/0x15c
+[   19.167197]  kthread from ret_from_fork+0x14/0x28
+[   19.167220] Exception stack(0xe0835fb0 to 0xe0835ff8)
+[   19.167232] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.167246] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.167258] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.167266] task:kworker/0:1     state:I stack:0     pid:10    tgid:10    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.167287] Workqueue:  0x0 (events)
+[   19.167303] Call trace: 
+[   19.167308]  __schedule from schedule+0x2c/0xf8
+[   19.167343]  schedule from worker_thread+0xa8/0x320
+[   19.167377]  worker_thread from kthread+0x12c/0x15c
+[   19.167409]  kthread from ret_from_fork+0x14/0x28
+[   19.167432] Exception stack(0xe0839fb0 to 0xe0839ff8)
+[   19.167444] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.167457] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.167469] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.167478] task:kworker/u8:0    state:I stack:0     pid:11    tgid:11    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.167497] Workqueue:  0x0 (events_unbound)
+[   19.167513] Call trace: 
+[   19.167518]  __schedule from schedule+0x2c/0xf8
+[   19.167553]  schedule from worker_thread+0xa8/0x320
+[   19.167587]  worker_thread from kthread+0x12c/0x15c
+[   19.167619]  kthread from ret_from_fork+0x14/0x28
+[   19.167642] Exception stack(0xe083dfb0 to 0xe083dff8)
+[   19.167654] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.167668] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.167679] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.167687] task:kworker/R-mm_pe state:I stack:0     pid:12    tgid:12    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.167708] Call trace: 
+[   19.167713]  __schedule from schedule+0x2c/0xf8
+[   19.167747]  schedule from rescuer_thread+0x38c/0x568
+[   19.167782]  rescuer_thread from kthread+0x12c/0x15c
+[   19.167814]  kthread from ret_from_fork+0x14/0x28
+[   19.167837] Exception stack(0xe0841fb0 to 0xe0841ff8)
+[   19.167849] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.167862] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.167874] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.167882] task:ksoftirqd/0     state:S stack:0     pid:13    tgid:13    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.167901] Call trace: 
+[   19.167905]  __schedule from schedule+0x2c/0xf8
+[   19.167940]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.168029]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.168071]  kthread from ret_from_fork+0x14/0x28
+[   19.168096] Exception stack(0xe0845fb0 to 0xe0845ff8)
+[   19.168109] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.168123] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.168135] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.168144] task:ktimers/0       state:S stack:0     pid:14    tgid:14    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.168165] Call trace: 
+[   19.168170]  __schedule from schedule+0x2c/0xf8
+[   19.168206]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.168240]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.168273]  kthread from ret_from_fork+0x14/0x28
+[   19.168296] Exception stack(0xe0849fb0 to 0xe0849ff8)
+[   19.168308] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.168321] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.168333] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.168341] task:rcu_preempt     state:I stack:0     pid:15    tgid:15    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.168361] Call trace: 
+[   19.168366]  __schedule from schedule+0x2c/0xf8
+[   19.168401]  schedule from schedule_timeout+0x80/0x110
+[   19.168430]  schedule_timeout from rcu_gp_fqs_loop+0x118/0x74c
+[   19.168459]  rcu_gp_fqs_loop from rcu_gp_kthread+0x1fc/0x274
+[   19.168486]  rcu_gp_kthread from kthread+0x12c/0x15c
+[   19.168515]  kthread from ret_from_fork+0x14/0x28
+[   19.168538] Exception stack(0xe084dfb0 to 0xe084dff8)
+[   19.168550] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.168563] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.168575] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.168583] task:rcub/0          state:S stack:0     pid:16    tgid:16    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.168602] Call trace: 
+[   19.168606]  __schedule from schedule+0x2c/0xf8
+[   19.168642]  schedule from rcu_boost_kthread+0x94/0x470
+[   19.168672]  rcu_boost_kthread from kthread+0x12c/0x15c
+[   19.168700]  kthread from ret_from_fork+0x14/0x28
+[   19.168723] Exception stack(0xe0851fb0 to 0xe0851ff8)
+[   19.168735] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.168748] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.168759] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.168768] task:rcu_exp_par_gp_ state:S stack:0     pid:17    tgid:17    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.168786] Call trace: 
+[   19.168790]  __schedule from schedule+0x2c/0xf8
+[   19.168825]  schedule from kthread_worker_fn+0x16c/0x364
+[   19.168859]  kthread_worker_fn from kthread+0x12c/0x15c
+[   19.168889]  kthread from ret_from_fork+0x14/0x28
+[   19.168912] Exception stack(0xe0855fb0 to 0xe0855ff8)
+[   19.168924] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.168937] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.168949] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.168957] task:rcuc/0          state:S stack:0     pid:18    tgid:18    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.169018] Call trace: 
+[   19.169025]  __schedule from schedule+0x2c/0xf8
+[   19.169064]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.169101]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.169135]  kthread from ret_from_fork+0x14/0x28
+[   19.169158] Exception stack(0xe0859fb0 to 0xe0859ff8)
+[   19.169171] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.169184] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.169196] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.169205] task:rcu_exp_gp_kthr state:S stack:0     pid:19    tgid:19    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.169225] Call trace: 
+[   19.169231]  __schedule from schedule+0x2c/0xf8
+[   19.169266]  schedule from kthread_worker_fn+0x16c/0x364
+[   19.169299]  kthread_worker_fn from kthread+0x12c/0x15c
+[   19.169329]  kthread from ret_from_fork+0x14/0x28
+[   19.169352] Exception stack(0xe085dfb0 to 0xe085dff8)
+[   19.169364] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.169378] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.169389] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.169398] task:migration/0     state:S stack:0     pid:20    tgid:20    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.169418] Stopper: 0x0 <- 0x0
+[   19.169430] Call trace: 
+[   19.169435]  __schedule from schedule+0x2c/0xf8
+[   19.169470]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.169505]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.169537]  kthread from ret_from_fork+0x14/0x28
+[   19.169560] Exception stack(0xe0861fb0 to 0xe0861ff8)
+[   19.169572] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.169585] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.169597] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.169605] task:irq_work/0      state:S stack:0     pid:21    tgid:21    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.169624] Call trace: 
+[   19.169628]  __schedule from schedule+0x2c/0xf8
+[   19.169663]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.169698]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.169730]  kthread from ret_from_fork+0x14/0x28
+[   19.169754] Exception stack(0xe0865fb0 to 0xe0865ff8)
+[   19.169765] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.169778] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.169790] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.169799] task:cpuhp/0         state:S stack:0     pid:22    tgid:22    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.169817] Call trace: 
+[   19.169822]  __schedule from schedule+0x2c/0xf8
+[   19.169856]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.169890]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.169922]  kthread from ret_from_fork+0x14/0x28
+[   19.169945] Exception stack(0xe086dfb0 to 0xe086dff8)
+[   19.169957] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.169970] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.170023] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.170036] task:cpuhp/1         state:S stack:0     pid:23    tgid:23    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.170056] Call trace: 
+[   19.170062]  __schedule from schedule+0x2c/0xf8
+[   19.170101]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.170136]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.170169]  kthread from ret_from_fork+0x14/0x28
+[   19.170193] Exception stack(0xe0871fb0 to 0xe0871ff8)
+[   19.170204] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.170218] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.170230] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.170238] task:irq_work/1      state:S stack:0     pid:24    tgid:24    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.170257] Call trace: 
+[   19.170263]  __schedule from schedule+0x2c/0xf8
+[   19.170297]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.170331]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.170364]  kthread from ret_from_fork+0x14/0x28
+[   19.170387] Exception stack(0xe0875fb0 to 0xe0875ff8)
+[   19.170398] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.170412] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.170423] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.170431] task:migration/1     state:S stack:0     pid:25    tgid:25    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.170450] Stopper: 0x0 <- 0x0
+[   19.170463] Call trace: 
+[   19.170468]  __schedule from schedule+0x2c/0xf8
+[   19.170503]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.170536]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.170569]  kthread from ret_from_fork+0x14/0x28
+[   19.170592] Exception stack(0xe0879fb0 to 0xe0879ff8)
+[   19.170603] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.170617] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.170628] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.170637] task:rcuc/1          state:S stack:0     pid:26    tgid:26    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.170655] Call trace: 
+[   19.170660]  __schedule from schedule+0x2c/0xf8
+[   19.170695]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.170729]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.170762]  kthread from ret_from_fork+0x14/0x28
+[   19.170785] Exception stack(0xe087dfb0 to 0xe087dff8)
+[   19.170796] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.170810] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.170822] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.170830] task:ktimers/1       state:S stack:0     pid:27    tgid:27    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.170848] Call trace: 
+[   19.170853]  __schedule from schedule+0x2c/0xf8
+[   19.170888]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.170922]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.170954]  kthread from ret_from_fork+0x14/0x28
+[   19.171019] Exception stack(0xe0881fb0 to 0xe0881ff8)
+[   19.171034] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.171049] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.171061] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.171070] task:ksoftirqd/1     state:S stack:0     pid:28    tgid:28    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.171091] Call trace: 
+[   19.171096]  __schedule from schedule+0x2c/0xf8
+[   19.171134]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.171169]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.171203]  kthread from ret_from_fork+0x14/0x28
+[   19.171226] Exception stack(0xe0885fb0 to 0xe0885ff8)
+[   19.171238] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.171251] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.171263] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.171271] task:kworker/1:0     state:I stack:0     pid:29    tgid:29    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.171291] Workqueue:  0x0 (rcu_gp)
+[   19.171308] Call trace: 
+[   19.171313]  __schedule from schedule+0x2c/0xf8
+[   19.171348]  schedule from worker_thread+0xa8/0x320
+[   19.171387]  worker_thread from kthread+0x12c/0x15c
+[   19.171420]  kthread from ret_from_fork+0x14/0x28
+[   19.171443] Exception stack(0xe0889fb0 to 0xe0889ff8)
+[   19.171455] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.171468] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.171479] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.171488] task:kworker/1:0H    state:I stack:0     pid:30    tgid:30    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.171508] Workqueue:  0x0 (kblockd)
+[   19.171524] Call trace: 
+[   19.171528]  __schedule from schedule+0x2c/0xf8
+[   19.171563]  schedule from worker_thread+0xa8/0x320
+[   19.171597]  worker_thread from kthread+0x12c/0x15c
+[   19.171630]  kthread from ret_from_fork+0x14/0x28
+[   19.171652] Exception stack(0xe088dfb0 to 0xe088dff8)
+[   19.171664] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.171678] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.171689] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.171698] task:kdevtmpfs       state:S stack:0     pid:31    tgid:31    ppid:2      task_flags:0x208140 flags:0x00000000
+[   19.171717] Call trace: 
+[   19.171721]  __schedule from schedule+0x2c/0xf8
+[   19.171756]  schedule from devtmpfsd+0x47c/0x4b4
+[   19.171786]  devtmpfsd from kthread+0x12c/0x15c
+[   19.171815]  kthread from ret_from_fork+0x14/0x28
+[   19.171838] Exception stack(0xe0891fb0 to 0xe0891ff8)
+[   19.171849] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.171862] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.171874] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.171882] task:kworker/R-inet_ state:I stack:0     pid:32    tgid:32    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.171902] Call trace: 
+[   19.171907]  __schedule from schedule+0x2c/0xf8
+[   19.171942]  schedule from rescuer_thread+0x38c/0x568
+[   19.172033]  rescuer_thread from kthread+0x12c/0x15c
+[   19.172086]  kthread from ret_from_fork+0x14/0x28
+[   19.172135] Exception stack(0xe0895fb0 to 0xe0895ff8)
+[   19.172167] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.172195] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.172227] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.172240] task:rcu_tasks_kthre state:I stack:0     pid:33    tgid:33    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.172263] Call trace: 
+[   19.172269]  __schedule from schedule+0x2c/0xf8
+[   19.172330]  schedule from rcu_tasks_one_gp+0x1fc/0x56c
+[   19.172398]  rcu_tasks_one_gp from rcu_tasks_kthread+0x9c/0xa8
+[   19.172462]  rcu_tasks_kthread from kthread+0x12c/0x15c
+[   19.172523]  kthread from ret_from_fork+0x14/0x28
+[   19.172570] Exception stack(0xe0899fb0 to 0xe0899ff8)
+[   19.172602] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.172641] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.172663] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.172683] task:khungtaskd      state:S stack:0     pid:34    tgid:34    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.172724] Call trace: 
+[   19.172737]  __schedule from schedule+0x2c/0xf8
+[   19.172787]  schedule from schedule_timeout+0x80/0x110
+[   19.172818]  schedule_timeout from watchdog+0x90/0x628
+[   19.172856]  watchdog from kthread+0x12c/0x15c
+[   19.172890]  kthread from ret_from_fork+0x14/0x28
+[   19.172913] Exception stack(0xe08c5fb0 to 0xe08c5ff8)
+[   19.172925] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.172939] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.172951] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.172960] task:oom_reaper      state:S stack:0     pid:35    tgid:35    ppid:2      task_flags:0x200040 flags:0x00000000
+[   19.173034] Call trace: 
+[   19.173042]  __schedule from schedule+0x2c/0xf8
+[   19.173083]  schedule from oom_reaper+0x210/0x690
+[   19.173124]  oom_reaper from kthread+0x12c/0x15c
+[   19.173158]  kthread from ret_from_fork+0x14/0x28
+[   19.173181] Exception stack(0xe08c9fb0 to 0xe08c9ff8)
+[   19.173193] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.173207] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.173219] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.173228] task:kworker/u8:1    state:I stack:0     pid:36    tgid:36    ppid:2      task_flags:0x4208160 flags:0x00000000
+[   19.173250] Workqueue:  0x0 (events_unbound)
+[   19.173267] Call trace: 
+[   19.173272]  __schedule from schedule+0x2c/0xf8
+[   19.173308]  schedule from worker_thread+0xa8/0x320
+[   19.173348]  worker_thread from kthread+0x12c/0x15c
+[   19.173382]  kthread from ret_from_fork+0x14/0x28
+[   19.173406] Exception stack(0xe08cdfb0 to 0xe08cdff8)
+[   19.173418] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.173432] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.173443] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.173452] task:kworker/R-write state:I stack:0     pid:37    tgid:37    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.173473] Call trace: 
+[   19.173478]  __schedule from schedule+0x2c/0xf8
+[   19.173514]  schedule from rescuer_thread+0x38c/0x568
+[   19.173549]  rescuer_thread from kthread+0x12c/0x15c
+[   19.173582]  kthread from ret_from_fork+0x14/0x28
+[   19.173605] Exception stack(0xe08d1fb0 to 0xe08d1ff8)
+[   19.173617] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.173631] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.173643] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.173652] task:kworker/R-bio_c state:I stack:0     pid:38    tgid:38    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.173672] Call trace: 
+[   19.173677]  __schedule from schedule+0x2c/0xf8
+[   19.173712]  schedule from rescuer_thread+0x38c/0x568
+[   19.173746]  rescuer_thread from kthread+0x12c/0x15c
+[   19.173779]  kthread from ret_from_fork+0x14/0x28
+[   19.173803] Exception stack(0xe08d5fb0 to 0xe08d5ff8)
+[   19.173814] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.173828] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.173840] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.173848] task:kworker/R-kbloc state:I stack:0     pid:39    tgid:39    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.173869] Call trace: 
+[   19.173874]  __schedule from schedule+0x2c/0xf8
+[   19.173910]  schedule from rescuer_thread+0x38c/0x568
+[   19.173945]  rescuer_thread from kthread+0x12c/0x15c
+[   19.174021]  kthread from ret_from_fork+0x14/0x28
+[   19.174050] Exception stack(0xe08d9fb0 to 0xe08d9ff8)
+[   19.174063] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.174077] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.174089] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.174098] task:kworker/u8:2    state:I stack:0     pid:40    tgid:40    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.174119] Workqueue:  0x0 (pm)
+[   19.174136] Call trace: 
+[   19.174141]  __schedule from schedule+0x2c/0xf8
+[   19.174178]  schedule from worker_thread+0xa8/0x320
+[   19.174215]  worker_thread from kthread+0x12c/0x15c
+[   19.174248]  kthread from ret_from_fork+0x14/0x28
+[   19.174271] Exception stack(0xe08ddfb0 to 0xe08ddff8)
+[   19.174283] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.174297] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.174309] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.174317] task:backlog_napi/0  state:S stack:0     pid:41    tgid:41    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.174337] Call trace: 
+[   19.174342]  __schedule from schedule+0x2c/0xf8
+[   19.174378]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.174417]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.174449]  kthread from ret_from_fork+0x14/0x28
+[   19.174472] Exception stack(0xe08e1fb0 to 0xe08e1ff8)
+[   19.174484] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.174497] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.174508] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.174517] task:backlog_napi/1  state:S stack:0     pid:42    tgid:42    ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.174535] Call trace: 
+[   19.174540]  __schedule from schedule+0x2c/0xf8
+[   19.174574]  schedule from smpboot_thread_fn+0x21c/0x2d4
+[   19.174608]  smpboot_thread_fn from kthread+0x12c/0x15c
+[   19.174641]  kthread from ret_from_fork+0x14/0x28
+[   19.174664] Exception stack(0xe08e5fb0 to 0xe08e5ff8)
+[   19.174676] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.174689] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.174701] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.174709] task:kworker/1:1     state:I stack:0     pid:43    tgid:43    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.174729] Workqueue:  0x0 (events_power_efficient)
+[   19.174745] Call trace: 
+[   19.174750]  __schedule from schedule+0x2c/0xf8
+[   19.174785]  schedule from worker_thread+0xa8/0x320
+[   19.174821]  worker_thread from kthread+0x12c/0x15c
+[   19.174854]  kthread from ret_from_fork+0x14/0x28
+[   19.174877] Exception stack(0xe08e9fb0 to 0xe08e9ff8)
+[   19.174889] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.174902] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.174914] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.174922] task:watchdogd       state:S stack:0     pid:44    tgid:44    ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.174942] Call trace: 
+[   19.174947]  __schedule from schedule+0x2c/0xf8
+[   19.175023]  schedule from kthread_worker_fn+0x16c/0x364
+[   19.175064]  kthread_worker_fn from kthread+0x12c/0x15c
+[   19.175096]  kthread from ret_from_fork+0x14/0x28
+[   19.175119] Exception stack(0xe08edfb0 to 0xe08edff8)
+[   19.175131] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.175144] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.175156] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.175165] task:kworker/1:1H    state:I stack:0     pid:45    tgid:45    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.175187] Workqueue:  0x0 (events_highpri)
+[   19.175204] Call trace: 
+[   19.175209]  __schedule from schedule+0x2c/0xf8
+[   19.175245]  schedule from worker_thread+0xa8/0x320
+[   19.175281]  worker_thread from kthread+0x12c/0x15c
+[   19.175314]  kthread from ret_from_fork+0x14/0x28
+[   19.175337] Exception stack(0xe08f1fb0 to 0xe08f1ff8)
+[   19.175350] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.175363] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.175375] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.175384] task:kworker/R-rpcio state:I stack:0     pid:46    tgid:46    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.175404] Call trace: 
+[   19.175409]  __schedule from schedule+0x2c/0xf8
+[   19.175444]  schedule from rescuer_thread+0x38c/0x568
+[   19.175479]  rescuer_thread from kthread+0x12c/0x15c
+[   19.175512]  kthread from ret_from_fork+0x14/0x28
+[   19.175536] Exception stack(0xe08f5fb0 to 0xe08f5ff8)
+[   19.175548] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.175561] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.175573] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.175582] task:kworker/R-xprti state:I stack:0     pid:47    tgid:47    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.175603] Call trace: 
+[   19.175608]  __schedule from schedule+0x2c/0xf8
+[   19.175642]  schedule from rescuer_thread+0x38c/0x568
+[   19.175677]  rescuer_thread from kthread+0x12c/0x15c
+[   19.175709]  kthread from ret_from_fork+0x14/0x28
+[   19.175732] Exception stack(0xe08f9fb0 to 0xe08f9ff8)
+[   19.175744] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.175757] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.175769] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.175778] task:kworker/u8:3    state:I stack:0     pid:48    tgid:48    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.175798] Workqueue:  0x0 (pm)
+[   19.175813] Call trace: 
+[   19.175818]  __schedule from schedule+0x2c/0xf8
+[   19.175852]  schedule from worker_thread+0xa8/0x320
+[   19.175887]  worker_thread from kthread+0x12c/0x15c
+[   19.175919]  kthread from ret_from_fork+0x14/0x28
+[   19.175942] Exception stack(0xe08fdfb0 to 0xe08fdff8)
+[   19.175954] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.175967] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.176020] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.176033] task:kworker/u8:4    state:I stack:0     pid:49    tgid:49    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.176055] Workqueue:  0x0 (events_unbound)
+[   19.176072] Call trace: 
+[   19.176078]  __schedule from schedule+0x2c/0xf8
+[   19.176114]  schedule from worker_thread+0xa8/0x320
+[   19.176151]  worker_thread from kthread+0x12c/0x15c
+[   19.176184]  kthread from ret_from_fork+0x14/0x28
+[   19.176207] Exception stack(0xe4915fb0 to 0xe4915ff8)
+[   19.176220] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.176233] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.176245] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.176253] task:kworker/u8:5    state:I stack:0     pid:52    tgid:52    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.176274] Workqueue:  0x0 (events_unbound)
+[   19.176289] Call trace: 
+[   19.176294]  __schedule from schedule+0x2c/0xf8
+[   19.176329]  schedule from worker_thread+0xa8/0x320
+[   19.176365]  worker_thread from kthread+0x12c/0x15c
+[   19.176397]  kthread from ret_from_fork+0x14/0x28
+[   19.176420] Exception stack(0xe4921fb0 to 0xe4921ff8)
+[   19.176432] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.176445] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.176457] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.176465] task:kswapd0         state:S stack:0     pid:63    tgid:63    ppid:2      task_flags:0x220840 flags:0x00000000
+[   19.176484] Call trace: 
+[   19.176489]  __schedule from schedule+0x2c/0xf8
+[   19.176523]  schedule from kswapd+0x8cc/0xc14
+[   19.176570]  kswapd from kthread+0x12c/0x15c
+[   19.176604]  kthread from ret_from_fork+0x14/0x28
+[   19.176627] Exception stack(0xe494dfb0 to 0xe494dff8)
+[   19.176638] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.176652] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.176663] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.176672] task:kworker/R-nfsio state:I stack:0     pid:65    tgid:65    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.176692] Call trace: 
+[   19.176698]  __schedule from schedule+0x2c/0xf8
+[   19.176733]  schedule from rescuer_thread+0x38c/0x568
+[   19.176768]  rescuer_thread from kthread+0x12c/0x15c
+[   19.176801]  kthread from ret_from_fork+0x14/0x28
+[   19.176824] Exception stack(0xe4955fb0 to 0xe4955ff8)
+[   19.176836] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.176849] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.176861] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.176869] task:kworker/R-cifsi state:I stack:0     pid:66    tgid:66    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.176889] Call trace: 
+[   19.176894]  __schedule from schedule+0x2c/0xf8
+[   19.176929]  schedule from rescuer_thread+0x38c/0x568
+[   19.176963]  rescuer_thread from kthread+0x12c/0x15c
+[   19.177039]  kthread from ret_from_fork+0x14/0x28
+[   19.177069] Exception stack(0xe4959fb0 to 0xe4959ff8)
+[   19.177081] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.177095] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.177107] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.177117] task:kworker/R-smb3d state:I stack:0     pid:67    tgid:67    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.177138] Call trace: 
+[   19.177144]  __schedule from schedule+0x2c/0xf8
+[   19.177181]  schedule from rescuer_thread+0x38c/0x568
+[   19.177218]  rescuer_thread from kthread+0x12c/0x15c
+[   19.177251]  kthread from ret_from_fork+0x14/0x28
+[   19.177274] Exception stack(0xe495dfb0 to 0xe495dff8)
+[   19.177286] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.177300] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.177312] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.177320] task:kworker/R-cifsf state:I stack:0     pid:68    tgid:68    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.177340] Call trace: 
+[   19.177345]  __schedule from schedule+0x2c/0xf8
+[   19.177381]  schedule from rescuer_thread+0x38c/0x568
+[   19.177415]  rescuer_thread from kthread+0x12c/0x15c
+[   19.177447]  kthread from ret_from_fork+0x14/0x28
+[   19.177470] Exception stack(0xe4961fb0 to 0xe4961ff8)
+[   19.177482] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.177495] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.177507] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.177515] task:kworker/R-cifso state:I stack:0     pid:69    tgid:69    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.177535] Call trace: 
+[   19.177540]  __schedule from schedule+0x2c/0xf8
+[   19.177575]  schedule from rescuer_thread+0x38c/0x568
+[   19.177610]  rescuer_thread from kthread+0x12c/0x15c
+[   19.177642]  kthread from ret_from_fork+0x14/0x28
+[   19.177664] Exception stack(0xe4965fb0 to 0xe4965ff8)
+[   19.177676] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.177689] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.177701] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.177709] task:kworker/R-defer state:I stack:0     pid:70    tgid:70    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.177729] Call trace: 
+[   19.177734]  __schedule from schedule+0x2c/0xf8
+[   19.177768]  schedule from rescuer_thread+0x38c/0x568
+[   19.177802]  rescuer_thread from kthread+0x12c/0x15c
+[   19.177834]  kthread from ret_from_fork+0x14/0x28
+[   19.177857] Exception stack(0xe4969fb0 to 0xe4969ff8)
+[   19.177868] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.177882] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.177893] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.177902] task:kworker/R-serve state:I stack:0     pid:71    tgid:71    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.177922] Call trace: 
+[   19.177926]  __schedule from schedule+0x2c/0xf8
+[   19.177961]  schedule from rescuer_thread+0x38c/0x568
+[   19.178061]  rescuer_thread from kthread+0x12c/0x15c
+[   19.178103]  kthread from ret_from_fork+0x14/0x28
+[   19.178127] Exception stack(0xe496dfb0 to 0xe496dff8)
+[   19.178139] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.178153] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.178165] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.178174] task:kworker/R-cfid_ state:I stack:0     pid:72    tgid:72    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.178196] Call trace: 
+[   19.178202]  __schedule from schedule+0x2c/0xf8
+[   19.178238]  schedule from rescuer_thread+0x38c/0x568
+[   19.178274]  rescuer_thread from kthread+0x12c/0x15c
+[   19.178307]  kthread from ret_from_fork+0x14/0x28
+[   19.178330] Exception stack(0xe4971fb0 to 0xe4971ff8)
+[   19.178342] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.178356] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.178368] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.178377] task:kworker/1:2     state:I stack:0     pid:74    tgid:74    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.178398] Workqueue:  0x0 (events)
+[   19.178414] Call trace: 
+[   19.178419]  __schedule from schedule+0x2c/0xf8
+[   19.178455]  schedule from worker_thread+0xa8/0x320
+[   19.178490]  worker_thread from kthread+0x12c/0x15c
+[   19.178523]  kthread from ret_from_fork+0x14/0x28
+[   19.178546] Exception stack(0xe49c9fb0 to 0xe49c9ff8)
+[   19.178558] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.178733] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.178751] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.178762] task:kworker/u9:0    state:I stack:0     pid:82    tgid:82    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.178785] Call trace: 
+[   19.178791]  __schedule from schedule+0x2c/0xf8
+[   19.178831]  schedule from worker_thread+0xa8/0x320
+[   19.178869]  worker_thread from kthread+0x12c/0x15c
+[   19.178905]  kthread from ret_from_fork+0x14/0x28
+[   19.178929] Exception stack(0xe49e9fb0 to 0xe49e9ff8)
+[   19.178941] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.178955] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.178966] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.178975] task:kworker/0:1H    state:I stack:0     pid:92    tgid:92    ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.179042] Workqueue:  0x0 (mmc_complete)
+[   19.179061] Call trace: 
+[   19.179067]  __schedule from schedule+0x2c/0xf8
+[   19.179104]  schedule from worker_thread+0xa8/0x320
+[   19.179141]  worker_thread from kthread+0x12c/0x15c
+[   19.179176]  kthread from ret_from_fork+0x14/0x28
+[   19.179200] Exception stack(0xe49d1fb0 to 0xe49d1ff8)
+[   19.179212] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.179226] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.179238] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.179248] task:irq/27-7c400000 state:S stack:0     pid:105   tgid:105   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.179268] Call trace: 
+[   19.179273]  __schedule from schedule+0x2c/0xf8
+[   19.179309]  schedule from irq_thread+0x138/0x284
+[   19.179347]  irq_thread from kthread+0x12c/0x15c
+[   19.179377]  kthread from ret_from_fork+0x14/0x28
+[   19.179400] Exception stack(0xe0905fb0 to 0xe0905ff8)
+[   19.179412] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.179426] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.179438] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.179447] task:irq/28-7c420000 state:S stack:0     pid:107   tgid:107   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.179467] Call trace: 
+[   19.179472]  __schedule from schedule+0x2c/0xf8
+[   19.179508]  schedule from irq_thread+0x138/0x284
+[   19.179539]  irq_thread from kthread+0x12c/0x15c
+[   19.179568]  kthread from ret_from_fork+0x14/0x28
+[   19.179591] Exception stack(0xe0911fb0 to 0xe0911ff8)
+[   19.179602] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.179616] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.179628] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.179637] task:irq/29-e0006000 state:S stack:0     pid:187   tgid:187   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.179656] Call trace: 
+[   19.179661]  __schedule from schedule+0x2c/0xf8
+[   19.179695]  schedule from irq_thread+0x138/0x284
+[   19.179725]  irq_thread from kthread+0x12c/0x15c
+[   19.179754]  kthread from ret_from_fork+0x14/0x28
+[   19.179777] Exception stack(0xe099dfb0 to 0xe099dff8)
+[   19.179789] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.179802] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.179814] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.179823] task:spi0            state:S stack:0     pid:189   tgid:189   ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.179842] Call trace: 
+[   19.179847]  __schedule from schedule+0x2c/0xf8
+[   19.179882]  schedule from kthread_worker_fn+0x16c/0x364
+[   19.179916]  kthread_worker_fn from kthread+0x12c/0x15c
+[   19.179947]  kthread from ret_from_fork+0x14/0x28
+[   19.179970] Exception stack(0xe09ddfb0 to 0xe09ddff8)
+[   19.180024] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.180040] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.180052] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.180062] task:irq/30-e000d000 state:S stack:0     pid:198   tgid:198   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.180083] Call trace: 
+[   19.180088]  __schedule from schedule+0x2c/0xf8
+[   19.180126]  schedule from irq_thread+0x138/0x284
+[   19.180158]  irq_thread from kthread+0x12c/0x15c
+[   19.180188]  kthread from ret_from_fork+0x14/0x28
+[   19.180212] Exception stack(0xe49e5fb0 to 0xe49e5ff8)
+[   19.180224] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.180238] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.180250] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.180259] task:kworker/u8:6    state:I stack:0     pid:287   tgid:287   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.180280] Workqueue:  0x0 (events_unbound)
+[   19.180297] Call trace: 
+[   19.180302]  __schedule from schedule+0x2c/0xf8
+[   19.180338]  schedule from worker_thread+0xa8/0x320
+[   19.180375]  worker_thread from kthread+0x12c/0x15c
+[   19.180408]  kthread from ret_from_fork+0x14/0x28
+[   19.180432] Exception stack(0xe0a81fb0 to 0xe0a81ff8)
+[   19.180444] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.180458] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.180470] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.180478] task:irq/31-eth%d    state:S stack:0     pid:291   tgid:291   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.180498] Call trace: 
+[   19.180503]  __schedule from schedule+0x2c/0xf8
+[   19.180538]  schedule from irq_thread+0x138/0x284
+[   19.180569]  irq_thread from kthread+0x12c/0x15c
+[   19.180597]  kthread from ret_from_fork+0x14/0x28
+[   19.180620] Exception stack(0xe49edfb0 to 0xe49edff8)
+[   19.180632] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.180645] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.180657] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.180666] task:irq/32-maia-sdr state:S stack:0     pid:315   tgid:315   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.180685] Call trace: 
+[   19.180690]  __schedule from schedule+0x2c/0xf8
+[   19.180724]  schedule from irq_thread+0x138/0x284
+[   19.180754]  irq_thread from kthread+0x12c/0x15c
+[   19.180782]  kthread from ret_from_fork+0x14/0x28
+[   19.180805] Exception stack(0xe09edfb0 to 0xe09edff8)
+[   19.180816] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.180830] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.180841] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.180850] task:irq/32-s-maia-s state:S stack:0     pid:316   tgid:316   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.180868] Call trace: 
+[   19.180873]  __schedule from schedule+0x2c/0xf8
+[   19.180908]  schedule from irq_thread+0x138/0x284
+[   19.180938]  irq_thread from kthread+0x12c/0x15c
+[   19.180967]  kthread from ret_from_fork+0x14/0x28
+[   19.181031] Exception stack(0xe0a79fb0 to 0xe0a79ff8)
+[   19.181046] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.181060] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.181072] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.181082] task:kworker/R-sdhci state:I stack:0     pid:354   tgid:354   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.181104] Call trace: 
+[   19.181110]  __schedule from schedule+0x2c/0xf8
+[   19.181148]  schedule from rescuer_thread+0x38c/0x568
+[   19.181187]  rescuer_thread from kthread+0x12c/0x15c
+[   19.181221]  kthread from ret_from_fork+0x14/0x28
+[   19.181245] Exception stack(0xe0ae5fb0 to 0xe0ae5ff8)
+[   19.181257] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.181270] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.181282] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.181291] task:irq/34-mmc0     state:S stack:0     pid:357   tgid:357   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.181311] Call trace: 
+[   19.181316]  __schedule from schedule+0x2c/0xf8
+[   19.181352]  schedule from irq_thread+0x138/0x284
+[   19.181384]  irq_thread from kthread+0x12c/0x15c
+[   19.181413]  kthread from ret_from_fork+0x14/0x28
+[   19.181436] Exception stack(0xe0aedfb0 to 0xe0aedff8)
+[   19.181447] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.181461] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.181473] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.181482] task:irq/34-s-mmc0   state:S stack:0     pid:360   tgid:360   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.181501] Call trace: 
+[   19.181506]  __schedule from schedule+0x2c/0xf8
+[   19.181540]  schedule from irq_thread+0x138/0x284
+[   19.181571]  irq_thread from kthread+0x12c/0x15c
+[   19.181599]  kthread from ret_from_fork+0x14/0x28
+[   19.181622] Exception stack(0xe0af9fb0 to 0xe0af9ff8)
+[   19.181633] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.181647] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.181658] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.181667] task:irq/36-f8007100 state:S stack:0     pid:369   tgid:369   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.181686] Call trace: 
+[   19.181691]  __schedule from schedule+0x2c/0xf8
+[   19.181726]  schedule from irq_thread+0x138/0x284
+[   19.181756]  irq_thread from kthread+0x12c/0x15c
+[   19.181785]  kthread from ret_from_fork+0x14/0x28
+[   19.181808] Exception stack(0xe0b1dfb0 to 0xe0b1dff8)
+[   19.181819] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.181832] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.181844] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.181852] task:kworker/R-mmc_c state:I stack:0     pid:378   tgid:378   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.181872] Call trace: 
+[   19.181877]  __schedule from schedule+0x2c/0xf8
+[   19.181911]  schedule from rescuer_thread+0x38c/0x568
+[   19.181947]  rescuer_thread from kthread+0x12c/0x15c
+[   19.182045]  kthread from ret_from_fork+0x14/0x28
+[   19.182077] Exception stack(0xe0b3dfb0 to 0xe0b3dff8)
+[   19.182090] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.182104] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.182116] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.182126] task:irq/39-f8007000 state:S stack:0     pid:394   tgid:394   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.182146] Call trace: 
+[   19.182152]  __schedule from schedule+0x2c/0xf8
+[   19.182190]  schedule from irq_thread+0x138/0x284
+[   19.182221]  irq_thread from kthread+0x12c/0x15c
+[   19.182251]  kthread from ret_from_fork+0x14/0x28
+[   19.182274] Exception stack(0xe0b4dfb0 to 0xe0b4dff8)
+[   19.182286] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.182299] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.182311] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.182320] task:kworker/R-mld   state:I stack:0     pid:416   tgid:416   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.182342] Call trace: 
+[   19.182347]  __schedule from schedule+0x2c/0xf8
+[   19.182382]  schedule from rescuer_thread+0x38c/0x568
+[   19.182420]  rescuer_thread from kthread+0x12c/0x15c
+[   19.182453]  kthread from ret_from_fork+0x14/0x28
+[   19.182476] Exception stack(0xe0b79fb0 to 0xe0b79ff8)
+[   19.182487] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.182501] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.182513] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.182522] task:kworker/R-ipv6_ state:I stack:0     pid:417   tgid:417   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.182542] Call trace: 
+[   19.182547]  __schedule from schedule+0x2c/0xf8
+[   19.182583]  schedule from rescuer_thread+0x38c/0x568
+[   19.182617]  rescuer_thread from kthread+0x12c/0x15c
+[   19.182650]  kthread from ret_from_fork+0x14/0x28
+[   19.182673] Exception stack(0xe0acdfb0 to 0xe0acdff8)
+[   19.182684] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.182697] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.182709] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.182717] task:kworker/u8:7    state:I stack:0     pid:572   tgid:572   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.182737] Workqueue:  0x0 (events_unbound)
+[   19.182754] Call trace: 
+[   19.182759]  __schedule from schedule+0x2c/0xf8
+[   19.182795]  schedule from worker_thread+0xa8/0x320
+[   19.182829]  worker_thread from kthread+0x12c/0x15c
+[   19.182862]  kthread from ret_from_fork+0x14/0x28
+[   19.182885] Exception stack(0xe0c99fb0 to 0xe0c99ff8)
+[   19.182896] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.182910] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.182921] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.182930] task:pr/legacy       state:R  running task     stack:0     pid:682   tgid:682   ppid:2      task_flags:0x208040 flags:0x00000000
+[   19.182952] Call trace: 
+[   19.182957]  __schedule from preempt_schedule_irq+0x3c/0x60
+[   19.183041]  preempt_schedule_irq from svc_preempt+0x8/0x18
+[   19.183096] Exception stack(0xe0da1e70 to 0xe0da1eb8)
+[   19.183129] 1e60:                                     d840a640 0000000a 00000808 00000800
+[   19.183169] 1e80: d840a640 00000114 00000161 00000001 c139986c 0000006d 00000000 00000000
+[   19.183196] 1ea0: fffbbaf0 e0da1ec0 c01221a0 c06ce650 20000113 ffffffff
+[   19.183214]  svc_preempt from cdns_uart_console_write+0xf4/0x250
+[   19.183258]  cdns_uart_console_write from console_flush_one_record+0x234/0x4b8
+[   19.183297]  console_flush_one_record from legacy_kthread_func+0x88/0x160
+[   19.183358]  legacy_kthread_func from kthread+0x12c/0x15c
+[   19.183417]  kthread from ret_from_fork+0x14/0x28
+[   19.183466] Exception stack(0xe0da1fb0 to 0xe0da1ff8)
+[   19.183500] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.183525] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.183562] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.183577] task:kworker/R-ci_ot state:I stack:0     pid:689   tgid:689   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.183623] Call trace: 
+[   19.183637]  __schedule from schedule+0x2c/0xf8
+[   19.183696]  schedule from rescuer_thread+0x38c/0x568
+[   19.183763]  rescuer_thread from kthread+0x12c/0x15c
+[   19.183804]  kthread from ret_from_fork+0x14/0x28
+[   19.183828] Exception stack(0xe0da9fb0 to 0xe0da9ff8)
+[   19.183840] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.183853] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.183865] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.183874] task:irq/41-e0002000 state:S stack:0     pid:692   tgid:692   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.183895] Call trace: 
+[   19.183901]  __schedule from schedule+0x2c/0xf8
+[   19.183936]  schedule from irq_thread+0x138/0x284
+[   19.183970]  irq_thread from kthread+0x12c/0x15c
+[   19.184045]  kthread from ret_from_fork+0x14/0x28
+[   19.184076] Exception stack(0xe0dbdfb0 to 0xe0dbdff8)
+[   19.184088] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.184102] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.184113] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.184123] task:irq/42-Button   state:S stack:0     pid:697   tgid:697   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.184144] Call trace: 
+[   19.184150]  __schedule from schedule+0x2c/0xf8
+[   19.184186]  schedule from irq_thread+0x138/0x284
+[   19.184217]  irq_thread from kthread+0x12c/0x15c
+[   19.184247]  kthread from ret_from_fork+0x14/0x28
+[   19.184270] Exception stack(0xe0dd5fb0 to 0xe0dd5ff8)
+[   19.184282] 5fa0:                                     00000000 00000000 00000000 00000000
+[   19.184295] 5fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.184307] 5fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.184316] task:kworker/u8:8    state:I stack:0     pid:698   tgid:698   ppid:2      task_flags:0x4208060 flags:0x00000000
+[   19.184337] Call trace: 
+[   19.184342]  __schedule from schedule+0x2c/0xf8
+[   19.184378]  schedule from worker_thread+0xa8/0x320
+[   19.184416]  worker_thread from kthread+0x12c/0x15c
+[   19.184449]  kthread from ret_from_fork+0x14/0x28
+[   19.184472] Exception stack(0xe0de9fb0 to 0xe0de9ff8)
+[   19.184484] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.184497] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.184509] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.184517] task:irq/40-xuartps  state:S stack:0     pid:707   tgid:707   ppid:2      task_flags:0x4208040 flags:0x00000000
+[   19.184537] Call trace: 
+[   19.184542]  __schedule from schedule+0x2c/0xf8
+[   19.184577]  schedule from irq_thread+0x138/0x284
+[   19.184608]  irq_thread from kthread+0x12c/0x15c
+[   19.184637]  kthread from ret_from_fork+0x14/0x28
+[   19.184660] Exception stack(0xe0db9fb0 to 0xe0db9ff8)
+[   19.184671] 9fa0:                                     00000000 00000000 00000000 00000000
+[   19.184685] 9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.184696] 9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.184705] task:jffs2_gcd_mtd2  state:S stack:0     pid:714   tgid:714   ppid:2      task_flags:0x200040 flags:0x00000000
+[   19.184724] Call trace: 
+[   19.184729]  __schedule from schedule+0x2c/0xf8
+[   19.184764]  schedule from jffs2_garbage_collect_thread+0xa8/0x278
+[   19.184802]  jffs2_garbage_collect_thread from kthread+0x12c/0x15c
+[   19.184833]  kthread from ret_from_fork+0x14/0x28
+[   19.184856] Exception stack(0xe0de1fb0 to 0xe0de1ff8)
+[   19.184867] 1fa0:                                     00000000 00000000 00000000 00000000
+[   19.184880] 1fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.184892] 1fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.184901] task:syslogd         state:S stack:0     pid:729   tgid:729   ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.184919] Call trace: 
+[   19.184924]  __schedule from schedule+0x2c/0xf8
+[   19.184959]  schedule from schedule_timeout+0xbc/0x110
+[   19.185033]  schedule_timeout from __skb_wait_for_more_packets+0x120/0x170
+[   19.185065]  __skb_wait_for_more_packets from __unix_dgram_recvmsg+0xb4/0x378
+[   19.185100]  __unix_dgram_recvmsg from sock_read_iter+0xd4/0x128
+[   19.185138]  sock_read_iter from vfs_read+0x2ec/0x3a4
+[   19.185166]  vfs_read from ksys_read+0xcc/0xf4
+[   19.185187]  ksys_read from ret_fast_syscall+0x0/0x54
+[   19.185206] Exception stack(0xe0dfdfa8 to 0xe0dfdff0)
+[   19.185221] dfa0:                   00000000 00000000 00000000 0051f1bc 000000ff 00000000
+[   19.185235] dfc0: 00000000 00000000 00000000 00000003 0051f1bc 00000000 0051f1ec 0051e558
+[   19.185247] dfe0: 00000000 be99fc38 00000001 b6e64290
+[   19.185255] task:klogd           state:R  running task     stack:0     pid:733   tgid:733   ppid:1      task_flags:0x400100 flags:0x00000000
+[   19.185279] Call trace: 
+[   19.185284]  __schedule from schedule+0x2c/0xf8
+[   19.185322]  schedule from syslog_print+0x114/0x33c
+[   19.185359]  syslog_print from do_syslog+0x210/0x38c
+[   19.185389]  do_syslog from ret_fast_syscall+0x0/0x54
+[   19.185413] Exception stack(0xe0e01fa8 to 0xe0e01ff0)
+[   19.185427] 1fa0:                   00586150 00000000 00000002 00586150 000003ff 00586150
+[   19.185441] 1fc0: 00586150 00000000 00000000 00000067 005859b0 0058666c 00584674 00586196
+[   19.185452] 1fe0: 00585d20 bee0cc8c 00505648 b6ea556c
+[   19.185461] task:watchdog        state:S stack:0     pid:742   tgid:742   ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.185480] Call trace: 
+[   19.185485]  __schedule from schedule+0x2c/0xf8
+[   19.185520]  schedule from do_nanosleep+0x7c/0x198
+[   19.185548]  do_nanosleep from hrtimer_nanosleep+0x9c/0x100
+[   19.185579]  hrtimer_nanosleep from sys_clock_nanosleep_time32+0xf0/0x14c
+[   19.185614]  sys_clock_nanosleep_time32 from ret_fast_syscall+0x0/0x54
+[   19.185636] Exception stack(0xe0e05fa8 to 0xe0e05ff0)
+[   19.185649] 5fa0:                   00000000 00000000 00000000 00000000 bee55c50 bee55c48
+[   19.185663] 5fc0: 00000000 00000000 00000000 00000109 005959b0 004c0550 00594674 b6f90000
+[   19.185674] 5fe0: 00000000 bee55c18 00000001 b6e3e290
+[   19.185682] task:iiod            state:S stack:0     pid:848   tgid:848   ppid:1      task_flags:0x400100 flags:0x00000000
+[   19.185701] Call trace: 
+[   19.185706]  __schedule from schedule+0x2c/0xf8
+[   19.185741]  schedule from futex_do_wait+0x44/0x88
+[   19.185776]  futex_do_wait from __futex_wait+0x90/0xfc
+[   19.185801]  __futex_wait from futex_wait+0x78/0x104
+[   19.185825]  futex_wait from do_futex+0x1b8/0x1d4
+[   19.185849]  do_futex from sys_futex_time32+0x10c/0x168
+[   19.185872]  sys_futex_time32 from ret_fast_syscall+0x0/0x54
+[   19.185892] Exception stack(0xe0e71fa8 to 0xe0e71ff0)
+[   19.185905] 1fa0:                   00000000 ffffffff 004b21c8 00000189 00000000 00000000
+[   19.185919] 1fc0: 00000000 ffffffff 00000000 000000f0 00000000 00000000 004b2190 00000000
+[   19.185930] 1fe0: bedc0770 bedc075c b6d9a268 b6da67f8
+[   19.185938] task:usbd_main_thd   state:S stack:0     pid:850   tgid:848   ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.185956] Call trace: 
+[   19.185961]  __schedule from schedule+0x2c/0xf8
+[   19.186044]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.186082]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.186107]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.186133]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.186152]  do_sys_poll from sys_poll+0x3c/0x110
+[   19.186170]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.186187] Exception stack(0xe0e51fa8 to 0xe0e51ff0)
+[   19.186201] 1fa0:                   00000000 00000000 b6aee934 00000002 ffffffff 00000000
+[   19.186216] 1fc0: 00000000 00000000 004c61e0 000000a8 00000003 004b0cd4 004abad0 b6aee928
+[   19.186227] 1fe0: b6aee8a0 b6aee88c b6d9a268 b6da67f8
+[   19.186235] task:net_main_thd    state:S stack:0     pid:851   tgid:848   ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.186254] Call trace: 
+[   19.186259]  __schedule from schedule+0x2c/0xf8
+[   19.186295]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.186325]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.186349]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.186371]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.186390]  do_sys_poll from sys_poll+0x3c/0x110
+[   19.186408]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.186425] Exception stack(0xe0e75fa8 to 0xe0e75ff0)
+[   19.186439] 5fa0:                   00000000 00000000 b62ed8d8 00000002 ffffffff 00000000
+[   19.186454] 5fc0: 00000000 00000000 b62ed8d8 000000a8 004b2190 b62ed944 00000009 b62edefc
+[   19.186464] 5fe0: b62ed840 b62ed82c b6d9a268 b6da67f8
+[   19.186472] task:avahi_thd       state:S stack:0     pid:1234  tgid:848   ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.186491] Call trace: 
+[   19.186496]  __schedule from schedule+0x2c/0xf8
+[   19.186531]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.186560]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.186584]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.186605]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.186624]  do_sys_poll from sys_poll+0x3c/0x110
+[   19.186642]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.186659] Exception stack(0xe0909fa8 to 0xe0909ff0)
+[   19.186672] 9fa0:                   00000000 00000000 b4f02610 00000002 ffffffff 00000000
+[   19.186686] 9fc0: 00000000 00000000 b4f02610 000000a8 b4eff3e0 b4eff3e0 b46ff000 b4efeefc
+[   19.186697] 9fe0: b4efec58 b4efec44 b6d9a268 b6da67f8
+[   19.186705] task:file-storage    state:S stack:0     pid:855   tgid:855   ppid:2      task_flags:0x200040 flags:0x00000000
+[   19.186724] Call trace: 
+[   19.186729]  __schedule from schedule+0x2c/0xf8
+[   19.186763]  schedule from sleep_thread+0x78/0x1c4
+[   19.186794]  sleep_thread from fsg_main_thread+0x124/0x1a24
+[   19.186818]  fsg_main_thread from kthread+0x12c/0x15c
+[   19.186850]  kthread from ret_from_fork+0x14/0x28
+[   19.186874] Exception stack(0xe0e6dfb0 to 0xe0e6dff8)
+[   19.186885] dfa0:                                     00000000 00000000 00000000 00000000
+[   19.186898] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   19.186910] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[   19.186919] task:dbus-daemon     state:S stack:0     pid:979   tgid:979   ppid:1      task_flags:0x400140 flags:0x00000000
+[   19.186938] Call trace: 
+[   19.186943]  __schedule from schedule+0x2c/0xf8
+[   19.187022]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.187088]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.187117]  schedule_hrtimeout_range from do_epoll_wait+0x3b8/0x520
+[   19.187143]  do_epoll_wait from sys_epoll_wait+0x78/0x114
+[   19.187163]  sys_epoll_wait from ret_fast_syscall+0x0/0x54
+[   19.187181] Exception stack(0xe0f69fa8 to 0xe0f69ff0)
+[   19.187196] 9fa0:                   00000000 00000000 00000003 beb52528 00000040 ffffffff
+[   19.187210] 9fc0: 00000000 00000000 beb529b0 000000fc beb529ac ffffffff 0050b238 00000001
+[   19.187221] 9fe0: 00000000 beb524d8 00000001 b6dc6290
+[   19.187231] task:ifplugd         state:S stack:0     pid:1125  tgid:1125  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.187251] Call trace: 
+[   19.187256]  __schedule from schedule+0x2c/0xf8
+[   19.187293]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.187323]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.187346]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.187369]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.187388]  do_sys_poll from sys_poll+0xb8/0x110
+[   19.187406]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.187423] Exception stack(0xe0f61fa8 to 0xe0f61ff0)
+[   19.187437] 1fa0:                   00000000 00000000 be8bbc84 00000000 000003e8 00000000
+[   19.187451] 1fc0: 00000000 00000000 00000000 000000a8 00000000 005a94f3 005ae674 00000000
+[   19.187462] 1fe0: 00000000 be8bbc08 00000001 b6ea3290
+[   19.187470] task:udhcpd          state:S stack:0     pid:1129  tgid:1129  ppid:1      task_flags:0x400140 flags:0x00000000
+[   19.187490] Call trace: 
+[   19.187495]  __schedule from schedule+0x2c/0xf8
+[   19.187530]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.187560]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.187583]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.187605]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.187624]  do_sys_poll from sys_poll+0xb8/0x110
+[   19.187642]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.187659] Exception stack(0xe0fc9fa8 to 0xe0fc9ff0)
+[   19.187672] 9fa0:                   00000000 00000000 bef389ec 00000002 006ddd00 00000000
+[   19.187686] 9fc0: 00000000 00000000 000003e8 000000a8 00000005 0049d550 00571674 b6ff1000
+[   19.187697] 9fe0: 00000000 bef38970 00000001 b6e9f290
+[   19.187705] task:sh              state:S stack:0     pid:1173  tgid:1173  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.187725] Call trace: 
+[   19.187730]  __schedule from schedule+0x2c/0xf8
+[   19.187765]  schedule from do_wait+0x90/0x168
+[   19.187805]  do_wait from kernel_wait4+0x98/0x154
+[   19.187839]  kernel_wait4 from sys_wait4+0xe8/0xf4
+[   19.187872]  sys_wait4 from ret_fast_syscall+0x0/0x54
+[   19.187897] Exception stack(0xe0ff5fa8 to 0xe0ff5ff0)
+[   19.187910] 5fa0:                   00000000 00000000 ffffffff bedd955c 00000000 00000000
+[   19.187925] 5fc0: 00000000 00000000 0057d190 00000072 0057d190 00000000 00000001 bedd9fac
+[   19.187935] 5fe0: 00000000 bedd94a0 00000001 b6dbe290
+[   19.187943] task:chronyd         state:S stack:0     pid:1178  tgid:1178  ppid:1      task_flags:0x400140 flags:0x00000000
+[   19.187962] Call trace: 
+[   19.187967]  __schedule from schedule+0x2c/0xf8
+[   19.188045]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.188082]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.188107]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.188131]  poll_schedule_timeout.constprop.0 from do_select+0x5c8/0x6a0
+[   19.188150]  do_select from core_sys_select+0x2f0/0x4fc
+[   19.188167]  core_sys_select from sys_pselect6_time32+0xf8/0x12c
+[   19.188186]  sys_pselect6_time32 from ret_fast_syscall+0x0/0x54
+[   19.188204] Exception stack(0xe1009fa8 to 0xe1009ff0)
+[   19.188219] 9fa0:                   be9909a0 00000000 0000000a be990ab4 00000000 be990bb4
+[   19.188233] 9fc0: be9909a0 00000000 be990a10 0000014f 00000000 00000000 0000000a be990ab4
+[   19.188244] 9fe0: be990948 be990934 b6da5268 b6db17f8
+[   19.188253] task:avahi-daemon    state:S stack:0     pid:1192  tgid:1192  ppid:1      task_flags:0x400140 flags:0x00000000
+[   19.188274] Call trace: 
+[   19.188278]  __schedule from schedule+0x2c/0xf8
+[   19.188314]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.188344]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.188367]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.188389]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.188408]  do_sys_poll from sys_poll+0xb8/0x110
+[   19.188426]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.188443] Exception stack(0xe1015fa8 to 0xe1015ff0)
+[   19.188456] 5fa0:                   00000000 00000000 0051a450 00000008 000000f1 00000000
+[   19.188471] 5fc0: 00000000 00000000 00000000 000000a8 00503540 005010a0 005006f4 b6f71000
+[   19.188481] 5fe0: 00000000 bed3cb50 00000001 b6d33290
+[   19.188490] task:avahi-daemon    state:S stack:0     pid:1193  tgid:1193  ppid:1192   task_flags:0x400040 flags:0x00000004
+[   19.188509] Call trace: 
+[   19.188514]  __schedule from schedule+0x2c/0xf8
+[   19.188549]  schedule from schedule_timeout+0xbc/0x110
+[   19.188576]  schedule_timeout from unix_stream_read_generic+0x394/0xc64
+[   19.188609]  unix_stream_read_generic from unix_stream_recvmsg+0x4c/0x70
+[   19.188640]  unix_stream_recvmsg from sock_read_iter+0xd4/0x128
+[   19.188674]  sock_read_iter from vfs_read+0x2ec/0x3a4
+[   19.188701]  vfs_read from ksys_read+0xcc/0xf4
+[   19.188721]  ksys_read from ret_fast_syscall+0x0/0x54
+[   19.188740] Exception stack(0xe1001fa8 to 0xe1001ff0)
+[   19.188753] 1fa0:                   00000000 00000000 00000006 bed3cb52 00000001 00000000
+[   19.188767] 1fc0: 00000000 00000000 004fab14 00000003 004fc0c0 005007e8 005006f4 b6f71000
+[   19.188778] 1fe0: 00000000 bed3caf8 00000001 b6d33290
+[   19.188786] task:dropbear        state:S stack:0     pid:1201  tgid:1201  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.188804] Call trace: 
+[   19.188809]  __schedule from schedule+0x2c/0xf8
+[   19.188845]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.188875]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.188899]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.188921]  poll_schedule_timeout.constprop.0 from do_select+0x5c8/0x6a0
+[   19.188939]  do_select from core_sys_select+0x2f0/0x4fc
+[   19.188957]  core_sys_select from sys_pselect6_time32+0xf8/0x12c
+[   19.189016]  sys_pselect6_time32 from ret_fast_syscall+0x0/0x54
+[   19.189041] Exception stack(0xe1019fa8 to 0xe1019ff0)
+[   19.189055] 9fa0:                   00000000 00000000 00000005 be8f9ba8 00000000 00000000
+[   19.189070] 9fc0: 00000000 00000000 ffffffff 0000014f be8f9a48 be8f9b2c be8f9a48 be8f9a40
+[   19.189080] 9fe0: 00000000 be8f9928 00000001 b6e20290
+[   19.189090] task:mosquitto       state:S stack:0     pid:1224  tgid:1224  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.189109] Call trace: 
+[   19.189115]  __schedule from schedule+0x2c/0xf8
+[   19.189151]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.189182]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.189205]  schedule_hrtimeout_range from do_epoll_wait+0x3b8/0x520
+[   19.189229]  do_epoll_wait from sys_epoll_wait+0x78/0x114
+[   19.189248]  sys_epoll_wait from ret_fast_syscall+0x0/0x54
+[   19.189266] Exception stack(0xe1021fa8 to 0xe1021ff0)
+[   19.189280] 1fa0:                   00000000 00000000 00000004 0047eac8 000003e8 00000064
+[   19.189295] 1fc0: 00000000 00000000 00000006 000000fc 00000000 0047eab8 004f37a8 00000000
+[   19.189305] 1fe0: 00000000 bebcb9d0 00000001 b67c2290
+[   19.189313] task:maia-httpd      state:S stack:0     pid:1240  tgid:1240  ppid:1      task_flags:0x400100 flags:0x00000000
+[   19.189332] Call trace: 
+[   19.189337]  __schedule from schedule+0x2c/0xf8
+[   19.189373]  schedule from futex_do_wait+0x44/0x88
+[   19.189407]  futex_do_wait from __futex_wait+0x90/0xfc
+[   19.189432]  __futex_wait from futex_wait+0x78/0x104
+[   19.189457]  futex_wait from do_futex+0x1b8/0x1d4
+[   19.189481]  do_futex from sys_futex_time32+0x10c/0x168
+[   19.189504]  sys_futex_time32 from ret_fast_syscall+0x0/0x54
+[   19.189524] Exception stack(0xe0919fa8 to 0xe0919ff0)
+[   19.189538] 9fa0:                   00000000 ffffffff 00a303e4 00000089 00000020 00000000
+[   19.189552] 9fc0: 00000000 ffffffff 00000000 000000f0 beaaf344 ffffffff 00a303e4 beaaf368
+[   19.189563] 9fe0: beaaf338 beaaf328 00851e18 b6e025e0
+[   19.189571] task:tokio-rt-worker state:S stack:0     pid:1242  tgid:1240  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.189590] Call trace: 
+[   19.189595]  __schedule from schedule+0x2c/0xf8
+[   19.189630]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.189660]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.189684]  schedule_hrtimeout_range from do_epoll_wait+0x3b8/0x520
+[   19.189706]  do_epoll_wait from sys_epoll_wait+0x78/0x114
+[   19.189725]  sys_epoll_wait from ret_fast_syscall+0x0/0x54
+[   19.189742] Exception stack(0xe1035fa8 to 0xe1035ff0)
+[   19.189756] 5fa0:                   00000000 00000000 00000003 00a2a620 00000400 ffffffff
+[   19.189771] 5fc0: 00000000 00000000 00a2ff38 000000fc fffffffd ffffffff 00a2ff40 00a2a35c
+[   19.189782] 5fe0: b6d0d930 b6d0d91c b6d8f268 b6d9b7f8
+[   19.189790] task:tokio-rt-worker state:S stack:0     pid:1244  tgid:1240  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.189809] Call trace: 
+[   19.189814]  __schedule from schedule+0x2c/0xf8
+[   19.189849]  schedule from futex_do_wait+0x44/0x88
+[   19.189878]  futex_do_wait from __futex_wait+0x90/0xfc
+[   19.189903]  __futex_wait from futex_wait+0x78/0x104
+[   19.189928]  futex_wait from do_futex+0x1b8/0x1d4
+[   19.189951]  do_futex from sys_futex_time32+0x10c/0x168
+[   19.189973]  sys_futex_time32 from ret_fast_syscall+0x0/0x54
+[   19.190032] Exception stack(0xe091dfa8 to 0xe091dff0)
+[   19.190050] dfa0:                   00000000 ffffffff 00a2fdf0 00000089 00000000 00000000
+[   19.190065] dfc0: 00000000 ffffffff 00000000 000000f0 b6b0c9fc ffffffff 00a27910 b6b0ca20
+[   19.190076] dfe0: b6b0c9f0 b6b0c9e0 00851e18 b6e025e0
+[   19.190085] task:tokio-rt-worker state:S stack:0     pid:1245  tgid:1240  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.190106] Call trace: 
+[   19.190111]  __schedule from schedule+0x2c/0xf8
+[   19.190147]  schedule from uio_read+0xb8/0x1ec
+[   19.190190]  uio_read from vfs_read+0xb8/0x3a4
+[   19.190219]  vfs_read from ksys_read+0x6c/0xf4
+[   19.190239]  ksys_read from ret_fast_syscall+0x0/0x54
+[   19.190258] Exception stack(0xe0921fa8 to 0xe0921ff0)
+[   19.190271] 1fa0:                   00000000 00000000 00000006 00a37508 00000004 00000000
+[   19.190287] 1fc0: 00000000 00000000 b65feac0 00000003 b65feac0 00a31280 00a37508 b65fea58
+[   19.190298] 1fe0: b65fea00 b65fe9ec b6d8f268 b6d9b7f8
+[   19.190306] task:tokio-rt-worker state:S stack:0     pid:1246  tgid:1240  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.190326] Call trace: 
+[   19.190331]  __schedule from schedule+0x2c/0xf8
+[   19.190367]  schedule from futex_do_wait+0x44/0x88
+[   19.190398]  futex_do_wait from __futex_wait+0x90/0xfc
+[   19.190423]  __futex_wait from futex_wait+0x78/0x104
+[   19.190447]  futex_wait from do_futex+0x1b8/0x1d4
+[   19.190470]  do_futex from sys_futex_time32+0x10c/0x168
+[   19.190493]  sys_futex_time32 from ret_fast_syscall+0x0/0x54
+[   19.190513] Exception stack(0xe0925fa8 to 0xe0925ff0)
+[   19.190527] 5fa0:                   00000000 ffffffff 00a2f378 00000089 00000024 b63fdb0c
+[   19.190541] 5fc0: 00000000 ffffffff 00a37508 000000f0 b63fdb08 ffffffff 00000000 b63fdb38
+[   19.190552] 5fe0: b63fdaf8 b63fdae8 00851d14 b6e025e0
+[   19.190560] task:classifier      state:S stack:0     pid:1251  tgid:1251  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.190579] Call trace: 
+[   19.190584]  __schedule from schedule+0x2c/0xf8
+[   19.190619]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.190649]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.190672]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.190695]  poll_schedule_timeout.constprop.0 from do_sys_poll+0x3b0/0x4f8
+[   19.190714]  do_sys_poll from sys_poll+0xb8/0x110
+[   19.190732]  sys_poll from ret_fast_syscall+0x0/0x54
+[   19.190749] Exception stack(0xe1095fa8 to 0xe1095ff0)
+[   19.190763] 5fa0:                   00000000 00000000 00415050 00000002 000074c0 00000000
+[   19.190777] 5fc0: 00000000 00000000 00410bd8 000000a8 01c810c2 00000000 0110471a 00000000
+[   19.190788] 5fe0: 00000000 bee75938 00000001 b6de8290
+[   19.190797] task:sleep           state:S stack:0     pid:1260  tgid:1260  ppid:1173   task_flags:0x400000 flags:0x00000000
+[   19.190816] Call trace: 
+[   19.190821]  __schedule from schedule+0x2c/0xf8
+[   19.190856]  schedule from do_nanosleep+0x7c/0x198
+[   19.190884]  do_nanosleep from hrtimer_nanosleep+0x9c/0x100
+[   19.190913]  hrtimer_nanosleep from sys_clock_nanosleep_time32+0xf0/0x14c
+[   19.190945]  sys_clock_nanosleep_time32 from ret_fast_syscall+0x0/0x54
+[   19.190967] Exception stack(0xe0e79fa8 to 0xe0e79ff0)
+[   19.191047] 9fa0:                   00000000 00000000 00000000 00000000 befeac70 befeac68
+[   19.191065] 9fc0: 00000000 00000000 00000000 00000109 005149b0 0043f550 00513674 b6fb0000
+[   19.191077] 9fe0: 00000000 befeac38 00000001 b6e5e290
+[   19.191087] task:watchconsoletx. state:S stack:0     pid:1268  tgid:1268  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.191108] Call trace: 
+[   19.191113]  __schedule from schedule+0x2c/0xf8
+[   19.191152]  schedule from do_wait+0x90/0x168
+[   19.191191]  do_wait from kernel_wait4+0x98/0x154
+[   19.191225]  kernel_wait4 from sys_wait4+0xe8/0xf4
+[   19.191258]  sys_wait4 from ret_fast_syscall+0x0/0x54
+[   19.191283] Exception stack(0xe0929fa8 to 0xe0929ff0)
+[   19.191297] 9fa0:                   00000000 00000000 ffffffff bed9f104 00000000 00000000
+[   19.191312] 9fc0: 00000000 00000000 005c0190 00000072 005c0190 00000000 00000001 bed9ff9c
+[   19.191323] 9fe0: 00000000 bed9f048 00000001 b6e32290
+[   19.191331] task:watchdatveasy.s state:S stack:0     pid:1269  tgid:1269  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.191351] Call trace: 
+[   19.191356]  __schedule from schedule+0x2c/0xf8
+[   19.191391]  schedule from do_wait+0x90/0x168
+[   19.191424]  do_wait from kernel_wait4+0x98/0x154
+[   19.191457]  kernel_wait4 from sys_wait4+0xe8/0xf4
+[   19.191491]  sys_wait4 from ret_fast_syscall+0x0/0x54
+[   19.191516] Exception stack(0xe0fc1fa8 to 0xe0fc1ff0)
+[   19.191529] 1fa0:                   00000000 00000000 ffffffff bedf2bc4 00000000 00000000
+[   19.191543] 1fc0: 00000000 00000000 00510190 00000072 00510190 00000000 00000001 bedf3f9d
+[   19.191554] 1fe0: 00000000 bedf2b08 00000001 b6e76290
+[   19.191562] task:watchconsolefre state:S stack:0     pid:1270  tgid:1270  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.191581] Call trace: 
+[   19.191586]  __schedule from schedule+0x2c/0xf8
+[   19.191621]  schedule from do_wait+0x90/0x168
+[   19.191655]  do_wait from kernel_wait4+0x98/0x154
+[   19.191688]  kernel_wait4 from sys_wait4+0xe8/0xf4
+[   19.191721]  sys_wait4 from ret_fast_syscall+0x0/0x54
+[   19.191746] Exception stack(0xe093dfa8 to 0xe093dff0)
+[   19.191759] dfa0:                   00000000 00000000 ffffffff bebdfd74 00000000 00000000
+[   19.191773] dfc0: 00000000 00000000 00578190 00000072 00578190 00000000 00000001 bebe0f9a
+[   19.191784] dfe0: 00000000 bebdfcb8 00000001 b6e75290
+[   19.191792] task:api_controller. state:S stack:0     pid:1271  tgid:1271  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.191811] Call trace: 
+[   19.191815]  __schedule from schedule+0x2c/0xf8
+[   19.191850]  schedule from anon_pipe_read+0x354/0x3b8
+[   19.191880]  anon_pipe_read from vfs_read+0x2ec/0x3a4
+[   19.191901]  vfs_read from ksys_read+0xcc/0xf4
+[   19.191922]  ksys_read from ret_fast_syscall+0x0/0x54
+[   19.191940] Exception stack(0xe0941fa8 to 0xe0941ff0)
+[   19.191953] 1fa0:                   00000000 00000000 00000003 beb365ac 00001000 00000000
+[   19.191967] 1fc0: 00000000 00000000 00000003 00000003 beb365ac 005554cc 00000004 00000000
+[   19.192020] 1fe0: 00000000 beb364f0 00000001 b6d73290
+[   19.192033] task:inotifywait     state:S stack:0     pid:1284  tgid:1284  ppid:1269   task_flags:0x400000 flags:0x00000000
+[   19.192054] Call trace: 
+[   19.192060]  __schedule from schedule+0x2c/0xf8
+[   19.192097]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.192129]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.192153]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.192177]  poll_schedule_timeout.constprop.0 from do_select+0x5c8/0x6a0
+[   19.192196]  do_select from core_sys_select+0x2f0/0x4fc
+[   19.192214]  core_sys_select from sys_pselect6_time32+0xf8/0x12c
+[   19.192233]  sys_pselect6_time32 from ret_fast_syscall+0x0/0x54
+[   19.192251] Exception stack(0xe0961fa8 to 0xe0961ff0)
+[   19.192264] 1fa0:                   00000000 00000000 00000004 b6f5c748 00000000 00000000
+[   19.192278] 1fc0: 00000000 00000000 00000001 0000014f 00000000 00000002 00000000 00000000
+[   19.192289] 1fe0: 00000000 beccfb30 00000001 b6e5e290
+[   19.192297] task:inotifywait     state:S stack:0     pid:1286  tgid:1286  ppid:1270   task_flags:0x400000 flags:0x00000000
+[   19.192317] Call trace: 
+[   19.192322]  __schedule from schedule+0x2c/0xf8
+[   19.192357]  schedule from schedule_hrtimeout_range_clock+0x12c/0x134
+[   19.192387]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.192411]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.192432]  poll_schedule_timeout.constprop.0 from do_select+0x5c8/0x6a0
+[   19.192450]  do_select from core_sys_select+0x2f0/0x4fc
+[   19.192468]  core_sys_select from sys_pselect6_time32+0xf8/0x12c
+[   19.192487]  sys_pselect6_time32 from ret_fast_syscall+0x0/0x54
+[   19.192504] Exception stack(0xe0915fa8 to 0xe0915ff0)
+[   19.192517] 5fa0:                   00000000 00000000 00000004 b6fa0748 00000000 00000000
+[   19.192531] 5fc0: 00000000 00000000 00000001 0000014f 00000000 00000002 00000000 00000000
+[   19.192541] 5fe0: 00000000 be918b10 00000001 b6ea2290
+[   19.192549] task:S99bootwatch    state:R  running task     stack:0     pid:1313  tgid:1313  ppid:1      task_flags:0x400140 flags:0x00000004
+[   19.192572] Call trace: 
+[   19.192577]  unwind_backtrace from show_stack+0x10/0x14
+[   19.192605]  show_stack from sched_show_task+0x154/0x180
+[   19.192634]  sched_show_task from show_state_filter+0x5c/0xf0
+[   19.192667]  show_state_filter from sysrq_handle_showstate+0xc/0x14
+[   19.192711]  sysrq_handle_showstate from __handle_sysrq+0x98/0x198
+[   19.192738]  __handle_sysrq from write_sysrq_trigger+0x80/0x98
+[   19.192756]  write_sysrq_trigger from proc_reg_write+0x98/0xbc
+[   19.192778]  proc_reg_write from vfs_write+0xcc/0x4cc
+[   19.192799]  vfs_write from ksys_write+0x6c/0xf4
+[   19.192819]  ksys_write from ret_fast_syscall+0x0/0x54
+[   19.192838] Exception stack(0xe095dfa8 to 0xe095dff0)
+[   19.192851] dfa0:                   00000000 00000000 00000001 00576158 00000002 00000000
+[   19.192865] dfc0: 00000000 00000000 00000001 00000004 00000002 00000001 00000020 00000000
+[   19.192875] dfe0: 00000000 be901e90 00000001 b6db4290
+[   19.192883] task:input-event-dae state:S stack:0     pid:1319  tgid:1319  ppid:1      task_flags:0x400040 flags:0x00000000
+[   19.192902] Call trace: 
+[   19.192907]  __schedule from schedule+0x2c/0xf8
+[   19.192943]  schedule from schedule_hrtimeout_range_clock+0xd8/0x134
+[   19.192974]  schedule_hrtimeout_range_clock from schedule_hrtimeout_range+0x1c/0x24
+[   19.193040]  schedule_hrtimeout_range from poll_schedule_timeout.constprop.0+0x48/0xac
+[   19.193069]  poll_schedule_timeout.constprop.0 from do_select+0x5c8/0x6a0
+[   19.193089]  do_select from core_sys_select+0x2f0/0x4fc
+[   19.193108]  core_sys_select from sys_pselect6_time32+0xf8/0x12c
+[   19.193127]  sys_pselect6_time32 from ret_fast_syscall+0x0/0x54
+[   19.193145] Exception stack(0xe0981fa8 to 0xe0981ff0)
+[   19.193159] 1fa0:                   be845a98 00000000 00000004 be845b8c 00000000 00000000
+[   19.193174] 1fc0: be845a98 00000000 00000000 0000014f 00000e10 00000000 00000004 be845b8c
+[   19.193185] 1fe0: 00000000 be845a40 00000001 b6e27290
+[   19.193193] task:getty           state:S stack:0     pid:1320  tgid:1320  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.193214] Call trace: 
+[   19.193219]  __schedule from schedule+0x2c/0xf8
+[   19.193255]  schedule from do_nanosleep+0x7c/0x198
+[   19.193282]  do_nanosleep from hrtimer_nanosleep+0x9c/0x100
+[   19.193311]  hrtimer_nanosleep from sys_clock_nanosleep_time32+0xf0/0x14c
+[   19.193343]  sys_clock_nanosleep_time32 from ret_fast_syscall+0x0/0x54
+[   19.193366] Exception stack(0xe0dd9fa8 to 0xe0dd9ff0)
+[   19.193379] 9fa0:                   00000000 00000000 00000000 00000000 bead5c28 bead5c20
+[   19.193393] 9fc0: 00000000 00000000 00000000 00000109 005c29b0 00000000 005c1674 b6fd2000
+[   19.193403] 9fe0: 00000000 bead5bf0 00000001 b6e80290
+[   19.193412] task:getty           state:S stack:0     pid:1322  tgid:1322  ppid:1      task_flags:0x400000 flags:0x00000000
+[   19.193431] Call trace: 
+[   19.193435]  __schedule from schedule+0x2c/0xf8
+[   19.193470]  schedule from do_nanosleep+0x7c/0x198
+[   19.193498]  do_nanosleep from hrtimer_nanosleep+0x9c/0x100
+[   19.193523]  hrtimer_nanosleep from sys_clock_nanosleep_time32+0xf0/0x14c
+[   19.193552]  sys_clock_nanosleep_time32 from ret_fast_syscall+0x0/0x54
+[   19.193574] Exception stack(0xe0989fa8 to 0xe0989ff0)
+[   19.193587] 9fa0:                   00000000 00000000 00000000 00000000 be926c28 be926c20
+[   19.193601] 9fc0: 00000000 00000000 00000000 00000109 005489b0 00000000 00547674 b6f2c000
+[   19.193612] 9fe0: 00000000 be926bf0 00000001 b6dda290
+[   19.193620] task:api_controller. state:S stack:0     pid:1328  tgid:1328  ppid:1271   task_flags:0x400040 flags:0x00000000
+[   19.193639] Call trace: 
+[   19.193644]  __schedule from schedule+0x2c/0xf8
+[   19.193679]  schedule from do_wait+0x90/0x168
+[   19.193716]  do_wait from kernel_wait4+0x98/0x154
+[   19.193750]  kernel_wait4 from sys_wait4+0xe8/0xf4
+[   19.193783]  sys_wait4 from ret_fast_syscall+0x0/0x54
+[   19.193808] Exception stack(0xe0979fa8 to 0xe0979ff0)
+[   19.193821] 9fa0:                   00000000 00000000 ffffffff beb3709c 00000000 00000000
+[   19.193836] 9fc0: 00000000 00000000 00568b88 00000072 00000000 0055fc98 00000000 00000000
+[   19.193847] 9fe0: 00000000 beb36fd8 00000001 b6d73290
+[   19.193855] task:api_controller. state:D stack:0     pid:1329  tgid:1329  ppid:1328   task_flags:0x400040 flags:0x00000000
+[   19.193874] Call trace: 
+[   19.193879]  __schedule from schedule+0x2c/0xf8
+[   19.193914]  schedule from io_schedule+0x34/0x44
+[   19.193947]  io_schedule from filemap_fault+0x288/0xe6c
+[   19.194054]  filemap_fault from __do_fault+0x3c/0xd8
+[   19.194087]  __do_fault from handle_mm_fault+0x850/0xf0c
+[   19.194112]  handle_mm_fault from do_page_fault+0x1c0/0x4a8
+[   19.194148]  do_page_fault from do_PrefetchAbort+0x38/0xa8
+[   19.194183]  do_PrefetchAbort from ret_from_exception+0x0/0x20
+[   19.194211] Exception stack(0xe097dfb0 to 0xe097dff8)
+[   19.194224] dfa0:                                     beb36dac beb36ed8 00000080 00000000
+[   19.194239] dfc0: beb36f60 00000014 b6e5ce40 beb36ed4 00000001 005595f4 00000000 005554cc
+[   19.194252] dfe0: b6e5ce98 beb36da0 b6d2e5b4 b6d940c0 a0010010 ffffffff
+[   19.194262] task:sleep           state:R  running task     stack:0     pid:1330  tgid:1330  ppid:1268   task_flags:0x400000 flags:0x00000000
+[   19.194284] Call trace: 
+[   19.194290]  __schedule from preempt_schedule_irq+0x3c/0x60
+[   19.194330]  preempt_schedule_irq from svc_preempt+0x8/0x18
+[   19.194357] Exception stack(0xe0985da0 to 0xe0985de8)
+[   19.194373] 5da0: 00000000 dfd95a00 0e79659f 0004103d 0e79659f d18c6710 00000001 d83f2600
+[   19.194388] 5dc0: 00000800 d18c6710 e0985ed4 b6fc4000 0e000000 e0985df0 c0122770 c0124bfc
+[   19.194397] 5de0: 40000113 ffffffff
+[   19.194405]  svc_preempt from v7_flush_icache_all+0x4/0xc
+[   19.194430] task:api_controller. state:D stack:0     pid:1331  tgid:1331  ppid:1328   task_flags:0x400040 flags:0x00000000
+[   19.194449] Call trace: 
+[   19.194455]  __schedule from schedule+0x2c/0xf8
+[   19.194490]  schedule from io_schedule+0x34/0x44
+[   19.194524]  io_schedule from filemap_fault+0x288/0xe6c
+[   19.194556]  filemap_fault from __do_fault+0x3c/0xd8
+[   19.194578]  __do_fault from handle_mm_fault+0x850/0xf0c
+[   19.194599]  handle_mm_fault from do_page_fault+0x1c0/0x4a8
+[   19.194629]  do_page_fault from do_PrefetchAbort+0x38/0xa8
+[   19.194663]  do_PrefetchAbort from ret_from_exception+0x0/0x20
+[   19.194690] Exception stack(0xe0975fb0 to 0xe0975ff8)
+[   19.194702] 5fa0:                                     beb36dac beb36ed8 00000080 00000000
+[   19.194717] 5fc0: beb36f60 00000014 b6e5ce40 beb36ed4 00000001 005595f4 00000000 005554cc
+[   19.194730] 5fe0: b6e5ce98 beb36da0 b6d2e5b4 b6d940c0 a0070010 ffffffff
+[   19.194739] task:api_controller. state:R  running task     stack:0     pid:1332  tgid:1332  ppid:1328   task_flags:0x400040 flags:0x00000000
+[   19.194762] Call trace: 
+[   19.194767]  __schedule from preempt_schedule_irq+0x3c/0x60
+[   19.194804]  preempt_schedule_irq from svc_preempt+0x8/0x18
+[   19.194830] Exception stack(0xe098ddc0 to 0xe098de08)
+[   19.194846] ddc0: d18c3650 0e8ca5df 00000800 0e8cae7e 0e8ca59f d18c3650 00000001 c0e67b00
+[   19.194861] dde0: 00000800 d18c364c e098dee4 b6d94000 0e000000 e098de10 c01235ec c0125810
+[   19.194871] de00: 00030113 ffffffff
+[   19.194878]  svc_preempt from cpu_ca15_set_pte_ext+0x30/0x58
+[   19.194905] Sched Debug Version: v0.11, 7.3.0 #1
+[   19.194913] ktime                                   : 19193.927790
+[   19.194924] sched_clk                               : 19194.903642
+[   19.194932] cpu_clk                                 : 19194.903822
+[   19.194940] jiffies                                 : 4294686489
+[   19.194947] 
+[   19.194951] sysctl_sched
+[   19.194955]   .sysctl_sched_base_slice                 : 1.400000
+[   19.194964]   .sysctl_sched_features                   : 468011999
+[   19.194971]   .sysctl_sched_tunable_scaling            : 1 (logarithmic)
+[   19.195024] 
+[   19.195030] cpu#0
+[   19.195035]   .nr_running                    : 1
+[   19.195042]   .nr_switches                   : 35537
+[   19.195050]   .nr_uninterruptible            : 47
+[   19.195057]   .next_balance                  : 4294.686552
+[   19.195066]   .curr->pid                     : 1313
+[   19.195073]   .clock                         : 19195.015356
+[   19.195081]   .clock_task                    : 19195.015356
+[   19.195089]   .avg_idle                      : 534536
+[   19.195096]   .max_idle_balance_cost         : 500000
+[   19.195103] 
+[   19.195107] cfs_rq[0]:
+[   19.195113]   .left_deadline                 : 0.000001
+[   19.195122]   .left_vruntime                 : 0.000001
+[   19.195129]   .zero_vruntime                 : 4168.012733
+[   19.195137]   .sum_w_vruntime                : 0 (-1 bits)
+[   19.195145]   .sum_weight                    : 0
+[   19.195151]   .sum_shift                     : 0
+[   19.195157]   .avg_vruntime                  : 4168.012733
+[   19.195166]   .right_vruntime                : 0.000001
+[   19.195174]   .spread                        : 0.000000
+[   19.195181]   .nr_queued                     : 1
+[   19.195187]   .h_nr_runnable                 : 1
+[   19.195193]   .h_nr_queued                   : 1
+[   19.195199]   .h_nr_idle                     : 0
+[   19.195205]   .load                          : 1024
+[   19.195212]   .load_avg                      : 594514
+[   19.195218]   .runnable_avg                  : 593650
+[   19.195224]   .util_avg                      : 609
+[   19.195230]   .util_est                      : 60
+[   19.195236]   .removed.load_avg              : 0
+[   19.195242]   .removed.util_avg              : 0
+[   19.195248]   .removed.runnable_avg          : 0
+[   19.195254] 
+[   19.195258] rt_rq[0]:
+[   19.195263]   .rt_nr_running                 : 0
+[   19.195269] 
+[   19.195273] dl_rq[0]:
+[   19.195278]   .dl_nr_running                 : 0
+[   19.195284]   .dl_bw->bw                     : -1
+[   19.195290]   .dl_bw->total_bw               : 104856
+[   19.195297] 
+[   19.195300] runnable tasks:
+[   19.195304]  S            task   PID     weight       vruntime   eligible    deadline             slice          sum-exec      switches  prio         wait-time        sum-sleep       sum-block
+[   19.195311] -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[   19.195319]  S        kthreadd     2       1024      1288.148649   E        1289.468921           1.400000         9.124578        93     120         0.000000         0.000000         0.000000
+[   19.195362]  I kworker/R-rcu_g     4      88761         0.827808   E           0.819921           0.700000         0.036462         2     100         0.000000         0.000000         0.000000
+[   19.195400]  I kworker/R-sync_     5      88761         0.712952   E           0.705051           0.700000         0.032268         2     100         0.000000         0.000000         0.000000
+[   19.195438]  I kworker/R-kvfre     6      88761         0.641983   E           0.634123           0.700000         0.040794         2     100         0.000000         0.000000         0.000000
+[   19.195473]  I kworker/R-slub_     7      88761         0.566658   E           0.558756           0.700000         0.032238         2     100         0.000000         0.000000         0.000000
+[   19.195509]  I     kworker/0:0     8       1024         0.319048   E           0.343788           0.700000         0.074742         3     120         0.000000         0.000000         0.000000
+[   19.195545]  I    kworker/0:0H     9      88761       771.654280   E         771.667943           1.400000         0.307158         4     100         0.000000         0.000000         0.000000
+[   19.195581]  I     kworker/0:1    10       1024      4129.644391   E        4131.005847           1.400000        24.522096       194     120         0.000000         0.000000         0.000000
+[   19.195619]  I kworker/R-mm_pe    12      88761         0.106727   E           0.098861           0.700000         0.041028         2     100         0.000000         0.000000         0.000000
+[   19.195654]  S     ksoftirqd/0    13       1024      4166.185805   E        4167.565567           1.400000        78.367464      4490     120         0.000000         0.000000         0.000000
+[   19.195691]  S       ktimers/0    14       1024         0.269243   E           0.690616           0.700000        29.599308      1503      48         0.000000         0.000000         0.000000
+[   19.195727]  S          rcub/0    16       1024         0.494108   E           0.821608           0.700000         0.043866         3      98         0.000000         0.000000         0.000000
+[   19.195763]  S rcu_exp_par_gp_    17       1024         0.604548   E           1.294192           0.700000         0.032334         2     120         0.000000         0.000000         0.000000
+[   19.195798]  S          rcuc/0    18       1024         0.705668   E           0.689872           0.700000       111.934314      3059      98         0.000000         0.000000         0.000000
+[   19.195835]  S     migration/0    20       1024         0.963364   E           1.654094           0.700000         3.190272        85       0         0.000000         0.000000         0.000000
+[   19.195869]  S      irq_work/0    21       1024         1.086195   E           0.689764           0.700000         6.272430       450      98         0.000000         0.000000         0.000000
+[   19.195906]  S         cpuhp/0    22       1024       841.992536   E         843.369046           1.400000         0.360828         8     120         0.000000         0.000000         0.000000
+[   19.195947]  S       kdevtmpfs    31       1024      2433.284152   E        2434.589310           1.400000        11.574936       169     120         0.000000         0.000000         0.000000
+[   19.196030]  I kworker/R-inet_    32      88761         3.529014   E           3.544884           1.400000         0.070890         2     100         0.000000         0.000000         0.000000
+[   19.196071]  S      khungtaskd    34       1024      4076.703592   E        4078.065372           1.400000         0.205368         5     120         0.000000         0.000000         0.000000
+[   19.196110]  I    kworker/u8:1    36       1024       894.272635   E         895.625067           1.400000     10648.981758      1851     120         0.000000         0.000000         0.000000
+[   19.196150]  S  backlog_napi/0    41       1024        37.972692   E          39.359180           1.400000         0.074910         3     120         0.000000         0.000000         0.000000
+[   19.196191]  I    kworker/u8:4    49       1024       894.570799   E         895.839399           1.400000         4.464918        27     120         0.000000         0.000000         0.000000
+[   19.196232]  I    kworker/0:1H    92      88761       992.323219   E         992.338751           1.400000         0.837492        28     100         0.000000         0.000000         0.000000
+[   19.196268]  S irq/27-7c400000   105       1024     10680.343254   N           1.380074           1.400000         0.084354         3      49         0.000000         0.000000         0.000000
+[   19.196304]  S irq/28-7c420000   107       1024     10681.392498   N           1.374986           1.400000         0.103986         3      49         0.000000         0.000000         0.000000
+[   19.196339]  S irq/29-e0006000   187       1024     10716.688070   N           1.383734           1.400000        97.772742      3833      39         0.000000         0.000000         0.000000
+[   19.196375]  S irq/30-e000d000   198       1024       795.847911   E           1.380794           1.400000       290.322168      1146      49         0.000000         0.000000         0.000000
+[   19.196411]  I    kworker/u8:6   287       1024      2434.725760   E        2435.820114           1.400000       859.385292      2366     120         0.000000         0.000000         0.000000
+[   19.196447]  S    irq/31-eth%d   291       1024       805.701002   E           1.377944           1.400000         0.086526         2      49         0.000000         0.000000         0.000000
+[   19.196483]  S irq/32-maia-sdr   315       1024     10754.811955   N           1.380038           1.400000         0.275808         9      49         0.000000         0.000000         0.000000
+[   19.196519]  S irq/32-s-maia-s   316       1024     10754.831053   N           1.380902           1.400000         0.197094         9      50         0.000000         0.000000         0.000000
+[   19.196555]  S     irq/34-mmc0   357       1024     10765.378866   N           1.346252           1.400000         1.151382        55      49         0.000000         0.000000         0.000000
+[   19.196591]  S   irq/34-s-mmc0   360       1024     10765.078749   N           1.388222           1.400000         0.529284        32      50         0.000000         0.000000         0.000000
+[   19.196626]  S irq/36-f8007100   369       1024     10765.786555   N           1.382786           1.400000         0.517002        30      49         0.000000         0.000000         0.000000
+[   19.196662]  S irq/39-f8007000   394       1024     10813.105993   N           1.374170           1.400000         0.101148         3      49         0.000000         0.000000         0.000000
+[   19.196697]  I   kworker/R-mld   416      88761       853.033289   E         853.049197           1.400000         0.061008         2     100         0.000000         0.000000         0.000000
+[   19.196735]  S irq/41-e0002000   692       1024     10878.691309   N           1.355978           1.400000        42.875946       947      49         0.000000         0.000000         0.000000
+[   19.196772]  S  irq/40-xuartps   707       1024     11712.999920   N           1.384760           1.400000         2.007678        63      49         0.000000         0.000000         0.000000
+[   19.196809]  S        watchdog   742       1024      3644.218831   E        3645.583725           1.400000         1.762506         6     120         0.000000         0.000000         0.000000
+[   19.196846]  S     dbus-daemon   979       1024      3641.647237   E        3642.686469           1.400000        15.467976        71     120         0.000000         0.000000         0.000000
+[   19.196883]  S         ifplugd  1125       1024      3967.911556   E        3969.201456           1.400000         2.580630        10     120         0.000000         0.000000         0.000000
+[   19.196919]  S          udhcpd  1129       1024      2192.317629   E        2192.658167           1.400000         2.306538         3     120         0.000000         0.000000         0.000000
+[   19.196954]  S              sh  1173       1024      3655.581803   E        3656.945767           1.400000        16.202856        44     120         0.000000         0.000000         0.000000
+[   19.197038]  S         chronyd  1178       1024      3646.800871   E        3648.114093           1.400000         8.760192        20     120         0.000000         0.000000         0.000000
+[   19.197076]  S    avahi-daemon  1192       1024      4137.068909   E        4138.308625           1.400000        39.519978       106     120         0.000000         0.000000         0.000000
+[   19.197114]  S    avahi-daemon  1193       1024      2371.974268   E        2373.359028           1.400000         1.565964         4     120         0.000000         0.000000         0.000000
+[   19.197150]  S       mosquitto  1224       1024      4151.620227   E        4152.913421           1.400000        90.190614       158     120         0.000000         0.000000         0.000000
+[   19.197189]  S      classifier  1251       1024      3640.847617   E        3641.414409           1.400000        28.321104        46     120         0.000000         0.000000         0.000000
+[   19.197226]  S           sleep  1260       1024      3660.366112   E        3661.333404           1.400000         5.140200         8     120         0.000000         0.000000         0.000000
+[   19.197263]  S     inotifywait  1284       1024      4000.893940   E        4001.112078           1.400000         4.318584         5     120         0.000000         0.000000         0.000000
+[   19.197299]  S     inotifywait  1286       1024      4005.939155   E        4006.435333           1.400000         3.866820         6     120         0.000000         0.000000         0.000000
+[   19.197335] >R    S99bootwatch  1313       1024      4169.972243   E        4171.372243           1.400000        37.589808        49     120         0.000000         0.000000         0.000000
+[   19.197370]  S input-event-dae  1319       1024      4093.652404   E        4094.627580           1.400000         0.810078         4     120         0.000000         0.000000         0.000000
+[   19.197406]  S           getty  1322       1024      4121.857699   E        4123.209039           1.400000         7.923840        17     120         0.000000         0.000000         0.000000
+[   19.197443]  S api_controller.  1328       1024      4136.908625   E        4136.927185           1.400000         4.302450         3     120         0.000000         0.000000         0.000000
+[   19.197480] 
+[   19.197484] cpu#1
+[   19.197489]   .nr_running                    : 7
+[   19.197496]   .nr_switches                   : 31783
+[   19.197503]   .nr_uninterruptible            : -47
+[   19.197510]   .next_balance                  : 4294.686545
+[   19.197518]   .curr->pid                     : 682
+[   19.197525]   .clock                         : 19196.982336
+[   19.197533]   .clock_task                    : 19196.982336
+[   19.197541]   .avg_idle                      : 718858
+[   19.197548]   .max_idle_balance_cost         : 500000
+[   19.197554] 
+[   19.197558] cfs_rq[1]:
+[   19.197565]   .left_deadline                 : 14720.865832
+[   19.197573]   .left_vruntime                 : 14719.465832
+[   19.197581]   .zero_vruntime                 : 14720.316259
+[   19.197588]   .sum_w_vruntime                : 54104064 (25 bits)
+[   19.197597]   .sum_weight                    : 6144
+[   19.197603]   .sum_shift                     : 0
+[   19.197609]   .avg_vruntime                  : 14720.326713
+[   19.197617]   .right_vruntime                : 14720.950068
+[   19.197625]   .spread                        : 1.484236
+[   19.197632]   .nr_queued                     : 7
+[   19.197638]   .h_nr_runnable                 : 5
+[   19.197644]   .h_nr_queued                   : 7
+[   19.197650]   .h_nr_idle                     : 0
+[   19.197656]   .load                          : 94905
+[   19.197662]   .load_avg                      : 330915
+[   19.197668]   .runnable_avg                  : 282501
+[   19.197674]   .util_avg                      : 655
+[   19.197681]   .util_est                      : 384
+[   19.197687]   .removed.load_avg              : 0
+[   19.197693]   .removed.util_avg              : 0
+[   19.197699]   .removed.runnable_avg          : 0
+[   19.197705] 
+[   19.197709] rt_rq[1]:
+[   19.197714]   .rt_nr_running                 : 0
+[   19.197720] 
+[   19.197723] dl_rq[1]:
+[   19.197728]   .dl_nr_running                 : 0
+[   19.197734]   .dl_bw->bw                     : -1
+[   19.197741]   .dl_bw->total_bw               : 104856
+[   19.197747] 
+[   19.197750] runnable tasks:
+[   19.197754]  S            task   PID     weight       vruntime   eligible    deadline             slice          sum-exec      switches  prio         wait-time        sum-sleep       sum-block
+[   19.197761] -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[   19.197767]  S            init     1       1024     14704.848511   E       14706.208719           1.400000       311.513184      2750     120         0.000000         0.000000         0.000000
+[   19.197806]  S pool_workqueue_     3       1024     11708.403736   E       11709.794004           1.400000         0.079704         5     120         0.000000         0.000000         0.000000
+[   19.197845]  I    kworker/u8:0    11       1024     11708.678732   E       11709.973354           1.400000       697.569378       312     120         0.000000         0.000000         0.000000
+[   19.197883]  I     rcu_preempt    15       1024         0.401468   E           0.728482           0.700000        85.303308      3024      98         0.000000         0.000000         0.000000
+[   19.197920]  S rcu_exp_gp_kthr    19       1024     10877.834678   E       10879.206802           1.400000         0.430092        15     120         0.000000         0.000000         0.000000
+[   19.197957]  S         cpuhp/1    23       1024     10812.520711   E       10813.892679           1.400000         0.444648        11     120         0.000000         0.000000         0.000000
+[   19.198041]  S      irq_work/1    24       1024        -1.012132   E           0.692038           0.700000         6.757866       417      98         0.000000         0.000000         0.000000
+[   19.198081]  S     migration/1    25       1024         1.692475   E           2.382527           0.700000         2.982186        74       0         0.000000         0.000000         0.000000
+[   19.198118]  S          rcuc/1    26       1024        -1.011997   E           0.693556           0.700000       141.776652      4239      98         0.000000         0.000000         0.000000
+[   19.198156]  S       ktimers/1    27       1024        -1.019174   E           0.688672           0.700000        43.212504      1884      48         0.000000         0.000000         0.000000
+[   19.198191]  S     ksoftirqd/1    28       1024     14719.475090   E       14720.865832           1.400000        38.997444      2304     120         0.000000         0.000000         0.000000
+[   19.198228]  I     kworker/1:0    29       1024        50.094225   E          51.424721           1.400000         0.254298         6     120         0.000000         0.000000         0.000000
+[   19.198264]  I    kworker/1:0H    30      88761     13781.528293   E       13781.544143           1.400000         0.211638         8     100         0.000000         0.000000         0.000000
+[   19.198302]  I rcu_tasks_kthre    33       1024        11.346554   E          12.724294           1.400000         0.059868         2     120         0.000000         0.000000         0.000000
+[   19.198338]  S      oom_reaper    35       1024        12.110278   E          13.495686           1.400000         0.046782         2     120         0.000000         0.000000         0.000000
+[   19.198374]  I kworker/R-write    37      88761        12.235410   E          12.251323           1.400000         0.048222         2     100         0.000000         0.000000         0.000000
+[   19.198409]  I kworker/R-bio_c    38      88761        12.742174   E          12.758052           1.400000         0.049614         2     100         0.000000         0.000000         0.000000
+[   19.198445]  I kworker/R-kbloc    39      88761        13.003693   E          13.019605           1.400000         0.045342         2     100         0.000000         0.000000         0.000000
+[   19.198481]  I    kworker/u8:2    40       1024     14697.564964   E       14698.895952           1.400000        23.837688       150     120         0.000000         0.000000         0.000000
+[   19.198518]  S  backlog_napi/1    42       1024        16.476731   E          17.862655           1.400000         0.057984         3     120         0.000000         0.000000         0.000000
+[   19.198555]  I     kworker/1:1    43       1024     13431.494064   E       13432.874726           1.400000        19.390872       596     120         0.000000         0.000000         0.000000
+[   19.198592]  S       watchdogd    44       1024        18.055294   E           1.400000           1.400000         0.063780         2      49         0.000000         0.000000         0.000000
+[   19.198629]  I    kworker/1:1H    45      88761        25.376746   E          25.392584           1.400000         0.055914         2     100         0.000000         0.000000         0.000000
+[   19.198664]  I kworker/R-rpcio    46      88761        37.459555   E          37.475243           1.400000         0.067776         2     100         0.000000         0.000000         0.000000
+[   19.198700]  I kworker/R-xprti    47      88761        37.525149   E          37.541101           1.400000         0.036690         2     100         0.000000         0.000000         0.000000
+[   19.198737]  I    kworker/u8:3    48       1024     14620.497155   E       14621.872705           1.400000         2.951808        26     120         0.000000         0.000000         0.000000
+[   19.198773]  I    kworker/u8:5    52       1024     11708.649688   E       11709.996618           1.400000         9.362148        90     120         0.000000         0.000000         0.000000
+[   19.198810]  S         kswapd0    63       1024       131.025110   E         132.404620           1.400000         0.074928         3     120         0.000000         0.000000         0.000000
+[   19.198847]  I kworker/R-nfsio    65      88761        43.039812   E          43.055634           1.400000         0.069414         2     100         0.000000         0.000000         0.000000
+[   19.198883]  I kworker/R-cifsi    66      88761        43.780727   E          43.796689           1.400000         0.047148         2     100         0.000000         0.000000         0.000000
+[   19.198918]  I kworker/R-smb3d    67      88761        44.143949   E          44.159843           1.400000         0.053784         2     100         0.000000         0.000000         0.000000
+[   19.198954]  I kworker/R-cifsf    68      88761        44.879182   E          44.895065           1.400000         0.060180         2     100         0.000000         0.000000         0.000000
+[   19.199034]  I kworker/R-cifso    69      88761        45.677504   E          45.693393           1.400000         0.052110         2     100         0.000000         0.000000         0.000000
+[   19.199074]  I kworker/R-defer    70      88761        46.969008   E          46.984941           1.400000         0.037260         2     100         0.000000         0.000000         0.000000
+[   19.199109]  I kworker/R-serve    71      88761        47.933866   E          47.949802           1.400000         0.043770         2     100         0.000000         0.000000         0.000000
+[   19.199145]  I kworker/R-cfid_    72      88761        49.051909   E          49.067632           1.400000         0.061920         2     100         0.000000         0.000000         0.000000
+[   19.199179]  I     kworker/1:2    74       1024     14715.113619   E       14716.486271           1.400000         1.904040        84     120         0.000000         0.000000         0.000000
+[   19.199216]  I    kworker/u9:0    82      88761        52.691372   E          52.707378           1.400000         0.035022         2     100         0.000000         0.000000         0.000000
+[   19.199254]  S            spi0   189       1024     10717.190630   E       10718.576098           1.400000         0.041568         2     120         0.000000         0.000000         0.000000
+[   19.199292]  I kworker/R-sdhci   354      88761     10764.126857   E       10764.142713           1.400000         0.064884         2     100         0.000000         0.000000         0.000000
+[   19.199329]  I kworker/R-mmc_c   378      88761     10801.187525   E       10801.203477           1.400000         0.046686         2     100         0.000000         0.000000         0.000000
+[   19.199367]  I kworker/R-ipv6_   417      88761     10816.724325   E       10816.740234           1.400000         0.056256         2     100         0.000000         0.000000         0.000000
+[   19.199403]  I    kworker/u8:7   572       1024     11708.451208   E       11709.776364           1.400000         1.466616        13     120         0.000000         0.000000         0.000000
+[   19.199439] >R       pr/legacy   682      88761     14720.349780   E       14720.354485           1.400000      1428.225912      2456     100         0.000000         0.000000         0.000000
+[   19.199476]  I kworker/R-ci_ot   689      88761     10877.671006   E       10877.686908           1.400000         0.048072         2     100         0.000000         0.000000         0.000000
+[   19.199512]  S   irq/42-Button   697       1024     11706.545561   E           1.385540           1.400000         0.059448         2      49         0.000000         0.000000         0.000000
+[   19.199547]  I    kworker/u8:8   698       1024     11708.640262   E       11710.022814           1.400000         0.051834         2     120         0.000000         0.000000         0.000000
+[   19.199584]  S  jffs2_gcd_mtd2   714        110     12417.468917   E       12430.314867           1.400000         9.673650       458     130         0.000000         0.000000         0.000000
+[   19.199622]  S         syslogd   729       1024     14705.150140   E       14706.425394           1.400000        18.208536        82     120         0.000000         0.000000         0.000000
+[   19.199659]  R           klogd   733       1024     14719.697801   E       14721.097801           1.400000        15.453462        52     120         0.000000         0.000000         0.000000
+[   19.199695]  S            iiod   848       1024     12414.686551   E           1.400000           1.400000        77.093358         7       0         0.000000         0.000000         0.000000
+[   19.199731]  S   usbd_main_thd   850       1024         0.000000   E           1.400000           1.400000         0.190698         3       0         0.000000         0.000000         0.000000
+[   19.199766]  S    net_main_thd   851       1024         0.000000   E           1.400000           1.400000         0.626838         1       0         0.000000         0.000000         0.000000
+[   19.199801]  S       avahi_thd  1234       1024         0.000000   E           1.400000           1.400000         3.698064        18       0         0.000000         0.000000         0.000000
+[   19.199837]  S    file-storage   855       1024     14029.514745   E       14030.899085           1.400000        35.101074       784     120         0.000000         0.000000         0.000000
+[   19.199877]  S        dropbear  1201       1024     13768.401981   E       13768.651121           1.400000         1.943700         4     120         0.000000         0.000000         0.000000
+[   19.199914]  S      maia-httpd  1240       1024     14698.683934   E       14699.973474           1.400000       557.547582       190     120         0.000000         0.000000         0.000000
+[   19.199950]  S tokio-rt-worker  1242       1024     14038.199636   E       14039.557984           1.400000         0.798912         6     120         0.000000         0.000000         0.000000
+[   19.200028]  S tokio-rt-worker  1244       1024     14038.243176   E       14039.564456           1.400000         0.464328         6     120         0.000000         0.000000         0.000000
+[   19.200068]  S tokio-rt-worker  1245       1024     14698.380931   E       14699.748183           1.400000         4.693698        36     120         0.000000         0.000000         0.000000
+[   19.200104]  S tokio-rt-worker  1246       1024     14697.941543   E       14699.213785           1.400000       293.688846        86     120         0.000000         0.000000         0.000000
+[   19.200142]  S watchconsoletx.  1268       1024     14719.451138   E       14720.813182           1.400000        22.750218        66     120         0.000000         0.000000         0.000000
+[   19.200178]  S watchdatveasy.s  1269       1024     14651.140066   E       14652.496356           1.400000        10.214214        19     120         0.000000         0.000000         0.000000
+[   19.200213]  S watchconsolefre  1270       1024     14655.074232   E       14656.420496           1.400000        10.281576        17     120         0.000000         0.000000         0.000000
+[   19.200249]  S api_controller.  1271       1024     14716.568791   E       14717.412525           1.400000        22.566108        49     120         0.000000         0.000000         0.000000
+[   19.200286]  S           getty  1320       1024     14712.040325   E       14713.440325           1.400000         8.315850        19     120         0.000000         0.000000         0.000000
+[   19.200323]  D api_controller.  1329       1024     14720.616798   N       14722.016798           1.400000         0.780984         1     120         0.000000         0.000000         0.000000
+[   19.200359]  R           sleep  1330       1024     14720.950068   N       14722.333862           1.400000         1.190304         2     120         0.000000         0.000000         0.000000
+[   19.200395]  D api_controller.  1331       1024     14720.613455   N       14722.013455           1.400000         0.848784         2     120         0.000000         0.000000         0.000000
+[   19.200430]  R api_controller.  1332       1024     14720.606436   N       14721.971234           1.400000         0.834024         1     120         0.000000         0.000000         0.000000
+[   19.200465] 
+[   19.200470] Showing busy workqueues and worker pools:
+[   19.881110] macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off

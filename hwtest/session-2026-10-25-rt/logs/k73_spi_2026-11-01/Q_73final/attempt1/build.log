@@ -1,0 +1,466 @@
+make: Entering directory '/home/mb/code/tezuka_fw-dev/buildroot'
+rm -Rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/board-fpga-1.0
+[7m>>> board-fpga 1.0 Syncing from source dir /home/mb/code/tezuka_fw-dev/board/tezuka/plutoplus/bitstream[27m
+rsync -au --chmod=u=rwX,go=rX  --exclude .svn --exclude .git --exclude .hg --exclude .bzr --exclude CVS /home/mb/code/tezuka_fw-dev/board/tezuka/plutoplus/bitstream/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/board-fpga-1.0
+[7m>>> board-fpga 1.0 Configuring[27m
+[7m>>> board-fpga 1.0 Building[27m
+[7m>>> board-fpga 1.0 Installing to images directory[27m
+/usr/bin/unzip -q -o /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/board-fpga-1.0/tezuka.xsa system_top.bit -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/board-fpga-1.0
+cp -f /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/board-fpga-1.0/system_top.bit /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images
+make: Leaving directory '/home/mb/code/tezuka_fw-dev/buildroot'
+make: Entering directory '/home/mb/code/tezuka_fw-dev/buildroot'
+[7m>>>   Finalizing host directory[27m
+[7m>>>   Finalizing target directory[27m
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/src/hare
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/etc/meson
+sed -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-D_TIME_BITS=64', '-O3', '-g0', '-D_FORTIFY_SOURCE=2'@PKG_TARGET_CFLAGS@%g" -e "s%@TARGET_LDFLAGS@%@PKG_TARGET_LDFLAGS@%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-D_TIME_BITS=64', '-O3', '-g0', '-D_FORTIFY_SOURCE=2'@PKG_TARGET_CXXFLAGS@%g" -e "s%@TARGET_FCFLAGS@%'-O3', '-g0'@PKG_TARGET_FCFLAGS@%g"         -e "s%@TARGET_CC@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gcc%g" -e "s%@TARGET_CXX@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-g++%g" -e "s%@TARGET_AR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gcc-ar%g" -e "s%@TARGET_FC@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gfortran%g" -e "s%@TARGET_STRIP@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-strip%g" -e "s%@TARGET_ARCH@%arm%g" -e "s%@TARGET_CPU@%cortex-a9%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%%g" -e "s%@TARGET_CFLAGS@%%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%%g" -e "s%@BR2_CMAKE@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host%g" -e "s%@STAGING_DIR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/arm-buildroot-linux-gnueabihf/sysroot%g" -e "s%@STATIC@%false%g" /home/mb/code/tezuka_fw-dev/buildroot/support/misc/cross-compilation.conf.in > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/etc/meson/cross-compilation.conf.in
+sed         -e "s%@TARGET_CC@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gcc%g" -e "s%@TARGET_CXX@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-g++%g" -e "s%@TARGET_AR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gcc-ar%g" -e "s%@TARGET_FC@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-gfortran%g" -e "s%@TARGET_STRIP@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-strip%g" -e "s%@TARGET_ARCH@%arm%g" -e "s%@TARGET_CPU@%cortex-a9%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%'-O3', '-g0'%g" -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-D_TIME_BITS=64', '-O3', '-g0', '-D_FORTIFY_SOURCE=2'%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-D_TIME_BITS=64', '-O3', '-g0', '-D_FORTIFY_SOURCE=2'%g" -e "s%@BR2_CMAKE@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host%g" -e "s%@STAGING_DIR@%/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/arm-buildroot-linux-gnueabihf/sysroot%g" -e "s%@STATIC@%false%g" /home/mb/code/tezuka_fw-dev/buildroot/support/misc/cross-compilation.conf.in > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/etc/meson/cross-compilation.conf
+grep -qsE '^/bin/bash$' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells || echo "/bin/bash" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells
+/usr/bin/sed -i -e '/# GENERIC_SERIAL$/s~^.*#~ttyPS0::respawn:/sbin/getty -L  ttyPS0 0 vt100 #~' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/inittab
+/usr/bin/sed -i -e '/^#.*-o remount,rw \/$/s~^#\+~~' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/inittab
+if grep -q CONFIG_ASH=y /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/busybox-1.38.0/.config; then grep -qsE '^/bin/ash$' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells || echo "/bin/ash" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells; fi
+if grep -q CONFIG_HUSH=y /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/busybox-1.38.0/.config; then grep -qsE '^/bin/hush$' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells || echo "/bin/hush" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells; fi
+# Remove any existing certificates under /etc/ssl/certs
+rm -f /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/ssl/certs/*
+# Create symlinks to certificates under /etc/ssl/certs
+# and generate the bundle
+cd /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target ; for i in `find usr/share/ca-certificates -name "*.crt" | LC_COLLATE=C sort` ; do ln -sf ../../../$i etc/ssl/certs/`basename ${i} .crt`.pem ; cat $i ; done >/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/ca-certificates.crt
+# Create symlinks to the certificates by their hash values
+/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/openssl rehash /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/ssl/certs
+# Install the certificates bundle
+/usr/bin/install -D -m 644 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/ca-certificates.crt /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/ssl/certs/ca-certificates.crt
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc
+echo "plutoplus" > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/hostname
+/usr/bin/sed -i -e '$a \127.0.1.1\tplutoplus' -e '/^127.0.1.1/d' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/hosts
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc
+echo "Welcome to Tezuka" > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/issue
+/usr/bin/sed -i -e s,^root:[^:]*:,root:"`/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/mkpasswd -m "sha-256" "analog"`":, /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shadow
+grep -qsE '^/bin/sh$' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells || echo "/bin/sh" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/shells
+if [ -x /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/sbin/swapon -a -x /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/sbin/swapoff ]; then /usr/bin/sed -i -e '/^#.*\/sbin\/swap/s/^#\+[[:blank:]]*//' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/inittab; else /usr/bin/sed -i -e '/^[^#].*\/sbin\/swap/s/^/#/' /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/inittab; fi
+if test -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/lib/modules/`MAKEFLAGS='-j16 --jobserver-auth=fifo:/tmp/GMfifo187777 --no-print-directory' /usr/bin/make  HOSTCC="/usr/bin/gcc -O2 -isystem /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/include -L/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/lib -Wl,-rpath,/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/lib" ARCH=arm KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target CROSS_COMPILE="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1 -C /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/linux-custom --no-print-directory -s kernelrelease 2>/dev/null` && grep -q "CONFIG_MODULES=y" /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/linux-custom/.config; then /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin/depmod -a -b /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target `MAKEFLAGS='-j16 --jobserver-auth=fifo:/tmp/GMfifo187777 --no-print-directory' /usr/bin/make  HOSTCC="/usr/bin/gcc -O2 -isystem /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/include -L/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/lib -Wl,-rpath,/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/lib" ARCH=arm KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target CROSS_COMPILE="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1 -C /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/linux-custom --no-print-directory -s kernelrelease 2>/dev/null`; fi
+printf '%s\n' C en_US locale-archive > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/locales.nopurge
+for dir in /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/locale /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/X11/locale /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/locale; do if [ ! -d $dir ]; then continue; fi; for langdir in $dir/*; do if [ -e "${langdir}" ]; then grep -qx "${langdir##*/}" /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/locales.nopurge || rm -rf $langdir; fi done; done
+if [ -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/X11/locale ]; then for lang in C en_US; do if [ -f /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/X11/locale/$lang/XLC_LOCALE ]; then echo "$lang/XLC_LOCALE: $lang"; fi done > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/X11/locale/locale.dir; fi
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/include /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/aclocal \
+	/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/pkgconfig /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/pkgconfig \
+	/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/cmake /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/cmake \
+	/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/rpm /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/doc
+find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/{lib,share}/ -name '*.cmake' -print0 | xargs -0 rm -f
+find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/lib/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/libexec/ \
+	\( -name '*.a' -o -name '*.la' -o -name '*.prl' \) -print0 | xargs -0 rm -f
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/gdb
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/zsh
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/man /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/man
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/info /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/info
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/doc /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/doc
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share/gtk-doc
+rmdir /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/share 2>/dev/null || true
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/lib/debug /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/debug
+find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target   -type f \( -perm /111 -o -name '*.so*' \) -not \( -name 'libpthread*.so*' -o -name 'ld-*.so*' -o -name '*.ko' \) -print0 | xargs -0 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-strip --remove-section=.comment --remove-section=.note 2>/dev/null || true
+find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target   \( -name 'ld-*.so*' -o -name 'libpthread*.so*' \) -print0 | xargs -0 -r /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/arm-linux-strip --remove-section=.comment --remove-section=.note --strip-debug 2>/dev/null || true
+test -f /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/ld.so.conf && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf file"; exit 1; } || true
+test -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc/ld.so.conf.d && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf.d directory"; exit 1; } || true
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc
+( \
+	echo "NAME=Buildroot"; \
+	echo "VERSION=v0.3.24-108-gb1cd4d0-dirty"; \
+	echo "ID=buildroot"; \
+	echo "VERSION_ID=2026.08.1"; \
+	echo "PRETTY_NAME=\"Buildroot 2026.08.1\"" \
+) >  /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr/lib/os-release
+ln -sf ../usr/lib/os-release /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/etc
+[7m>>>   Sanitizing RPATH in target tree[27m
+PARALLEL_JOBS=23 \
+	PER_PACKAGE_DIR=/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/per-package \
+	/home/mb/code/tezuka_fw-dev/buildroot/support/scripts/fix-rpath target
+[7m>>>   Sanity check in overlays /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_base /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_tezuka /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_maia /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_iqengine[27m
+support/scripts/check-merged \
+	-t overlay \
+	 \
+	 \
+	/home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_base /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_tezuka /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_maia /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_iqengine
+[7m>>>   Copying overlay /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_base[27m
+[7m>>>   Copying overlay /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_tezuka[27m
+[7m>>>   Copying overlay /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_maia[27m
+[7m>>>   Copying overlay /home/mb/code/tezuka_fw-dev/board/tezuka/common/overlay_iqengine[27m
+[7m>>>   Executing post-build script /home/mb/code/tezuka_fw-dev/board/tezuka/common/post-build.sh[27m
+INFO: cmd: "mkdir -p "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/genimage.tmp"" (stderr):
+INFO: cmd: "rm -rf "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/genimage.tmp"/*" (stderr):
+INFO: cmd: "mkdir -p "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/genimage.tmp"" (stderr):
+INFO: cmd: "cp -a "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target" "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/genimage.tmp/root"" (stderr):
+INFO: cmd: "mkdir -p "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/opt/"" (stderr):
+INFO: vfat(boot.vfat): cmd: "mkdosfs -n TEZUKA  '/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/opt//boot.vfat'" (stderr):
+INFO: vfat(boot.vfat): adding file 'index.html' as 'index.html' ...
+INFO: vfat(boot.vfat): cmd: "MTOOLS_SKIP_CHECK=1 mcopy -sp -i '/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/opt//boot.vfat' '/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/msd/index.html' '::'" (stderr):
+INFO: vfat(boot.vfat): adding file 'LICENSE.html' as 'LICENSE.html' ...
+INFO: vfat(boot.vfat): cmd: "MTOOLS_SKIP_CHECK=1 mcopy -sp -i '/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/opt//boot.vfat' '/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/msd/LICENSE.html' '::'" (stderr):
+INFO: hdimage(vfat.img): adding primary partition 'boot' (in MBR) from 'boot.vfat' ...
+INFO: hdimage(vfat.img): adding primary partition '[MBR]' ...
+INFO: hdimage(vfat.img): writing MBR
+INFO: cmd: "rm -rf "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/genimage.tmp/"" (stderr):
+[bundle] npm ci...
+
+added 3 packages, and audited 4 packages in 455ms
+
+found 0 vulnerabilities
+[bundle] esbuild signals-entry.js -> vendor/signals.bundle.js...
+[bundle] signals.bundle.js (50 KB)
+[bundle] esbuild tweaks-panel.jsx...
+[bundle] esbuild icons.jsx...
+[bundle] esbuild charts.jsx...
+[bundle] esbuild plotaxes.jsx...
+[bundle] esbuild data.jsx...
+[bundle] esbuild tuner.jsx...
+[bundle] esbuild pages1.jsx...
+[bundle] esbuild pages2.jsx...
+[bundle] esbuild pages3.jsx...
+[bundle] esbuild pages4.jsx...
+[bundle] esbuild pages5.jsx...
+[bundle] esbuild radioastro.jsx...
+[bundle] esbuild classifier.jsx...
+[bundle] esbuild complexiq.jsx...
+[bundle] esbuild midi.jsx...
+[bundle] esbuild webtioune.jsx...
+[bundle] esbuild tsanalyzer.jsx...
+[bundle] esbuild rftest.jsx...
+[bundle] esbuild app.jsx...
+[bundle] /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/root/index.html (642 KB)
+touch /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/usr
+[7m>>>   Generating root filesystems common tables[27m
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs
+printf '   	avahi -1 avahi -1 * - - -\n 	chrony -1 chrony -1 * /run/chrony - - Time daemon\n 	dbus -1 dbus -1 * /run/dbus - dbus DBus messagebus user\n 	mosquitto -1 mosquitto -1 * - - - Mosquitto user\n\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_users_table.txt
+printf '   	/bin/busybox                     f 4755 0  0 - - - - -\n 	/var/lib/chrony d 755 chrony chrony - - - - -\n 	/usr/libexec/dbus-daemon-launch-helper f 4750 0 dbus - - - - -\n\n' > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt
+cat system/device_table.txt >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt
+[7m>>>   Generating filesystem image rootfs.cpio[27m
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target
+echo '#!/bin/sh' > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+echo "set -e" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+echo "chown -h -R 0:0 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+PATH="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin:/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/share/../bin:/home/mb/.cargo/bin:/home/mb/.local/bin:/opt/sdrconnect:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/src/iridium-toolkit" /home/mb/code/tezuka_fw-dev/buildroot/support/scripts/mkusers /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_users_table.txt /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+echo "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/makedevs -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+printf '   	rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/usr/lib/udev/hwdb.d/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/etc/udev/hwdb.d/\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+printf '   	if [ ! -e /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/init ]; then /usr/bin/install -m 0755 fs/cpio/init /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/init; fi\n	mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/dev\n	mknod -m 0622 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/dev/console c 5 1\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+echo "find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+echo "find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+printf '   \n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+printf '   \n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+printf '   	cd /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target && find . | LC_ALL=C sort | cpio  --quiet -o -H newc > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.cpio\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+chmod a+x /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+PATH="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin:/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/share/../bin:/home/mb/.cargo/bin:/home/mb/.local/bin:/opt/sdrconnect:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/src/iridium-toolkit" FAKEROOTDONTTRYCHOWN=1 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/fakeroot -- /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/fakeroot
+rootdir=/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/cpio/target
+table='/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt'
+PATH="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin:/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/share/../bin:/home/mb/.cargo/bin:/home/mb/.local/bin:/opt/sdrconnect:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/src/iridium-toolkit" xz -9 -C crc32 -c -T 23 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.cpio > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.cpio.xz
+/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/mkimage -A arm -T ramdisk -C none -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.cpio.xz /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.cpio.uboot
+Image Name:   
+Created:      Sun Nov  1 23:25:48 2026
+Image Type:   ARM Linux RAMDisk Image (uncompressed)
+Data Size:    19753000 Bytes = 19290.04 KiB = 18.84 MiB
+Load Address: 00000000
+Entry Point:  00000000
+[7m>>>   Generating filesystem image rootfs.tar[27m
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images
+rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar
+mkdir -p /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/target/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target
+echo '#!/bin/sh' > /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+echo "set -e" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+echo "chown -h -R 0:0 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+PATH="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin:/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/share/../bin:/home/mb/.cargo/bin:/home/mb/.local/bin:/opt/sdrconnect:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/src/iridium-toolkit" /home/mb/code/tezuka_fw-dev/buildroot/support/scripts/mkusers /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_users_table.txt /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+echo "/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/makedevs -d /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+printf '   	rm -rf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target/usr/lib/udev/hwdb.d/ /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target/etc/udev/hwdb.d/\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+echo "find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+echo "find /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+printf '   \n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+printf '   \n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+printf '   	(cd /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target; find -print0 | LC_ALL=C sort -z | tar  --pax-option=exthdr.name=%%d/PaxHeaders/%%f,atime:=0,ctime:=0 -cf /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/images/rootfs.tar --null --xattrs-include='\''*'\'' --no-recursion -T - --numeric-owner)\n' >> /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+chmod a+x /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+PATH="/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin:/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/sbin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/bin:/home/mb/.local/share/../bin:/home/mb/.cargo/bin:/home/mb/.local/bin:/opt/sdrconnect:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/src/iridium-toolkit" FAKEROOTDONTTRYCHOWN=1 /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/host/bin/fakeroot -- /home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/fakeroot
+rootdir=/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/tar/target
+table='/home/mb/code/tezuka_fw-dev/output/plutoplus_rt73/build/buildroot-fs/full_devices_table.txt'
+[7m>>>   Executing post-image script /home/mb/code/tezuka_fw-dev/board/tezuka/common/prepost-image.sh[27m
+7407008+0 records in
+7407008+0 records out
+7407008 bytes (7.4 MB, 7.1 MiB) copied, 3.24458 s, 2.3 MB/s
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+[7m>>>   Executing post-image script /home/mb/code/tezuka_fw-dev/board/tezuka/common/postimage-qspi.sh[27m
+generating FIT image (pluto.itb)
+plutomaia.its:18.9-24.5: Warning (unit_address_vs_reg): /images/fdt@1: node has a unit name, but no reg or ranges property
+plutomaia.its:26.10-37.5: Warning (unit_address_vs_reg): /images/fpga@1: node has a unit name, but no reg or ranges property
+plutomaia.its:34.11-36.6: Warning (unit_address_vs_reg): /images/fpga@1/hash@1: node has a unit name, but no reg or ranges property
+plutomaia.its:39.18-51.5: Warning (unit_address_vs_reg): /images/linux_kernel@1: node has a unit name, but no reg or ranges property
+plutomaia.its:48.11-50.6: Warning (unit_address_vs_reg): /images/linux_kernel@1/hash@1: node has a unit name, but no reg or ranges property
+plutomaia.its:52.13-62.5: Warning (unit_address_vs_reg): /images/ramdisk@1: node has a unit name, but no reg or ranges property
+plutomaia.its:59.11-61.6: Warning (unit_address_vs_reg): /images/ramdisk@1/hash@1: node has a unit name, but no reg or ranges property
+plutomaia.its:68.12-74.5: Warning (unit_address_vs_reg): /configurations/config@0: node has a unit name, but no reg or ranges property
+plutomaia.its:78.12-84.5: Warning (unit_address_vs_reg): /configurations/config@1: node has a unit name, but no reg or ranges property
+plutomaia.its:86.12-92.5: Warning (unit_address_vs_reg): /configurations/config@2: node has a unit name, but no reg or ranges property
+plutomaia.its:94.12-100.5: Warning (unit_address_vs_reg): /configurations/config@3: node has a unit name, but no reg or ranges property
+plutomaia.its:102.12-108.5: Warning (unit_address_vs_reg): /configurations/config@4: node has a unit name, but no reg or ranges property
+plutomaia.its:110.12-116.5: Warning (unit_address_vs_reg): /configurations/config@5: node has a unit name, but no reg or ranges property
+plutomaia.its:118.12-124.5: Warning (unit_address_vs_reg): /configurations/config@6: node has a unit name, but no reg or ranges property
+plutomaia.its:127.12-133.5: Warning (unit_address_vs_reg): /configurations/config@7: node has a unit name, but no reg or ranges property
+plutomaia.its:135.12-141.5: Warning (unit_address_vs_reg): /configurations/config@8: node has a unit name, but no reg or ranges property
+plutomaia.its:143.12-149.5: Warning (unit_address_vs_reg): /configurations/config@9: node has a unit name, but no reg or ranges property
+plutomaia.its:151.13-157.5: Warning (unit_address_vs_reg): /configurations/config@10: node has a unit name, but no reg or ranges property
+FIT description: Configuration to load fpga before Kernel
+Created:         Sun Nov  1 23:25:58 2026
+ Image 0 (fdt@1)
+  Description:  zynq-pluto-sdr
+  Created:      Sun Nov  1 23:25:58 2026
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    26422 Bytes = 25.80 KiB = 0.03 MiB
+  Architecture: ARM
+ Image 1 (fpga@1)
+  Description:  FPGA
+  Created:      Sun Nov  1 23:25:58 2026
+  Type:         FPGA Image
+  Compression:  uncompressed
+  Data Size:    1127784 Bytes = 1101.35 KiB = 1.08 MiB
+  Load Address: 0x0f000000
+  Hash algo:    md5
+  Hash value:   c849d28d49fcb99e17316cc4f18f611e
+ Image 2 (linux_kernel@1)
+  Description:  Linux
+  Created:      Sun Nov  1 23:25:58 2026
+  Type:         Kernel Image
+  Compression:  lzma compressed
+  Data Size:    5424500 Bytes = 5297.36 KiB = 5.17 MiB
+  Architecture: ARM
+  OS:           Linux
+  Load Address: 0x00008000
+  Entry Point:  0x00008000
+  Hash algo:    md5
+  Hash value:   e5be8d54c9835b6f099414479cf15489
+ Image 3 (ramdisk@1)
+  Description:  Ramdisk
+  Created:      Sun Nov  1 23:25:58 2026
+  Type:         RAMDisk Image
+  Compression:  uncompressed
+  Data Size:    19753000 Bytes = 19290.04 KiB = 18.84 MiB
+  Architecture: ARM
+  OS:           Linux
+  Load Address: unavailable
+  Entry Point:  unavailable
+  Hash algo:    md5
+  Hash value:   3958a58c6d86de7d69bc7219ca9765d8
+ Default Configuration: 'config@0'
+ Configuration 0 (config@0)
+  Description:  Linux with fpga RevA
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 1 (config@1)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 2 (config@2)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 3 (config@3)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 4 (config@4)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 5 (config@5)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 6 (config@6)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 7 (config@7)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 8 (config@8)
+  Description:  Linux with fpga RevC
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 9 (config@9)
+  Description:  Linux with fpga maiaplus
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+ Configuration 10 (config@10)
+  Description:  Linux with fpga RevB
+  Kernel:       linux_kernel@1
+  Init Ramdisk: ramdisk@1
+  FDT:          fdt@1
+  FPGA:         fpga@1
+generating pluto.frm
+pluto.frm: 26334779 / 31457280 bytes (83% of QSPI budget)
+generating pluto.dfu
+dfu-suffix (dfu-util) 0.11
+
+Copyright 2011-2012 Stefan Schmidt, 2013-2020 Tormod Volden
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Suffix successfully added to file
+generating boot.img
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+generating boot.frm
+2f74bb9289c50fb147154821bbeb2b2e
+generating boot.dfu
+dfu-suffix (dfu-util) 0.11
+
+Copyright 2011-2012 Stefan Schmidt, 2013-2020 Tormod Volden
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Suffix successfully added to file
+generating uboot-env.dfu
+dfu-suffix (dfu-util) 0.11
+
+Copyright 2011-2012 Stefan Schmidt, 2013-2020 Tormod Volden
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Suffix successfully added to file
+[7m>>>   Executing post-image script /home/mb/code/tezuka_fw-dev/board/tezuka/common/postimage-sd.sh[27m
+generating BOOT.bin
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+
+
+****** Bootgen v2026.1
+  **** Build date : Oct 31 2026-17:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Image Name:   
+Created:      Sun Nov  1 23:25:58 2026
+Image Type:   ARM Linux RAMDisk Image (uncompressed)
+Data Size:    19753000 Bytes = 19290.04 KiB = 18.84 MiB
+Load Address: 00000000
+Entry Point:  00000000
+Image Name:   Linux kernel
+Created:      Sun Nov  1 23:25:59 2026
+Image Type:   ARM Linux Kernel Image (lzma compressed)
+Data Size:    5424500 Bytes = 5297.36 KiB = 5.17 MiB
+Load Address: 00008000
+Entry Point:  00008000
+[7m>>>   Executing post-image script /home/mb/code/tezuka_fw-dev/board/tezuka/common/postimage-zip.sh[27m
+updating: sdimg/BOOT.bin (deflated 52%)
+updating: sdimg/devicetree.dtb (deflated 73%)
+updating: sdimg/overclock/ (stored 0%)
+updating: sdimg/overclock/BOOT_fsbl_CPU1100_DDR750 (deflated 52%)
+updating: sdimg/overclock/BOOT_fsbl_CPU495_DDR396 (deflated 52%)
+updating: sdimg/overclock/BOOT_fsbl_CPU950_DDR600 (deflated 52%)
+updating: sdimg/system_top.bin (deflated 64%)
+updating: sdimg/system_top_top.bin (deflated 60%)
+updating: sdimg/tezuka_top.bin (deflated 64%)
+updating: sdimg/uEnv.txt (deflated 74%)
+updating: sdimg/uImage (deflated 0%)
+updating: sdimg/uramdisk.image.xz (deflated 0%)
+updating: flash/boot.dfu (deflated 52%)
+updating: flash/boot.frm (deflated 58%)
+updating: flash/jtag/ (stored 0%)
+updating: flash/jtag/fsbl.elf (deflated 63%)
+updating: flash/jtag/boot_fsbl_uboot.sh (deflated 45%)
+updating: flash/jtag/u-boot.elf (deflated 55%)
+updating: flash/jtag/xilinx-tcl.cfg (deflated 59%)
+updating: flash/jtag/boot_fsbl_uboot.bat (deflated 46%)
+updating: flash/jtag/tezuka.cfg (deflated 27%)
+updating: flash/pluto.dfu (deflated 3%)
+updating: flash/pluto.frm (deflated 3%)
+make: Leaving directory '/home/mb/code/tezuka_fw-dev/buildroot'

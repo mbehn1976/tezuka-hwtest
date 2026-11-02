@@ -1,0 +1,38 @@
+# tracer: irqsoff
+#
+# irqsoff latency trace v1.1.5 on 6.12.114-rt21
+# --------------------------------------------------------------------
+# latency: 61 us, #4/4, CPU#0 | (M:preempt VP:0, KP:0, SP:0 HP:0 #P:2)
+#    -----------------
+#    | task: sh-29730 (uid:0 nice:0 policy:0 rt_prio:0)
+#    -----------------
+#  => started at: __schedule
+#  => ended at:   finish_task_switch
+#
+#
+#                    _------=> CPU#            
+#                   / _-----=> irqs-off/BH-disabled
+#                  | / _----=> need-resched    
+#                  || / _---=> hardirq/softirq 
+#                  ||| / _--=> preempt-depth   
+#                  |||| / _-=> migrate-disable 
+#                  ||||| /     delay           
+#  cmd     pid     |||||| time  |   caller     
+#     \   /        ||||||  \    |    /       
+   <...>-28684     0d..1.    1us+: __schedule
+      sh-29730     0d..1.   59us : finish_task_switch
+      sh-29730     0d..1.   62us+: stop_critical_timing <-finish_task_switch
+      sh-29730     0d..1.  104us : <stack trace>
+ => __schedule
+ => preempt_schedule_irq
+ => svc_preempt
+ => __call_rcu_common.constprop.0
+ => mas_wr_node_store
+ => mas_store_prealloc
+ => vma_complete
+ => __split_vma
+ => vma_modify
+ => vma_modify_flags
+ => mprotect_fixup
+ => do_mprotect_pkey.constprop.0
+ => ret_fast_syscall

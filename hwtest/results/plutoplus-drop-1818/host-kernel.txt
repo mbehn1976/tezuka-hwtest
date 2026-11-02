@@ -1,0 +1,1243 @@
+Oct 11 18:17:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 18:17:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 18:17:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 18:21:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 18:21:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 37
+Oct 11 18:21:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 18:21:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU0: Package temperature is above threshold, cpu clock is throttled (total events = 465782)
+Oct 11 18:21:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU5: Package temperature is above threshold, cpu clock is throttled (total events = 466758)
+Oct 11 18:21:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU0: Package temperature/speed normal (total events = 465791)
+Oct 11 18:21:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU5: Package temperature/speed normal (total events = 466767)
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 38 using xhci_hcd
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 18:23:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 18:23:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] tag#0 FAILED Result: hostbyte=DID_ERROR driverbyte=DRIVER_OK cmd_age=0s
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] tag#0 CDB: Read(10) 28 00 00 00 01 00 00 00 08 00
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: I/O error, dev sdc, sector 256 op 0x0:(READ) flags 0x880700 phys_seg 1 prio class 2
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 38
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 256, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 257, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 258, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 259, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 260, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 261, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 262, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: Buffer I/O error on dev sdc, logical block 263, async page read
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 18:23:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 18:24:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 18:24:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 11 18:24:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 11 18:24:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 11 18:24:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 18:24:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 39 using xhci_hcd
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 18:24:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 18:24:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 39
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 40 using xhci_hcd
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 18:24:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 18:24:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 18:24:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 18:25:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 18:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 40
+Oct 11 18:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 41 using xhci_hcd
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 18:34:20 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 18:34:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 18:34:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 18:34:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 41
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=53 aid=0)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: 02:ec:da:3b:fd:49 denied association (code=53)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX AssocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=2)
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 11 18:34:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 11 18:35:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 18:37:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-3: USB disconnect, device number 23
+Oct 11 18:37:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-3.1: USB disconnect, device number 24
+Oct 11 18:37:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: new high-speed USB device number 42 using xhci_hcd
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: New USB device found, idVendor=0424, idProduct=2640, bcdDevice= 8.a2
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-1:1.0: USB hub found
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-1:1.0: 1 port detected
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: new high-speed USB device number 43 using xhci_hcd
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: New USB device found, idVendor=0424, idProduct=4041, bcdDevice= 2.09
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: Product: usb-sd-mux FAST
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: Manufacturer: Linux Automation GmbH
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: SerialNumber: 00048.02035
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-1.1:1.0: USB Mass Storage device detected
+Oct 11 18:37:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host0: usb-storage 3-1.1:1.0
+Oct 11 18:37:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 0:0:0:0: Direct-Access     LinuxAut sdFST HS-SD/MMC  2.09 PQ: 0 ANSI: 0
+Oct 11 18:37:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Oct 11 18:37:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] Media removed, stopped polling
+Oct 11 18:37:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] Attached SCSI removable disk
+Oct 11 18:38:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x703
+Oct 11 18:38:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x703
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3b:fd:49 for new auth to 02:ec:da:3c:fd:49
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=1)
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 11 18:39:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 44 using xhci_hcd
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 18:45:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 18:45:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 44
+Oct 11 18:46:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 45 using xhci_hcd
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 18:46:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 18:46:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 18:46:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 19:19:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 19:19:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 19:19:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 45
+Oct 11 19:19:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 19:19:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 46 using xhci_hcd
+Oct 11 19:19:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 19:19:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 19:19:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 19:19:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 19:19:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 19:20:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 46
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 47 using xhci_hcd
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 19:20:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 19:20:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 19:20:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 19:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 19:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 19:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 47
+Oct 11 19:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 19:46:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 48 using xhci_hcd
+Oct 11 19:46:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 19:46:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 19:46:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 19:46:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 19:46:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 19:46:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 11 19:46:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 11 19:46:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 11 19:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 19:46:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 11 19:46:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 48
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 49 using xhci_hcd
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 19:52:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 19:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 49
+Oct 11 19:52:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 50 using xhci_hcd
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 19:52:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Media removed, stopped polling
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdc: detected capacity change from 0 to 61441
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 19:52:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 19:53:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 20:34:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdb: detected capacity change from 61441 to 0
+Oct 11 20:39:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 35
+Oct 11 20:39:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: unregister 'rndis_host' usb-0000:00:14.0-6.3.4, RNDIS device
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 51 using xhci_hcd
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: USB download gadget
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: U-Boot
+Oct 11 20:39:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.0: ttyACM0: USB ACM device
+Oct 11 20:40:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 51
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 52 using xhci_hcd
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: Analog Devices Inc.
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: SerialNumber: spi-norspi1.0SPI-NOR-UniqueID1044730a1997000cf2ff2500c6ec7bd2eb
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.3.4, RNDIS device, 00:e0:22:48:cd:43
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.3.4:1.2: USB Mass Storage device detected
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host1: usb-storage 3-6.3.4:1.2
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.3: ttyACM0: USB ACM device
+Oct 11 20:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: renamed from eth0
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 1:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: Attached scsi generic sg1 type 0
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write Protect is off
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Mode Sense: 0f 00 00 00
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdb: sdb1
+Oct 11 20:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Attached SCSI removable disk
+Oct 11 22:11:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 50
+Oct 11 22:11:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 22:11:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 22:11:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 22:11:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 22:11:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 53 using xhci_hcd
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 22:11:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 22:12:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 53
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 54 using xhci_hcd
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 22:12:18 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 22:12:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 22:12:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 54
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 22:16:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 55 using xhci_hcd
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 22:16:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 22:16:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 55
+Oct 11 22:16:30 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 22:16:30 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 56 using xhci_hcd
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 22:16:31 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 22:16:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:16:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 22:24:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:24:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 22:24:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 56
+Oct 11 22:24:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 57 using xhci_hcd
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 22:24:35 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 22:24:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 57
+Oct 11 22:25:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 22:25:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 58 using xhci_hcd
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 22:25:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 22:25:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 22:25:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 22:25:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 22:25:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:25:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 58
+Oct 11 22:25:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 59 using xhci_hcd
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 22:25:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 22:25:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 59
+Oct 11 22:25:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 60 using xhci_hcd
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 22:25:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 22:25:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 22:25:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 22:26:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 11 22:26:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 11 22:26:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 11 22:26:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 22:26:30 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 60
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 22:26:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 22:26:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 61 using xhci_hcd
+Oct 11 22:26:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:26:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:26:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 22:26:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 22:26:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 22:26:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 61
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 62 using xhci_hcd
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 22:27:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Media removed, stopped polling
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdc: detected capacity change from 0 to 61441
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 22:27:04 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 22:27:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 22:37:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdb: detected capacity change from 61441 to 0
+Oct 11 22:42:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 52
+Oct 11 22:42:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: unregister 'rndis_host' usb-0000:00:14.0-6.3.4, RNDIS device
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 63 using xhci_hcd
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: USB download gadget
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: U-Boot
+Oct 11 22:42:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.0: ttyACM0: USB ACM device
+Oct 11 22:42:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 63
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 64 using xhci_hcd
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: Analog Devices Inc.
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: SerialNumber: spi-norspi1.0SPI-NOR-UniqueID1044730a1997000cf2ff2500c6ec7bd2eb
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.3.4, RNDIS device, 00:e0:22:48:cd:43
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.3.4:1.2: USB Mass Storage device detected
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host1: usb-storage 3-6.3.4:1.2
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.3: ttyACM0: USB ACM device
+Oct 11 22:42:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: renamed from eth0
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 1:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: Attached scsi generic sg1 type 0
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write Protect is off
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Mode Sense: 0f 00 00 00
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdb: sdb1
+Oct 11 22:42:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Attached SCSI removable disk
+Oct 11 23:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 11 23:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 11 23:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 11 23:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 23:15:50 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 62
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 23:15:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 65 using xhci_hcd
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 23:15:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 23:16:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 65
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 66 using xhci_hcd
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 23:16:24 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 23:16:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 23:16:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 23:23:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 66
+Oct 11 23:23:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 23:23:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 23:23:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 23:23:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 23:23:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:23:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 67 using xhci_hcd
+Oct 11 23:23:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 23:23:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 23:23:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 23:23:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 23:23:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 23:23:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 67
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 68 using xhci_hcd
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 23:23:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Media removed, stopped polling
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 23:23:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:23:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 23:23:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 23:23:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdc: detected capacity change from 0 to 61441
+Oct 11 23:23:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 23:23:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 23:23:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 23:23:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 68
+Oct 11 23:23:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 23:36:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature is above threshold, cpu clock is throttled (total events = 219596)
+Oct 11 23:36:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature/speed normal (total events = 219608)
+Oct 11 23:48:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU6: Package temperature is above threshold, cpu clock is throttled (total events = 1023848)
+Oct 11 23:48:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU7: Package temperature is above threshold, cpu clock is throttled (total events = 1020681)
+Oct 11 23:48:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU7: Package temperature/speed normal (total events = 1020684)
+Oct 11 23:48:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU6: Package temperature/speed normal (total events = 1023851)
+Oct 11 23:49:21 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU6: Package temperature is above threshold, cpu clock is throttled (total events = 1034553)
+Oct 11 23:49:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU7: Package temperature is above threshold, cpu clock is throttled (total events = 1031371)
+Oct 11 23:49:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU7: Package temperature/speed normal (total events = 1031378)
+Oct 11 23:49:23 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU6: Package temperature/speed normal (total events = 1034560)
+Oct 11 23:54:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 11 23:54:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 11 23:54:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 11 23:54:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 11 23:54:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 11 23:54:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 69 using xhci_hcd
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 23:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 23:54:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 69
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 70 using xhci_hcd
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 23:55:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 23:55:13 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 23:55:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 70
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 11 23:56:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 71 using xhci_hcd
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 11 23:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 11 23:56:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 71
+Oct 11 23:57:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 72 using xhci_hcd
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 11 23:57:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 11 23:57:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 11 23:57:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 12 00:04:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU5: Package temperature is above threshold, cpu clock is throttled (total events = 598037)
+Oct 12 00:04:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 97605)
+Oct 12 00:04:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 101795)
+Oct 12 00:04:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 101801)
+Oct 12 00:04:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 97611)
+Oct 12 00:04:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU5: Package temperature/speed normal (total events = 598043)
+Oct 12 00:10:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 100224)
+Oct 12 00:10:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 104628)
+Oct 12 00:10:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature is above threshold, cpu clock is throttled (total events = 239579)
+Oct 12 00:10:55 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 243852)
+Oct 12 00:10:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 104630)
+Oct 12 00:10:56 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 243854)
+Oct 12 00:10:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 100236)
+Oct 12 00:10:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature/speed normal (total events = 239591)
+Oct 12 06:26:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 12 06:26:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 12 06:26:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 12 06:26:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 12 06:26:54 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 12 06:26:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 72
+Oct 12 06:26:57 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 12 06:26:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 12 06:26:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 12 06:26:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 12 06:26:58 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 73 using xhci_hcd
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 12 06:27:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 12 06:27:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 73
+Oct 12 06:27:27 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 74 using xhci_hcd
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 12 06:27:28 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 12 06:27:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 12 06:27:32 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 12 06:44:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 122015)
+Oct 12 06:44:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature is above threshold, cpu clock is throttled (total events = 105205)
+Oct 12 06:44:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature is above threshold, cpu clock is throttled (total events = 105205)
+Oct 12 06:44:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 122015)
+Oct 12 06:44:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature/speed normal (total events = 105219)
+Oct 12 06:44:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature/speed normal (total events = 105219)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 278713)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 119703)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU0: Package temperature is above threshold, cpu clock is throttled (total events = 739214)
+Oct 12 06:52:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 108258)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU0: Package temperature/speed normal (total events = 739219)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 119708)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 278718)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature/speed normal (total events = 108263)
+Oct 12 06:52:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature/speed normal (total events = 108263)
+Oct 12 06:57:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 12 06:57:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 12 06:57:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 12 06:57:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 12 06:57:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 74
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 12 06:57:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 75 using xhci_hcd
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 12 06:57:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 12 06:57:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 75
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 76 using xhci_hcd
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 12 06:58:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 12 06:58:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Media removed, stopped polling
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdc: detected capacity change from 0 to 61441
+Oct 12 06:58:16 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 12 06:58:19 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 128785)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature is above threshold, cpu clock is throttled (total events = 116915)
+Oct 12 08:12:10 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 135349)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 128791)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 135355)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 116921)
+Oct 12 08:12:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature/speed normal (total events = 116921)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 138331)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 131489)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature is above threshold, cpu clock is throttled (total events = 119524)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 131497)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 138339)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:48 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature/speed normal (total events = 119532)
+Oct 12 08:17:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 119532)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature is above threshold, cpu clock is throttled (total events = 312764)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 319277)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature is above threshold, cpu clock is throttled (total events = 121581)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature/speed normal (total events = 312779)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 319291)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature/speed normal (total events = 121595)
+Oct 12 08:23:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature/speed normal (total events = 121595)
+Oct 12 20:54:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 129131)
+Oct 12 20:54:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 129138)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=53 aid=1)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: 02:ec:da:3b:fd:49 denied association (code=53)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX AssocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=1)
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 21:05:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Connection to AP 02:ec:da:3b:fd:49 lost
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 7e:8a:20:d4:b7:23 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 7e:8a:20:d4:b7:23 (try 1/3)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 7e:8a:20:d4:b7:23 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 7e:8a:20:d4:b7:23 (try 1/3)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 7e:8a:20:d4:b7:23 (try 1/3)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX AssocResp from 7e:8a:20:d4:b7:23 (capab=0x1431 status=0 aid=1)
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 21:07:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x707
+Oct 12 21:07:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 7e:8a:20:d4:b7:23
+Oct 12 21:07:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Connection to AP 7e:8a:20:d4:b7:23 lost
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX AssocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=2)
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x707
+Oct 12 21:07:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 12 21:08:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature is above threshold, cpu clock is throttled (total events = 156691)
+Oct 12 21:08:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 356597)
+Oct 12 21:08:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU10: Package temperature/speed normal (total events = 156693)
+Oct 12 21:08:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 356599)
+Oct 12 21:40:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 12 21:40:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 21:40:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 2/3)
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=1)
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 21:40:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3b:fd:49 for new auth to 02:ec:da:3c:fd:49
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=1)
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 22:05:47 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 12 22:15:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 12 22:15:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 12 22:15:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 12 22:15:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 12 22:15:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 76
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 12 22:15:14 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 77 using xhci_hcd
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 12 22:15:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 12 22:15:29 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 77
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 78 using xhci_hcd
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 12 22:15:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Power-on or device reset occurred
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Media removed, stopped polling
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdc: detected capacity change from 0 to 61441
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 12 22:15:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 12 22:15:49 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 12 22:40:25 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature is above threshold, cpu clock is throttled (total events = 166765)
+Oct 12 22:40:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU11: Package temperature/speed normal (total events = 166770)
+Oct 12 22:41:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature is above threshold, cpu clock is throttled (total events = 384013)
+Oct 12 22:41:44 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 391847)
+Oct 12 22:41:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 391847)
+Oct 12 22:41:45 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature/speed normal (total events = 384013)
+Oct 12 22:47:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature is above threshold, cpu clock is throttled (total events = 398124)
+Oct 12 22:47:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature is above threshold, cpu clock is throttled (total events = 389990)
+Oct 12 22:47:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU9: Package temperature/speed normal (total events = 389998)
+Oct 12 22:47:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU8: Package temperature/speed normal (total events = 398132)
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=1)
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 23:11:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature is above threshold, cpu clock is throttled (total events = 148841)
+Oct 12 23:16:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU13: Package temperature/speed normal (total events = 148841)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU15: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU12: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU21: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU20: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU19: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU17: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU16: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU14: Package temperature/speed normal (total events = 148848)
+Oct 12 23:16:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: CPU18: Package temperature/speed normal (total events = 148848)
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3b:fd:49 for new auth to 02:ec:da:3c:fd:49
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=1)
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 12 23:32:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 13 02:56:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] 30535680 512-byte logical blocks: (15.6 GB/14.6 GiB)
+Oct 13 02:56:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 0 to 30535680
+Oct 13 02:56:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sda: sda1
+Oct 13 02:56:02 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct 13 02:56:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sda: detected capacity change from 30535680 to 0
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 78
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 13 02:56:12 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 79 using xhci_hcd
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 13 02:56:15 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 13 02:56:26 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 79
+Oct 13 02:56:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 80 using xhci_hcd
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.1:1.2
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM1: USB ACM device
+Oct 13 02:56:42 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 13 02:56:43 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 13 02:56:46 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=1)
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 13 05:45:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 13 05:45:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: missed beacons exceeds threshold, but receiving data. Stay connected, Expect bugs.
+Oct 13 05:45:59 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: missed_beacons:19, missed_beacons_since_rx:1
+Oct 13 05:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x703
+Oct 13 05:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x703
+Oct 13 05:46:17 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: iwlwifi 0000:00:14.3: Unhandled alg: 0x703
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3b:fd:49 for new auth to 02:ec:da:3c:fd:49
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=1)
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 13 05:46:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3c:fd:49 for new auth to 02:ec:da:3b:fd:49
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3b:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3b:fd:49 (try 1/3)
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3b:fd:49 (try 1/3)
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3b:fd:49 (capab=0x1431 status=0 aid=1)
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 13 05:48:41 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3b:fd:49
+Oct 13 05:49:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: disconnect from AP 02:ec:da:3b:fd:49 for new auth to 02:ec:da:3c:fd:49
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticate with 02:ec:da:3c:fd:49 (local address=98:bd:80:ce:55:4f)
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: send auth to 02:ec:da:3c:fd:49 (try 1/3)
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: authenticated
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associate with 02:ec:da:3c:fd:49 (try 1/3)
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: RX ReassocResp from 02:ec:da:3c:fd:49 (capab=0x1511 status=0 aid=2)
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: associated
+Oct 13 05:49:53 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 02:ec:da:3c:fd:49
+Oct 13 06:15:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sdb: detected capacity change from 61441 to 0
+Oct 13 06:21:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 64
+Oct 13 06:21:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: unregister 'rndis_host' usb-0000:00:14.0-6.3.4, RNDIS device
+Oct 13 06:21:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 81 using xhci_hcd
+Oct 13 06:21:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 13 06:21:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 06:21:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: USB download gadget
+Oct 13 06:21:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: U-Boot
+Oct 13 06:21:09 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.0: ttyACM0: USB ACM device
+Oct 13 06:21:22 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 81
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 82 using xhci_hcd
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: PlutoSDR (ADALM-PLUTO)
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: Analog Devices Inc.
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: SerialNumber: spi-norspi1.0SPI-NOR-UniqueID1044730a1997000cf2ff2500c6ec7bd2eb
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.3.4, RNDIS device, 00:e0:22:48:cd:43
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.3.4:1.2: USB Mass Storage device detected
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host1: usb-storage 3-6.3.4:1.2
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.3: ttyACM0: USB ACM device
+Oct 13 06:21:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: renamed from eth0
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 1:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: Attached scsi generic sg1 type 0
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write Protect is off
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Mode Sense: 0f 00 00 00
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdb: sdb1
+Oct 13 06:21:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Attached SCSI removable disk
+Oct 13 07:40:00 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 82
+Oct 13 07:40:00 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: unregister 'rndis_host' usb-0000:00:14.0-6.3.4, RNDIS device
+Oct 13 07:40:00 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdb1): unable to read boot sector to mark fs as dirty
+Oct 13 07:40:00 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+Oct 13 07:40:00 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 80
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: unregister 'rndis_host' usb-0000:00:14.0-6.1, RNDIS device
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: FAT-fs (sdc1): unable to read boot sector to mark fs as dirty
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Synchronize Cache(10) failed: Result: hostbyte=DID_NO_CONNECT driverbyte=DRIVER_OK
+Oct 13 07:40:01 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: USB disconnect, device number 8
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: USB disconnect, device number 9
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: USB disconnect, device number 10
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: USB disconnect, device number 2
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: USB disconnect, device number 3
+Oct 13 07:40:03 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: USB disconnect, device number 4
+Oct 13 07:40:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: USB disconnect, device number 42
+Oct 13 07:40:05 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: USB disconnect, device number 43
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: new high-speed USB device number 83 using xhci_hcd
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: New USB device found, idVendor=0bda, idProduct=5411, bcdDevice= 0.04
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: Product: USB2.1 Hub
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6: Manufacturer: Generic
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6:1.0: USB hub found
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6:1.0: 4 ports detected
+Oct 13 15:05:33 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: new SuperSpeed USB device number 5 using xhci_hcd
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: New USB device found, idVendor=0bda, idProduct=0411, bcdDevice= 0.04
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: Product: USB3.2 Hub
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1: Manufacturer: Generic
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1:1.0: USB hub found
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1:1.0: 4 ports detected
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: new high-speed USB device number 84 using xhci_hcd
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: New USB device found, idVendor=0bda, idProduct=5411, bcdDevice= 0.04
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: Product: USB2.1 Hub
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3: Manufacturer: Generic
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6.3:1.0: USB hub found
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6.3:1.0: 4 ports detected
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: new SuperSpeed USB device number 6 using xhci_hcd
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: New USB device found, idVendor=0bda, idProduct=0411, bcdDevice= 0.04
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: Product: USB3.2 Hub
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.3: Manufacturer: Generic
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1.3:1.0: USB hub found
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1.3:1.0: 4 ports detected
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: new high-speed USB device number 85 using xhci_hcd
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: New USB device found, idVendor=0bda, idProduct=5411, bcdDevice= 0.04
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: Product: USB2.1 Hub
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.4: Manufacturer: Generic
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6.4:1.0: USB hub found
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-6.4:1.0: 4 ports detected
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: new SuperSpeed USB device number 7 using xhci_hcd
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: New USB device found, idVendor=0bda, idProduct=0411, bcdDevice= 0.04
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: Product: USB3.2 Hub
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 4-1.4: Manufacturer: Generic
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1.4:1.0: USB hub found
+Oct 13 15:05:34 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 4-1.4:1.0: 4 ports detected
+Oct 13 15:05:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: new high-speed USB device number 86 using xhci_hcd
+Oct 13 15:05:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: New USB device found, idVendor=0424, idProduct=2640, bcdDevice= 8.a2
+Oct 13 15:05:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Oct 13 15:05:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-1:1.0: USB hub found
+Oct 13 15:05:36 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: hub 3-1:1.0: 1 port detected
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: new high-speed USB device number 87 using xhci_hcd
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: New USB device found, idVendor=0424, idProduct=4041, bcdDevice= 2.09
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: Product: usb-sd-mux FAST
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: Manufacturer: Linux Automation GmbH
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-1.1: SerialNumber: 00048.02035
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-1.1:1.0: USB Mass Storage device detected
+Oct 13 15:05:37 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host0: usb-storage 3-1.1:1.0
+Oct 13 15:05:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 0:0:0:0: Direct-Access     LinuxAut sdFST HS-SD/MMC  2.09 PQ: 0 ANSI: 0
+Oct 13 15:05:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Oct 13 15:05:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] Media removed, stopped polling
+Oct 13 15:05:38 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 0:0:0:0: [sda] Attached SCSI removable disk
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 88 using xhci_hcd
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: USB download gadget
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: U-Boot
+Oct 13 15:05:39 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.0: ttyACM0: USB ACM device
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 89 using xhci_hcd
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0000, idProduct=0000, bcdDevice=7e.91
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: USB download gadget
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: U-Boot
+Oct 13 15:05:40 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.0: ttyACM1: USB ACM device
+Oct 13 15:05:51 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: USB disconnect, device number 89
+Oct 13 15:05:52 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: USB disconnect, device number 88
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: new high-speed USB device number 90 using xhci_hcd
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Product: PlutoSDR (ADALM-PLUTO)
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: Manufacturer: Analog Devices Inc.
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.1: SerialNumber: WZ5Z6HQZ6IXHI5QI
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.1, RNDIS device, 00:e0:22:0a:e2:77
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.1:1.2: USB Mass Storage device detected
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host1: usb-storage 3-6.1:1.2
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.1:1.3: ttyACM0: USB ACM device
+Oct 13 15:06:06 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.1:1.0 enx00e0220ae277: renamed from eth0
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: new high-speed USB device number 91 using xhci_hcd
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device found, idVendor=0456, idProduct=b673, bcdDevice= 6.12
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Product: PlutoSDR (ADALM-PLUTO)
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: Manufacturer: Analog Devices Inc.
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb 3-6.3.4: SerialNumber: spi-norspi1.0SPI-NOR-UniqueID1044730a1997000cf2ff2500c6ec7bd2eb
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 eth0: register 'rndis_host' at usb-0000:00:14.0-6.3.4, RNDIS device, 00:e0:22:48:cd:43
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: usb-storage 3-6.3.4:1.2: USB Mass Storage device detected
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi host2: usb-storage 3-6.3.4:1.2
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: cdc_acm 3-6.3.4:1.3: ttyACM1: USB ACM device
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: rndis_host 3-6.3.4:1.0 enx00e02248cd43: renamed from eth0
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 1:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: Attached scsi generic sg1 type 0
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write Protect is off
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Mode Sense: 0f 00 00 00
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdb: sdb1
+Oct 13 15:06:07 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 1:0:0:0: [sdb] Attached SCSI removable disk
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Down
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: scsi 2:0:0:0: Direct-Access     Linux    File-Stor Gadget 0612 PQ: 0 ANSI: 2
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: Attached scsi generic sg2 type 0
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] 61441 512-byte logical blocks: (31.5 MB/30.0 MiB)
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write Protect is off
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Mode Sense: 0f 00 00 00
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel:  sdc: sdc1
+Oct 13 15:06:08 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: sd 2:0:0:0: [sdc] Attached SCSI removable disk
+Oct 13 15:06:11 mb-HP-ZBook-Power-16-inch-G11-Mobile-Workstation-PC kernel: e1000e 0000:00:1f.6 eno1: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: Rx

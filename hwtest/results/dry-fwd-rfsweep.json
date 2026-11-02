@@ -1,0 +1,53 @@
+{
+ "tx": "192.168.2.1",
+ "rx": "192.168.3.1",
+ "rx_gain_db": 30.0,
+ "tx_atten_db": -10.0,
+ "fs": 30720000,
+ "tone_hz": 960000,
+ "tx_saved": {
+  "out_altvoltage0_RX_LO_frequency": "2400000000",
+  "out_altvoltage1_TX_LO_frequency": "2450000000",
+  "in_voltage0_gain_control_mode": "slow_attack",
+  "in_voltage0_hardwaregain": "71.000000",
+  "out_voltage0_hardwaregain": "-10.000000"
+ },
+ "rx_saved": {
+  "out_altvoltage0_RX_LO_frequency": "2400000000",
+  "out_altvoltage1_TX_LO_frequency": "2450000000",
+  "in_voltage0_gain_control_mode": "manual",
+  "in_voltage0_hardwaregain": "62.000000",
+  "out_voltage0_hardwaregain": "-10.000000"
+ },
+ "points": [
+  {
+   "f_mhz": 2400.0,
+   "tx_lo": 2400000000,
+   "rx_lo": 2400000000,
+   "tx_lock": 1,
+   "rx_lock": 1,
+   "tone_dbfs": -23.5,
+   "offset_khz": -49.7,
+   "image_dbc": -75.2,
+   "snr_1mhz_db": 51.5,
+   "max_abs": 114,
+   "rssi": "68.25 dB"
+  }
+ ],
+ "tx_writer": "writers 1 buffer 1",
+ "rx_gain_read": "30.000000 dB",
+ "tx_restored": {
+  "out_altvoltage0_RX_LO_frequency": "2400000000",
+  "out_altvoltage1_TX_LO_frequency": "2450000000",
+  "in_voltage0_gain_control_mode": "slow_attack",
+  "in_voltage0_hardwaregain": "71.000000",
+  "out_voltage0_hardwaregain": "-10.000000"
+ },
+ "rx_restored": {
+  "out_altvoltage0_RX_LO_frequency": "2400000000",
+  "out_altvoltage1_TX_LO_frequency": "2450000000",
+  "in_voltage0_gain_control_mode": "manual",
+  "in_voltage0_hardwaregain": "62.000000",
+  "out_voltage0_hardwaregain": "-10.000000"
+ }
+}

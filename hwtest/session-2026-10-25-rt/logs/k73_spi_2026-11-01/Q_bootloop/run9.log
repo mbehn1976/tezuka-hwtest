@@ -1,0 +1,7 @@
+12:25:13 == release builds with the halt fix + 6.12 verification loop: start
+12:25:13 plutoplus_rt options: BR2_ROOTFS_OVERLAY="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_base ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_tezuka ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_maia ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_iqengine" BR2_LINUX_KERNEL_PATCH="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/patches/linux/6.12-rt" BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="$(BR2_EXTERNAL_PLUTOSDR_PATH)/board/tezuka/plutoplus/kernel/fragment/frag1.config $(BR2_EXTERNAL_PLUTOSDR_PATH)/board/tezuka/plutoplus/kernel/fragment/rt.config" 
+12:25:13 plutoplus_rt build start
+12:28:52 plutoplus_rt checks: release=6.12.114-rt21 halt_patch=1 sysrq=0 printk_time=0 watcher=0 rtprio=1 modules=6.12.114-rt21
+12:28:53 image sdimg-rt21-halt: 6.12.114-rt21 uImage 2d6678b0 ramdisk 04688f78
+12:28:53 plutoplus_rt73 options: BR2_ROOTFS_OVERLAY="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_base ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_tezuka ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_maia ${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/overlay_iqengine" BR2_LINUX_KERNEL_PATCH="${BR2_EXTERNAL_PLUTOSDR_PATH}/board/tezuka/common/patches/linux/7.3" BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="" 
+12:28:53 plutoplus_rt73 build start

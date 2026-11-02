@@ -1,0 +1,12 @@
+== board: sync, /boot read-only
+== mux -> host
+card partition: /dev/sda1 (INTENSO 14.6G)
+mounted at /run/media/mb/INTENSO
+== backup card -> known_good/card-before-2026-11-01-612control
+== rsync known_good/sdimg-rt21-sw
+host-side checksums OK
+== mux -> dut, power on
+== reboot over SSH
+== board up; verifying /boot
+board /boot checksums match image
+FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.

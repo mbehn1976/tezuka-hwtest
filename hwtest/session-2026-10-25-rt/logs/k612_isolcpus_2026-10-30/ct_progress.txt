@@ -1,0 +1,6 @@
+phase idle start 00:01:06 up=66.09
+phase idle end 00:06:11 load=0.02 0.24 0.16
+phase cpu2 start 00:06:41 up=401.22
+phase cpu2 end 00:11:49 load=2.06 1.44 0.72
+phase heavy start 00:12:19 up=739.43
+phase heavy end 00:17:27 load=6.76 5.07 2.54

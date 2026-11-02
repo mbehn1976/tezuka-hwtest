@@ -1,0 +1,16 @@
+pid 832's current affinity mask: 1
+== stressor: cpu only, on core 0
+liveness before (0 = ok): 0
+cyclictest (cpu): T: 0 ( 3514) P:99 I:250 C:1320000 Min:     10 Act:   11 Avg:   14 Max:      47
+liveness after (0 = ok): 0
+1
+0
+DONE_cpu
+== stressor: vm only, on core 0
+liveness before (0 = ok): 0
+cyclictest (vm): T: 0 (14425) P:99 I:250 C:1320000 Min:     10 Act:   18 Avg:   17 Max:      74
+liveness after (0 = ok): 0
+1
+0
+DONE_vm
+ALLDONE

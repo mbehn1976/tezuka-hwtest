@@ -1,0 +1,81 @@
+run 1 rc=0 21:26:51
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9112, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9434, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.4} ok
+run 2 rc=0 21:28:01
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9482, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9465, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 23.0, "inband_over_outband_db_iq": 22.3} ok
+run 3 rc=0 21:29:11
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9031, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9273, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 4 rc=0 21:30:20
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9428, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9423, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 5 rc=0 21:31:29
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9482, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9371, raw_log_corr: 0.9999} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 6 rc=0 21:32:38
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9508, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9224, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 23.9, "inband_over_outband_db_iq": 23.1} ok
+run 7 rc=0 21:33:49
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9392, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9175, raw_log_corr: 0.9999} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 23.8, "inband_over_outband_db_iq": 23.1} ok
+run 8 rc=0 21:34:58
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9398, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9347, raw_log_corr: 0.9999} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9983, "inband_over_outband_db_mag": 23.8, "inband_over_outband_db_iq": 23.1} ok
+run 9 rc=0 21:36:08
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9324, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.119, raw_log_corr: 0.998} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 10 rc=0 21:37:17
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9391, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9451, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 11 rc=0 21:38:26
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9494, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9478, raw_log_corr: 0.9999} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9982, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.2} ok
+run 12 rc=0 21:39:36
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9438, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9465, raw_log_corr: 0.9999} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.9, "inband_over_outband_db_iq": 22.3} ok
+run 13 rc=0 21:40:45
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9494, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9334, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.8, "inband_over_outband_db_iq": 22.2} ok
+run 14 rc=0 21:41:55
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9491, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.944, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.8, "inband_over_outband_db_iq": 22.2} ok
+run 15 rc=0 21:43:04
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9321, raw_log_corr: 0.9999} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9029, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.8, "inband_over_outband_db_iq": 22.2} ok
+run 16 rc=0 21:44:14
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9136, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9242, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9983, "inband_over_outband_db_mag": 23.8, "inband_over_outband_db_iq": 23.1} ok
+run 17 rc=0 21:45:23
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9166, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9097, raw_log_corr: 0.9998} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9946, "inband_over_outband_db_mag": 23.5, "inband_over_outband_db_iq": 22.9} ok
+run 18 rc=0 21:46:32
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.5721, raw_log_corr: 0.9998} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9386, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9981, "inband_over_outband_db_mag": 22.8, "inband_over_outband_db_iq": 22.2} ok
+run 19 rc=0 21:47:41
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9302, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9108, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.998, "inband_over_outband_db_mag": 22.7, "inband_over_outband_db_iq": 21.9} ok
+run 20 rc=0 21:48:51
+{"name": "cw 5038080 Hz", corr_mag_iq_log: 0.9301, raw_log_corr: 1.0} ok
+{"name": "cw -14745600 Hz", corr_mag_iq_log: 0.9288, raw_log_corr: 1.0} ok
+{"name": "ofdm 1024/128/600", corr_mag_iq_log: 0.9979, "inband_over_outband_db_mag": 22.7, "inband_over_outband_db_iq": 22.0} ok
+LOOP_DONE

@@ -1,0 +1,125 @@
+console=ttyPS0,115200 rootfstype=ramfs root=/dev/ram0 rw rootwait earlycon clk_ignore_unused cpuidle.off=1 uio_pdrv_genirq.of_id=uio_pdrv_genirq UBOOT_MODEBOOT=sdboot UBOOT_VERSION=""
+Linux plutoplus 6.12.77 #1 SMP PREEMPT Sun Oct 11 06:48:16 CEST 2026 armv7l GNU/Linux
+2317973903b87544c8cb5c6e47563fd7  /boot/BOOT.bin
+ba5c7f5c8f9f5e2175baa0fc51679cba  /boot/devicetree.dtb
+md5sum: can't read '/boot/overclock': Is a directory
+85b0b129314175388e0a2530e150137c  /boot/system_top.bin
+71c31dd02dffadbff8a30feabd1351ed  /boot/system_top_top.bin
+85b0b129314175388e0a2530e150137c  /boot/tezuka_top.bin
+4dd43ad69adfa46753e14b4213128c29  /boot/uEnv.txt
+0809f13634217e1d5acbd03f4a7cabaf  /boot/uImage
+b58db4a5f3bd41458746b9d2d78f387c  /boot/uramdisk.image.xz
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [pool_workqueue_]
+    4 root     [kworker/R-kvfre]
+    5 root     [kworker/R-rcu_g]
+    6 root     [kworker/R-sync_]
+    7 root     [kworker/R-slub_]
+    8 root     [kworker/R-netns]
+    9 root     [kworker/0:0-eve]
+   10 root     [kworker/0:0H-ev]
+   11 root     [kworker/0:1-dev]
+   12 root     [kworker/u8:0-ev]
+   13 root     [kworker/R-mm_pe]
+   14 root     [ksoftirqd/0]
+   15 root     [rcu_preempt]
+   16 root     [rcu_exp_par_gp_]
+   17 root     [rcu_exp_gp_kthr]
+   18 root     [migration/0]
+   19 root     [cpuhp/0]
+   20 root     [cpuhp/1]
+   21 root     [migration/1]
+   22 root     [ksoftirqd/1]
+   23 root     [kworker/1:0-eve]
+   24 root     [kworker/1:0H-ev]
+   25 root     [kdevtmpfs]
+   26 root     [kworker/R-inet_]
+   27 root     [oom_reaper]
+   28 root     [kworker/R-write]
+   29 root     [kworker/R-kbloc]
+   30 root     [kworker/u8:1-ev]
+   31 root     [watchdogd]
+   32 root     [kworker/0:1H-mm]
+   33 root     [kworker/R-rpcio]
+   34 root     [kworker/R-xprti]
+   35 root     [kswapd0]
+   36 root     [kworker/u8:2-ev]
+   48 root     [kworker/R-nfsio]
+   49 root     [kworker/R-cifsi]
+   50 root     [kworker/R-smb3d]
+   51 root     [kworker/R-cifsf]
+   52 root     [kworker/R-cifso]
+   53 root     [kworker/R-defer]
+   54 root     [kworker/R-serve]
+   55 root     [kworker/R-cfid_]
+   56 root     [kworker/0:2-dev]
+   72 root     [kworker/1:1-mm_]
+  144 root     [kworker/u8:3-ev]
+  156 root     [spi0]
+  161 root     [kworker/u8:4-ev]
+  278 root     [irq/32-maia-sdr]
+  297 root     [kworker/R-ci_ot]
+  347 root     [kworker/u9:0]
+  348 root     [kworker/R-sdhci]
+  349 root     [irq/35-mmc0]
+  360 root     [kworker/R-mmc_c]
+  405 root     [kworker/1:1H-kb]
+  406 root     [kworker/R-mld]
+  407 root     [kworker/R-ipv6_]
+  431 root     [kworker/u8:5-ev]
+  527 root     [kworker/u8:6-ev]
+  548 root     [kworker/u8:7-ev]
+  658 root     [kworker/u8:8-ev]
+  687 root     [jffs2_gcd_mtd2]
+  702 root     /sbin/syslogd -n
+  706 root     /sbin/klogd -n
+  715 root     watchdog -t 5 -T 10 /dev/watchdog
+  819 root     /usr/sbin/iiod -D -n 3 -F /dev/iio_ffs
+  826 root     [file-storage]
+  842 dbus     /usr/bin/dbus-daemon --system --syslog
+  989 root     /usr/sbin/ifplugd
+  993 root     /usr/sbin/udhcpd /etc/udhcpd.conf
+ 1037 root     /bin/sh /sbin/update.sh
+ 1043 chrony   /usr/sbin/chronyd
+ 1056 avahi    avahi-daemon: running [plutoplus.local]
+ 1057 avahi    avahi-daemon: chroot helper
+ 1065 root     /usr/sbin/dropbear -R
+ 1084 root     /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
+ 1099 root     /usr/bin/maia-httpd --listen 0.0.0.0:80 --ssl-cert /mnt/jffs2/maia-httpd.crt --ssl-key /mnt/jffs2/maia-httpd.key --ca-cert /mnt/jffs2/maia-sdr-ca.crt
+ 1113 root     /usr/bin/classifier -f /mnt/jffs2/classifier/templates.bin
+ 1130 root     {watchconsoletx.} /bin/sh /root/watchconsoletx.sh
+ 1131 root     {watchdatveasy.s} /bin/sh /root/watchdatveasy.sh
+ 1132 root     {watchconsolefre} /bin/sh /root/watchconsolefreq.sh
+ 1133 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 1142 root     inotifywait -e modify /sys/bus/iio/devices/iio:device0/ensm_mode
+ 1153 root     inotifywait -q -e modify /sys/bus/iio/devices/iio:device0/out_altvoltage0_RX_LO_frequency
+ 1169 root     input-event-daemon
+ 1173 root     /sbin/getty -L ttyPS0 0 vt100
+ 1174 root     /sbin/getty -L ttyGS0 0 vt100
+ 1203 root     /usr/bin/mqtt_pubd -i tezuka_pub
+ 1207 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 1208 root     /usr/bin/mosquitto_sub -v -i tezuka_sub -t cmd/#
+ 1209 root     {api_controller.} /bin/bash /root/api_controller.sh
+ 1948 root     sleep 2
+ 1950 root     /usr/sbin/dropbear -R -2 9
+ 1960 root     bash -c cat /proc/cmdline; uname -a; md5sum /boot/*; ps w; free; df -h; cat /sys/kernel/config/usb_gadget/*/UDC; ls /sys/kernel/config/usb_gadget/*/functions; logread 2>/dev/null | tail -100
+ 1965 root     sleep 1
+ 1974 root     sleep 1
+ 1975 root     ps w
+              total        used        free      shared  buff/cache   available
+Mem:         374576       20680      234704         128      119192      256676
+Swap:             0           0           0
+Filesystem                Size      Used Available Use% Mounted on
+devtmpfs                141.7M         0    141.7M   0% /dev
+tmpfs                   182.9M         0    182.9M   0% /dev/shm
+tmpfs                   182.9M     56.0K    182.8M   0% /tmp
+tmpfs                   182.9M     68.0K    182.8M   0% /run
+mtd2                    896.0K    216.0K    680.0K  24% /mnt/jffs2
+/dev/mmcblk0p1           14.5G     28.2M     14.5G   0% /boot
+ci_hdrc.0
+acm.usb0
+ffs.iio_ffs
+mass_storage.0
+rndis.0

@@ -1,0 +1,33 @@
+nb4 round 1 full=True outliers=1 f0=1.2500 rc=0
+nb32 round 1 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 2 full=True outliers=1 f0=1.2500 rc=0
+nb32 round 2 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 3 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 3 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 4 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 4 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 5 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 5 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 6 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 6 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 7 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 7 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 8 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 8 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 9 full=True outliers=1 f0=1.2500 rc=0
+nb32 round 9 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 10 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 10 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 11 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 11 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 12 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 12 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 13 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 13 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 14 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 14 full=True outliers=0 f0=1.2500 rc=0
+nb4 round 15 full=True outliers=0 f0=1.2500 rc=0
+nb32 round 15 full=True outliers=0 f0=1.2500 rc=0
+SUMMARY nb4: runs 15, incomplete 0, runs with outliers 3, outliers 3
+SUMMARY nb32: runs 15, incomplete 0, runs with outliers 0, outliers 0
+DROP_DONE

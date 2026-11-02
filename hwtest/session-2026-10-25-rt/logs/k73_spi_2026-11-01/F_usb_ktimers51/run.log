@@ -1,0 +1,20 @@
+19:16:33 == F_usb_ktimers51: 160 rounds, kernel 7.3.0-rc7, stream host 192.168.4.1, fs 5000000, blocks 32
+19:16:33 reboot board
+19:17:12 board: 7.3.0-rc7 WZ5Z6HQZ6IXHI5QI
+19:18:14 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+19:18:14 setup: for p in $(grep -l "^ktimers/" /proc/[0-9]*/comm | cut -d/ -f3); do chrt -f -p 51 $p; done
+pid 14's current scheduling policy: SCHED_FIFO
+pid 14's current scheduling priority: 99
+pid 14's new scheduling policy: SCHED_FIFO
+pid 14's new scheduling priority: 51
+pid 27's current scheduling policy: SCHED_FIFO
+pid 27's current scheduling priority: 99
+pid 27's new scheduling policy: SCHED_FIFO
+pid 27's new scheduling priority: 51
+19:18:18 radio: phy=iio:device1 sf=5000000 loopback=1 writer=1
+19:18:21 before: up=88.25 spito=0 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1  spi_irq: 187 pol=1 rt=50 cpu=0 irq/29-e0006000.spi
+19:18:22 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.246/0.500/0.718/0.162 ms)
+19:47:58 stream end
+tx_muted
+19:48:02 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000014 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+19:48:02 RESULT F_usb_ktimers51: SUMMARY nb32: runs 160, incomplete 0, runs with outliers 108, outliers 182  | SPI timeouts 15

@@ -1,0 +1,28 @@
+07:43:22 == Q_usb4M_73: 100 rounds, kernel 7.3.0, stream host 192.168.4.1, fs 4000000, blocks 32 (v4: pre-check before radio_on)
+07:43:22 reboot board
+07:44:01 board: 7.3.0 WZ5Z6HQZ6IXHI5QI
+07:45:03 spiregs fresh_boot:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+07:45:03 setup: cat > /tmp/adcheck.sh <<"EOS"
+#!/bin/sh
+# AD9361 control-path health: product id regs via debugfs, sf write+readback, kernel log counters
+P=$(dirname $(grep -l '^ad9361-phy$' /sys/bus/iio/devices/iio:device*/name)); N=$(basename $P); D=/sys/kernel/debug/iio/$N
+r(){ echo $1 > $D/direct_reg_access; cat $D/direct_reg_access; }
+echo "regs 0x037=$(r 0x037) 0x002=$(r 0x002) 0x003=$(r 0x003) 0x017=$(r 0x017)"
+b=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')
+echo "sf_read=$(cat $P/in_voltage_sampling_frequency)"
+echo 5000000 > $P/in_voltage_sampling_frequency 2>&1; echo "sf_after_write=$(cat $P/in_voltage_sampling_frequency) ensm=$(cat $P/ensm_mode)"
+echo "spito=$(dmesg | grep -c 'SPI transfer timed out') errlines_before_write=$b errlines_now=$(dmesg | grep -c -E 'Calibration TIMEOUT|Failed to set|Error -110')"
+PM=/sys/bus/platform/devices/e0006000.spi/power; echo on > $PM/control; sleep 0.2; echo "ISR=$(devmem 0xE0006004 32)"; echo auto > $PM/control
+EOS
+echo shipped settings
+shipped settings
+07:45:04 pre: regs 0x037=0xA 0x002=0x4C 0x003=0x5C 0x017=0x1A sf_read=30720000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+07:45:07 radio: phy=iio:device1 sf=4000000 loopback=1 writer=1
+07:45:10 before: up=89.03 spito=0 ktimers: 14 pol=1 rt=51 cpu=0 ktimers/0 27 pol=1 rt=51 cpu=1 ktimers/1  spi_irq: 188 pol=1 rt=60 cpu=0 irq/29-e0006000.spi
+07:45:11 stream start (ping 192.168.4.1: rtt min/avg/max/mdev = 0.264/0.422/0.583/0.114 ms)
+08:03:44 stream end
+08:03:44 rate seen by the monitor:      19 sf=4000000 
+08:03:45 post: regs 0x037=0xA 0x002=0x5C 0x003=0x5C 0x017=0x1A sf_read=4000000 sf_after_write=5000000 ensm=fdd spito=0 errlines_before_write=0 errlines_now=0 ISR=0x00000004 
+tx_muted
+08:03:49 spiregs end:  pm=active CR=0x00007C25 ISR=0x00000004 IMR=0x00000000 ER=0x00000000 TXWR=0x00000001 RXTHR=0x00000001 
+08:03:49 RESULT Q_usb4M_73: SUMMARY nb32: runs 100, incomplete 0, runs with outliers 0, outliers 0  | SPI timeouts 0

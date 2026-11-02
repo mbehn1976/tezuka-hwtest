@@ -1,0 +1,6 @@
+INFO: debugfs mountpoint: /sys/kernel/debug/tracing/
+# /dev/cpu_dma_latency set to 0us
+T: 0 (27126) P:98 I:250 C:  62429 Min:     24 Act:   91 Avg:   35 Max:      91
+# Thread Ids: 27126
+# Break thread: 27126
+# Break value: 91

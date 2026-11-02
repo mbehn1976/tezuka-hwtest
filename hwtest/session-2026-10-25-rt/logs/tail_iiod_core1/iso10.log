@@ -1,0 +1,5 @@
+rounds done: 70, incomplete: 0
+pid iiod: 8978
+cat: can't open '/tmp/iiod_exit.log': No such file or directory
+ls: /tmp/core.*: No such file or directory
+ALLDONE
